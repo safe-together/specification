@@ -1,4 +1,4 @@
-# Safe Together Specification
+# SafeTogether Specification
 
 * Editor's Draft: https://safe-together.github.io/specification/
 * Latest Published: https://safe-together.github.io/specification/
@@ -9,8 +9,8 @@
   * Contat Tracing app: *TBD*
   * Quarantine app: *TBD*
 
-This repository contains the source code of [=Safetogether Specification=]ion]
-which aims to be a clear, unambiguous, free and implementable documentation for [Safetogether Project].
+This repository contains the source of the SafeTogether Specification
+which aims to be a clear, unambiguous, free and implementable documentation for [SafeTogether Project].
 
 For the time being, while the migration is in progress, please refer also to the existing draft documents available in reference implementation repositories.
 

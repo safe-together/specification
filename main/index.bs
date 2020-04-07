@@ -1,9 +1,9 @@
 <pre class='metadata'>
-Title: The Safetogether Ecosystem
+Title: The SafeTogether Ecosystem
 Shortname: safetogether
 Level: 1
 Status: DREAM
-Group: Safetogether Community Group
+Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/
 Markup Shorthands: markdown yes
 Max ToC Depth: 2

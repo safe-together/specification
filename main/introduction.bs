@@ -5,17 +5,17 @@ Issue: Write Introduction section.
 
 ## Definitions ## {#definitions}
 
-The <dfn export>Safetogether Specification</dfn> 
-describes for architecture and protocols for the [=Safetogether Project=].
+The <dfn export>SafeTogether Specification</dfn> 
+describes for architecture and protocols for the [=SafeTogether Project=].
 
-A <dfn export>Safetogether Application</dfn> implements [=Safetogether Specification=].
+A <dfn export>SafeTogether Application</dfn> implements [=SafeTogether Specification=].
 
 A <dfn export>user</dfn> is an individual, 
-company, or organization who access a [=Safetogether Application=].
+company, or organization who access a [=SafeTogether Application=].
 
 
 A <dfn export>implementer</dfn> is a company 
-or organization who are implementing the [=Safetogether Specification*].
+or organization who are implementing the [=SafeTogether Specification*].
 An implementer may be any combination of Identity Provider, Registry Provider, and Application Provider.
 
 ## Structure of this document ## {#structure}
