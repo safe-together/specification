@@ -5,7 +5,7 @@
 * Working Drafts:
   * Currently in progress
 * Reference implementation repositories:
-  * Shieldind app: https://github.com/g0v-it/safetogether-shielding
+  * Shielding app: https://github.com/g0v-it/safetogether-shielding
   * Contat Tracing app: *TBD*
   * Quarantine app: *TBD*
 
