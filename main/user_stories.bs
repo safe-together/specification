@@ -20,7 +20,7 @@ Issue: update ongoing...
 
 #### Conditions
 
-##### Precondition
+#### Precondition
 [=Marco=]’s state is immune
 
 #### Story
@@ -45,11 +45,11 @@ Marco as a volunteer.
 
 
 ### *US10* Marco’s Immunity Expires {#us10}
-##### Precondition
+#### Precondition
 [=Marco=]’s state is immune.
-##### Post-condition
+#### Post-condition
 [=Marco=]’s state is unknown
- #### Story
+#### Story
 The mobile app notifies [=Marco=]  that his state has expired, and
 that it is now unknown. [=Marco=])  can now proceed with [#us1].
 
@@ -59,9 +59,9 @@ that it is now unknown. [=Marco=])  can now proceed with [#us1].
 
 
 ### *US11*  Marco is Tested (Tampon) {#us11}
- ##### Precondition
+#### Precondition
  [=Marco=] state is unknown, immune, or negative.
- ##### Post-condition
+#### Post-condition
   [=Marco=] state is quarantined, negative, or immune
 #### Story
  [=Marco=] feels
@@ -79,9 +79,9 @@ depending on [=Marco=]’s state at the beginning of US11.
 
 
 ### *US12* Marco Visits Franca. {#us12}
-##### Precondition
+#### Precondition
 [=Marco=]’s state is immune
- #### Story
+#### Story
 [=Walter=] sends Marco to [=Franca=]. Marco knocks [=Franca=]’s door, and
 Franca asks him to identify himself. Marco authenticates with the
 mobile app on his smartphone, which then broadcasts Marco’s
@@ -102,7 +102,7 @@ photo shown on her mobile app, and opens the door.
 
 #### Conditions
 
-##### Precondition
+#### Precondition
 Marco’s state is unknown
 
 #### Story
@@ -122,7 +122,7 @@ The certificate will be stored [=Marco=]'s device memory.
 
 #### Conditions
 
-##### Precondition
+#### Precondition
 [#us13] [=Marco=] has a test-certificate
 
 #### Story
@@ -136,7 +136,7 @@ The test-certificate has an expiring-date. After this date [=Marco=] has to go b
 
 #### Conditions
 
-##### Precondition
+#### Precondition
 [=Marco=] has a test-certificate
 
 #### Story
