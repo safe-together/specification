@@ -1,0 +1,41 @@
+<pre class='metadata'>
+Title: The Safetogether Ecosystem
+Shortname: safetogether
+Level: 1
+Status: draft
+Group: Safetogether Community Group
+URL: https://safe-together.github.io/specification/
+Markup Shorthands: markdown yes
+Max ToC Depth: 2
+Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Abstract:
+  This document connects a set of specifications that, together,
+  provide applications with secure and permissioned access to safetogether applications
+  in an interoperable way.
+</pre>
+
+## Status of This Document ## {#status}
+**This document is an incomplete draft.**
+The sections that have been incorporated have been reviewed
+following the [safetogether process](process/).
+However, the information in this document is still subject to change.
+
+You are invited to [contribute](https://github.com/g0v-it/safetogether-spec/issues)
+any feedback, comments, or questions you might have.
+
+<pre class=include>path: introduction.bs</pre>
+
+
+<pre class=biblio>
+{
+  "verifiable-credentials": {
+		"href": "https://www.w3.org/TR/verifiable-claims-data-model/",
+		"title": "Verifiable Credentials Data Model 1.0",
+    "authors": [
+      "Manu Sporny",
+      "Dave Longley",
+      "David Chadwick"
+    ]
+	}
+}
+</pre>
