@@ -28,7 +28,7 @@ Marco is asked by
 [=Andrea=] to prove that his state is immune. Marco opens the mobile app and authenticates. 
 The app shows a QR code that contains Marco’s COC_ID. [=Andrea=] scans the QR code using the operator app. 
 The operator app checks Marco’s state on the backend (including the expiration date if the state is immune),
-and returns it to [Andrea](#marco-the-immune-volunteer).
+and returns it to Andrea.
 
 ### *US9* Marco Volunteers to Join Cordone Sanitario {#us9}
 #### Precondition
@@ -66,7 +66,7 @@ that it is now unknown. [=Marco=])  can now proceed with [#us1].
 #### Story
  [=Marco=] feels
 sick, and goes to his doctor Giovanni. Giovanni records information
-about the test using the operator app, and updates[=Marco=]’s
+about the test using the operator app, and updates [=Marco=]’s
 state to unknown - thus possibly revoking [=Marco=])’s immune
 state. After a few days, the test result is back. If the test is
 positive, [=Marco=]’s state becomes quarantined. If the test is
@@ -91,7 +91,7 @@ her smartphone. Franca’s mobile app sends the COC_ID to the
 backend, which returns Marco’s photo if his state is immune
 and he was registered by [=Walter=]. Otherwise, the mobile app tells
 Franca not to open the door. The backend records the interaction
-between Marco and[Franca). Franca verifies that Marco matches the
+between Marco and Franca. Franca verifies that Marco matches the
 photo shown on her mobile app, and opens the door.
 
 
@@ -106,13 +106,13 @@ photo shown on her mobile app, and opens the door.
 Marco’s state is unknown
 
 #### Story
-Marco goes to =Paola=] in order to perform an antibodies test.
-If the test is positive [Paola](#paola-the-pharmacist) ask for Marco's tax code and phone number and records them using operator app.
+Marco goes to [=Paola=] in order to perform an antibodies test.
+If the test is positive Paola ask for Marco's tax code and phone number and records them using operator app.
 The operator app notifies the institutional forces.
 (Also has to update db?)
 
 Otherwise [=Paola=] informs [=Marco=] that she can add the test-certificate on his user app if he wants. (And if he doesn't want?)
-[=Marco=] can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), [Paola](#paola-the-pharmacist) uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.
+[=Marco=] can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), Paola uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.
 
 The information are stored in a db, morover they are sended to COC Backend that forwards the certificate to the user-app.
 The certificate will be stored [=Marco=]'s device memory.
@@ -126,7 +126,8 @@ The certificate will be stored [=Marco=]'s device memory.
 [#us13] [=Marco=] has a test-certificate
 
 #### Story
-The test-certificate has an expiring-date. After this date [=Marco=] has to go back to [Paola](#paola-the-pharmacist) in order to update his immunity condition.
+The test-certificate has an expiring-date. After this date [=Marco=] has to go back to [=Paola=]
+ in order to update his immunity condition.
 
 
 
@@ -140,5 +141,6 @@ The test-certificate has an expiring-date. After this date [=Marco=] has to go b
 
 #### Story
 When [=Marco=] goes to [=Franca=] robs her. Franca reports the crime to Carabinieri. 
-Pietro, the policeman, uses the user-app to read [=Franca=] COC_ID, then He asks to Stefano, the app owner, [=Marco=]'s COC_ID stored in [=Franca=]'s contact logs. Pietro, the policeman, asks to [Walter](#walter-the-istitutional) to revoke [=Marco=]'s volunteer certificate.
+Pietro, the policeman, uses the user-app to read [=Franca=] COC_ID, then He asks to Stefano, the app owner, [=Marco=]'s COC_ID stored in [=Franca=]'s contact logs. Pietro,
+ the policeman, asks to [=Walter=] to revoke [=Marco=]'s volunteer certificate.
 
