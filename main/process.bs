@@ -1,18 +1,26 @@
 Process {#process}
 =====================
 
+The following is a description about how changes to the specifications in the Safetogheter ecosystem may be proposed and accepted.
+
+The current development is carried out in the [REPOSITORY](https://github.com/SafeTogether/specification) repository. 
+
+Anyone may participate in this process. Please read the [#code-of-conduct](code-of-conduct.md) before doing so.
+
 
 ## Contributors
 
-Any individual that has been involved in proposals to improve the [Safetogether Specification] has provided a valuable service to Safetogether Projectoject] and is encouraged to continue.
+Any individual that has been involved in proposals to improve the [=SafeTogether Specification=] has provided a valuable service to 
+SafeTogether Projectoject] and is encouraged to continue.
 
 All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.
 
-There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise. For these cases, we have [Safetogether Panels](#safetogether-panels).
+There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise. 
+For these cases, we have [SafeTogether Panels](#safetogether-panels).
 
-### Safetogether Panels
+### SafeTogether Panels
 
-Safetogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the [Safetogether Specification]. Anyone may join a panel or suggest a new panel.
+SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the [=SafeTogether Specification=]. Anyone may join a panel or suggest a new panel.
 
 Domains may be technical, non-technical, or some combination of the two. For example, a Security Panel could focus on the evaluation and advancement of the safetogether security model.
 
@@ -21,33 +29,33 @@ A list of safetogether Panels is maintained at [panels](panels/). This listing h
 
 ## Stakeholders
 
-Stakeholders are those affected by normative changes to the [Safetogether Specification](https://github.com/solid/specification). There are two types of Stakeholders; [users](#users) and [Implementers](#implementers). It is important to consider them both when proposing changes, and adhering to the W3C [priority of constituencies](https://www.w3.org/TR/html-design-principles/#priority-of-constituencies) is encouraged. A Stakeholder may be both a user and an implementer.
+Stakeholders are those affected by normative changes to the [=SafeTogether Specification=](https://github.com/SafeTogether/specification). There are two types of Stakeholders; [users](#users) and [Implementers](#implementers). It is important to consider them both when proposing changes, and adhering to the W3C [priority of constituencies](https://www.w3.org/TR/html-design-principles/#priority-of-constituencies) is encouraged. A Stakeholder may be both a user and an implementer.
 
 Stakeholders who have opted to identify themselves publicly are listed at [stakeholders.md](stakeholders.md). Anyone may decide to identify themselves publicly as a safetogether Stakeholder, but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.
 
 ### Users
 
-Safetogether Users are individuals, companies, or organizations who access a safetogether Application.
+SafeTogether Users are individuals, companies, or organizations who access a [=SafeTogether Application=].
 
 ### Implementers
 
-Safetogether Implementers are companies or organizations who are implementing the [Safetogether Specification]. A Safetogether Implementer may be any combination of Identity Provider, Data Provider, and Application Provider.
+SafeTogether Implementers are companies or organizations who are implementing the [=SafeTogether Specification=]. A SafeTogether Implementer may be any combination of Identity Provider, Data Provider, and Application Provider.
 
 ## How to Make Changes
 
-This section details how changes to the [Safetogether Specification] may be drafted, proposed, and accepted by the community of the Editors
+This section details how changes to the [=SafeTogether Specification=] may be drafted, proposed, and accepted by the community of the Editors
 
 Anyone may submit a proposal to alter this process. 
 
 ### Drafting proposals
 
-Anyone may propose improvements to the [Safetogether Specification]. Here are some examples of different ways to contribute:
+Anyone may propose improvements to the [=SafeTogether Specification=]. Here are some examples of different ways to contribute:
 
 - Submit a pull request or issue on the [REPOSITORY] in GitHub
 - Make a suggestion to a Panel communication chennel about a change you'd like to see
 - Propose an item for the  safetogether Community Group call
 
-Proposals for substantive changes to the [Safetogether Specification] go through an editorial review process. A change is considered substantive when it alters the normative text of the Safetogether Specification or the safetogether Roadmap. Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from Implementers.
+Proposals for substantive changes to the [=SafeTogether Specification=] go through an editorial review process. A change is considered substantive when it alters the normative text of the SafeTogether Specification or the safetogether Roadmap. Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from Implementers.
 
 Any proposal should also be accompanied with a reasonable explanation of the need for the proposed change. For example:
 
@@ -70,3 +78,48 @@ The Editorial Team is comprised of all the Editors. Anyone may apply to be an Ed
 Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.
 
 Editors have [_Admin Permissions_](https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization) on the repositories they are assigned to.
+
+## Code of Conduct
+
+Personal threats or discriminatory threats towards arbitrary groups or Community Group call and mailing list may result in a ban 
+of the threatening individual.
+
+Repeated and sustained straying from the defined aims of the communication channels
+ may result in a ban of those individuals straying from those defined aims.
+
+### General Expectations
+Below are some general expectations around how participants of the  community are encouraged to behave.
+
+Participants in the  community are expected to behave professionally and respectfully.
+This community is committed to maintain a positive and constructive community while helping to build SafeTogether. 
+This commitment calls for a community where participants behave according to the rules of the following Code of Conduct:
+
+- Communicate and behave with respect, professionalism, fairness, and sensitivity.
+- Communicate constructively and avoid demeaning or insulting behavior or language.
+- Be welcoming. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, religion, national origin, sexual orientation, gender identity and expression, and physical and mental abilities.
+- Be mindful of people's time and effort spent on contributions to the project. In discussions, read other people's points, make an effort to understand, and reply to relevant statements and questions they write. Substantiate your opinions, concerns, or issues respectfully with arguments of an appropriate technical level to keep the discussion clear and focused.
+- Do not insult or put down other participants. Harassment (whether verbal, physical or sexual) and other exclusionary behavior is not acceptable.
+- Disagreements, both social and technical, happen all the time. Whenever inappropriate behaviors are observed members of the community should strive to bring the discussion back to a more professional level. In most cases misunderstandings and disagreements can be resolved informally.  We hope that most concerns can be solved this way. 
+
+### Best Practices
+Best practices for the Community include:
+
+- Contribute! Help SafeTogether be the best it can be. Work together constructively toward the good working of the technology.
+- Stay on topic. Remember others voices need to be heard as well as yours and you must allow the space for other members to participate (e.g. don't monologue or respond to every comment).
+- Respect the expertise and contributions of other members of the community (e.g. don't assume that you're "the smartest person in the room"). Remember that this is a community with different backgrounds who have valuable contributions to make.
+- Listen first and be sure you understand the point of view of the other person (e.g. don't assume that others are disagreeing with you because they don't understand what you’re saying and don't suggest that another person's comments are invalid because they have a different opinion).
+- Respond from an informed and inclusive point of view (e.g. don't respond to comments without reading the background information).
+- Do review the work of others to see if you are doing something that other groups have already done (i.e. don't “reinvent the wheel”).
+- Know that your contribution is still valuable even if it is not integrated.
+- Remember the work is about more than just your area of interest (e.g. don't let your personal or professional goals impede the progress of the group).
+- Do [contact](mailto:manager@SafeTogetherproject.org) the SafeTogether Manager if you feel someone has been working in a way that is having a negative impact on the work of the group, if they are insulting or harassing you, or unfairly impeding your own ability to work.
+- Maintain an open mindset and encourage others to do the same. There might be things you or others haven't heard about yet, so be open to send and receive pointers to more info.
+- There are multiple ways of achieving the same goals, but when you build something new, check what already exists so we can better understand and help you with your contribution.
+
+### Based on:
+- https://www.w3.org/Consortium/cepc/  (and an as-of-yet unpublished “BestPractices for Working Groups”)
+- https://adainitiative.org/2014/02/18/howto-design-a-code-of-conduct-for-your-community/
+- http://geekfeminism.wikia.com/wiki/Code_of_conduct
+- https://www.djangoproject.com/conduct/
+- http://artofcommunityonline.org/Art_of_Community_Second_Edition.pdf
+

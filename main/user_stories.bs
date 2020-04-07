@@ -1,0 +1,146 @@
+User stories {#user_stories}
+=====================
+
+
+## Tracing stories {#tracingg_stories}
+
+Issue: add tracing story.
+
+## Quarantine stories {#quarantine_stories}
+
+Issue: add quarantine story.
+
+
+## Shielding stories {#shielding_stories}
+
+Issue: update ongoing...
+
+### *US8* Proof of Immunity {#us8}
+
+
+#### Conditions
+
+#### Precondition
+[=Marco=]’s state is immune
+
+#### Story
+Marco is asked by
+[=Andrea=] to prove that his state is immune. Marco opens the mobile app and authenticates. 
+The app shows a QR code that contains Marco’s COC_ID. [=Andrea=] scans the QR code using the operator app. 
+The operator app checks Marco’s state on the backend (including the expiration date if the state is immune),
+and returns it to Andrea.
+
+### *US9* Marco Volunteers to Join Cordone Sanitario {#us9}
+#### Precondition
+[=Marco=]’s state is immune
+#### Story
+[=Marco=] goes to Walter at
+protezione civile, and volunteers to join cordone sanitario for
+at-risk individuals. Marco proves that he is immune as described in
+[#us8]. [=Walter=] registers [=Marco=]’s information, including his COC_ID and
+photo, to protezione civile’s system. Protezione civile’s system
+uses the COC backend to send a notification to [=Marco=] mobile
+app. [=Marco=] authenticates in front of [=Walter=], and the app records
+Marco as a volunteer.
+
+
+### *US10* Marco’s Immunity Expires {#us10}
+#### Precondition
+[=Marco=]’s state is immune.
+#### Post-condition
+[=Marco=]’s state is unknown
+#### Story
+The mobile app notifies [=Marco=]  that his state has expired, and
+that it is now unknown. [=Marco=])  can now proceed with [#us1].
+
+
+
+
+
+
+### *US11*  Marco is Tested (Tampon) {#us11}
+#### Precondition
+ [=Marco=] state is unknown, immune, or negative.
+#### Post-condition
+  [=Marco=] state is quarantined, negative, or immune
+#### Story
+ [=Marco=] feels
+sick, and goes to his doctor Giovanni. Giovanni records information
+about the test using the operator app, and updates [=Marco=]’s
+state to unknown - thus possibly revoking [=Marco=])’s immune
+state. After a few days, the test result is back. If the test is
+positive, [=Marco=]’s state becomes quarantined. If the test is
+negative, [=Marco=]’s state is set to negative or immune,
+depending on [=Marco=]’s state at the beginning of US11.
+
+
+
+
+
+
+### *US12* Marco Visits Franca. {#us12}
+#### Precondition
+[=Marco=]’s state is immune
+#### Story
+[=Walter=] sends Marco to [=Franca=]. Marco knocks [=Franca=]’s door, and
+Franca asks him to identify himself. Marco authenticates with the
+mobile app on his smartphone, which then broadcasts Marco’s
+certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
+devices and read’s Marco’s COC_ID using the mobile app on
+her smartphone. Franca’s mobile app sends the COC_ID to the
+backend, which returns Marco’s photo if his state is immune
+and he was registered by [=Walter=]. Otherwise, the mobile app tells
+Franca not to open the door. The backend records the interaction
+between Marco and Franca. Franca verifies that Marco matches the
+photo shown on her mobile app, and opens the door.
+
+
+
+
+
+### *US13* Antibodies test {#us13}
+
+#### Conditions
+
+#### Precondition
+Marco’s state is unknown
+
+#### Story
+Marco goes to [=Paola=] in order to perform an antibodies test.
+If the test is positive Paola ask for Marco's tax code and phone number and records them using operator app.
+The operator app notifies the institutional forces.
+(Also has to update db?)
+
+Otherwise [=Paola=] informs [=Marco=] that she can add the test-certificate on his user app if he wants. (And if he doesn't want?)
+[=Marco=] can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), Paola uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.
+
+The information are stored in a db, morover they are sended to COC Backend that forwards the certificate to the user-app.
+The certificate will be stored [=Marco=]'s device memory.
+
+
+### *US14* expired immunity {#us13}
+
+#### Conditions
+
+#### Precondition
+[#us13] [=Marco=] has a test-certificate
+
+#### Story
+The test-certificate has an expiring-date. After this date [=Marco=] has to go back to [=Paola=]
+ in order to update his immunity condition.
+
+
+
+
+### *US15* Marco is a bad person {#us15}
+
+#### Conditions
+
+#### Precondition
+[=Marco=] has a test-certificate
+
+#### Story
+When [=Marco=] goes to [=Franca=] robs her. Franca reports the crime to Carabinieri. 
+Pietro, the policeman, uses the user-app to read [=Franca=] COC_ID, then He asks to Stefano, the app owner, [=Marco=]'s COC_ID stored in [=Franca=]'s contact logs. Pietro,
+ the policeman, asks to [=Walter=] to revoke [=Marco=]'s volunteer certificate.
+

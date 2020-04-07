@@ -1,7 +1,7 @@
 <!doctype html><html lang="en">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>The Safetogether Ecosystem</title>
+  <title>The SafeTogether Ecosystem</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="4e42ef6a03517128d2a710665c28cf28e07917fa" name="document-revision">
+  <meta content="f7bd7436e506083bbe529b44e43d11939564e85b" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1315,6 +1315,43 @@ figcaption {
 figcaption:not(.no-marker)::before {
     content: "Figure " counter(figure) " ";
 }</style>
+<style>/* style-dfn-panel */
+
+.dfn-panel {
+    position: absolute;
+    z-index: 35;
+    height: auto;
+    width: -webkit-fit-content;
+    width: fit-content;
+    max-width: 300px;
+    max-height: 500px;
+    overflow: auto;
+    padding: 0.5em 0.75em;
+    font: small Helvetica Neue, sans-serif, Droid Sans Fallback;
+    background: #DDDDDD;
+    color: black;
+    border: outset 0.2em;
+}
+.dfn-panel:not(.on) { display: none; }
+.dfn-panel * { margin: 0; padding: 0; text-indent: 0; }
+.dfn-panel > b { display: block; }
+.dfn-panel a { color: black; }
+.dfn-panel a:not(:hover) { text-decoration: none !important; border-bottom: none !important; }
+.dfn-panel > b + b { margin-top: 0.25em; }
+.dfn-panel ul { padding: 0; }
+.dfn-panel li { list-style: inside; }
+.dfn-panel.activated {
+    display: inline-block;
+    position: fixed;
+    left: .5em;
+    bottom: 2em;
+    margin: 0 auto;
+    max-width: calc(100vw - 1.5em - .4em - .5em);
+    max-height: 30vh;
+}
+
+.dfn-paneled { cursor: pointer; }
+</style>
 <style>/* style-md-lists */
 
 /* This is a weird hack for me not yet following the commonmark spec
@@ -1374,7 +1411,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
-   <h1 class="p-name no-ref" id="title">The Safetogether Ecosystem</h1>
+   <h1 class="p-name no-ref" id="title">The SafeTogether Ecosystem</h1>
    <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">A Collection of Interesting Ideas, <time class="dt-updated" datetime="2020-04-07">7 April 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
@@ -1411,14 +1448,29 @@ Parts of this work may be from another specification document.  If so, those par
      <a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
      <ol class="toc">
       <li><a href="#definitions"><span class="secno">1.1</span> <span class="content">Definitions</span></a>
+      <li><a href="#structure"><span class="secno">1.2</span> <span class="content">Structure of this document</span></a>
      </ol>
     <li>
-     <a href="#process"><span class="secno">2</span> <span class="content">Process</span></a>
+     <a href="#personas"><span class="secno">2</span> <span class="content">Personas</span></a>
      <ol class="toc">
-      <li><a href="#contributors"><span class="secno">2.1</span> <span class="content">Contributors</span></a>
-      <li><a href="#stakeholders"><span class="secno">2.2</span> <span class="content">Stakeholders</span></a>
-      <li><a href="#how-to-make-changes"><span class="secno">2.3</span> <span class="content">How to Make Changes</span></a>
-      <li><a href="#editorial-structure"><span class="secno">2.4</span> <span class="content">Editorial Structure</span></a>
+      <li><a href="#implementers"><span class="secno">2.1</span> <span class="content">Implementers</span></a>
+      <li><a href="#end-users"><span class="secno">2.2</span> <span class="content">End Users</span></a>
+     </ol>
+    <li>
+     <a href="#user_stories"><span class="secno">3</span> <span class="content">User stories</span></a>
+     <ol class="toc">
+      <li><a href="#tracingg_stories"><span class="secno">3.1</span> <span class="content">Tracing stories {#tracingg_stories}</span></a>
+      <li><a href="#quarantine_stories"><span class="secno">3.2</span> <span class="content">Quarantine stories {#quarantine_stories}</span></a>
+      <li><a href="#shielding_stories"><span class="secno">3.3</span> <span class="content">Shielding stories {#shielding_stories}</span></a>
+     </ol>
+    <li>
+     <a href="#process"><span class="secno">4</span> <span class="content">Process</span></a>
+     <ol class="toc">
+      <li><a href="#contributors"><span class="secno">4.1</span> <span class="content">Contributors</span></a>
+      <li><a href="#stakeholders"><span class="secno">4.2</span> <span class="content">Stakeholders</span></a>
+      <li><a href="#how-to-make-changes"><span class="secno">4.3</span> <span class="content">How to Make Changes</span></a>
+      <li><a href="#editorial-structure"><span class="secno">4.4</span> <span class="content">Editorial Structure</span></a>
+      <li><a href="#code-of-conduct"><span class="secno">4.5</span> <span class="content">Code of Conduct</span></a>
      </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
@@ -1442,43 +1494,181 @@ However, the information in this document is still subject to change.
    <p>You are invited to <a href="https://github.com/g0v-it/safetogether-spec/issues">contribute</a> any feedback, comments, or questions you might have.</p>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
    <p class="issue" id="issue-add5c02e"><a class="self-link" href="#issue-add5c02e"></a> Write Introduction section.</p>
-   <p class="issue" id="issue-0bb0747d"><a class="self-link" href="#issue-0bb0747d"></a> Explain the principle of orthogonality,
-  by which this spec is split into multiple documents.</p>
-   <p class="issue" id="issue-85718ff0"><a class="self-link" href="#issue-85718ff0"></a> Explain that this specification is not documentation;
-  it is the easiest way to understand how Safe Together application work,
-  not the easiest way for building them.</p>
    <h3 class="heading settled" data-level="1.1" id="definitions"><span class="secno">1.1. </span><span class="content">Definitions</span><a class="self-link" href="#definitions"></a></h3>
-   <p>A <dfn data-dfn-type="dfn" data-export id="safetogether-specification">Safetogether Specification<a class="self-link" href="#safetogether-specification"></a></dfn> a,
-documentation for architecture and protocols for the [Safetogether Project].</p>
-   <p>A <dfn data-dfn-type="dfn" data-export id="safetogether-application">safetogether Application<a class="self-link" href="#safetogether-application"></a></dfn> is an application
-that that implements [-Safetogether Specification-].</p>
+   <p>The <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="safetogether-specification">SafeTogether Specification</dfn> describes for architecture and protocols for the <a data-link-type="dfn">SafeTogether Project</a>.</p>
+   <p>A <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="safetogether-application">SafeTogether Application</dfn> implements <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification">SafeTogether Specification</a>.</p>
    <p>A <dfn data-dfn-type="dfn" data-export id="user">user<a class="self-link" href="#user"></a></dfn> is an individual,
-company, or organization who access a [-Safetogether Application-].</p>
+company, or organization who access a <a data-link-type="dfn" href="#safetogether-application" id="ref-for-safetogether-application">SafeTogether Application</a>.</p>
    <p>A <dfn data-dfn-type="dfn" data-export id="implementer">implementer<a class="self-link" href="#implementer"></a></dfn> is a company
-or organization who are implementing the [-Safetogether Specification-].
+or organization who are implementing the [=SafeTogether Specification*].
 An implementer may be any combination of Identity Provider, Registry Provider, and Application Provider.</p>
+   <h3 class="heading settled" data-level="1.2" id="structure"><span class="secno">1.2. </span><span class="content">Structure of this document</span><a class="self-link" href="#structure"></a></h3>
    <p class="issue" id="issue-47640ee2"><a class="self-link" href="#issue-47640ee2"></a> Introduce the structure of this document.</p>
-   <h2 class="heading settled" data-level="2" id="process"><span class="secno">2. </span><span class="content">Process</span><a class="self-link" href="#process"></a></h2>
-   <h3 class="heading settled" data-level="2.1" id="contributors"><span class="secno">2.1. </span><span class="content">Contributors</span><a class="self-link" href="#contributors"></a></h3>
-   <p>Any individual that has been involved in proposals to improve the [Safetogether Specification] has provided a valuable service to Safetogether Projectoject] and is encouraged to continue.</p>
+   <h2 class="heading settled" data-level="2" id="personas"><span class="secno">2. </span><span class="content">Personas</span><a class="self-link" href="#personas"></a></h2>
+   <h3 class="heading settled" data-level="2.1" id="implementers"><span class="secno">2.1. </span><span class="content">Implementers</span><a class="self-link" href="#implementers"></a></h3>
+   <p class="issue" id="issue-0f9f400a"><a class="self-link" href="#issue-0f9f400a"></a> detail personas</p>
+   <ul>
+    <li data-md>
+     <p><strong>App Business Owner</strong></p>
+    <li data-md>
+     <p><strong>Business man</strong> who designed/built a contacts tracing (?) App or is currently developing one.</p>
+    <li data-md>
+     <p><strong>App Developer</strong> Software developer who will be in charge of integrating our SDK into hisapplication.</p>
+   </ul>
+   <h3 class="heading settled" data-level="2.2" id="end-users"><span class="secno">2.2. </span><span class="content">End Users</span><a class="self-link" href="#end-users"></a></h3>
+   <h4 class="heading settled" data-level="2.2.1" id="marco-the-immune-volunteer"><span class="secno">2.2.1. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="marco">Marco</dfn> the Immune Volunteer</span><a class="self-link" href="#marco-the-immune-volunteer"></a></h4>
+   <h5 class="heading settled" data-level="2.2.1.1" id="details"><span class="secno">2.2.1.1. </span><span class="content">Details</span><a class="self-link" href="#details"></a></h5>
+   <p>Marco is 34, he’s a proactive with strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered. He is keen to get back to work soon after a long quarantine. In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile elderly. He knows how to use a smartphone, but technology isn’t really his thing.</p>
+   <h5 class="heading settled" data-level="2.2.1.2" id="goals"><span class="secno">2.2.1.2. </span><span class="content">Goals</span><a class="self-link" href="#goals"></a></h5>
+    Marco would like to get the “volunteer” certification so that he could go ahead and start helping his community. He is looking for the fastest and simplest way to achieve this goal. 
+   <h5 class="heading settled" data-level="2.2.1.3" id="values-and-fears"><span class="secno">2.2.1.3. </span><span class="content">Values and Fears</span><a class="self-link" href="#values-and-fears"></a></h5>
+   <p>Marco cares about privacy in general and doesn’t want to be tracked or share his data with any large government or corporation<br> He is afraid of:</p>
+   <ul>
+    <li data-md>
+     <p>Carrying the virus to the fragile people he is helping</p>
+    <li data-md>
+     <p>Being tracked and observed in his daily life</p>
+    <li data-md>
+     <p>Not knowing how to use the application properly</p>
+   </ul>
+   <h4 class="heading settled" data-level="2.2.2" id="paola-the-pharmacist"><span class="secno">2.2.2. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="paola">Paola</dfn> the Pharmacist</span><a class="self-link" href="#paola-the-pharmacist"></a></h4>
+   <h5 class="heading settled" data-level="2.2.2.1" id="details①"><span class="secno">2.2.2.1. </span><span class="content">Details</span><a class="self-link" href="#details①"></a></h5>
+   <p>Paola is 47, living in Milano, she’s been working in her pharmacy with her husband for over 12 years. She’s open minded and relaxed, taking life one step at a time. She hasn’t been tested for SARS-CoV-2, but none of his relatives was exposed so fairly confident of not being infectious.</p>
+   <h5 class="heading settled" data-level="2.2.2.2" id="goals①"><span class="secno">2.2.2.2. </span><span class="content">Goals</span><a class="self-link" href="#goals①"></a></h5>
+    Paola’s goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business. She’s now one of the few registered professionals that can test the virus antibodies and produce digital certificates for immunity. While she’s happy to contribute to solving the current crisis, her major interests stay with the pharmacy itself. 
+   <h5 class="heading settled" data-level="2.2.2.3" id="values-and-fears①"><span class="secno">2.2.2.3. </span><span class="content">Values and Fears</span><a class="self-link" href="#values-and-fears①"></a></h5>
+   <p>Paola cares about her community, and especially their health. She’s afraid the current situation will be prolonged and that everyone will suffer, if not due to health conditions and access to treatment, due to the economic impact that this crisis will have.</p>
+   <h4 class="heading settled" data-level="2.2.3" id="walter-the-institutional-force"><span class="secno">2.2.3. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="walter">Walter</dfn> the Institutional Force</span><a class="self-link" href="#walter-the-institutional-force"></a></h4>
+   <h5 class="heading settled" data-level="2.2.3.1" id="details②"><span class="secno">2.2.3.1. </span><span class="content">Details</span><a class="self-link" href="#details②"></a></h5>
+    Walter is 51, he works with the Civil Defence forces and he is in charge of coordinating volunteering efforts in a large province with a population of 1.2M people. 
+   <h5 class="heading settled" data-level="2.2.3.2" id="goals②"><span class="secno">2.2.3.2. </span><span class="content">Goals</span><a class="self-link" href="#goals②"></a></h5>
+    Walter wants to leverage all existing resources to mitigate the damages of the current epidemic. Supporting all those in need with essentials and protective equipment. He needs to recruit the most immune volunteers possible to serve the local population. 
+   <h5 class="heading settled" data-level="2.2.3.3" id="values-and-fears②"><span class="secno">2.2.3.3. </span><span class="content">Values and Fears</span><a class="self-link" href="#values-and-fears②"></a></h5>
+    He fears to unknowingly spread the virus while trying to mitigate its damages. While he values privacy, he needs technological aid to gain visibility and make quick decisions. 
+   <h4 class="heading settled" data-level="2.2.4" id="franca-the-fragile-person"><span class="secno">2.2.4. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="franca-the-fragile-person①">Franca<dfn data-dfn-type="dfn" data-export data-lt="the Fragile Person" id="the-fragile-person"> the Fragile Person<a class="self-link" href="#the-fragile-person"></a></dfn><a class="self-link" href="#franca-the-fragile-person①"></a></dfn></span><a class="self-link" href="#franca-the-fragile-person"></a></h4>
+   <h5 class="heading settled" data-level="2.2.4.1" id="details③"><span class="secno">2.2.4.1. </span><span class="content">Details</span><a class="self-link" href="#details③"></a></h5>
+    Franca is 72, already home-bound due to the government directions to the elderly. She’s getting essentials delivered at home by either supermarkets or volunteers. Living alone, with no family within her city she needs external support to survive. 
+   <h5 class="heading settled" data-level="2.2.4.2" id="goals③"><span class="secno">2.2.4.2. </span><span class="content">Goals</span><a class="self-link" href="#goals③"></a></h5>
+    Survive. She needs to rely on low-tech communication, not having a computer and having only limited experience on how to use her smartphone. 
+   <h5 class="heading settled" data-level="2.2.4.3" id="values-and-fears③"><span class="secno">2.2.4.3. </span><span class="content">Values and Fears</span><a class="self-link" href="#values-and-fears③"></a></h5>
+    Franca fears to be “left behind” and to have little means to request help/support. 
+   <h2 class="heading settled" data-level="3" id="user_stories"><span class="secno">3. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
+   <h3 class="heading settled" data-level="3.1" id="tracingg_stories"><span class="secno">3.1. </span><span class="content">Tracing stories {#tracingg_stories}</span><a class="self-link" href="#tracingg_stories"></a></h3>
+   <p class="issue" id="issue-c2ecf448"><a class="self-link" href="#issue-c2ecf448"></a> add tracing story.</p>
+   <h3 class="heading settled" data-level="3.2" id="quarantine_stories"><span class="secno">3.2. </span><span class="content">Quarantine stories {#quarantine_stories}</span><a class="self-link" href="#quarantine_stories"></a></h3>
+   <p class="issue" id="issue-cb8999a9"><a class="self-link" href="#issue-cb8999a9"></a> add quarantine story.</p>
+   <h3 class="heading settled" data-level="3.3" id="shielding_stories"><span class="secno">3.3. </span><span class="content">Shielding stories {#shielding_stories}</span><a class="self-link" href="#shielding_stories"></a></h3>
+   <p class="issue" id="issue-2cb67e3e"><a class="self-link" href="#issue-2cb67e3e"></a> update ongoing...</p>
+   <h4 class="heading settled" data-level="3.3.1" id="us8"><span class="secno">3.3.1. </span><span class="content"><em>US8</em> Proof of Immunity {#us8}</span><a class="self-link" href="#us8"></a></h4>
+   <h5 class="heading settled" data-level="3.3.1.1" id="conditions"><span class="secno">3.3.1.1. </span><span class="content">Conditions</span><a class="self-link" href="#conditions"></a></h5>
+   <h5 class="heading settled" data-level="3.3.1.2" id="precondition"><span class="secno">3.3.1.2. </span><span class="content">Precondition</span><a class="self-link" href="#precondition"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco">Marco</a>’s state is immune 
+   <h5 class="heading settled" data-level="3.3.1.3" id="story"><span class="secno">3.3.1.3. </span><span class="content">Story</span><a class="self-link" href="#story"></a></h5>
+    Marco is asked by <a data-link-type="dfn">Andrea</a> to prove that his state is immune. Marco opens the mobile app and authenticates. 
+The app shows a QR code that contains Marco’s COC_ID. <a data-link-type="dfn">Andrea</a> scans the QR code using the operator app. 
+The operator app checks Marco’s state on the backend (including the expiration date if the state is immune),
+and returns it to Andrea. 
+   <h4 class="heading settled" data-level="3.3.2" id="us9"><span class="secno">3.3.2. </span><span class="content"><em>US9</em> Marco Volunteers to Join Cordone Sanitario {#us9}</span><a class="self-link" href="#us9"></a></h4>
+   <h5 class="heading settled" data-level="3.3.2.1" id="precondition①"><span class="secno">3.3.2.1. </span><span class="content">Precondition</span><a class="self-link" href="#precondition①"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco①">Marco</a>’s state is immune 
+   <h5 class="heading settled" data-level="3.3.2.2" id="story①"><span class="secno">3.3.2.2. </span><span class="content">Story</span><a class="self-link" href="#story①"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco②">Marco</a> goes to Walter at
+protezione civile, and volunteers to join cordone sanitario for
+at-risk individuals. Marco proves that he is immune as described in
+[#us8]. <a data-link-type="dfn" href="#walter" id="ref-for-walter">Walter</a> registers <a data-link-type="dfn" href="#marco" id="ref-for-marco③">Marco</a>’s information, including his COC_ID and
+photo, to protezione civile’s system. Protezione civile’s system
+uses the COC backend to send a notification to <a data-link-type="dfn" href="#marco" id="ref-for-marco④">Marco</a> mobile
+app. <a data-link-type="dfn" href="#marco" id="ref-for-marco⑤">Marco</a> authenticates in front of <a data-link-type="dfn" href="#walter" id="ref-for-walter①">Walter</a>, and the app records
+Marco as a volunteer. 
+   <h4 class="heading settled" data-level="3.3.3" id="us10"><span class="secno">3.3.3. </span><span class="content"><em>US10</em> Marco’s Immunity Expires {#us10}</span><a class="self-link" href="#us10"></a></h4>
+   <h5 class="heading settled" data-level="3.3.3.1" id="precondition②"><span class="secno">3.3.3.1. </span><span class="content">Precondition</span><a class="self-link" href="#precondition②"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco⑥">Marco</a>’s state is immune. 
+   <h5 class="heading settled" data-level="3.3.3.2" id="post-condition"><span class="secno">3.3.3.2. </span><span class="content">Post-condition</span><a class="self-link" href="#post-condition"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco⑦">Marco</a>’s state is unknown 
+   <h5 class="heading settled" data-level="3.3.3.3" id="story②"><span class="secno">3.3.3.3. </span><span class="content">Story</span><a class="self-link" href="#story②"></a></h5>
+    The mobile app notifies <a data-link-type="dfn" href="#marco" id="ref-for-marco⑧">Marco</a> that his state has expired, and
+that it is now unknown. <a data-link-type="dfn" href="#marco" id="ref-for-marco⑨">Marco</a>)  can now proceed with [#us1]. 
+   <h4 class="heading settled" data-level="3.3.4" id="us11"><span class="secno">3.3.4. </span><span class="content"><em>US11</em> Marco is Tested (Tampon) {#us11}</span><a class="self-link" href="#us11"></a></h4>
+   <h5 class="heading settled" data-level="3.3.4.1" id="precondition③"><span class="secno">3.3.4.1. </span><span class="content">Precondition</span><a class="self-link" href="#precondition③"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco①⓪">Marco</a> state is unknown, immune, or negative. 
+   <h5 class="heading settled" data-level="3.3.4.2" id="post-condition①"><span class="secno">3.3.4.2. </span><span class="content">Post-condition</span><a class="self-link" href="#post-condition①"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco①①">Marco</a> state is quarantined, negative, or immune 
+   <h5 class="heading settled" data-level="3.3.4.3" id="story③"><span class="secno">3.3.4.3. </span><span class="content">Story</span><a class="self-link" href="#story③"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco①②">Marco</a> feels
+sick, and goes to his doctor Giovanni. Giovanni records information
+about the test using the operator app, and updates <a data-link-type="dfn" href="#marco" id="ref-for-marco①③">Marco</a>’s
+state to unknown - thus possibly revoking <a data-link-type="dfn" href="#marco" id="ref-for-marco①④">Marco</a>)’s immune
+state. After a few days, the test result is back. If the test is
+positive, <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑤">Marco</a>’s state becomes quarantined. If the test is
+negative, <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑥">Marco</a>’s state is set to negative or immune,
+depending on <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑦">Marco</a>’s state at the beginning of US11. 
+   <h4 class="heading settled" data-level="3.3.5" id="us12"><span class="secno">3.3.5. </span><span class="content"><em>US12</em> Marco Visits Franca. {#us12}</span><a class="self-link" href="#us12"></a></h4>
+   <h5 class="heading settled" data-level="3.3.5.1" id="precondition④"><span class="secno">3.3.5.1. </span><span class="content">Precondition</span><a class="self-link" href="#precondition④"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑧">Marco</a>’s state is immune 
+   <h5 class="heading settled" data-level="3.3.5.2" id="story④"><span class="secno">3.3.5.2. </span><span class="content">Story</span><a class="self-link" href="#story④"></a></h5>
+    <a data-link-type="dfn" href="#walter" id="ref-for-walter②">Walter</a> sends Marco to <a data-link-type="dfn">Franca</a>. Marco knocks <a data-link-type="dfn">Franca</a>’s door, and
+Franca asks him to identify himself. Marco authenticates with the
+mobile app on his smartphone, which then broadcasts Marco’s
+certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
+devices and read’s Marco’s COC_ID using the mobile app on
+her smartphone. Franca’s mobile app sends the COC_ID to the
+backend, which returns Marco’s photo if his state is immune
+and he was registered by <a data-link-type="dfn" href="#walter" id="ref-for-walter③">Walter</a>. Otherwise, the mobile app tells
+Franca not to open the door. The backend records the interaction
+between Marco and Franca. Franca verifies that Marco matches the
+photo shown on her mobile app, and opens the door. 
+   <h4 class="heading settled" data-level="3.3.6" id="us13"><span class="secno">3.3.6. </span><span class="content"><em>US13</em> Antibodies test {#us13}</span><a class="self-link" href="#us13"></a></h4>
+   <h5 class="heading settled" data-level="3.3.6.1" id="conditions①"><span class="secno">3.3.6.1. </span><span class="content">Conditions</span><a class="self-link" href="#conditions①"></a></h5>
+   <h5 class="heading settled" data-level="3.3.6.2" id="precondition⑤"><span class="secno">3.3.6.2. </span><span class="content">Precondition</span><a class="self-link" href="#precondition⑤"></a></h5>
+    Marco’s state is unknown 
+   <h5 class="heading settled" data-level="3.3.6.3" id="story⑤"><span class="secno">3.3.6.3. </span><span class="content">Story</span><a class="self-link" href="#story⑤"></a></h5>
+    Marco goes to <a data-link-type="dfn" href="#paola" id="ref-for-paola">Paola</a> in order to perform an antibodies test.
+If the test is positive Paola ask for Marco’s tax code and phone number and records them using operator app.
+The operator app notifies the institutional forces.
+(Also has to update db?) 
+   <p>Otherwise <a data-link-type="dfn" href="#paola" id="ref-for-paola①">Paola</a> informs <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑨">Marco</a> that she can add the test-certificate on his user app if he wants. (And if he doesn’t want?) <a data-link-type="dfn" href="#marco" id="ref-for-marco②⓪">Marco</a> can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), Paola uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.</p>
+   <p>The information are stored in a db, morover they are sended to COC Backend that forwards the certificate to the user-app.
+The certificate will be stored <a data-link-type="dfn" href="#marco" id="ref-for-marco②①">Marco</a>'s device memory.</p>
+   <h4 class="heading settled" data-level="3.3.7" id="us13①"><span class="secno">3.3.7. </span><span class="content"><em>US14</em> expired immunity {#us13}</span><a class="self-link" href="#us13①"></a></h4>
+   <h5 class="heading settled" data-level="3.3.7.1" id="conditions②"><span class="secno">3.3.7.1. </span><span class="content">Conditions</span><a class="self-link" href="#conditions②"></a></h5>
+   <h5 class="heading settled" data-level="3.3.7.2" id="precondition⑥"><span class="secno">3.3.7.2. </span><span class="content">Precondition</span><a class="self-link" href="#precondition⑥"></a></h5>
+    [#us13] <a data-link-type="dfn" href="#marco" id="ref-for-marco②②">Marco</a> has a test-certificate 
+   <h5 class="heading settled" data-level="3.3.7.3" id="story⑥"><span class="secno">3.3.7.3. </span><span class="content">Story</span><a class="self-link" href="#story⑥"></a></h5>
+    The test-certificate has an expiring-date. After this date <a data-link-type="dfn" href="#marco" id="ref-for-marco②③">Marco</a> has to go back to <a data-link-type="dfn" href="#paola" id="ref-for-paola②">Paola</a> in order to update his immunity condition. 
+   <h4 class="heading settled" data-level="3.3.8" id="us15"><span class="secno">3.3.8. </span><span class="content"><em>US15</em> Marco is a bad person {#us15}</span><a class="self-link" href="#us15"></a></h4>
+   <h5 class="heading settled" data-level="3.3.8.1" id="conditions③"><span class="secno">3.3.8.1. </span><span class="content">Conditions</span><a class="self-link" href="#conditions③"></a></h5>
+   <h5 class="heading settled" data-level="3.3.8.2" id="precondition⑦"><span class="secno">3.3.8.2. </span><span class="content">Precondition</span><a class="self-link" href="#precondition⑦"></a></h5>
+    <a data-link-type="dfn" href="#marco" id="ref-for-marco②④">Marco</a> has a test-certificate 
+   <h5 class="heading settled" data-level="3.3.8.3" id="story⑦"><span class="secno">3.3.8.3. </span><span class="content">Story</span><a class="self-link" href="#story⑦"></a></h5>
+    When <a data-link-type="dfn" href="#marco" id="ref-for-marco②⑤">Marco</a> goes to <a data-link-type="dfn">Franca</a> robs her. Franca reports the crime to Carabinieri. 
+Pietro, the policeman, uses the user-app to read <a data-link-type="dfn">Franca</a> COC_ID, then He asks to Stefano, the app owner, <a data-link-type="dfn" href="#marco" id="ref-for-marco②⑥">Marco</a>'s COC_ID stored in <a data-link-type="dfn">Franca</a>'s contact logs. Pietro,
+ the policeman, asks to <a data-link-type="dfn" href="#walter" id="ref-for-walter④">Walter</a> to revoke <a data-link-type="dfn" href="#marco" id="ref-for-marco②⑦">Marco</a>'s volunteer certificate. 
+   <h2 class="heading settled" data-level="4" id="process"><span class="secno">4. </span><span class="content">Process</span><a class="self-link" href="#process"></a></h2>
+   <p>The following is a description about how changes to the specifications in the Safetogheter ecosystem may be proposed and accepted.</p>
+   <p>The current development is carried out in the safe-together/specification(https://github.com/SafeTogether/specification) repository.</p>
+   <p>Anyone may participate in this process. Please read the <a href="code-of-conduct.md">#code-of-conduct</a> before doing so.</p>
+   <h3 class="heading settled" data-level="4.1" id="contributors"><span class="secno">4.1. </span><span class="content">Contributors</span><a class="self-link" href="#contributors"></a></h3>
+   <p>Any individual that has been involved in proposals to improve the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification①">SafeTogether Specification</a> has provided a valuable service to
+SafeTogether Projectoject] and is encouraged to continue.</p>
    <p>All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.</p>
-   <p>There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise. For these cases, we have <a href="#safetogether-panels">Safetogether Panels</a>.</p>
-   <h4 class="heading settled" data-level="2.1.1" id="safetogether-panels"><span class="secno">2.1.1. </span><span class="content">Safetogether Panels</span><a class="self-link" href="#safetogether-panels"></a></h4>
-   <p>Safetogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the [Safetogether Specification]. Anyone may join a panel or suggest a new panel.</p>
+   <p>There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise.
+For these cases, we have <a href="#safetogether-panels">SafeTogether Panels</a>.</p>
+   <h4 class="heading settled" data-level="4.1.1" id="safetogether-panels"><span class="secno">4.1.1. </span><span class="content">SafeTogether Panels</span><a class="self-link" href="#safetogether-panels"></a></h4>
+   <p>SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification②">SafeTogether Specification</a>. Anyone may join a panel or suggest a new panel.</p>
    <p>Domains may be technical, non-technical, or some combination of the two. For example, a Security Panel could focus on the evaluation and advancement of the safetogether security model.</p>
    <p>A list of safetogether Panels is maintained at <a href="panels/">panels</a>. This listing helps people find panels they may want to participate in, and helps editors find panels to consult as part of the editorial process.</p>
-   <h3 class="heading settled" data-level="2.2" id="stakeholders"><span class="secno">2.2. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h3>
-   <p>Stakeholders are those affected by normative changes to the <a href="https://github.com/solid/specification">Safetogether Specification</a>. There are two types of Stakeholders; <a href="#users">users</a> and <a href="#implementers">Implementers</a>. It is important to consider them both when proposing changes, and adhering to the W3C <a href="https://www.w3.org/TR/html-design-principles/#priority-of-constituencies">priority of constituencies</a> is encouraged. A Stakeholder may be both a user and an implementer.</p>
+   <h3 class="heading settled" data-level="4.2" id="stakeholders"><span class="secno">4.2. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h3>
+   <p>Stakeholders are those affected by normative changes to the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification③">SafeTogether Specification</a>(https://github.com/SafeTogether/specification). There are two types of Stakeholders; <a href="#users">users</a> and <a href="#implementers">Implementers</a>. It is important to consider them both when proposing changes, and adhering to the W3C <a href="https://www.w3.org/TR/html-design-principles/#priority-of-constituencies">priority of constituencies</a> is encouraged. A Stakeholder may be both a user and an implementer.</p>
    <p>Stakeholders who have opted to identify themselves publicly are listed at <a href="stakeholders.md">stakeholders.md</a>. Anyone may decide to identify themselves publicly as a safetogether Stakeholder, but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.</p>
-   <h4 class="heading settled" data-level="2.2.1" id="users"><span class="secno">2.2.1. </span><span class="content">Users</span><a class="self-link" href="#users"></a></h4>
-   <p>Safetogether Users are individuals, companies, or organizations who access a safetogether Application.</p>
-   <h4 class="heading settled" data-level="2.2.2" id="implementers"><span class="secno">2.2.2. </span><span class="content">Implementers</span><a class="self-link" href="#implementers"></a></h4>
-   <p>Safetogether Implementers are companies or organizations who are implementing the [Safetogether Specification]. A Safetogether Implementer may be any combination of Identity Provider, Data Provider, and Application Provider.</p>
-   <h3 class="heading settled" data-level="2.3" id="how-to-make-changes"><span class="secno">2.3. </span><span class="content">How to Make Changes</span><a class="self-link" href="#how-to-make-changes"></a></h3>
-   <p>This section details how changes to the [Safetogether Specification] may be drafted, proposed, and accepted by the community of the Editors</p>
+   <h4 class="heading settled" data-level="4.2.1" id="users"><span class="secno">4.2.1. </span><span class="content">Users</span><a class="self-link" href="#users"></a></h4>
+   <p>SafeTogether Users are individuals, companies, or organizations who access a <a data-link-type="dfn" href="#safetogether-application" id="ref-for-safetogether-application①">SafeTogether Application</a>.</p>
+   <h4 class="heading settled" data-level="4.2.2" id="implementers①"><span class="secno">4.2.2. </span><span class="content">Implementers</span><a class="self-link" href="#implementers①"></a></h4>
+   <p>SafeTogether Implementers are companies or organizations who are implementing the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification④">SafeTogether Specification</a>. A SafeTogether Implementer may be any combination of Identity Provider, Data Provider, and Application Provider.</p>
+   <h3 class="heading settled" data-level="4.3" id="how-to-make-changes"><span class="secno">4.3. </span><span class="content">How to Make Changes</span><a class="self-link" href="#how-to-make-changes"></a></h3>
+   <p>This section details how changes to the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification⑤">SafeTogether Specification</a> may be drafted, proposed, and accepted by the community of the Editors</p>
    <p>Anyone may submit a proposal to alter this process.</p>
-   <h4 class="heading settled" data-level="2.3.1" id="drafting-proposals"><span class="secno">2.3.1. </span><span class="content">Drafting proposals</span><a class="self-link" href="#drafting-proposals"></a></h4>
-   <p>Anyone may propose improvements to the [Safetogether Specification]. Here are some examples of different ways to contribute:</p>
+   <h4 class="heading settled" data-level="4.3.1" id="drafting-proposals"><span class="secno">4.3.1. </span><span class="content">Drafting proposals</span><a class="self-link" href="#drafting-proposals"></a></h4>
+   <p>Anyone may propose improvements to the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification⑥">SafeTogether Specification</a>. Here are some examples of different ways to contribute:</p>
    <ul>
     <li data-md>
      <p>Submit a pull request or issue on the safe-together/specification in GitHub</p>
@@ -1487,7 +1677,7 @@ An implementer may be any combination of Identity Provider, Registry Provider, a
     <li data-md>
      <p>Propose an item for the  safetogether Community Group call</p>
    </ul>
-   <p>Proposals for substantive changes to the [Safetogether Specification] go through an editorial review process. A change is considered substantive when it alters the normative text of the Safetogether Specification or the safetogether Roadmap. Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from Implementers.</p>
+   <p>Proposals for substantive changes to the <a data-link-type="dfn" href="#safetogether-specification" id="ref-for-safetogether-specification⑦">SafeTogether Specification</a> go through an editorial review process. A change is considered substantive when it alters the normative text of the SafeTogether Specification or the safetogether Roadmap. Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from Implementers.</p>
    <p>Any proposal should also be accompanied with a reasonable explanation of the need for the proposed change. For example:</p>
    <ul>
     <li data-md>
@@ -1499,11 +1689,74 @@ An implementer may be any combination of Identity Provider, Registry Provider, a
    </ul>
    <p>A draft proposal often involves public discussion before being formally presented for review. After these discussions have occurred and a draft proposal has reached a sufficient level of maturity, it should be presented as a candidate proposal, asking Stakeholders and Panels if there are any major objections.</p>
    <p>When there are objections, notify the safetogether Panels and Stakeholders about the final proposal with an invitation to vote. If there are options, detail them along with the implications of the options. The final proposal needs to be open for one week to give others a chance to vote. To show your support for a proposal write +1. To show your disapproval for a proposal write -1 along with a detailed reason for the disapproval and a suggestion for a preferred alternative. To abstain type 0 when you have no opinion. If you do not vote by the end of the week it will be assumed that you abstain. At the end of the week anyone may publish an overview of the vote results per safetogether Panel and Stakeholder.</p>
-   <h3 class="heading settled" data-level="2.4" id="editorial-structure"><span class="secno">2.4. </span><span class="content">Editorial Structure</span><a class="self-link" href="#editorial-structure"></a></h3>
+   <h3 class="heading settled" data-level="4.4" id="editorial-structure"><span class="secno">4.4. </span><span class="content">Editorial Structure</span><a class="self-link" href="#editorial-structure"></a></h3>
    <p>The Editorial Team is comprised of all the Editors. Anyone may apply to be an Editor, and must include one or more requested editorial assignments as part of their application. These requests are reviewed by other Editors Editor applications that can demonstrate the support of a relevant panel or group of community members will be favorably considered.</p>
-   <h4 class="heading settled" data-level="2.4.1" id="repositories"><span class="secno">2.4.1. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h4>
+   <h4 class="heading settled" data-level="4.4.1" id="repositories"><span class="secno">4.4.1. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h4>
    <p>Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.</p>
    <p>Editors have <a href="https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization">_Admin Permissions_</a> on the repositories they are assigned to.</p>
+   <h3 class="heading settled" data-level="4.5" id="code-of-conduct"><span class="secno">4.5. </span><span class="content">Code of Conduct</span><a class="self-link" href="#code-of-conduct"></a></h3>
+   <p>Personal threats or discriminatory threats towards arbitrary groups or Community Group call and mailing list may result in a ban
+of the threatening individual.</p>
+   <p>Repeated and sustained straying from the defined aims of the communication channels
+ may result in a ban of those individuals straying from those defined aims.</p>
+   <h4 class="heading settled" data-level="4.5.1" id="general-expectations"><span class="secno">4.5.1. </span><span class="content">General Expectations</span><a class="self-link" href="#general-expectations"></a></h4>
+    Below are some general expectations around how participants of the  community are encouraged to behave. 
+   <p>Participants in the  community are expected to behave professionally and respectfully.
+This community is committed to maintain a positive and constructive community while helping to build SafeTogether. 
+This commitment calls for a community where participants behave according to the rules of the following Code of Conduct:</p>
+   <ul>
+    <li data-md>
+     <p>Communicate and behave with respect, professionalism, fairness, and sensitivity.</p>
+    <li data-md>
+     <p>Communicate constructively and avoid demeaning or insulting behavior or language.</p>
+    <li data-md>
+     <p>Be welcoming. We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, religion, national origin, sexual orientation, gender identity and expression, and physical and mental abilities.</p>
+    <li data-md>
+     <p>Be mindful of people’s time and effort spent on contributions to the project. In discussions, read other people’s points, make an effort to understand, and reply to relevant statements and questions they write. Substantiate your opinions, concerns, or issues respectfully with arguments of an appropriate technical level to keep the discussion clear and focused.</p>
+    <li data-md>
+     <p>Do not insult or put down other participants. Harassment (whether verbal, physical or sexual) and other exclusionary behavior is not acceptable.</p>
+    <li data-md>
+     <p>Disagreements, both social and technical, happen all the time. Whenever inappropriate behaviors are observed members of the community should strive to bring the discussion back to a more professional level. In most cases misunderstandings and disagreements can be resolved informally.  We hope that most concerns can be solved this way.</p>
+   </ul>
+   <h4 class="heading settled" data-level="4.5.2" id="best-practices"><span class="secno">4.5.2. </span><span class="content">Best Practices</span><a class="self-link" href="#best-practices"></a></h4>
+    Best practices for the Community include: 
+   <ul>
+    <li data-md>
+     <p>Contribute! Help SafeTogether be the best it can be. Work together constructively toward the good working of the technology.</p>
+    <li data-md>
+     <p>Stay on topic. Remember others voices need to be heard as well as yours and you must allow the space for other members to participate (e.g. don’t monologue or respond to every comment).</p>
+    <li data-md>
+     <p>Respect the expertise and contributions of other members of the community (e.g. don’t assume that you’re "the smartest person in the room"). Remember that this is a community with different backgrounds who have valuable contributions to make.</p>
+    <li data-md>
+     <p>Listen first and be sure you understand the point of view of the other person (e.g. don’t assume that others are disagreeing with you because they don’t understand what you’re saying and don’t suggest that another person’s comments are invalid because they have a different opinion).</p>
+    <li data-md>
+     <p>Respond from an informed and inclusive point of view (e.g. don’t respond to comments without reading the background information).</p>
+    <li data-md>
+     <p>Do review the work of others to see if you are doing something that other groups have already done (i.e. don’t “reinvent the wheel”).</p>
+    <li data-md>
+     <p>Know that your contribution is still valuable even if it is not integrated.</p>
+    <li data-md>
+     <p>Remember the work is about more than just your area of interest (e.g. don’t let your personal or professional goals impede the progress of the group).</p>
+    <li data-md>
+     <p>Do <a href="mailto:manager@SafeTogetherproject.org">contact</a> the SafeTogether Manager if you feel someone has been working in a way that is having a negative impact on the work of the group, if they are insulting or harassing you, or unfairly impeding your own ability to work.</p>
+    <li data-md>
+     <p>Maintain an open mindset and encourage others to do the same. There might be things you or others haven’t heard about yet, so be open to send and receive pointers to more info.</p>
+    <li data-md>
+     <p>There are multiple ways of achieving the same goals, but when you build something new, check what already exists so we can better understand and help you with your contribution.</p>
+   </ul>
+   <h4 class="heading settled" data-level="4.5.3" id="based-on"><span class="secno">4.5.3. </span><span class="content">Based on:</span><a class="self-link" href="#based-on"></a></h4>
+   <ul>
+    <li data-md>
+     <p>https://www.w3.org/Consortium/cepc/  (and an as-of-yet unpublished “BestPractices for Working Groups”)</p>
+    <li data-md>
+     <p>https://adainitiative.org/2014/02/18/howto-design-a-code-of-conduct-for-your-community/</p>
+    <li data-md>
+     <p>http://geekfeminism.wikia.com/wiki/Code_of_conduct</p>
+    <li data-md>
+     <p>https://www.djangoproject.com/conduct/</p>
+    <li data-md>
+     <p>http://artofcommunityonline.org/Art_of_Community_Second_Edition.pdf</p>
+   </ul>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1654,10 +1907,15 @@ An implementer may be any combination of Identity Provider, Registry Provider, a
   <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
   <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
   <ul class="index">
+   <li><a href="#franca-the-fragile-person①">Franca the Fragile Person</a><span>, in §2.2.4</span>
    <li><a href="#implementer">implementer</a><span>, in §1.1</span>
-   <li><a href="#safetogether-application">safetogether Application</a><span>, in §1.1</span>
-   <li><a href="#safetogether-specification">Safetogether Specification</a><span>, in §1.1</span>
+   <li><a href="#marco">Marco</a><span>, in §2.2.1</span>
+   <li><a href="#paola">Paola</a><span>, in §2.2.2</span>
+   <li><a href="#safetogether-application">SafeTogether Application</a><span>, in §1.1</span>
+   <li><a href="#safetogether-specification">SafeTogether Specification</a><span>, in §1.1</span>
+   <li><a href="#the-fragile-person">the Fragile Person</a><span>, in §2.2.4</span>
    <li><a href="#user">user</a><span>, in §1.1</span>
+   <li><a href="#walter">Walter</a><span>, in §2.2.3</span>
   </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
@@ -1668,10 +1926,119 @@ An implementer may be any combination of Identity Provider, Registry Provider, a
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
    <div class="issue"> Write Introduction section.<a href="#issue-add5c02e"> ↵ </a></div>
-   <div class="issue"> Explain the principle of orthogonality,
-  by which this spec is split into multiple documents.<a href="#issue-0bb0747d"> ↵ </a></div>
-   <div class="issue"> Explain that this specification is not documentation;
-  it is the easiest way to understand how Safe Together application work,
-  not the easiest way for building them.<a href="#issue-85718ff0"> ↵ </a></div>
    <div class="issue"> Introduce the structure of this document.<a href="#issue-47640ee2"> ↵ </a></div>
+   <div class="issue"> detail personas<a href="#issue-0f9f400a"> ↵ </a></div>
+   <div class="issue"> add tracing story.<a href="#issue-c2ecf448"> ↵ </a></div>
+   <div class="issue"> add quarantine story.<a href="#issue-cb8999a9"> ↵ </a></div>
+   <div class="issue"> update ongoing...<a href="#issue-2cb67e3e"> ↵ </a></div>
   </div>
+  <aside class="dfn-panel" data-for="safetogether-specification">
+   <b><a href="#safetogether-specification">#safetogether-specification</a></b><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-safetogether-specification">1.1. Definitions</a>
+    <li><a href="#ref-for-safetogether-specification①">4.1. Contributors</a>
+    <li><a href="#ref-for-safetogether-specification②">4.1.1. SafeTogether Panels</a>
+    <li><a href="#ref-for-safetogether-specification③">4.2. Stakeholders</a>
+    <li><a href="#ref-for-safetogether-specification④">4.2.2. Implementers</a>
+    <li><a href="#ref-for-safetogether-specification⑤">4.3. How to Make Changes</a>
+    <li><a href="#ref-for-safetogether-specification⑥">4.3.1. Drafting proposals</a> <a href="#ref-for-safetogether-specification⑦">(2)</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="safetogether-application">
+   <b><a href="#safetogether-application">#safetogether-application</a></b><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-safetogether-application">1.1. Definitions</a>
+    <li><a href="#ref-for-safetogether-application①">4.2.1. Users</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="marco">
+   <b><a href="#marco">#marco</a></b><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-marco">3.3.1.2. Precondition</a>
+    <li><a href="#ref-for-marco①">3.3.2.1. Precondition</a>
+    <li><a href="#ref-for-marco②">3.3.2.2. Story</a> <a href="#ref-for-marco③">(2)</a> <a href="#ref-for-marco④">(3)</a> <a href="#ref-for-marco⑤">(4)</a>
+    <li><a href="#ref-for-marco⑥">3.3.3.1. Precondition</a>
+    <li><a href="#ref-for-marco⑦">3.3.3.2. Post-condition</a>
+    <li><a href="#ref-for-marco⑧">3.3.3.3. Story</a> <a href="#ref-for-marco⑨">(2)</a>
+    <li><a href="#ref-for-marco①⓪">3.3.4.1. Precondition</a>
+    <li><a href="#ref-for-marco①①">3.3.4.2. Post-condition</a>
+    <li><a href="#ref-for-marco①②">3.3.4.3. Story</a> <a href="#ref-for-marco①③">(2)</a> <a href="#ref-for-marco①④">(3)</a> <a href="#ref-for-marco①⑤">(4)</a> <a href="#ref-for-marco①⑥">(5)</a> <a href="#ref-for-marco①⑦">(6)</a>
+    <li><a href="#ref-for-marco①⑧">3.3.5.1. Precondition</a>
+    <li><a href="#ref-for-marco①⑨">3.3.6.3. Story</a> <a href="#ref-for-marco②⓪">(2)</a> <a href="#ref-for-marco②①">(3)</a>
+    <li><a href="#ref-for-marco②②">3.3.7.2. Precondition</a>
+    <li><a href="#ref-for-marco②③">3.3.7.3. Story</a>
+    <li><a href="#ref-for-marco②④">3.3.8.2. Precondition</a>
+    <li><a href="#ref-for-marco②⑤">3.3.8.3. Story</a> <a href="#ref-for-marco②⑥">(2)</a> <a href="#ref-for-marco②⑦">(3)</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="paola">
+   <b><a href="#paola">#paola</a></b><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-paola">3.3.6.3. Story</a> <a href="#ref-for-paola①">(2)</a>
+    <li><a href="#ref-for-paola②">3.3.7.3. Story</a>
+   </ul>
+  </aside>
+  <aside class="dfn-panel" data-for="walter">
+   <b><a href="#walter">#walter</a></b><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-walter">3.3.2.2. Story</a> <a href="#ref-for-walter①">(2)</a>
+    <li><a href="#ref-for-walter②">3.3.5.2. Story</a> <a href="#ref-for-walter③">(2)</a>
+    <li><a href="#ref-for-walter④">3.3.8.3. Story</a>
+   </ul>
+  </aside>
+<script>/* script-dfn-panel */
+
+document.body.addEventListener("click", function(e) {
+    var queryAll = function(sel) { return [].slice.call(document.querySelectorAll(sel)); }
+    // Find the dfn element or panel, if any, that was clicked on.
+    var el = e.target;
+    var target;
+    var hitALink = false;
+    while(el.parentElement) {
+        if(el.tagName == "A") {
+            // Clicking on a link in a <dfn> shouldn't summon the panel
+            hitALink = true;
+        }
+        if(el.classList.contains("dfn-paneled")) {
+            target = "dfn";
+            break;
+        }
+        if(el.classList.contains("dfn-panel")) {
+            target = "dfn-panel";
+            break;
+        }
+        el = el.parentElement;
+    }
+    if(target != "dfn-panel") {
+        // Turn off any currently "on" or "activated" panels.
+        queryAll(".dfn-panel.on, .dfn-panel.activated").forEach(function(el){
+            el.classList.remove("on");
+            el.classList.remove("activated");
+        });
+    }
+    if(target == "dfn" && !hitALink) {
+        // open the panel
+        var dfnPanel = document.querySelector(".dfn-panel[data-for='" + el.id + "']");
+        if(dfnPanel) {
+            dfnPanel.classList.add("on");
+            var rect = el.getBoundingClientRect();
+            dfnPanel.style.left = window.scrollX + rect.right + 5 + "px";
+            dfnPanel.style.top = window.scrollY + rect.top + "px";
+            var panelRect = dfnPanel.getBoundingClientRect();
+            var panelWidth = panelRect.right - panelRect.left;
+            if(panelRect.right > document.body.scrollWidth && (rect.left - (panelWidth + 5)) > 0) {
+                // Reposition, because the panel is overflowing
+                dfnPanel.style.left = window.scrollX + rect.left - (panelWidth + 5) + "px";
+            }
+        } else {
+            console.log("Couldn't find .dfn-panel[data-for='" + el.id + "']");
+        }
+    } else if(target == "dfn-panel") {
+        // Switch it to "activated" state, which pins it.
+        el.classList.add("activated");
+        el.style.left = null;
+        el.style.top = null;
+    }
+
+});
+</script>

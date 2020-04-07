@@ -3,28 +3,22 @@ Introduction {#intro}
 
 Issue: Write Introduction section.
 
-Issue: Explain the principle of orthogonality,
-  by which this spec is split into multiple documents.
-
-Issue: Explain that this specification is not documentation;
-  it is the easiest way to understand how Safe Together application work,
-  not the easiest way for building them.
-
 ## Definitions ## {#definitions}
 
-A <dfn export>Safetogether Specification</dfn> a,
-documentation for architecture and protocols for the [Safetogether Project].
+The <dfn export>SafeTogether Specification</dfn> 
+describes for architecture and protocols for the [=SafeTogether Project=].
 
-A <dfn export>safetogether Application</dfn> is an application
-that that implements [-Safetogether Specification-].
+A <dfn export>SafeTogether Application</dfn> implements [=SafeTogether Specification=].
 
 A <dfn export>user</dfn> is an individual, 
-company, or organization who access a [-Safetogether Application-].
+company, or organization who access a [=SafeTogether Application=].
 
 
 A <dfn export>implementer</dfn> is a company 
-or organization who are implementing the [-Safetogether Specification-].
+or organization who are implementing the [=SafeTogether Specification*].
 An implementer may be any combination of Identity Provider, Registry Provider, and Application Provider.
+
+## Structure of this document ## {#structure}
 
 Issue: Introduce the structure of this document.
 
