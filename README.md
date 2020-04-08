@@ -20,3 +20,17 @@ A fair number of spec improvements are currently in the making. If you want to c
 ## Editing and building the specification
 The specification is built using [Bikeshed](https://tabatkins.github.io/bikeshed/).
 
+Pushing to master triggers the  compliation and publishing in GitHub pages.
+
+## Local building
+ 
+If needed, download and install [docker community engine](https://hub.docker.com/search/?type=edition&offering=community)
+
+For example to generate the html documentation for stories:
+
+```
+mkdir distrib
+docker run --rm -v ${PWD}:/data linkeddatacenter/bikeshed bikeshed spec /data/stories/index.bs 
+```
+
+Note that by default .html files are not pushed to repository

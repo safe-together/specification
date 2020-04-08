@@ -27,5 +27,4 @@ You are invited to [contribute](https://github.com/safe-together/issues)
 any feedback, comments, or questions you might have.
 
 
-<pre class=include>path: governance.bs</pre>
-
+pre class=include>path: governance.bs

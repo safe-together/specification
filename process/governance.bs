@@ -1,5 +1,3 @@
-Process {#process}
-=====================
 
 ## Contributors
 
@@ -37,7 +35,7 @@ SafeTogether Users are individuals, companies, or organizations who access a Saf
 
 SafeTogether Implementers are individuals,  companies or organizations who are implementing the SafeTogether Specification. 
 SafeTogether Implementer may be any combination of Identity Provider, Data Provider, Software providers, Service providers,
- and Application Editors.
+and Application Editors.
 
 
 ## Panels
