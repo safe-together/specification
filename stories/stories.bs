@@ -2,20 +2,20 @@ User stories {#user_stories}
 =====================
 
 
-## Tracing stories {#tracingg_stories}
+## Tracing stories index ## {#tracingg_stories}
 
 Issue: add tracing story.
 
-## Quarantine stories {#quarantine_stories}
+## Quarantine stories index ## {#quarantine_stories}
 
 Issue: add quarantine story.
 
 
-## Shielding stories {#shielding_stories}
+## Shielding stories  index ## {#shielding_stories}
 
 Issue: update ongoing...
 
-### *US8* Proof of Immunity {#us8}
+### <dfn export>US8</dfn> Proof of Immunity
 
 
 #### Conditions
@@ -30,7 +30,7 @@ The app shows a QR code that contains Marco’s COC_ID. [=Andrea=] scans the QR 
 The operator app checks Marco’s state on the backend (including the expiration date if the state is immune),
 and returns it to Andrea.
 
-### *US9* Marco Volunteers to Join Cordone Sanitario {#us9}
+###  <dfn export>US9</dfn> Marco Volunteers to Join Cordone Sanitario 
 #### Precondition
 [=Marco=]’s state is immune
 #### Story
@@ -44,7 +44,7 @@ app. [=Marco=] authenticates in front of [=Walter=], and the app records
 Marco as a volunteer.
 
 
-### *US10* Marco’s Immunity Expires {#us10}
+###  <dfn export>US10</dfn> Marco’s Immunity Expires
 #### Precondition
 [=Marco=]’s state is immune.
 #### Post-condition
@@ -58,7 +58,7 @@ that it is now unknown. [=Marco=])  can now proceed with [#us1].
 
 
 
-### *US11*  Marco is Tested (Tampon) {#us11}
+###  <dfn export>US11</dfn>  Marco is Tested (Tampon)
 #### Precondition
  [=Marco=] state is unknown, immune, or negative.
 #### Post-condition
@@ -78,7 +78,7 @@ depending on [=Marco=]’s state at the beginning of US11.
 
 
 
-### *US12* Marco Visits Franca. {#us12}
+###  <dfn export>US12</dfn> Marco Visits Franca.
 #### Precondition
 [=Marco=]’s state is immune
 #### Story
@@ -98,7 +98,7 @@ photo shown on her mobile app, and opens the door.
 
 
 
-### *US13* Antibodies test {#us13}
+###  <dfn export>US13</dfn> Antibodies test 
 
 #### Conditions
 
@@ -118,12 +118,12 @@ The information are stored in a db, morover they are sended to COC Backend that 
 The certificate will be stored [=Marco=]'s device memory.
 
 
-### *US14* expired immunity {#us13}
+###  <dfn export>US14</dfn> expired immunity 
 
 #### Conditions
 
 #### Precondition
-[#us13] [=Marco=] has a test-certificate
+[=US13=] [=Marco=] has a test-certificate
 
 #### Story
 The test-certificate has an expiring-date. After this date [=Marco=] has to go back to [=Paola=]
@@ -132,7 +132,7 @@ The test-certificate has an expiring-date. After this date [=Marco=] has to go b
 
 
 
-### *US15* Marco is a bad person {#us15}
+###  <dfn export>US15</dfn> Marco is a bad person
 
 #### Conditions
 

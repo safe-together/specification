@@ -54,7 +54,7 @@ Walter wants to leverage all existing resources to mitigate the damages of the c
 He fears to unknowingly spread the virus while trying to mitigate its damages. While he values privacy, he needs technological aid to gain visibility and make quick decisions.
 
 
-### <dfn export>Franca<dfn> the Fragile Person
+### <dfn export>Franca</dfn> the Fragile Person
 
 #### Details
 Franca is 72, already home-bound due to the government directions to the elderly. She’s getting essentials delivered at home by either supermarkets or volunteers. Living alone, with no family within her city she needs external support to survive.

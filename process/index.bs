@@ -1,61 +1,168 @@
-Process {#process}
-=====================
+<pre class='metadata'>
+Title: The SafeTogether Process
+Shortname: process
+Level: 1
+Status: DREAM
+Group: SafeTogether Community Group
+URL: https://safe-together.github.io/specification/process/
+Markup Shorthands: markdown yes
+Max ToC Depth: 2
+Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Abstract:
+  This document is a description about how changes to the specifications in the Safetogheter ecosystem may be proposed and accepted.
+  The current development is carried out in the [REPOSITORY] repository. 
+  Anyone may participate in this process.
+</pre>
 
-The following is a description about how changes to the specifications in the Safetogheter ecosystem may be proposed and accepted.
-
-The current development is carried out in the [REPOSITORY](https://github.com/SafeTogether/specification) repository. 
+## Status of This Document ## {#status}
+**This document is an incomplete draft.**
+The sections that have been incorporated have been reviewed
+following the [safetogether process](process/).
+However, the information in this document is still subject to change.
 
 Anyone may participate in this process. Please read the [#code-of-conduct](code-of-conduct.md) before doing so.
 
 
+You are invited to [contribute](https://github.com/safe-together/issues)
+any feedback, comments, or questions you might have.
+
+Process {#process}
+===================
+
+
 ## Contributors
 
-Any individual that has been involved in proposals to improve the [=SafeTogether Specification=] has provided a valuable service to 
-SafeTogether Projectoject] and is encouraged to continue.
+Any individual that has been involved in proposals to improve the SafeTogether Specification has provided a valuable service to 
+SafeTogether Project and is encouraged to continue.
 
 All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.
 
 There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise. 
-For these cases, we have [SafeTogether Panels](#safetogether-panels).
-
-### SafeTogether Panels
-
-SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the [=SafeTogether Specification=]. Anyone may join a panel or suggest a new panel.
-
-Domains may be technical, non-technical, or some combination of the two. For example, a Security Panel could focus on the evaluation and advancement of the safetogether security model.
-
-A list of safetogether Panels is maintained at [panels](panels/). This listing helps people find panels they may want to participate in, and helps editors find panels to consult as part of the editorial process.
+For these cases, we have Panels
 
 
 ## Stakeholders
 
-Stakeholders are those affected by normative changes to the [=SafeTogether Specification=](https://github.com/SafeTogether/specification). There are two types of Stakeholders; [users](#users) and [Implementers](#implementers). It is important to consider them both when proposing changes, and adhering to the W3C [priority of constituencies](https://www.w3.org/TR/html-design-principles/#priority-of-constituencies) is encouraged. A Stakeholder may be both a user and an implementer.
+Stakeholders are those affected by normative changes to the SafeTogether Specification. 
+There are two types of Stakeholders; [users](#users) and [Implementers](#implementers). 
+It is important to consider them both when proposing changes. 
+A Stakeholder may be both a user and an implementer.
 
-Stakeholders who have opted to identify themselves publicly are listed at [stakeholders.md](stakeholders.md). Anyone may decide to identify themselves publicly as a safetogether Stakeholder, but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.
+Anyone may decide to identify themselves publicly as a Safetogether Stakeholder, 
+but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.
+
+
+Stakeholders who have opted to identify themselves publicly are listed below:
+
+*  User name or company name, home page, role (user | implementer)
+*  User name or company name, home page, role (user | implementer)
+
 
 ### Users
 
-SafeTogether Users are individuals, companies, or organizations who access a [=SafeTogether Application=].
+SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.
 
 ### Implementers
 
-SafeTogether Implementers are companies or organizations who are implementing the [=SafeTogether Specification=]. A SafeTogether Implementer may be any combination of Identity Provider, Data Provider, and Application Provider.
+SafeTogether Implementers are individuals,  companies or organizations who are implementing the SafeTogether Specification. 
+SafeTogether Implementer may be any combination of Identity Provider, Data Provider, Software providers, Service providers,
+and Application Editors.
+
+
+## Panels
+
+SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the SafeTogether Specification. Anyone may join a panel or suggest a new panel.
+Domains may be technical, non-technical, or some combination of the two. For example, a Security Panel could focus on the evaluation and advancement of the safetogether security model.
+
+Below is a listing. This listing helps people find panels they may want to participate in, and helps editors find panels to consult 
+as part of the editorial process.
+
+
+Solid Panels are groups of individuals focused on a specific problem or domain relevant to SafeTogether, 
+with an aim to propose changes to the SafeTogether Specification, 
+Roadmap, and/or Reference implementation. Anyone may join a panel or suggest a new panel.
+Anyone can create a SafeTogether Panel by submitting by making a pull request directly to this document.
+
+This listing helps people find panels in which they may want to participate, 
+and helps editors find panels to consult as part of the editorial process.
+
+
+### Example Panel
+This is an example that people can use as a template for submitting their own panels. A description of the panel, including its focus and goal, should go here.
+
+### Communication channels
+- Link to join mailing list goes here
+- Link to public chat goes here
+- Any other public communication link goes here
+
+### Panelists
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+
+
+
+### Index of Panels
+
+* [Process](#process-panel)
+* [User Stories](#stories-panel)
+* [Shielding](#shielding-panel)
+
+
+### Process panel
+Discussion about project governances
+
+### Communication channels
+- Link to join mailing list goes here
+- Link to public chat goes here
+- Any other public communication link goes here
+
+### Panelists
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+
+
+
+### Stories panel
+Definition of personas and user stories
+
+### Communication channels
+- Link to join mailing list goes here
+- Link to public chat goes here
+- Any other public communication link goes here
+
+### Panelists
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+
+
+### Shielding panel
+Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
+
+### Communication channels
+- Link to join mailing list goes here
+- Link to public chat goes here
+- Any other public communication link goes here
+
+### Panelists
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+
 
 ## How to Make Changes
 
-This section details how changes to the [=SafeTogether Specification=] may be drafted, proposed, and accepted by the community of the Editors
+This section details how changes to the SafeTogether Specification may be drafted, proposed, and accepted by the community of the Editors
 
 Anyone may submit a proposal to alter this process. 
 
 ### Drafting proposals
 
-Anyone may propose improvements to the [=SafeTogether Specification=]. Here are some examples of different ways to contribute:
+Anyone may propose improvements to the SafeTogether Specification. Here are some examples of different ways to contribute:
 
 - Submit a pull request or issue on the [REPOSITORY] in GitHub
 - Make a suggestion to a Panel communication chennel about a change you'd like to see
 - Propose an item for the  safetogether Community Group call
 
-Proposals for substantive changes to the [=SafeTogether Specification=] go through an editorial review process. A change is considered substantive when it alters the normative text of the SafeTogether Specification or the safetogether Roadmap. Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from Implementers.
+Proposals for substantive changes to the SafeTogether Specification go through an editorial review process. A change is considered substantive when it alters the normative text of the SafeTogether Specification or the safetogether Roadmap. Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from Implementers.
 
 Any proposal should also be accompanied with a reasonable explanation of the need for the proposed change. For example:
 

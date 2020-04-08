@@ -1,17 +1,17 @@
 <pre class='metadata'>
-Title: The SafeTogether Ecosystem
-Shortname: safetogether
+Title: SafeTogether Personas and Use Cases
+Shortname: stories
 Level: 1
 Status: DREAM
 Group: SafeTogether Community Group
-URL: https://safe-together.github.io/specification/
+URL: https://safe-together.github.io/specification/stories/
 Markup Shorthands: markdown yes
 Max ToC Depth: 2
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
-  This document connects a set of specifications that, together,
-  provide applications with secure and permissioned access to safetogether applications
-  in an interoperable way.
+  This document is a description about personas and user stories.
+  The current development is carried out in the [REPOSITORY] repository. 
+  Anyone may participate in this process.
 </pre>
 
 ## Status of This Document ## {#status}
@@ -23,18 +23,5 @@ However, the information in this document is still subject to change.
 You are invited to [contribute](https://github.com/safe-together/issues)
 any feedback, comments, or questions you might have.
 
-<pre class=include>path: introduction.bs</pre>
-
-<pre class=biblio>
-{
-  "verifiable-credentials": {
-		"href": "https://www.w3.org/TR/verifiable-claims-data-model/",
-		"title": "Verifiable Credentials Data Model 1.0",
-    "authors": [
-      "Manu Sporny",
-      "Dave Longley",
-      "David Chadwick"
-    ]
-	}
-}
-</pre>
+<pre class=include>path: personas.bs</pre>
+<pre class=include>path: stories.bs</pre>
