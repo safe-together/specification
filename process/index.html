@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/process/" rel="canonical">
-  <meta content="3d4fa76f58f0eedd5ed03f88eef0fdd95a201413" name="document-revision">
+  <meta content="7e67f89d485befaf2e55390fa02dd800617edc52" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1406,15 +1406,26 @@ Parts of this work may be from another specification document.  If so, those par
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
+    <li><a href="#contributors"><span class="secno">1</span> <span class="content">Contributors</span></a>
+    <li><a href="#stakeholders"><span class="secno">2</span> <span class="content">Stakeholders</span></a>
     <li>
-     <a href="#process"><span class="secno">1</span> <span class="content">Process</span></a>
+     <a href="#panels"><span class="secno">3</span> <span class="content">Panels</span></a>
      <ol class="toc">
-      <li><a href="#contributors"><span class="secno">1.1</span> <span class="content">Contributors</span></a>
-      <li><a href="#stakeholders"><span class="secno">1.2</span> <span class="content">Stakeholders</span></a>
-      <li><a href="#panels"><span class="secno">1.3</span> <span class="content">Panels</span></a>
-      <li><a href="#how-to-make-changes"><span class="secno">1.4</span> <span class="content">How to Make Changes</span></a>
-      <li><a href="#editorial-structure"><span class="secno">1.5</span> <span class="content">Editorial Structure</span></a>
-      <li><a href="#code-of-conduct"><span class="secno">1.6</span> <span class="content">Code of Conduct</span></a>
+      <li><a href="#example-of-a-panel"><span class="secno">3.1</span> <span class="content">Example of a Panel</span></a>
+      <li><a href="#index-of-all-panels"><span class="secno">3.2</span> <span class="content">Index of all Panels</span></a>
+     </ol>
+    <li>
+     <a href="#editorial-and-rules"><span class="secno">4</span> <span class="content">Editorial  and rules</span></a>
+     <ol class="toc">
+      <li><a href="#how-to-make-changes"><span class="secno">4.1</span> <span class="content">How to Make Changes</span></a>
+      <li><a href="#drafting-proposals"><span class="secno">4.2</span> <span class="content">Drafting proposals</span></a>
+      <li><a href="#repositories"><span class="secno">4.3</span> <span class="content">Repositories</span></a>
+     </ol>
+    <li>
+     <a href="#code-of-conduct"><span class="secno">5</span> <span class="content">Code of Conduct</span></a>
+     <ol class="toc">
+      <li><a href="#general-expectations"><span class="secno">5.1</span> <span class="content">General Expectations</span></a>
+      <li><a href="#best-practices"><span class="secno">5.2</span> <span class="content">Best Practices</span></a>
      </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
@@ -1431,18 +1442,19 @@ following the <a href="process/">safetogether process</a>.
 However, the information in this document is still subject to change. 
    <p>Anyone may participate in this process. Please read the <a href="code-of-conduct.md">#code-of-conduct</a> before doing so.</p>
    <p>You are invited to <a href="https://github.com/safe-together/issues">contribute</a> any feedback, comments, or questions you might have.</p>
-   <h2 class="heading settled" data-level="1" id="process"><span class="secno">1. </span><span class="content">Process</span><a class="self-link" href="#process"></a></h2>
-   <h3 class="heading settled" data-level="1.1" id="contributors"><span class="secno">1.1. </span><span class="content">Contributors</span><a class="self-link" href="#contributors"></a></h3>
+   <h2 class="heading settled" data-level="1" id="contributors"><span class="secno">1. </span><span class="content">Contributors</span><a class="self-link" href="#contributors"></a></h2>
    <p>Any individual that has been involved in proposals to improve the SafeTogether Specification has provided a valuable service to
 SafeTogether Project and is encouraged to continue.</p>
    <p>All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.</p>
    <p>There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise.
 For these cases, we have Panels</p>
-   <h3 class="heading settled" data-level="1.2" id="stakeholders"><span class="secno">1.2. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h3>
+   <h2 class="heading settled" data-level="2" id="stakeholders"><span class="secno">2. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h2>
    <p>Stakeholders are those affected by normative changes to the SafeTogether Specification.
-There are two types of Stakeholders; <a href="#users">users</a> and <a href="#implementers">Implementers</a>. 
-It is important to consider them both when proposing changes. 
+There are two types of Stakeholders; <strong>users</strong> and <strong>implementers</strong>. 
+SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.
+SafeTogether Implementers are individuals,  companies or organizations who are implementing the SafeTogether Specification. 
 A Stakeholder may be both a user and an implementer.</p>
+   <p>It is important to consider them both when proposing changes.</p>
    <p>Anyone may decide to identify themselves publicly as a Safetogether Stakeholder,
 but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.</p>
    <p>Stakeholders who have opted to identify themselves publicly are listed below:</p>
@@ -1452,13 +1464,9 @@ but it is not mandatory. Identified stakeholders may be consulted for feedback a
     <li data-md>
      <p>User name or company name, home page, role (user | implementer)</p>
    </ul>
-   <h4 class="heading settled" data-level="1.2.1" id="users"><span class="secno">1.2.1. </span><span class="content">Users</span><a class="self-link" href="#users"></a></h4>
-   <p>SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.</p>
-   <h4 class="heading settled" data-level="1.2.2" id="implementers"><span class="secno">1.2.2. </span><span class="content">Implementers</span><a class="self-link" href="#implementers"></a></h4>
-   <p>SafeTogether Implementers are individuals,  companies or organizations who are implementing the SafeTogether Specification.
-SafeTogether Implementer may be any combination of Identity Provider, Data Provider, Software providers, Service providers,
+   <p>SafeTogether Implementer may be any combination of Identity Provider, Data Provider, Software providers, Service providers,
 and Application Editors.</p>
-   <h3 class="heading settled" data-level="1.3" id="panels"><span class="secno">1.3. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h3>
+   <h2 class="heading settled" data-level="3" id="panels"><span class="secno">3. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h2>
    <p>SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the SafeTogether Specification. Anyone may join a panel or suggest a new panel.
 Domains may be technical, non-technical, or some combination of the two. For example, a Security Panel could focus on the evaluation and advancement of the safetogether security model.</p>
    <p>Below is a listing. This listing helps people find panels they may want to participate in, and helps editors find panels to consult
@@ -1469,9 +1477,9 @@ Roadmap, and/or Reference implementation. Anyone may join a panel or suggest a n
 Anyone can create a SafeTogether Panel by submitting by making a pull request directly to this document.</p>
    <p>This listing helps people find panels in which they may want to participate,
 and helps editors find panels to consult as part of the editorial process.</p>
-   <h4 class="heading settled" data-level="1.3.1" id="example-panel"><span class="secno">1.3.1. </span><span class="content">Example Panel</span><a class="self-link" href="#example-panel"></a></h4>
+   <h3 class="heading settled" data-level="3.1" id="example-of-a-panel"><span class="secno">3.1. </span><span class="content">Example of a Panel</span><a class="self-link" href="#example-of-a-panel"></a></h3>
     This is an example that people can use as a template for submitting their own panels. A description of the panel, including its focus and goal, should go here. 
-   <h4 class="heading settled" data-level="1.3.2" id="communication-channels"><span class="secno">1.3.2. </span><span class="content">Communication channels</span><a class="self-link" href="#communication-channels"></a></h4>
+   <p><strong>Communication channels</strong></p>
    <ul>
     <li data-md>
      <p>Link to join mailing list goes here</p>
@@ -1480,25 +1488,17 @@ and helps editors find panels to consult as part of the editorial process.</p>
     <li data-md>
      <p>Any other public communication link goes here</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.3" id="panelists"><span class="secno">1.3.3. </span><span class="content">Panelists</span><a class="self-link" href="#panelists"></a></h4>
+   <p><strong>Panelists</strong></p>
    <ul>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.4" id="index-of-panels"><span class="secno">1.3.4. </span><span class="content">Index of Panels</span><a class="self-link" href="#index-of-panels"></a></h4>
-   <ul>
-    <li data-md>
-     <p><a href="#process-panel">Process</a></p>
-    <li data-md>
-     <p><a href="#stories-panel">User Stories</a></p>
-    <li data-md>
-     <p><a href="#shielding-panel">Shielding</a></p>
-   </ul>
-   <h4 class="heading settled" data-level="1.3.5" id="process-panel"><span class="secno">1.3.5. </span><span class="content">Process panel</span><a class="self-link" href="#process-panel"></a></h4>
+   <h3 class="heading settled" data-level="3.2" id="index-of-all-panels"><span class="secno">3.2. </span><span class="content">Index of all Panels</span><a class="self-link" href="#index-of-all-panels"></a></h3>
+   <h4 class="heading settled" data-level="3.2.1" id="process-panel"><span class="secno">3.2.1. </span><span class="content">Process panel</span><a class="self-link" href="#process-panel"></a></h4>
     Discussion about project governances 
-   <h4 class="heading settled" data-level="1.3.6" id="communication-channels①"><span class="secno">1.3.6. </span><span class="content">Communication channels</span><a class="self-link" href="#communication-channels①"></a></h4>
+   <p><strong>Communication channels</strong></p>
    <ul>
     <li data-md>
      <p>Link to join mailing list goes here</p>
@@ -1507,16 +1507,16 @@ and helps editors find panels to consult as part of the editorial process.</p>
     <li data-md>
      <p>Any other public communication link goes here</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.7" id="panelists①"><span class="secno">1.3.7. </span><span class="content">Panelists</span><a class="self-link" href="#panelists①"></a></h4>
+   <p><strong>Panelists</strong></p>
    <ul>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.8" id="stories-panel"><span class="secno">1.3.8. </span><span class="content">Stories panel</span><a class="self-link" href="#stories-panel"></a></h4>
+   <h4 class="heading settled" data-level="3.2.2" id="stories-panel"><span class="secno">3.2.2. </span><span class="content">Stories panel</span><a class="self-link" href="#stories-panel"></a></h4>
     Definition of personas and user stories 
-   <h4 class="heading settled" data-level="1.3.9" id="communication-channels②"><span class="secno">1.3.9. </span><span class="content">Communication channels</span><a class="self-link" href="#communication-channels②"></a></h4>
+   <p><strong>Communication channels</strong></p>
    <ul>
     <li data-md>
      <p>Link to join mailing list goes here</p>
@@ -1525,16 +1525,16 @@ and helps editors find panels to consult as part of the editorial process.</p>
     <li data-md>
      <p>Any other public communication link goes here</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.10" id="panelists②"><span class="secno">1.3.10. </span><span class="content">Panelists</span><a class="self-link" href="#panelists②"></a></h4>
+   <p><strong>Panelists</strong></p>
    <ul>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.11" id="shielding-panel"><span class="secno">1.3.11. </span><span class="content">Shielding panel</span><a class="self-link" href="#shielding-panel"></a></h4>
+   <h4 class="heading settled" data-level="3.2.3" id="shielding-panel"><span class="secno">3.2.3. </span><span class="content">Shielding panel</span><a class="self-link" href="#shielding-panel"></a></h4>
     Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
-   <h4 class="heading settled" data-level="1.3.12" id="communication-channels③"><span class="secno">1.3.12. </span><span class="content">Communication channels</span><a class="self-link" href="#communication-channels③"></a></h4>
+   <p><strong>Communication channels</strong></p>
    <ul>
     <li data-md>
      <p>Link to join mailing list goes here</p>
@@ -1543,17 +1543,18 @@ and helps editors find panels to consult as part of the editorial process.</p>
     <li data-md>
      <p>Any other public communication link goes here</p>
    </ul>
-   <h4 class="heading settled" data-level="1.3.13" id="panelists③"><span class="secno">1.3.13. </span><span class="content">Panelists</span><a class="self-link" href="#panelists③"></a></h4>
+   <p><strong>Panelists</strong></p>
    <ul>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
     <li data-md>
      <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
    </ul>
-   <h3 class="heading settled" data-level="1.4" id="how-to-make-changes"><span class="secno">1.4. </span><span class="content">How to Make Changes</span><a class="self-link" href="#how-to-make-changes"></a></h3>
+   <h2 class="heading settled" data-level="4" id="editorial-and-rules"><span class="secno">4. </span><span class="content">Editorial  and rules</span><a class="self-link" href="#editorial-and-rules"></a></h2>
+   <h3 class="heading settled" data-level="4.1" id="how-to-make-changes"><span class="secno">4.1. </span><span class="content">How to Make Changes</span><a class="self-link" href="#how-to-make-changes"></a></h3>
    <p>This section details how changes to the SafeTogether Specification may be drafted, proposed, and accepted by the community of the Editors</p>
    <p>Anyone may submit a proposal to alter this process.</p>
-   <h4 class="heading settled" data-level="1.4.1" id="drafting-proposals"><span class="secno">1.4.1. </span><span class="content">Drafting proposals</span><a class="self-link" href="#drafting-proposals"></a></h4>
+   <h3 class="heading settled" data-level="4.2" id="drafting-proposals"><span class="secno">4.2. </span><span class="content">Drafting proposals</span><a class="self-link" href="#drafting-proposals"></a></h3>
    <p>Anyone may propose improvements to the SafeTogether Specification. Here are some examples of different ways to contribute:</p>
    <ul>
     <li data-md>
@@ -1575,17 +1576,16 @@ and helps editors find panels to consult as part of the editorial process.</p>
    </ul>
    <p>A draft proposal often involves public discussion before being formally presented for review. After these discussions have occurred and a draft proposal has reached a sufficient level of maturity, it should be presented as a candidate proposal, asking Stakeholders and Panels if there are any major objections.</p>
    <p>When there are objections, notify the safetogether Panels and Stakeholders about the final proposal with an invitation to vote. If there are options, detail them along with the implications of the options. The final proposal needs to be open for one week to give others a chance to vote. To show your support for a proposal write +1. To show your disapproval for a proposal write -1 along with a detailed reason for the disapproval and a suggestion for a preferred alternative. To abstain type 0 when you have no opinion. If you do not vote by the end of the week it will be assumed that you abstain. At the end of the week anyone may publish an overview of the vote results per safetogether Panel and Stakeholder.</p>
-   <h3 class="heading settled" data-level="1.5" id="editorial-structure"><span class="secno">1.5. </span><span class="content">Editorial Structure</span><a class="self-link" href="#editorial-structure"></a></h3>
    <p>The Editorial Team is comprised of all the Editors. Anyone may apply to be an Editor, and must include one or more requested editorial assignments as part of their application. These requests are reviewed by other Editors Editor applications that can demonstrate the support of a relevant panel or group of community members will be favorably considered.</p>
-   <h4 class="heading settled" data-level="1.5.1" id="repositories"><span class="secno">1.5.1. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h4>
+   <h3 class="heading settled" data-level="4.3" id="repositories"><span class="secno">4.3. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h3>
    <p>Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.</p>
    <p>Editors have <a href="https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization">_Admin Permissions_</a> on the repositories they are assigned to.</p>
-   <h3 class="heading settled" data-level="1.6" id="code-of-conduct"><span class="secno">1.6. </span><span class="content">Code of Conduct</span><a class="self-link" href="#code-of-conduct"></a></h3>
+   <h2 class="heading settled" data-level="5" id="code-of-conduct"><span class="secno">5. </span><span class="content">Code of Conduct</span><a class="self-link" href="#code-of-conduct"></a></h2>
    <p>Personal threats or discriminatory threats towards arbitrary groups or Community Group call and mailing list may result in a ban
 of the threatening individual.</p>
    <p>Repeated and sustained straying from the defined aims of the communication channels
  may result in a ban of those individuals straying from those defined aims.</p>
-   <h4 class="heading settled" data-level="1.6.1" id="general-expectations"><span class="secno">1.6.1. </span><span class="content">General Expectations</span><a class="self-link" href="#general-expectations"></a></h4>
+   <h3 class="heading settled" data-level="5.1" id="general-expectations"><span class="secno">5.1. </span><span class="content">General Expectations</span><a class="self-link" href="#general-expectations"></a></h3>
     Below are some general expectations around how participants of the  community are encouraged to behave. 
    <p>Participants in the  community are expected to behave professionally and respectfully.
 This community is committed to maintain a positive and constructive community while helping to build SafeTogether. 
@@ -1604,7 +1604,7 @@ This commitment calls for a community where participants behave according to the
     <li data-md>
      <p>Disagreements, both social and technical, happen all the time. Whenever inappropriate behaviors are observed members of the community should strive to bring the discussion back to a more professional level. In most cases misunderstandings and disagreements can be resolved informally.  We hope that most concerns can be solved this way.</p>
    </ul>
-   <h4 class="heading settled" data-level="1.6.2" id="best-practices"><span class="secno">1.6.2. </span><span class="content">Best Practices</span><a class="self-link" href="#best-practices"></a></h4>
+   <h3 class="heading settled" data-level="5.2" id="best-practices"><span class="secno">5.2. </span><span class="content">Best Practices</span><a class="self-link" href="#best-practices"></a></h3>
     Best practices for the Community include: 
    <ul>
     <li data-md>
@@ -1630,7 +1630,7 @@ This commitment calls for a community where participants behave according to the
     <li data-md>
      <p>There are multiple ways of achieving the same goals, but when you build something new, check what already exists so we can better understand and help you with your contribution.</p>
    </ul>
-   <h4 class="heading settled" data-level="1.6.3" id="based-on"><span class="secno">1.6.3. </span><span class="content">Based on:</span><a class="self-link" href="#based-on"></a></h4>
+   <p>Based on:</p>
    <ul>
     <li data-md>
      <p>https://www.w3.org/Consortium/cepc/  (and an as-of-yet unpublished “BestPractices for Working Groups”)</p>
