@@ -9,8 +9,8 @@ Markup Shorthands: markdown yes
 Max ToC Depth: 2
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
- This document is a description about personas and user stories.
- The current development is carried out in the [REPOSITORY] repository. 
+  This document is a description about personas and user stories.
+  The current development is carried out in the [REPOSITORY] repository. 
   Anyone may participate in this process.
 </pre>
 
