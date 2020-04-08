@@ -1,24 +1,17 @@
 Introduction {#intro}
 =====================
 
-Issue: Write Introduction section.
+Issue: Write Introduction section to SafeTogether project and specification.
 
-## Definitions ## {#definitions}
 
 The <dfn export>SafeTogether Specification</dfn> 
-describes for architecture and protocols for the [=SafeTogether Project=].
-
-A <dfn export>SafeTogether Application</dfn> implements [=SafeTogether Specification=].
-
-A <dfn export>user</dfn> is an individual, 
-company, or organization who access a [=SafeTogether Application=].
+describes for architecture and protocols for the [SafeTogether Project](https://safetogether.com).
 
 
-A <dfn export>implementer</dfn> is a company 
-or organization who are implementing the [=SafeTogether Specification*].
-An implementer may be any combination of Identity Provider, Registry Provider, and Application Provider.
+## Structure of the specification ## {#structure}
 
-## Structure of this document ## {#structure}
+SafeTogether Specification is composed by set of related documents:
 
-Issue: Introduce the structure of this document.
-
+* A description about how changes to the specifications in the Safetogheter ecosystem is described
+in the [Process documentation](process/).
+* Personas and use cases are described  in the [Stories documentation](stories/).
