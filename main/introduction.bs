@@ -12,6 +12,5 @@ describes for architecture and protocols for the [SafeTogether Project](https://
 
 SafeTogether Specification is composed by set of related documents:
 
-* A description about how changes to the specifications in the Safetogheter ecosystem is described
-in the [Process documentation](process/).
-* Personas and use cases are described  in the [Stories documentation](stories/).
+- A description about how changes to the specifications in the Safetogheter ecosystem is described in the [Process documentation](process/).
+- Personas and use cases are described  in the [stories/).
