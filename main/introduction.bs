@@ -1,6 +1,4 @@
-Introduction {#intro}
-=====================
-
+# Introduction # {#intro}
 Issue: Write Introduction section to SafeTogether project and specification.
 
 
@@ -8,7 +6,7 @@ The <dfn export>SafeTogether Specification</dfn>
 describes for architecture and protocols for the [SafeTogether Project](https://safetogether.com).
 
 
-## Structure of the specification ## {#structure}
+# Structure of the specification # {#structure}
 
 SafeTogether Specification is composed by set of related documents:
 

@@ -26,11 +26,8 @@ Anyone may participate in this process. Please read the [#code-of-conduct](code-
 You are invited to [contribute](https://github.com/safe-together/issues)
 any feedback, comments, or questions you might have.
 
-Process {#process}
-===================
 
-
-## Contributors
+# Contributors # {#contributors}
 
 Any individual that has been involved in proposals to improve the SafeTogether Specification has provided a valuable service to 
 SafeTogether Project and is encouraged to continue.
@@ -41,12 +38,15 @@ There are many topics, problems, or ideas best tackled by a group of people with
 For these cases, we have Panels
 
 
-## Stakeholders
+# Stakeholders # {#stakeholders}
 
 Stakeholders are those affected by normative changes to the SafeTogether Specification. 
-There are two types of Stakeholders; [users](#users) and [Implementers](#implementers). 
-It is important to consider them both when proposing changes. 
+There are two types of Stakeholders; **users** and **implementers**. 
+SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.
+SafeTogether Implementers are individuals,  companies or organizations who are implementing the SafeTogether Specification. 
 A Stakeholder may be both a user and an implementer.
+
+It is important to consider them both when proposing changes. 
 
 Anyone may decide to identify themselves publicly as a Safetogether Stakeholder, 
 but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.
@@ -58,18 +58,11 @@ Stakeholders who have opted to identify themselves publicly are listed below:
 *  User name or company name, home page, role (user | implementer)
 
 
-### Users
-
-SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.
-
-### Implementers
-
-SafeTogether Implementers are individuals,  companies or organizations who are implementing the SafeTogether Specification. 
 SafeTogether Implementer may be any combination of Identity Provider, Data Provider, Software providers, Service providers,
 and Application Editors.
 
 
-## Panels
+# Panels # {#panels}
 
 SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to safetogether, with an aim to propose changes to the SafeTogether Specification. Anyone may join a panel or suggest a new panel.
 Domains may be technical, non-technical, or some combination of the two. For example, a Security Panel could focus on the evaluation and advancement of the safetogether security model.
@@ -87,36 +80,31 @@ This listing helps people find panels in which they may want to participate,
 and helps editors find panels to consult as part of the editorial process.
 
 
-### Example Panel
+## Example of a Panel
 This is an example that people can use as a template for submitting their own panels. A description of the panel, including its focus and goal, should go here.
 
-### Communication channels
+**Communication channels**
 - Link to join mailing list goes here
 - Link to public chat goes here
 - Any other public communication link goes here
 
-### Panelists
+**Panelists**
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 
 
 
-### Index of Panels
-
-* [Process](#process-panel)
-* [User Stories](#stories-panel)
-* [Shielding](#shielding-panel)
-
+## Index of all Panels
 
 ### Process panel
 Discussion about project governances
 
-### Communication channels
+**Communication channels**
 - Link to join mailing list goes here
 - Link to public chat goes here
 - Any other public communication link goes here
 
-### Panelists
+**Panelists**
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 
@@ -125,12 +113,12 @@ Discussion about project governances
 ### Stories panel
 Definition of personas and user stories
 
-### Communication channels
+**Communication channels**
 - Link to join mailing list goes here
 - Link to public chat goes here
 - Any other public communication link goes here
 
-### Panelists
+**Panelists**
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 
@@ -138,15 +126,20 @@ Definition of personas and user stories
 ### Shielding panel
 Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
 
-### Communication channels
+**Communication channels**
 - Link to join mailing list goes here
 - Link to public chat goes here
 - Any other public communication link goes here
 
-### Panelists
+**Panelists**
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 - [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
 
+
+
+
+
+# Editorial  and rules 
 
 ## How to Make Changes
 
@@ -154,7 +147,7 @@ This section details how changes to the SafeTogether Specification may be drafte
 
 Anyone may submit a proposal to alter this process. 
 
-### Drafting proposals
+## Drafting proposals
 
 Anyone may propose improvements to the SafeTogether Specification. Here are some examples of different ways to contribute:
 
@@ -175,18 +168,15 @@ A draft proposal often involves public discussion before being formally presente
 When there are objections, notify the safetogether Panels and Stakeholders about the final proposal with an invitation to vote. If there are options, detail them along with the implications of the options. The final proposal needs to be open for one week to give others a chance to vote. To show your support for a proposal write +1. To show your disapproval for a proposal write -1 along with a detailed reason for the disapproval and a suggestion for a preferred alternative. To abstain type 0 when you have no opinion. If you do not vote by the end of the week it will be assumed that you abstain. At the end of the week anyone may publish an overview of the vote results per safetogether Panel and Stakeholder.
 
 
-
-## Editorial Structure
-
 The Editorial Team is comprised of all the Editors. Anyone may apply to be an Editor, and must include one or more requested editorial assignments as part of their application. These requests are reviewed by other Editors Editor applications that can demonstrate the support of a relevant panel or group of community members will be favorably considered.
 
-### Repositories
+## Repositories
 
 Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.
 
 Editors have [_Admin Permissions_](https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization) on the repositories they are assigned to.
 
-## Code of Conduct
+# Code of Conduct
 
 Personal threats or discriminatory threats towards arbitrary groups or Community Group call and mailing list may result in a ban 
 of the threatening individual.
@@ -194,7 +184,7 @@ of the threatening individual.
 Repeated and sustained straying from the defined aims of the communication channels
  may result in a ban of those individuals straying from those defined aims.
 
-### General Expectations
+## General Expectations
 Below are some general expectations around how participants of the  community are encouraged to behave.
 
 Participants in the  community are expected to behave professionally and respectfully.
@@ -208,7 +198,7 @@ This commitment calls for a community where participants behave according to the
 - Do not insult or put down other participants. Harassment (whether verbal, physical or sexual) and other exclusionary behavior is not acceptable.
 - Disagreements, both social and technical, happen all the time. Whenever inappropriate behaviors are observed members of the community should strive to bring the discussion back to a more professional level. In most cases misunderstandings and disagreements can be resolved informally.  We hope that most concerns can be solved this way. 
 
-### Best Practices
+## Best Practices
 Best practices for the Community include:
 
 - Contribute! Help SafeTogether be the best it can be. Work together constructively toward the good working of the technology.
@@ -223,7 +213,7 @@ Best practices for the Community include:
 - Maintain an open mindset and encourage others to do the same. There might be things you or others haven't heard about yet, so be open to send and receive pointers to more info.
 - There are multiple ways of achieving the same goals, but when you build something new, check what already exists so we can better understand and help you with your contribution.
 
-### Based on:
+Based on:
 - https://www.w3.org/Consortium/cepc/  (and an as-of-yet unpublished “BestPractices for Working Groups”)
 - https://adainitiative.org/2014/02/18/howto-design-a-code-of-conduct-for-your-community/
 - http://geekfeminism.wikia.com/wiki/Code_of_conduct

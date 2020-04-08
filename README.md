@@ -29,7 +29,6 @@ If needed, download and install [docker community engine](https://hub.docker.com
 For example to generate the html documentation for stories:
 
 ```
-mkdir distrib
 docker run --rm -v ${PWD}:/data linkeddatacenter/bikeshed bikeshed spec /data/stories/index.bs 
 ```
 
