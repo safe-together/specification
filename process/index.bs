@@ -9,21 +9,19 @@ Markup Shorthands: markdown yes
 Max ToC Depth: 2
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
-  This document is a description about how changes to the specifications in the Safetogheter ecosystem may be proposed and accepted.
+  This document is a description about how changes to the specifications in the SafeTogether Ecosystem may be proposed and accepted.
   The current development is carried out in the [REPOSITORY] repository. 
   Anyone may participate in this process.
 </pre>
 
 ## Status of This Document ## {#status}
 **This document is an incomplete draft.**
-The sections that have been incorporated have been reviewed
-following the [safetogether process](process/).
-However, the information in this document is still subject to change.
+The information in this document is still subject to change.
 
 Anyone may participate in this process. Please read the [#code-of-conduct](code-of-conduct.md) before doing so.
 
 
-You are invited to [contribute](https://github.com/safe-together/issues)
+You are invited to [contribute](https://github.com/safe-together/specification/issues)
 any feedback, comments, or questions you might have.
 
 
@@ -48,7 +46,7 @@ A Stakeholder may be both a user and an implementer.
 
 It is important to consider them both when proposing changes. 
 
-Anyone may decide to identify themselves publicly as a Safetogether Stakeholder, 
+Anyone may decide to identify themselves publicly as a SafeTogether Stakeholder, 
 but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.
 
 

@@ -17,10 +17,29 @@ Abstract:
 ## Status of This Document ## {#status}
 **This document is an incomplete draft.**
 The sections that have been incorporated have been reviewed
-following the [safetogether process](process/).
+following the [SafeTogether Process](process/).
 However, the information in this document is still subject to change.
 
-You are invited to [contribute](https://github.com/safe-together/issues)
+You are invited to [contribute](https://github.com/safe-together/specification/issues)
 any feedback, comments, or questions you might have.
 
-<pre class=include>path: introduction.bs</pre>
+
+# Introduction # {#intro}
+
+Issue: Write Introduction section to SafeTogether project and specification.
+
+
+The <dfn export>SafeTogether Specification</dfn> 
+describes architecture and protocols for the [SafeTogether Project](https://safetogether.com).
+SafeTogether Specification is composed by set of related documents:
+
+<table border = 1>
+  <tr>
+    <th>[process](process/)</th>
+    <td>a description about how to change the specifications in the Safetogheter ecosystem</td>
+  </tr>
+  <tr>
+    <th>[stories](stories/)</th>
+    <td>contains a description of personas and use cases referred in the Safetogheter ecosystem</td>
+  </tr>
+</table>

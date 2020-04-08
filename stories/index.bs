@@ -17,10 +17,10 @@ Abstract:
 ## Status of This Document ## {#status}
 **This document is an incomplete draft.**
 The sections that have been incorporated have been reviewed
-following the [safetogether process](process/).
+following the [safetogether process](../process/).
 However, the information in this document is still subject to change.
 
-You are invited to [contribute](https://github.com/safe-together/issues)
+You are invited to [contribute](https://github.com/safe-together/specification/issues)
 any feedback, comments, or questions you might have.
 
 <pre class=include>path: personas.bs</pre>
