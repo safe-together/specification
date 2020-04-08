@@ -23,4 +23,5 @@ However, the information in this document is still subject to change.
 You are invited to [contribute](https://github.com/safe-together/issues)
 any feedback, comments, or questions you might have.
 
+<pre class=include>path: personas.bs</pre>
 <pre class=include>path: stories.bs</pre>
