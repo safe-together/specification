@@ -3,9 +3,9 @@
 Personas {#personas}
 =====================
 
-**Premise**: there is a backend (*COC*) that menages comunication with apps.
-Apps are identified by an ID (*COC_ID*) 
-There is another backend (SBE) that menages staytogether-shielding system.
+## Personas categories ## {#categories}
+
+
 
 
 <!--
@@ -123,7 +123,24 @@ He is afraid of:
  ███████   ██████  ████████ ██     ██  ██████ 
 -->
 
+
+
 ## Users ## {#users}
+
+Issue: Walter, Andrea, Giovanni, Maria and Paola roles MUST be reviewed in speces
+
+
+### Giovanni the physician ### {#Giovanni}
+
+Issue: details of Giovanni Missing
+
+Iissue: could be Giovanni a duplicated persona of Paola?
+
+### Maria the hospital physician ### {#Maria}
+
+Issue: details of Maria Missing
+
+Iissue: could be Maria a duplicated persona of Paola?
 
 
 ### Marco the Immune Volunteer ### {#Marco}
@@ -164,6 +181,8 @@ Paola cares about her community, and especially their health. She’s afraid the
 
 ### Walter the Institutional Force ### {#Walter}
 
+Issue: Role mistmach Waklteris used as a member of "protezione civile in keyless document
+
 **Details**
 
 Walter is 51, he works with the Civil Defence forces and he is in charge of coordinating volunteering efforts in a large province with a population of 1.2M people.
@@ -194,6 +213,9 @@ Franca fears to be “left behind” and to have little means to request help/su
 
 ### Andrea the lorry driver ### {#Andrea}
 
+
+Issue: Andrea is a duplicate name, it was used bt Keyless fo the police officer
+
 **Details**
 
 Andrea is 51, she is from Poland. She drives a lorry for work. Sometimes she has to travel across countries to deliver goods.
@@ -207,6 +229,40 @@ Andrea's goal is to get back to “business as usual" as soon as possible. Her f
 She fears that she might lose her job in case travel across Europe is restricted.
 Some countries may deny her access, even though she could be immune.
 
+
+### Anne a Regular Citizenr ### {#Anne}
+
+**Details**
+
+Anneis a general adult with a family of 3, living and working in a medium
+size city. She’s a smartphone and uses it regularly in her daily life.
+
+**Goals**
+
+Staying healthy, while being able to live and work as normal.
+
+**Values and Fear**
+
+Anne values privacy and freedom, she’s aware of abuse of controlling
+measures some governments have been enacting. Anne fears to have the
+virus, to be passing it to his family members. She’s afraid for her
+own health, that her family could be in hard economic conditions,
+that she might be fired.
+
+### Jack a patient under treatment ### {#Jack}
+
+**Details**
+
+Jack is a patient under treatment for Covid-19, he could either be
+hospitalized or in ICUs.
+
+**Goals**
+
+Fight the disease, connect with loved ones.
+
+**Values and Fear**
+
+Fear of death, loss and overall feeling of grief.
 
 ### Natasha CEO of Lorry for women. ### {#Natasha}
 
