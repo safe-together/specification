@@ -1,4 +1,4 @@
-# SafeTogether Specification
+# SafeTogether Specification repository
 
 * Editor's Draft: https://safe-together.github.io/specification/
 * Latest Published: https://safe-together.github.io/specification/
@@ -13,11 +13,11 @@
   * Quarantine app: *TBD*
 
 This repository contains the source of the SafeTogether Specification
-which aims to be a clear, unambiguous, free and implementable documentation for [SafeTogether Project].
+which aims to be a clear, unambiguous, free and implementable documentation for SafeTogether Project.
 
 For the time being, while the migration is in progress, please refer also to the existing draft documents available in reference implementation repositories.
 
-A fair number of spec improvements are currently in the making. If you want to contribute, please refer to a relevant [panel].
+A fair number of spec improvements are currently in the making. If you want to contribute, please refer to a relevant [panel](https://safe-together.github.io/specification/process#panels).
 
 
 ## Editing and building the specification
@@ -29,7 +29,8 @@ Pushing to master triggers the  compliation and publishing in GitHub pages.
  
 If needed, download and install [docker community engine](https://hub.docker.com/search/?type=edition&offering=community)
 
-For example to generate the html documentation for stories:
+You can use the public `linkeddatacenter/bikeshed` docker avaliable in doker hub to generate locally specs HTML code.
+For example, to generate the html documentation for stories type:
 
 ```
 docker run --rm -v ${PWD}:/data linkeddatacenter/bikeshed bikeshed spec /data/stories/index.bs 

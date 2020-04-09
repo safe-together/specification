@@ -1,11 +1,255 @@
 User stories {#user_stories}
 =====================
 
+## TBD ## {#US1}
+tbd
 
-## stories index ## {#tracingg_stories}
+## US08 - Proof of Immunity ## {#US08}
 
-Issue: add a table with story type and instances.
+**Actors:**
 
-Issue: merge personas defined in [shielding repo](https://github.com/g0v-it/staysafe-shielding), 
+- [[#Marco]]
+- [[#Walter]]
+
+**Preconditions:**
+
+Marco’s state is immune
+
+**Story:**
+
+Marco is asked by
+Walter to prove that his state is immune. Marco opens the mobile app and authenticates. The app shows a QR code that contains Marco’s COC_ID. Walter scans the QR code using the operator app. The operator app checks Marco’s state on the backend (including the expiration date if the state is immune), and returns it to Walter.
+
+
+## US09 - Marco Volunteers to Join Shielding Program ## {#US09}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Walter]]
+
+**Preconditions:**
+
+Marco’s state is immune
+
+**Story:**
+
+Marco goes to Walter at
+protezione civile, and volunteers to join the shielding prohram for
+at-risk individuals. Marco proves that he is immune as described in
+[[#US08]]. Walter registers Marco’s information, including his COC_ID and
+photo, to protezione civile’s system. Protezione civile’s system
+uses the COC backend to send a notification to Marco mobile
+app. Marco authenticates in front of Walter, and the app records
+Marco as a volunteer.
+
+
+
+
+## US10 - Marco’s Immunity Expires ## {#US10}
+
+**Actors:**
+
+- [[#Marco]]
+
+**Preconditions:**
+
+Marco’s state is immune.
+
+** Post-condition:**
+
+Marco’s state is unknown
+ 
+**Story:**
+
+The mobile app notifies Marco that his state has expired, and
+that it is now unknown. Marco can now proceed with [[#US1]].
+
+
+
+## US11 -  Marco is Tested (Tampon). ## {#US11}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Walter]]
+ 
+**Preconditions:**
+
+Marco state is unknown, immune, or negative.
+ 
+** Post-condition:**
+
+Marco state is quarantined, negative, or immune
+
+**Story:**
+
+issue: who is Giovanni??
+
+Marco feels
+sick, and goes to his doctor Giovanni. Giovanni records information
+about the test using the operator app, and updates Marco’s
+state to unknown - thus possibly revoking Marco’s immune
+state. After a few days, the test result is back. If the test is
+positive, Marco’s state becomes quarantined. If the test is
+negative, Marco’s state is set to negative or immune,
+depending on Marco’s state at the beginning of US11.
+
+
+
+## US12 - Marco Visits Franca. ## {#US12}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Walter]]
+- [[#Franca]]
+
+**Preconditions:**
+
+Marco’s state is immune
+ 
+**Story:**
+
+Issue: is Bluethoot really usefull? What happens if Franca lives in a big building and Mark ring apartment building intercom? 
+
+Walter sends Marco to Franca. Marco knocks Franca’s door, and
+Franca asks him to identify himself. Marco authenticates with the
+mobile app on his smartphone, which then broadcasts Marco’s
+certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
+devices and read’s Marco’s COC_ID using the mobile app on
+her smartphone. Franca’s mobile app sends the COC_ID to the
+backend, which returns Marco’s photo if his state is immune
+and he was registered by Walter. Otherwise, the mobile app tells
+Franca not to open the door. The backend records the interaction
+between Marco and Franca. Franca verifies that Marco matches the
+photo shown on her mobile app, and opens the door.
+
+
+
+## US13 - Antibodies test ## {#US13}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Paola]]
+
+**Conditions:**
+
+**Preconditions:**
+
+Marco’s state is unknown
+
+**Story:**
+
+Marco goes to Paola in order to perform an antibodies test.
+If the test is positive Paola ask for Marco's tax code and phone number and records them using operator app.
+The operator app notifies the institutional forces.
+
+Otherwise Paola informs Marco that she can add the test-certificate on his user app if he wants. 
+Marco can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), Paola uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.
+
+The information are stored in a db, morover they are sended to COC Backend that forwards the certificate to the user-app.
+The certificate will be stored Marco's device memory.
+
+
+## US14 - expired immunity ## {#US14}
+
+**Actors:**
+
+- [[#Marco]]
+
+**Conditions:**
+
+[[#US13]]
+
+**Preconditions:**
+
+Marco has a test-certificate
+
+**Story:**
+
+The test-certificate has an expiring-date. After this date Marco has to go back to Paola in order to update his immunity condition.
+
+
+## US15 - Marco is a bad person ## {#US15}
+
+**Actors:**
+
+- [[#Marco]]
+
+**Conditions:**
+
+**Preconditions:**
+
+Marco has a test-certificate
+
+**Story:**
+
+Issue: who is Stefano? 
+
+Issue: Who is Pietro?
+
+When Marco goes to Franca robs her. Franca reports the crime to Carabinieri. Pietro, the policeman, uses the user-app to read Franca COC_ID, then He asks to Stefano, the app owner, Marco's COC_ID stored in Franca's contact logs. Pietro, the policeman, asks to Walter to revoke Marco's volunteer certificate.
+
+
+## US16 - Natasha encourages her employees to take the test ## {#US16}
+
+**Actors:**
+
+- [[#Natasha]]
+
+**Conditions:**
+
+**Preconditions:**
+
+**Story:**
+
+Natasha wants to do business in Italy knowing that crossing the border is permitted only if her drivers have a certification of immunity. She encourages her employees to take the test and obtain permission to cross.
+
+
+## US17 - Andrea corsses the italian border ## {#US17}
+
+**Actors:**
+
+- [[#Natasha]]
+- [[#Andrea]]
+
+
+**Conditions:**
+
+[#US16]
+
+**Preconditions:**
+
+Andrea’s state is immune.
+
+Natasha encourages her employees to take the test
+
+**Story:**
+
+Following Natasha's advice Andrea takes the immunity test and obtains the certification.
+Now she can cross the Italian boarder.
+
+At the border she authenticate herself using the user application and the COC_ID.
+Walter grants her access.
+
+
+
+
+Issue: merge personas defined in 
   [keyless specs](https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&origin_channel=C011G7ES68N) ,
   [Michele doc](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&fileid=20773)
+  
+
+
+Issue: Virus test is different from antibodies test, which one should we consider for specification purposing? Both?
+
+Issue: The QRcode is generated upon onboarding or upon test result?
+
+Issue: Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?
+
+Issue: How the sanitary personnel are enrolled? Is it a metter of the application or someone else?
+
+Issue: Does a test machine update the test outcome in real time on the db? If so, is it a matter of the application or the backend should provide a sicure call to update test results?
+  
