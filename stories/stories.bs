@@ -6,7 +6,7 @@ The following diagram summarizes the transitions between user states.
 The initial state is N (unknown). All users are
 initially in this state. Users are enrolled in the system in US1.
 
-<img src="fig1.png2"/>
+<img src="fig1.png"/>
 
 : U
 :: unknown
