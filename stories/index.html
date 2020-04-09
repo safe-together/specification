@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="dd1996288074d56f84fcf5f9584c6aa18d65dd49" name="document-revision">
+  <meta content="f99ea75d47ad8f6ed7bb0e5c9030189d19a9d299" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1315,43 +1315,6 @@ figcaption {
 figcaption:not(.no-marker)::before {
     content: "Figure " counter(figure) " ";
 }</style>
-<style>/* style-dfn-panel */
-
-.dfn-panel {
-    position: absolute;
-    z-index: 35;
-    height: auto;
-    width: -webkit-fit-content;
-    width: fit-content;
-    max-width: 300px;
-    max-height: 500px;
-    overflow: auto;
-    padding: 0.5em 0.75em;
-    font: small Helvetica Neue, sans-serif, Droid Sans Fallback;
-    background: #DDDDDD;
-    color: black;
-    border: outset 0.2em;
-}
-.dfn-panel:not(.on) { display: none; }
-.dfn-panel * { margin: 0; padding: 0; text-indent: 0; }
-.dfn-panel > b { display: block; }
-.dfn-panel a { color: black; }
-.dfn-panel a:not(:hover) { text-decoration: none !important; border-bottom: none !important; }
-.dfn-panel > b + b { margin-top: 0.25em; }
-.dfn-panel ul { padding: 0; }
-.dfn-panel li { list-style: inside; }
-.dfn-panel.activated {
-    display: inline-block;
-    position: fixed;
-    left: .5em;
-    bottom: 2em;
-    margin: 0 auto;
-    max-width: calc(100vw - 1.5em - .4em - .5em);
-    max-height: 30vh;
-}
-
-.dfn-paneled { cursor: pointer; }
-</style>
 <style>/* style-md-lists */
 
 /* This is a weird hack for me not yet following the commonmark spec
@@ -1446,8 +1409,18 @@ Parts of this work may be from another specification document.  If so, those par
     <li>
      <a href="#personas"><span class="secno">1</span> <span class="content">Personas</span></a>
      <ol class="toc">
-      <li><a href="#implementers"><span class="secno">1.1</span> <span class="content">Implementers</span></a>
-      <li><a href="#end-users"><span class="secno">1.2</span> <span class="content">End Users</span></a>
+      <li>
+       <a href="#implementers"><span class="secno">1.1</span> <span class="content">Implementers</span></a>
+       <ol class="toc">
+        <li><a href="#app-business-owner"><span class="secno">1.1.1</span> <span class="content">App Business Owner</span></a>
+        <li><a href="#business-man"><span class="secno">1.1.2</span> <span class="content">Business man</span></a>
+        <li><a href="#app-developer"><span class="secno">1.1.3</span> <span class="content">App Developer</span></a>
+       </ol>
+      <li>
+       <a href="#end-user"><span class="secno">1.2</span> <span class="content">End Users</span></a>
+       <ol class="toc">
+        <li><a href="#immune-volunteer"><span class="secno">1.2.1</span> <span class="content"><span>Marco</span> the Immune Volunteer</span></a>
+       </ol>
      </ol>
     <li>
      <a href="#user_stories"><span class="secno">2</span> <span class="content">User stories</span></a>
@@ -1477,19 +1450,17 @@ However, the information in this document is still subject to change.
    <h2 class="heading settled" data-level="1" id="personas"><span class="secno">1. </span><span class="content">Personas</span><a class="self-link" href="#personas"></a></h2>
    <h3 class="heading settled" data-level="1.1" id="implementers"><span class="secno">1.1. </span><span class="content">Implementers</span><a class="self-link" href="#implementers"></a></h3>
    <p class="issue" id="issue-0f9f400a"><a class="self-link" href="#issue-0f9f400a"></a> detail personas</p>
-   <ul>
-    <li data-md>
-     <p><strong>App Business Owner</strong></p>
-    <li data-md>
-     <p><strong>Business man</strong>who designed/built a contacts tracing (?) App or is currently developing one.</p>
-    <li data-md>
-     <p><strong>App Developer</strong>Software developer who will be in charge of integrating our SDK into hisapplication.</p>
-   </ul>
-   <h3 class="heading settled" data-level="1.2" id="end-users"><span class="secno">1.2. </span><span class="content">End Users</span><a class="self-link" href="#end-users"></a></h3>
-   <h4 class="heading settled" data-level="1.2.1" id="marco-the-immune-volunteer"><span class="secno">1.2.1. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="marco">Marco</dfn> the Immune Volunteer</span><a class="self-link" href="#marco-the-immune-volunteer"></a></h4>
+   <h4 class="heading settled" data-level="1.1.1" id="app-business-owner"><span class="secno">1.1.1. </span><span class="content">App Business Owner</span><a class="self-link" href="#app-business-owner"></a></h4>
+   <h4 class="heading settled" data-level="1.1.2" id="business-man"><span class="secno">1.1.2. </span><span class="content">Business man</span><a class="self-link" href="#business-man"></a></h4>
+    who designed/built a contacts tracing (?) App or is currently developing one. 
+   <h4 class="heading settled" data-level="1.1.3" id="app-developer"><span class="secno">1.1.3. </span><span class="content">App Developer</span><a class="self-link" href="#app-developer"></a></h4>
+    Software developer who will be in charge of integrating our SDK into hisapplication. 
+   <h3 class="heading settled" data-level="1.2" id="end-user"><span class="secno">1.2. </span><span class="content">End Users</span><a class="self-link" href="#end-user"></a></h3>
+   <h4 class="heading settled" data-level="1.2.1" id="immune-volunteer"><span class="secno">1.2.1. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="marco">Marco<a class="self-link" href="#marco"></a></dfn> the Immune Volunteer</span><a class="self-link" href="#immune-volunteer"></a></h4>
    <p><strong>Details</strong></p>
    <p>Marco is 34, he’s a proactive with strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered. He is keen to get back to work soon after a long quarantine. In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile elderly. He knows how to use a smartphone, but technology isn’t really his thing.</p>
-   <p><strong>Goals</strong> Marco would like to get the “volunteer” certification so that he could go ahead and start helping his community. He is looking for the fastest and simplest way to achieve this goal.</p>
+   <p><strong>Goals</strong></p>
+   <p>Marco would like to get the “volunteer” certification so that he could go ahead and start helping his community. He is looking for the fastest and simplest way to achieve this goal.</p>
    <p><strong>Values and Fears</strong></p>
    <p>Marco cares about privacy in general and doesn’t want to be tracked or share his data with any large government or corporation<br> He is afraid of:</p>
    <ul>
@@ -1500,83 +1471,11 @@ However, the information in this document is still subject to change.
     <li data-md>
      <p>Not knowing how to use the application properly</p>
    </ul>
-   <h4 class="heading settled" data-level="1.2.2" id="paola-the-pharmacist"><span class="secno">1.2.2. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="paola">Paola</dfn> the Pharmacist</span><a class="self-link" href="#paola-the-pharmacist"></a></h4>
-   <p><strong>Details</strong></p>
-   <p>Paola is 47, living in Milano, she’s been working in her pharmacy with her husband for over 12 years. She’s open minded and relaxed, taking life one step at a time. She hasn’t been tested for SARS-CoV-2, but none of his relatives was exposed so fairly confident of not being infectious.</p>
-   <p><strong>Goals</strong> Paola’s goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business. She’s now one of the few registered professionals that can test the virus antibodies and produce digital certificates for immunity. While she’s happy to contribute to solving the current crisis, her major interests stay with the pharmacy itself.</p>
-   <p><strong>Values and Fears</strong></p>
-   <p>Paola cares about her community, and especially their health. She’s afraid the current situation will be prolonged and that everyone will suffer, if not due to health conditions and access to treatment, due to the economic impact that this crisis will have.</p>
-   <h4 class="heading settled" data-level="1.2.3" id="walter-the-institutional-force"><span class="secno">1.2.3. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="walter">Walter</dfn> the Institutional Force</span><a class="self-link" href="#walter-the-institutional-force"></a></h4>
-   <p><strong>Details</strong> Walter is 51, he works with the Civil Defence forces and he is in charge of coordinating volunteering efforts in a large province with a population of 1.2M people.</p>
-   <p><strong>Goals</strong> Walter wants to leverage all existing resources to mitigate the damages of the current epidemic. Supporting all those in need with essentials and protective equipment. He needs to recruit the most immune volunteers possible to serve the local population.</p>
-   <p><strong>Values and Fears</strong> He fears to unknowingly spread the virus while trying to mitigate its damages. While he values privacy, he needs technological aid to gain visibility and make quick decisions.</p>
-   <h4 class="heading settled" data-level="1.2.4" id="franca-the-fragile-person"><span class="secno">1.2.4. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="franca">Franca</dfn> the Fragile Person</span><a class="self-link" href="#franca-the-fragile-person"></a></h4>
-   <p><strong>Details</strong> Franca is 72, already home-bound due to the government directions to the elderly. She’s getting essentials delivered at home by either supermarkets or volunteers. Living alone, with no family within her city she needs external support to survive.</p>
-   <p><strong>Goals</strong> Survive. She needs to rely on low-tech communication, not having a computer and having only limited experience on how to use her smartphone.</p>
-   <p><strong>Values and Fears</strong> Franca fears to be “left behind” and to have little means to request help/support.</p>
+   <p class="issue" id="issue-8a4184a0"><a class="self-link" href="#issue-8a4184a0"></a> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a></p>
    <h2 class="heading settled" data-level="2" id="user_stories"><span class="secno">2. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="tracingg_stories"><span class="secno">2.1. </span><span class="content">stories index</span><a class="self-link" href="#tracingg_stories"></a></h3>
    <p class="issue" id="issue-25af5c0e"><a class="self-link" href="#issue-25af5c0e"></a> add a table with story type and instances.</p>
-   <h4 class="heading settled" data-level="2.1.1" id="us8-proof-of-immunity"><span class="secno">2.1.1. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us8">US8<a class="self-link" href="#us8"></a></dfn> Proof of Immunity</span><a class="self-link" href="#us8-proof-of-immunity"></a></h4>
-   <p><strong>Conditions</strong></p>
-   <p><strong>Precondition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco">Marco</a>’s state is immune</p>
-   <p><strong>Story</strong> Marco is asked by <a data-link-type="dfn">Andrea</a> to prove that his state is immune. Marco opens the mobile app and authenticates. 
-The app shows a QR code that contains Marco’s COC_ID. <a data-link-type="dfn">Andrea</a> scans the QR code using the operator app. 
-The operator app checks Marco’s state on the backend (including the expiration date if the state is immune),
-and returns it to Andrea.</p>
-   <h4 class="heading settled" data-level="2.1.2" id="us9-marco-volunteers-to-join-cordone-sanitario"><span class="secno">2.1.2. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us9">US9<a class="self-link" href="#us9"></a></dfn> Marco Volunteers to Join Cordone Sanitario</span><a class="self-link" href="#us9-marco-volunteers-to-join-cordone-sanitario"></a></h4>
-    <strong>Precondition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco①">Marco</a>’s state is immune <strong>Story</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco②">Marco</a> goes to Walter at
-protezione civile, and volunteers to join cordone sanitario for
-at-risk individuals. Marco proves that he is immune as described in
-[#us8]. <a data-link-type="dfn" href="#walter" id="ref-for-walter">Walter</a> registers <a data-link-type="dfn" href="#marco" id="ref-for-marco③">Marco</a>’s information, including his COC_ID and
-photo, to protezione civile’s system. Protezione civile’s system
-uses the COC backend to send a notification to <a data-link-type="dfn" href="#marco" id="ref-for-marco④">Marco</a> mobile
-app. <a data-link-type="dfn" href="#marco" id="ref-for-marco⑤">Marco</a> authenticates in front of <a data-link-type="dfn" href="#walter" id="ref-for-walter①">Walter</a>, and the app records
-Marco as a volunteer. 
-   <h4 class="heading settled" data-level="2.1.3" id="us10-marcos-immunity-expires"><span class="secno">2.1.3. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us10">US10<a class="self-link" href="#us10"></a></dfn> Marco’s Immunity Expires</span><a class="self-link" href="#us10-marcos-immunity-expires"></a></h4>
-    <strong>Precondition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco⑥">Marco</a>’s state is immune. <strong>Post-condition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco⑦">Marco</a>’s state is unknown <strong>Story</strong> The mobile app notifies <a data-link-type="dfn" href="#marco" id="ref-for-marco⑧">Marco</a> that his state has expired, and
-that it is now unknown. <a data-link-type="dfn" href="#marco" id="ref-for-marco⑨">Marco</a>)  can now proceed with [#us1]. 
-   <h4 class="heading settled" data-level="2.1.4" id="us11-marco-is-tested-tampon"><span class="secno">2.1.4. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us11">US11<a class="self-link" href="#us11"></a></dfn> Marco is Tested (Tampon)</span><a class="self-link" href="#us11-marco-is-tested-tampon"></a></h4>
-    <strong>Precondition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco①⓪">Marco</a> state is unknown, immune, or negative. <strong>Post-condition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco①①">Marco</a> state is quarantined, negative, or immune <strong>Story</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco①②">Marco</a> feels
-sick, and goes to his doctor Giovanni. Giovanni records information
-about the test using the operator app, and updates <a data-link-type="dfn" href="#marco" id="ref-for-marco①③">Marco</a>’s
-state to unknown - thus possibly revoking <a data-link-type="dfn" href="#marco" id="ref-for-marco①④">Marco</a>)’s immune
-state. After a few days, the test result is back. If the test is
-positive, <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑤">Marco</a>’s state becomes quarantined. If the test is
-negative, <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑥">Marco</a>’s state is set to negative or immune,
-depending on <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑦">Marco</a>’s state at the beginning of US11. 
-   <h4 class="heading settled" data-level="2.1.5" id="us12-marco-visits-franca"><span class="secno">2.1.5. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us12">US12<a class="self-link" href="#us12"></a></dfn> Marco Visits Franca.</span><a class="self-link" href="#us12-marco-visits-franca"></a></h4>
-    <strong>Precondition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑧">Marco</a>’s state is immune <strong>Story</strong> <a data-link-type="dfn" href="#walter" id="ref-for-walter②">Walter</a> sends Marco to <a data-link-type="dfn" href="#franca" id="ref-for-franca">Franca</a>. Marco knocks <a data-link-type="dfn" href="#franca" id="ref-for-franca①">Franca</a>’s door, and
-Franca asks him to identify himself. Marco authenticates with the
-mobile app on his smartphone, which then broadcasts Marco’s
-certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
-devices and read’s Marco’s COC_ID using the mobile app on
-her smartphone. Franca’s mobile app sends the COC_ID to the
-backend, which returns Marco’s photo if his state is immune
-and he was registered by <a data-link-type="dfn" href="#walter" id="ref-for-walter③">Walter</a>. Otherwise, the mobile app tells
-Franca not to open the door. The backend records the interaction
-between Marco and Franca. Franca verifies that Marco matches the
-photo shown on her mobile app, and opens the door. 
-   <h4 class="heading settled" data-level="2.1.6" id="us13-antibodies-test"><span class="secno">2.1.6. </span><span class="content"><dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="us13">US13</dfn> Antibodies test</span><a class="self-link" href="#us13-antibodies-test"></a></h4>
-   <p><strong>Conditions</strong></p>
-   <p><strong>Precondition</strong> Marco’s state is unknown</p>
-   <p><strong>Story</strong> Marco goes to <a data-link-type="dfn" href="#paola" id="ref-for-paola">Paola</a> in order to perform an antibodies test.
-If the test is positive Paola ask for Marco’s tax code and phone number and records them using operator app.
-The operator app notifies the institutional forces.
-(Also has to update db?)</p>
-   <p>Otherwise <a data-link-type="dfn" href="#paola" id="ref-for-paola①">Paola</a> informs <a data-link-type="dfn" href="#marco" id="ref-for-marco①⑨">Marco</a> that she can add the test-certificate on his user app if he wants. (And if he doesn’t want?) <a data-link-type="dfn" href="#marco" id="ref-for-marco②⓪">Marco</a> can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), Paola uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.</p>
-   <p>The information are stored in a db, morover they are sended to COC Backend that forwards the certificate to the user-app.
-The certificate will be stored <a data-link-type="dfn" href="#marco" id="ref-for-marco②①">Marco</a>'s device memory.</p>
-   <h4 class="heading settled" data-level="2.1.7" id="us14-expired-immunity"><span class="secno">2.1.7. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us14">US14<a class="self-link" href="#us14"></a></dfn> expired immunity</span><a class="self-link" href="#us14-expired-immunity"></a></h4>
-   <p><strong>Conditions</strong></p>
-   <p><strong>Precondition</strong> <a data-link-type="dfn" href="#us13" id="ref-for-us13">US13</a> <a data-link-type="dfn" href="#marco" id="ref-for-marco②②">Marco</a> has a test-certificate</p>
-   <p><strong>Story</strong> The test-certificate has an expiring-date. After this date <a data-link-type="dfn" href="#marco" id="ref-for-marco②③">Marco</a> has to go back to <a data-link-type="dfn" href="#paola" id="ref-for-paola②">Paola</a> in order to update his immunity condition.</p>
-   <h4 class="heading settled" data-level="2.1.8" id="us15-marco-is-a-bad-person"><span class="secno">2.1.8. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="us15">US15<a class="self-link" href="#us15"></a></dfn> Marco is a bad person</span><a class="self-link" href="#us15-marco-is-a-bad-person"></a></h4>
-   <p><strong>Conditions</strong></p>
-   <p><strong>Precondition</strong> <a data-link-type="dfn" href="#marco" id="ref-for-marco②④">Marco</a> has a test-certificate</p>
-   <p><strong>Story</strong> When <a data-link-type="dfn" href="#marco" id="ref-for-marco②⑤">Marco</a> goes to <a data-link-type="dfn" href="#franca" id="ref-for-franca②">Franca</a> robs her. Franca reports the crime to Carabinieri. 
-Pietro, the policeman, uses the user-app to read <a data-link-type="dfn" href="#franca" id="ref-for-franca③">Franca</a> COC_ID, then He asks to Stefano, the app owner, <a data-link-type="dfn" href="#marco" id="ref-for-marco②⑥">Marco</a>'s COC_ID stored in <a data-link-type="dfn" href="#franca" id="ref-for-franca④">Franca</a>'s contact logs. Pietro,
- the policeman, asks to <a data-link-type="dfn" href="#walter" id="ref-for-walter④">Walter</a> to revoke <a data-link-type="dfn" href="#marco" id="ref-for-marco②⑦">Marco</a>'s volunteer certificate.</p>
+   <p class="issue" id="issue-8a4184a0①"><a class="self-link" href="#issue-8a4184a0①"></a> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a></p>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1727,18 +1626,7 @@ Pietro, the policeman, uses the user-app to read <a data-link-type="dfn" href="#
   <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
   <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
   <ul class="index">
-   <li><a href="#franca">Franca</a><span>, in §1.2.4</span>
    <li><a href="#marco">Marco</a><span>, in §1.2.1</span>
-   <li><a href="#paola">Paola</a><span>, in §1.2.2</span>
-   <li><a href="#us10">US10</a><span>, in §2.1.3</span>
-   <li><a href="#us11">US11</a><span>, in §2.1.4</span>
-   <li><a href="#us12">US12</a><span>, in §2.1.5</span>
-   <li><a href="#us13">US13</a><span>, in §2.1.6</span>
-   <li><a href="#us14">US14</a><span>, in §2.1.7</span>
-   <li><a href="#us15">US15</a><span>, in §2.1.8</span>
-   <li><a href="#us8">US8</a><span>, in §2.1.1</span>
-   <li><a href="#us9">US9</a><span>, in §2.1.2</span>
-   <li><a href="#walter">Walter</a><span>, in §1.2.3</span>
   </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
@@ -1749,102 +1637,7 @@ Pietro, the policeman, uses the user-app to read <a data-link-type="dfn" href="#
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
    <div class="issue"> detail personas<a href="#issue-0f9f400a"> ↵ </a></div>
+   <div class="issue"> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a><a href="#issue-8a4184a0"> ↵ </a></div>
    <div class="issue"> add a table with story type and instances.<a href="#issue-25af5c0e"> ↵ </a></div>
+   <div class="issue"> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a><a href="#issue-8a4184a0①"> ↵ </a></div>
   </div>
-  <aside class="dfn-panel" data-for="marco">
-   <b><a href="#marco">#marco</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-marco">2.1.1. US8 Proof of Immunity</a>
-    <li><a href="#ref-for-marco①">2.1.2. US9 Marco Volunteers to Join Cordone Sanitario</a> <a href="#ref-for-marco②">(2)</a> <a href="#ref-for-marco③">(3)</a> <a href="#ref-for-marco④">(4)</a> <a href="#ref-for-marco⑤">(5)</a>
-    <li><a href="#ref-for-marco⑥">2.1.3. US10 Marco’s Immunity Expires</a> <a href="#ref-for-marco⑦">(2)</a> <a href="#ref-for-marco⑧">(3)</a> <a href="#ref-for-marco⑨">(4)</a>
-    <li><a href="#ref-for-marco①⓪">2.1.4. US11  Marco is Tested (Tampon)</a> <a href="#ref-for-marco①①">(2)</a> <a href="#ref-for-marco①②">(3)</a> <a href="#ref-for-marco①③">(4)</a> <a href="#ref-for-marco①④">(5)</a> <a href="#ref-for-marco①⑤">(6)</a> <a href="#ref-for-marco①⑥">(7)</a> <a href="#ref-for-marco①⑦">(8)</a>
-    <li><a href="#ref-for-marco①⑧">2.1.5. US12 Marco Visits Franca.</a>
-    <li><a href="#ref-for-marco①⑨">2.1.6. US13 Antibodies test</a> <a href="#ref-for-marco②⓪">(2)</a> <a href="#ref-for-marco②①">(3)</a>
-    <li><a href="#ref-for-marco②②">2.1.7. US14 expired immunity</a> <a href="#ref-for-marco②③">(2)</a>
-    <li><a href="#ref-for-marco②④">2.1.8. US15 Marco is a bad person</a> <a href="#ref-for-marco②⑤">(2)</a> <a href="#ref-for-marco②⑥">(3)</a> <a href="#ref-for-marco②⑦">(4)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="paola">
-   <b><a href="#paola">#paola</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-paola">2.1.6. US13 Antibodies test</a> <a href="#ref-for-paola①">(2)</a>
-    <li><a href="#ref-for-paola②">2.1.7. US14 expired immunity</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="walter">
-   <b><a href="#walter">#walter</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-walter">2.1.2. US9 Marco Volunteers to Join Cordone Sanitario</a> <a href="#ref-for-walter①">(2)</a>
-    <li><a href="#ref-for-walter②">2.1.5. US12 Marco Visits Franca.</a> <a href="#ref-for-walter③">(2)</a>
-    <li><a href="#ref-for-walter④">2.1.8. US15 Marco is a bad person</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="franca">
-   <b><a href="#franca">#franca</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-franca">2.1.5. US12 Marco Visits Franca.</a> <a href="#ref-for-franca①">(2)</a>
-    <li><a href="#ref-for-franca②">2.1.8. US15 Marco is a bad person</a> <a href="#ref-for-franca③">(2)</a> <a href="#ref-for-franca④">(3)</a>
-   </ul>
-  </aside>
-  <aside class="dfn-panel" data-for="us13">
-   <b><a href="#us13">#us13</a></b><b>Referenced in:</b>
-   <ul>
-    <li><a href="#ref-for-us13">2.1.7. US14 expired immunity</a>
-   </ul>
-  </aside>
-<script>/* script-dfn-panel */
-
-document.body.addEventListener("click", function(e) {
-    var queryAll = function(sel) { return [].slice.call(document.querySelectorAll(sel)); }
-    // Find the dfn element or panel, if any, that was clicked on.
-    var el = e.target;
-    var target;
-    var hitALink = false;
-    while(el.parentElement) {
-        if(el.tagName == "A") {
-            // Clicking on a link in a <dfn> shouldn't summon the panel
-            hitALink = true;
-        }
-        if(el.classList.contains("dfn-paneled")) {
-            target = "dfn";
-            break;
-        }
-        if(el.classList.contains("dfn-panel")) {
-            target = "dfn-panel";
-            break;
-        }
-        el = el.parentElement;
-    }
-    if(target != "dfn-panel") {
-        // Turn off any currently "on" or "activated" panels.
-        queryAll(".dfn-panel.on, .dfn-panel.activated").forEach(function(el){
-            el.classList.remove("on");
-            el.classList.remove("activated");
-        });
-    }
-    if(target == "dfn" && !hitALink) {
-        // open the panel
-        var dfnPanel = document.querySelector(".dfn-panel[data-for='" + el.id + "']");
-        if(dfnPanel) {
-            dfnPanel.classList.add("on");
-            var rect = el.getBoundingClientRect();
-            dfnPanel.style.left = window.scrollX + rect.right + 5 + "px";
-            dfnPanel.style.top = window.scrollY + rect.top + "px";
-            var panelRect = dfnPanel.getBoundingClientRect();
-            var panelWidth = panelRect.right - panelRect.left;
-            if(panelRect.right > document.body.scrollWidth && (rect.left - (panelWidth + 5)) > 0) {
-                // Reposition, because the panel is overflowing
-                dfnPanel.style.left = window.scrollX + rect.left - (panelWidth + 5) + "px";
-            }
-        } else {
-            console.log("Couldn't find .dfn-panel[data-for='" + el.id + "']");
-        }
-    } else if(target == "dfn-panel") {
-        // Switch it to "activated" state, which pins it.
-        el.classList.add("activated");
-        el.style.left = null;
-        el.style.top = null;
-    }
-
-});
-</script>

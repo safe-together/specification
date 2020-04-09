@@ -6,7 +6,7 @@ Status: DREAM
 Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/stories/
 Markup Shorthands: markdown yes
-Max ToC Depth: 2
+Max ToC Depth: 3
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
   This document is a description about personas and user stories.

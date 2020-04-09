@@ -83,8 +83,8 @@ Issue: Write Introduction section to  specification (explain ortogonality).
 The SafeTogether Specification
 describes architecture and protocols for the [[Project]] and is composed by set of related documents:
 
-- [[!Process]]: that contains a description about how to change the specifications in the SafeTogheter Ecosystem
-- [[!Stories]]: that contains a description of personas and use cases referred in various specifications
+- [[!Process]]: that describes  how to change the SafeTogheter Specifications
+- [[!Stories]]: that describes personas and user stories inspiring the SafeTogheter
 
 
 <pre class=biblio>
