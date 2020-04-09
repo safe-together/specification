@@ -10,8 +10,7 @@ Max ToC Depth: 2
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
   This document connects a set of specifications that, together,
-  provide applications with secure and permissioned access to safetogether applications
-  in an interoperable way.
+  provide ain interoperability framework for SafeTogether applications.
 </pre>
 
 ## Status of This Document ## {#status}
@@ -26,20 +25,97 @@ any feedback, comments, or questions you might have.
 
 # Introduction # {#intro}
 
-Issue: Write Introduction section to SafeTogether project and specification.
+Issue: translate to english following section.
+
+SafeTogether è un complesso di sistemi software e di servizi di supporto per fornire agli operatori
+incaricati un insieme di strumenti per contribuire ad affrontare la fase 2 dell’emergenza epidemica
+legata alla malattia Covid-19. 
+
+Essi sono realizzati da un gruppo internazionale di volontari, suddivisi in team tematici ed in coordinamento
+tra loro. Alcune aziende ed associazioni supportano pro bono l’operato del gruppo.
+
+SafeTogether prevede la realizzazione di un insieme di protocolli, specifiche e applicazioni rilasciate con 
+licenza Open Source che forniscano una *reference implementation* della SafeTogether Specification. 
+
+Sono attualmente parte di SafeTogether:
+
+1. **Autocertificazione spostamenti**: consente di prevedere i luoghi a rischio affollamento,
+    segnalarli alle autorità, disincentivarne l’afflusso,
+    consentendo alle persone di spostarsi in maggiore sicurezza. Digitalizzare la procedura per il cittadino e
+    velocizzare drasticamente il controllo da parte delle forze dell’ordine.
+    Viene proposto anche un articolo di legge per consentire all’attestazione presentata via QR code di 
+    essere assimilato ad un documento elettronico.
+1. **Shielding** (Cordone Sanitario) : per la schermatura delle categorie ad alto rischio, il sistema supporta
+    la gestione di un "buffer" con persone immuni, secondo la proposta del Weizmann Institute. 
+    Gli operatori sanitari sono l'unica autorità che può registrare e associare sullo smartphone un certificato 
+    digitale (la cui catena di trust è verificabile internazionalmente) che attesta l’immunità. 
+    Pensata per il personale di supporto alle categorie ad alto rischio, consente di verificare direttamente veridicità 
+    e validità della certificazione, evitando il rischio di truffe.
+1. **Autocertificazione test**: consente ad una persona di documentare lo svolgimento di un proprio test sierologico 
+    e di consentirgli di attestarne l’esito a terzi, per contesti in cui sia opportuno un livello di certezza inferiore 
+    di quello richiesto dal cordone sanitario.
+1. [[Tracing]]: le informazioni di contatto/esposizione degli utenti de-identificate vengono raccolte in modo efficiente
+    e completamente anonimo. Consente alle autorità mediche e di gestione delle emergenze di intraprendere le azioni 
+    corrette per allertare le persone che hanno avuto i contatti più stretti con un paziente risultato infetto. 
+    Il sistema non tratta informazioni personali, sfruttando esclusivamente dati anonimi scambiati dal protocollo 
+    di handshaking Bluetooth LE. 
+1. **Quarantena**: per l'applicazione della quarantena, il problema di garantire la presenza fisica della persona specifica
+    in un determinato luogo viene affrontato in un insieme di modi tra cui la verifica telefonica da parte di un call center e, 
+    grazie ad una tecnologia concessa in uso gratuito dal titolare,  tramite un riconoscimento biometrico eseguito localmente 
+    sullo smartphone,che non prevede la trasmissione di nessuna informazione di identificazione personale.
+1. **Gestione infrastrutture**: supporto specialistico da parte di aziende specializzate nelle fasi di implementazione,
+    testing e roll-out dei sistemi precedenti, affrontando i temi relativi agli aspetti di sicurezza e connessi alla 
+    scalabilità delle infrastrutture. Gestione della manutenzione evolutiva degli applicativi.
+1. **User interaction e Process Management**: supporto operativo nella gestione del flusso di una transazione dell’utente 
+    dall'inizio alla fine, accompagnando i tempi ed il flusso effettivo delle attività, 
+    nonché supportando gli utenti per soddisfare le loro aspettative (o gli standard di prestazione) associati a ciascuno 
+    dei punti di contatto previsti.
+
+Le applicazioni sono sviluppate da gruppi indipendenti, alcune (e.g. [[Tracing]]) sono pronte per essere utilizzate, 
+altre sono in corso di sviluppo.
 
 
-The <dfn export>SafeTogether Specification</dfn> 
-describes architecture and protocols for the [SafeTogether Project](https://safetogether.com).
-SafeTogether Specification is composed by set of related documents:
+# Document organization # {#organization}
 
-<table border = 1>
-  <tr>
-    <th>[process](process/)</th>
-    <td>a description about how to change the specifications in the Safetogheter ecosystem</td>
-  </tr>
-  <tr>
-    <th>[stories](stories/)</th>
-    <td>contains a description of personas and use cases referred in the Safetogheter ecosystem</td>
-  </tr>
-</table>
+Issue: Write Introduction section to  specification (explain ortogonality).
+
+
+The SafeTogether Specification
+describes architecture and protocols for the [[Project]] and is composed by set of related documents:
+
+- [[!Process]]: that contains a description about how to change the specifications in the SafeTogheter Ecosystem
+- [[!Stories]]: that contains a description of personas and use cases referred in various specifications
+
+
+<pre class=biblio>
+{
+	"tracing": {
+		"href": "https://coronavirus-outbreak-control.github.io/web/",
+		"title": "CovidApp - Covid Community Alert",
+		"authors": [
+	      "coronavirus Outbreak Control Team"
+	    ]
+	},
+	"process": {
+		"href": "https://safe-together.github.io/specification/process",
+		"title": "The SafeTogether Process",
+		"authors": [
+	      " SafeTogheter Process Panel"
+	    ]
+	},
+	"stories": {
+		"href": "https://safe-together.github.io/specification/stories",
+		"title": "Personas and User Stories",
+		"authors": [
+	      " SafeTogheter Stories Panel"
+	    ]
+	},
+	"project": {
+		"href": "https://safetogether.com",
+		"title": "The SafeTogether web site",
+		"authors": [
+	      " SafeTogheter Web Panel"
+	    ]
+	}
+}
+</pre>

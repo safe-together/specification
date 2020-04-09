@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="027187b089dac360324deff782eb522cb1467e2e" name="document-revision">
+  <meta content="dd1996288074d56f84fcf5f9584c6aa18d65dd49" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">The SafeTogether Ecosystem</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">A Collection of Interesting Ideas, <time class="dt-updated" datetime="2020-04-08">8 April 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">A Collection of Interesting Ideas, <time class="dt-updated" datetime="2020-04-09">9 April 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 8 April 2020,
+In addition, as of 9 April 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1400,24 +1400,20 @@ Parts of this work may be from another specification document.  If so, those par
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
    <p>This document connects a set of specifications that, together,
 
-  provide applications with secure and permissioned access to safetogether applications
-  in an interoperable way.</p>
+  provide ain interoperability framework for SafeTogether applications.</p>
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
+    <li><a href="#organization"><span class="secno">2</span> <span class="content">Document organization</span></a>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
-    <li>
-     <a href="#index"><span class="secno"></span> <span class="content">Index</span></a>
-     <ol class="toc">
-      <li><a href="#index-defined-here"><span class="secno"></span> <span class="content">Terms defined by this specification</span></a>
-     </ol>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
      <ol class="toc">
       <li><a href="#normative"><span class="secno"></span> <span class="content">Normative References</span></a>
+      <li><a href="#informative"><span class="secno"></span> <span class="content">Informative References</span></a>
      </ol>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
@@ -1429,18 +1425,67 @@ following the <a href="process/">SafeTogether Process</a>.
 However, the information in this document is still subject to change. 
    <p>You are invited to <a href="https://github.com/safe-together/specification/issues">contribute</a> any feedback, comments, or questions you might have.</p>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
-   <p class="issue" id="issue-c508c799"><a class="self-link" href="#issue-c508c799"></a> Write Introduction section to SafeTogether project and specification.</p>
-   <p>The <dfn data-dfn-type="dfn" data-export id="safetogether-specification">SafeTogether Specification<a class="self-link" href="#safetogether-specification"></a></dfn> describes architecture and protocols for the <a href="https://safetogether.com">SafeTogether Project</a>.
-SafeTogether Specification is composed by set of related documents:</p>
-   <table border="1">
-    <tbody>
-     <tr>
-      <th><a href="process/">process</a>
-      <td>a description about how to change the specifications in the Safetogheter ecosystem
-     <tr>
-      <th><a href="stories/">stories</a>
-      <td>contains a description of personas and use cases referred in the Safetogheter ecosystem
-   </table>
+   <p class="issue" id="issue-e24eebe3"><a class="self-link" href="#issue-e24eebe3"></a> translate to english following section.</p>
+   <p>SafeTogether è un complesso di sistemi software e di servizi di supporto per fornire agli operatori
+incaricati un insieme di strumenti per contribuire ad affrontare la fase 2 dell’emergenza epidemica
+legata alla malattia Covid-19.</p>
+   <p>Essi sono realizzati da un gruppo internazionale di volontari, suddivisi in team tematici ed in coordinamento
+tra loro. Alcune aziende ed associazioni supportano pro bono l’operato del gruppo.</p>
+   <p>SafeTogether prevede la realizzazione di un insieme di protocolli, specifiche e applicazioni rilasciate con
+licenza Open Source che forniscano una <em>reference implementation</em> della SafeTogether Specification.</p>
+   <p>Sono attualmente parte di SafeTogether:</p>
+   <ol>
+    <li data-md>
+     <p><strong>Autocertificazione spostamenti</strong>: consente di prevedere i luoghi a rischio affollamento,
+segnalarli alle autorità, disincentivarne l’afflusso,
+consentendo alle persone di spostarsi in maggiore sicurezza. Digitalizzare la procedura per il cittadino e
+velocizzare drasticamente il controllo da parte delle forze dell’ordine.
+Viene proposto anche un articolo di legge per consentire all’attestazione presentata via QR code di 
+essere assimilato ad un documento elettronico.</p>
+    <li data-md>
+     <p><strong>Shielding</strong> (Cordone Sanitario) : per la schermatura delle categorie ad alto rischio, il sistema supporta
+la gestione di un "buffer" con persone immuni, secondo la proposta del Weizmann Institute. 
+Gli operatori sanitari sono l’unica autorità che può registrare e associare sullo smartphone un certificato 
+digitale (la cui catena di trust è verificabile internazionalmente) che attesta l’immunità. 
+Pensata per il personale di supporto alle categorie ad alto rischio, consente di verificare direttamente veridicità 
+e validità della certificazione, evitando il rischio di truffe.</p>
+    <li data-md>
+     <p><strong>Autocertificazione test</strong>: consente ad una persona di documentare lo svolgimento di un proprio test sierologico
+e di consentirgli di attestarne l’esito a terzi, per contesti in cui sia opportuno un livello di certezza inferiore 
+di quello richiesto dal cordone sanitario.</p>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>: le informazioni di contatto/esposizione degli utenti de-identificate vengono raccolte in modo efficiente
+e completamente anonimo. Consente alle autorità mediche e di gestione delle emergenze di intraprendere le azioni 
+corrette per allertare le persone che hanno avuto i contatti più stretti con un paziente risultato infetto. 
+Il sistema non tratta informazioni personali, sfruttando esclusivamente dati anonimi scambiati dal protocollo 
+di handshaking Bluetooth LE.</p>
+    <li data-md>
+     <p><strong>Quarantena</strong>: per l’applicazione della quarantena, il problema di garantire la presenza fisica della persona specifica
+in un determinato luogo viene affrontato in un insieme di modi tra cui la verifica telefonica da parte di un call center e, 
+grazie ad una tecnologia concessa in uso gratuito dal titolare,  tramite un riconoscimento biometrico eseguito localmente 
+sullo smartphone,che non prevede la trasmissione di nessuna informazione di identificazione personale.</p>
+    <li data-md>
+     <p><strong>Gestione infrastrutture</strong>: supporto specialistico da parte di aziende specializzate nelle fasi di implementazione,
+testing e roll-out dei sistemi precedenti, affrontando i temi relativi agli aspetti di sicurezza e connessi alla 
+scalabilità delle infrastrutture. Gestione della manutenzione evolutiva degli applicativi.</p>
+    <li data-md>
+     <p><strong>User interaction e Process Management</strong>: supporto operativo nella gestione del flusso di una transazione dell’utente
+dall’inizio alla fine, accompagnando i tempi ed il flusso effettivo delle attività, 
+nonché supportando gli utenti per soddisfare le loro aspettative (o gli standard di prestazione) associati a ciascuno 
+dei punti di contatto previsti.</p>
+   </ol>
+   <p>Le applicazioni sono sviluppate da gruppi indipendenti, alcune (e.g. <a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>) sono pronte per essere utilizzate,
+altre sono in corso di sviluppo.</p>
+   <h2 class="heading settled" data-level="2" id="organization"><span class="secno">2. </span><span class="content">Document organization</span><a class="self-link" href="#organization"></a></h2>
+   <p class="issue" id="issue-b0a63dd3"><a class="self-link" href="#issue-b0a63dd3"></a> Write Introduction section to  specification (explain ortogonality).</p>
+   <p>The SafeTogether Specification
+describes architecture and protocols for the <a data-link-type="biblio" href="#biblio-project">[Project]</a> and is composed by set of related documents:</p>
+   <ul>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-process">[Process]</a>: that contains a description about how to change the specifications in the SafeTogheter Ecosystem</p>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-stories">[Stories]</a>: that contains a description of personas and use cases referred in various specifications</p>
+   </ul>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1588,18 +1633,25 @@ SafeTogether Specification is composed by set of related documents:</p>
 
 })();
 </script>
-  <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
-  <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
-  <ul class="index">
-   <li><a href="#safetogether-specification">SafeTogether Specification</a><span>, in §1</span>
-  </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-process">[Process]
+   <dd> SafeTogheter Process Panel. <a href="https://safe-together.github.io/specification/process">The SafeTogether Process</a>. URL: <a href="https://safe-together.github.io/specification/process">https://safe-together.github.io/specification/process</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
+   <dt id="biblio-stories">[Stories]
+   <dd> SafeTogheter Stories Panel. <a href="https://safe-together.github.io/specification/stories">Personas and User Stories</a>. URL: <a href="https://safe-together.github.io/specification/stories">https://safe-together.github.io/specification/stories</a>
+  </dl>
+  <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
+  <dl>
+   <dt id="biblio-project">[Project]
+   <dd> SafeTogheter Web Panel. <a href="https://safetogether.com">The SafeTogether web site</a>. URL: <a href="https://safetogether.com">https://safetogether.com</a>
+   <dt id="biblio-tracing">[Tracing]
+   <dd>coronavirus Outbreak Control Team. <a href="https://coronavirus-outbreak-control.github.io/web/">CovidApp - Covid Community Alert</a>. URL: <a href="https://coronavirus-outbreak-control.github.io/web/">https://coronavirus-outbreak-control.github.io/web/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"> Write Introduction section to SafeTogether project and specification.<a href="#issue-c508c799"> ↵ </a></div>
+   <div class="issue"> translate to english following section.<a href="#issue-e24eebe3"> ↵ </a></div>
+   <div class="issue"> Write Introduction section to  specification (explain ortogonality).<a href="#issue-b0a63dd3"> ↵ </a></div>
   </div>
