@@ -25,14 +25,13 @@ any feedback, comments, or questions you might have.
 
 # Introduction # {#intro}
 
-SafeTogether is a toolbox  to take 
-on the Covid-19 pandemic emergency second stage.
+SafeTogether is a toolbox to take on the second stage of Covid-19 pandemic emergency.
 
-An international volunteer group creates it; teams work in coordination with each other.
+An international volunteer group created it; teams work in coordination with each other.
 Some companies and associations offer pro bono support. 
 
-SafeTogether involves the creation of a protocols, architectures and specifications together with
-*reference implementation* for applications and support services
+SafeTogether involves the creation of protocols, architectures and specifications together with
+*reference implementation* for applications and support services.
 
 It's currently part of SafeTogether:
 
@@ -65,7 +64,7 @@ It's currently part of SafeTogether:
     following activity effective flow and time, and also user support to satisfy his expectations (or presentation standards)
 	associated with every planned contact point.
 
-Independent teams work in parallel to develop applications, some applications (e.g. [Tracing]) are  ready to use, 
+Independent teams work in parallel to develop applications, some applications (e.g. [[Tracing]]) are  ready to use, 
 some others others are in an early development stage.
 
 
