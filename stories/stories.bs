@@ -1,8 +1,228 @@
-User stories {#user_stories}
-=====================
+# User State # {#use-state}
 
-## TBD ## {#US1}
-tbd
+Issue: need a short intro to state transition
+
+The following diagram summarizes the transitions between user states. 
+The initial state is N (unknown). All users are
+initially in this state. Users are enrolled in the system in US1.
+
+<img src="fig1.png2"/>
+
+: U
+:: unknown
+: N
+:: negative
+: Q
+:: quarantined
+: S
+:: suspended
+: I
+:: immune
+
+
+
+# User stories #{#user_stories}
+
+
+## US01: Marco is Tested (Antibody Test) ## {#US01}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Giovanni]]
+
+**Preconditions:**
+
+Marco’s state is unknown or negative
+
+**Postcondition:**
+
+Marco’s state is quarantined, negative, or immune 
+
+**Story:**
+
+Marco visits Giovanni, who runs an antibody test on Marco. Giovanni
+asks Marco to install the *Mobile App*. The *Mobile App*
+requests Marco to show his face, which is enrolled in the system. The
+app also creates a unique COC_ID, which is associated with Marco’s
+information. As a result, the app presents a QR code on the screen.
+Giovanni starts the operator app, scans the QR code, and
+enters Marco’s codice fiscale and phone number in the operator
+app. At this point, the *Mobile App* shows a single-button
+interface that, when pressed, records the current location and sets
+it as a quarantine location. Giovanni instructs Marco to go home
+immediately, and to press the button on the *Mobile App* once he
+arrives. After a predetermined amount of time (e.g., one hour) the
+*Mobile App* reminds Marco to press the button. Once at home
+Marco opens the *Mobile App* and presses the button. The mobile
+app shows a confirmation prompt, and then authenticates Marco
+using his face. This saves the current location in the app, and
+completes the enrollment process.
+
+After some time, the result of the test is back. Giovanni enters the
+result in the operator app, which also notifies Marco’s
+*Mobile App*, as well as the authorities.
+
+- if the test result is positive, the app enters in quarantine mode (see US2)
+- if the test result is negative or immune, Marco receives a certificate
+	that indicates that he is not sick. Marco is notified via the mobile
+	app.
+
+
+## US02 - Marco Confirms His Location -- Enforce Quarantine ## {#US02}
+
+**Actors:**
+
+- [[#Marco]]
+
+
+**Preconditions:**
+
+Marco’s state is quarantined.
+
+**Story:**
+
+Marco receives a notification on the *Mobile App* that requires
+him to confirm his location. He taps on the notification, which
+brings him into the *Mobile App*. The *Mobile App* asks him
+to authenticate using his face, and checks that his current location
+is close to the location that was selected to complete the
+enrollment. The result of this check is reported to the authorities.
+If Marco does not respond to the notification in a timely manner
+(e.g., within 3 minutes), the *Mobile App* notifies him again.
+After a predetermined number of unanswered notifications (say, 2),
+the *Mobile App* notifies the authorities.
+The *Mobile App*
+periodically polls Marco’s phone location. If the phone is outside
+of the designated quarantine area, it notifies Marco as well as the
+authorities.
+
+
+## US03 -  Marco Goes to the Hospital -- Suspend Quarantine ## {#US03}
+
+**Actors:**
+
+- [[#Marco]]
+
+
+**Preconditions:**
+
+Marco’s state is quarantined.
+
+**Postconditions:**
+
+Marco’s state is suspended.
+
+**Story:**
+
+Marco feels sick and calls an ambulance. He is taken to the hospital.
+At the hospital, Maria enters Marco’s codice fiscale into the
+system, marking his state on the backend as suspended. This
+dismisses any pending notification received by Marco’s Mobile App
+in the last 1-2 hours, and suspends the quarantine until further
+notice.
+
+
+## US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine ## {#US04}
+
+**Actors:**
+
+- [[#Marco]]
+
+
+**Preconditions:**
+
+Marco’s state is suspended
+
+**Postconditions:**
+
+Marco’s state is quarantined.
+
+**Story:**
+
+Marco is still sick, but he no longer needs hospital care. Maria
+enters Marco’s codice fiscale into the system, marking his state on
+the backend as quarantined again. At this point, Marco has a
+predetermined amount of time (say, 2 hours) to go home. After the
+predetermined amount of time, Marco receives a notification, which
+asks him to authenticate as described in [[#US02]].
+
+
+
+## US05 - Marco Recovers while at the Hospital -- Immune ## {#US05}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Maria]]
+
+
+**Preconditions:**
+
+Marco’s state is suspended
+
+**Postconditions:**
+
+Marco’s state is immune.
+
+**Story:**
+
+Marco is now healthy. Maria enters Marco’s codice fiscale into the
+system, and marks his state in the backend as immune. The
+mobile app no longer receives notifications and no longer
+checks Marco’s location.
+
+
+
+
+
+## US06 - Marco Dies while at the Hospital -- Immune ## {#US06}
+
+**Actors:**
+
+- [[#Marco]]
+
+
+**Preconditions:**
+
+Marco’s state is suspended
+
+**Postconditions:**
+
+Marco’s state is immune.
+
+**Story:**
+
+Marco dies at the hospital. Maria enters Marco’s codice fiscale
+into the system, and marks his state in the backend as immune.
+The mobile app no longer receives notifications and no longer
+checks Marco’s location.
+
+
+
+## US07 - Marco is Removed from Quarantine -- Recovery ## {#US07}
+
+**Actors:**
+
+- [[#Marco]]
+
+
+**Preconditions:**
+
+Marco’s state is quarantined
+
+**Postconditions:**
+
+Marco’s state is immune
+
+**Story:**
+
+Issue: who certificates that Marco is Immune?
+
+Marco’s quarantine is over, and he has recovered. The app notifies
+Marco that is state is now immune.
+
+
 
 ## US08 - Proof of Immunity ## {#US08}
 
@@ -18,7 +238,7 @@ Marco’s state is immune
 **Story:**
 
 Marco is asked by
-Walter to prove that his state is immune. Marco opens the mobile app and authenticates. The app shows a QR code that contains Marco’s COC_ID. Walter scans the QR code using the operator app. The operator app checks Marco’s state on the backend (including the expiration date if the state is immune), and returns it to Walter.
+Walter to prove that his state is immune. Marco opens the *Mobile App* and authenticates. The app shows a QR code that contains Marco’s COC_ID. Walter scans the QR code using the operator app. The operator app checks Marco’s state on the backend (including the expiration date if the state is immune), and returns it to Walter.
 
 
 ## US09 - Marco Volunteers to Join Shielding Program ## {#US09}
@@ -62,8 +282,8 @@ Marco’s state is unknown
  
 **Story:**
 
-The mobile app notifies Marco that his state has expired, and
-that it is now unknown. Marco can now proceed with [[#US1]].
+The *Mobile App* notifies Marco that his state has expired, and
+that it is now unknown. Marco can now proceed with [[#US01]].
 
 
 
@@ -115,15 +335,15 @@ Issue: is Bluethoot really usefull? What happens if Franca lives in a big buildi
 
 Walter sends Marco to Franca. Marco knocks Franca’s door, and
 Franca asks him to identify himself. Marco authenticates with the
-mobile app on his smartphone, which then broadcasts Marco’s
+*Mobile App* on his smartphone, which then broadcasts Marco’s
 certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
-devices and read’s Marco’s COC_ID using the mobile app on
-her smartphone. Franca’s mobile app sends the COC_ID to the
+devices and read’s Marco’s COC_ID using the *Mobile App* on
+her smartphone. Franca’s *Mobile App* sends the COC_ID to the
 backend, which returns Marco’s photo if his state is immune
-and he was registered by Walter. Otherwise, the mobile app tells
+and he was registered by Walter. Otherwise, the *Mobile App* tells
 Franca not to open the door. The backend records the interaction
 between Marco and Franca. Franca verifies that Marco matches the
-photo shown on her mobile app, and opens the door.
+photo shown on her *Mobile App*, and opens the door.
 
 
 
