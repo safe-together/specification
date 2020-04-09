@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="f99ea75d47ad8f6ed7bb0e5c9030189d19a9d299" name="document-revision">
+  <meta content="6c4029c41127a9cc60db3c38a52aec30013cf374" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1412,27 +1412,53 @@ Parts of this work may be from another specification document.  If so, those par
       <li>
        <a href="#implementers"><span class="secno">1.1</span> <span class="content">Implementers</span></a>
        <ol class="toc">
-        <li><a href="#app-business-owner"><span class="secno">1.1.1</span> <span class="content">App Business Owner</span></a>
-        <li><a href="#business-man"><span class="secno">1.1.2</span> <span class="content">Business man</span></a>
-        <li><a href="#app-developer"><span class="secno">1.1.3</span> <span class="content">App Developer</span></a>
+        <li><a href="#Albert"><span class="secno">1.1.1</span> <span class="content">Albert the App Business Owner</span></a>
+        <li><a href="#Alice"><span class="secno">1.1.2</span> <span class="content">Alice the App Product Owner</span></a>
+        <li><a href="#Bob"><span class="secno">1.1.3</span> <span class="content">Bob the App Developer</span></a>
        </ol>
       <li>
-       <a href="#end-user"><span class="secno">1.2</span> <span class="content">End Users</span></a>
+       <a href="#users"><span class="secno">1.2</span> <span class="content">Users</span></a>
        <ol class="toc">
-        <li><a href="#immune-volunteer"><span class="secno">1.2.1</span> <span class="content"><span>Marco</span> the Immune Volunteer</span></a>
+        <li><a href="#Marco"><span class="secno">1.2.1</span> <span class="content">Marco the Immune Volunteer</span></a>
+        <li><a href="#Paola"><span class="secno">1.2.2</span> <span class="content">Paola the Pharmacist</span></a>
+        <li><a href="#Walter"><span class="secno">1.2.3</span> <span class="content">Walter the Institutional Force</span></a>
+        <li><a href="#Franca"><span class="secno">1.2.4</span> <span class="content">Franca the Fragile Person</span></a>
+        <li><a href="#Andrea"><span class="secno">1.2.5</span> <span class="content">Andrea the lorry driver</span></a>
+        <li><a href="#Natasha"><span class="secno">1.2.6</span> <span class="content">Natasha CEO of Lorry for women.</span></a>
        </ol>
      </ol>
     <li>
      <a href="#user_stories"><span class="secno">2</span> <span class="content">User stories</span></a>
      <ol class="toc">
-      <li><a href="#tracingg_stories"><span class="secno">2.1</span> <span class="content">stories index</span></a>
+      <li><a href="#US1"><span class="secno">2.1</span> <span class="content">TBD</span></a>
+      <li><a href="#US08"><span class="secno">2.2</span> <span class="content">US08 - Proof of Immunity</span></a>
+      <li><a href="#US09"><span class="secno">2.3</span> <span class="content">US09 - Marco Volunteers to Join Shielding Program</span></a>
+      <li><a href="#US10"><span class="secno">2.4</span> <span class="content">US10 - Marco’s Immunity Expires</span></a>
+      <li><a href="#US11"><span class="secno">2.5</span> <span class="content">US11 -  Marco is Tested (Tampon).</span></a>
+      <li><a href="#US12"><span class="secno">2.6</span> <span class="content">US12 - Marco Visits Franca.</span></a>
+      <li><a href="#US13"><span class="secno">2.7</span> <span class="content">US13 - Antibodies test</span></a>
+      <li><a href="#US14"><span class="secno">2.8</span> <span class="content">US14 - expired immunity</span></a>
+      <li><a href="#US15"><span class="secno">2.9</span> <span class="content">US15 - Marco is a bad person</span></a>
+      <li><a href="#US16"><span class="secno">2.10</span> <span class="content">US16 - Natasha encourages her employees to take the test</span></a>
+      <li><a href="#US17"><span class="secno">2.11</span> <span class="content">US17 - Andrea corsses the italian border</span></a>
+     </ol>
+    <li>
+     <a href="#user_needs"><span class="secno">3</span> <span class="content">User needs</span></a>
+     <ol class="toc">
+      <li><a href="#Marco-needs"><span class="secno">3.1</span> <span class="content">Marco – Volunteer</span></a>
+      <li><a href="#Paola-needs"><span class="secno">3.2</span> <span class="content">Paola – Pharmacist</span></a>
+      <li><a href="#Walter-needs"><span class="secno">3.3</span> <span class="content">Walter – Institutional Forces</span></a>
+      <li><a href="#Franca-needs"><span class="secno">3.4</span> <span class="content">Franca – Fragile Population</span></a>
+     </ol>
+    <li>
+     <a href="#app-functionalities"><span class="secno">4</span> <span class="content">App functionalities</span></a>
+     <ol class="toc">
+      <li><a href="#user-app"><span class="secno">4.1</span> <span class="content">User App</span></a>
+      <li><a href="#volunteer-app"><span class="secno">4.2</span> <span class="content">Operator App (Volunteer)</span></a>
+      <li><a href="#doctor-app"><span class="secno">4.3</span> <span class="content">Operator App ( Sanitary Personnel )</span></a>
+      <li><a href="#certificate-requirements"><span class="secno">4.4</span> <span class="content">Certificate Requirements</span></a>
      </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
-    <li>
-     <a href="#index"><span class="secno"></span> <span class="content">Index</span></a>
-     <ol class="toc">
-      <li><a href="#index-defined-here"><span class="secno"></span> <span class="content">Terms defined by this specification</span></a>
-     </ol>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
      <ol class="toc">
@@ -1448,20 +1474,119 @@ following the <a href="../process/">safetogether process</a>.
 However, the information in this document is still subject to change. 
    <p>You are invited to <a href="https://github.com/safe-together/specification/issues">contribute</a> any feedback, comments, or questions you might have.</p>
    <h2 class="heading settled" data-level="1" id="personas"><span class="secno">1. </span><span class="content">Personas</span><a class="self-link" href="#personas"></a></h2>
+   <p><strong>Premise</strong>: there is a backend (<em>COC</em>) that menages comunication with apps.
+Apps are identified by an ID (<em>COC_ID</em>) 
+There is another backend (SBE) that menages staytogether-shielding system.</p>
+   <p></p>
    <h3 class="heading settled" data-level="1.1" id="implementers"><span class="secno">1.1. </span><span class="content">Implementers</span><a class="self-link" href="#implementers"></a></h3>
-   <p class="issue" id="issue-0f9f400a"><a class="self-link" href="#issue-0f9f400a"></a> detail personas</p>
-   <h4 class="heading settled" data-level="1.1.1" id="app-business-owner"><span class="secno">1.1.1. </span><span class="content">App Business Owner</span><a class="self-link" href="#app-business-owner"></a></h4>
-   <h4 class="heading settled" data-level="1.1.2" id="business-man"><span class="secno">1.1.2. </span><span class="content">Business man</span><a class="self-link" href="#business-man"></a></h4>
-    who designed/built a contacts tracing (?) App or is currently developing one. 
-   <h4 class="heading settled" data-level="1.1.3" id="app-developer"><span class="secno">1.1.3. </span><span class="content">App Developer</span><a class="self-link" href="#app-developer"></a></h4>
-    Software developer who will be in charge of integrating our SDK into hisapplication. 
-   <h3 class="heading settled" data-level="1.2" id="end-user"><span class="secno">1.2. </span><span class="content">End Users</span><a class="self-link" href="#end-user"></a></h3>
-   <h4 class="heading settled" data-level="1.2.1" id="immune-volunteer"><span class="secno">1.2.1. </span><span class="content"><dfn data-dfn-type="dfn" data-export id="marco">Marco<a class="self-link" href="#marco"></a></dfn> the Immune Volunteer</span><a class="self-link" href="#immune-volunteer"></a></h4>
+   <h4 class="heading settled" data-level="1.1.1" id="Albert"><span class="secno">1.1.1. </span><span class="content">Albert the App Business Owner</span><a class="self-link" href="#Albert"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Albert is 48, he’s the owner of a successful small software company. He has developed websites,
+web applications and mobile applications for customers all over Europe. He’s been very successfull 
+on the market and his company is considered a leader for mobile development. 
+His company’s operations haven’t been disrupted by SARS-CoV-2 but is worried that the economic 
+downturn following the epidemic could severly impact his business. He believes that the usage of tracing 
+technology could help the socity  to recover more rapidly and keep it working while waiting for 
+more definitive solutions to the disease.</p>
+   <p><strong>Goals</strong></p>
+   <p>Albert would like to create an application to help with contact tracing and wants to use his company experience
+in building mobile apps to</p>
+   <p><strong>Values and Fears</strong></p>
+   <p>Albert cares about:</p>
+   <ul>
+    <li data-md>
+     <p>helping the local community through using his company know how</p>
+    <li data-md>
+     <p>consolidating his company position as a leader in his market</p>
+   </ul>
+   <p>He is afraid of:</p>
+   <ul>
+    <li data-md>
+     <p>Being cut-out from the upcoming platform</p>
+    <li data-md>
+     <p>Having a solution that is not privacy compliant because of the interoperability platform</p>
+    <li data-md>
+     <p>Having an application that has security issues</p>
+    <li data-md>
+     <p>Being unable to anticipate the shifts in the digital and mobile apps market</p>
+    <li data-md>
+     <p>To reach an insufficent population coverage with his app to make the contact tracing effective</p>
+    <li data-md>
+     <p>Loosing his distintive company know how</p>
+   </ul>
+   <h4 class="heading settled" data-level="1.1.2" id="Alice"><span class="secno">1.1.2. </span><span class="content">Alice the App Product Owner</span><a class="self-link" href="#Alice"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Alice is 31, she’s a product manager for digital companies. She has worked mostly on B2C facing online services and consumer mobile apps.
+She wants to crafti applications that are easy to use and pleasant and wants to create experiences that users love. 
+When her current company owner had started exploring the idea of developing a contact tracing application for SARS-CoV-2 
+she has jumped right into the opportunity since she feels that it could be a great way to make an impact. 
+She also believes that developing an effective application will require a deep understanding of end users and how to build great UXes</p>
+   <p><strong>Goals</strong></p>
+   <p>Alice would like to create an application that is easy for its users as it believes that this is the best way to drive the usage and make
+it effective.</p>
+   <p><strong>Values and Fears</strong></p>
+   <p>Alice cares about:</p>
+   <ul>
+    <li data-md>
+     <p>having the freedom to build the best user experience</p>
+    <li data-md>
+     <p>being able design a responsive application for both Android and iOS phones</p>
+   </ul>
+   <p>She is afraid of:</p>
+   <ul>
+    <li data-md>
+     <p>Having to design cumbersome user onboarding and identification flows</p>
+    <li data-md>
+     <p>Being limited with the way the app should be designed</p>
+   </ul>
+   <h4 class="heading settled" data-level="1.1.3" id="Bob"><span class="secno">1.1.3. </span><span class="content">Bob the App Developer</span><a class="self-link" href="#Bob"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Bob is 25, he’s an experienced mobile software developer. He has worked with a few different companies as a
+freelancer and helped to create apps for both Android and iOS ecosystems. 
+His current company has decided to participate in the development of a contact tracing application that integrates 
+into the SafeTogether project and he has been tasked with being compliant with SafeTogether Specification. 
+He is expert in  native development but lately moved to cross-platform tools to improve the time-to-market and have a common
+codebase across both mobile app stores.</p>
+   <p><strong>Goals</strong></p>
+   <p>Bob would like to integrate available SDK into his workflow as painlessly and rapidly as possible.
+To do so he would like to be able to keep using the mobile app stack he has standardized on which is based on React Native.</p>
+   <p><strong>Values and Fears</strong></p>
+   <p>Bob cares about:</p>
+   <ul>
+    <li data-md>
+     <p>building applications that are successful and high quality in terms of user feedback on the app stores</p>
+     <ul>
+      <li data-md>
+       <p>that take advantage of the device features</p>
+      <li data-md>
+       <p>that can be monetized well (they rely on in-app purchases)</p>
+      <li data-md>
+       <p>that are responsive to the user input</p>
+      <li data-md>
+       <p>that work on phones and tablets</p>
+     </ul>
+    <li data-md>
+     <p>being efficient in coding the application, and being able to code <a href="#Alice">§ 1.1.2 Alice the App Product Owner</a> requirements</p>
+    <li data-md>
+     <p>being able to easily track down errors and issues, specially with with external SDKs</p>
+   </ul>
+   <p>He is afraid of:</p>
+   <ul>
+    <li data-md>
+     <p>Having to battle with unclear or lacking documentation</p>
+    <li data-md>
+     <p>Being unable to build the application using his current tools</p>
+    <li data-md>
+     <p>Having to use an SDK with bugs and unexpected behaviours</p>
+   </ul>
+   <p></p>
+   <h3 class="heading settled" data-level="1.2" id="users"><span class="secno">1.2. </span><span class="content">Users</span><a class="self-link" href="#users"></a></h3>
+   <h4 class="heading settled" data-level="1.2.1" id="Marco"><span class="secno">1.2.1. </span><span class="content">Marco the Immune Volunteer</span><a class="self-link" href="#Marco"></a></h4>
    <p><strong>Details</strong></p>
    <p>Marco is 34, he’s a proactive with strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered. He is keen to get back to work soon after a long quarantine. In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile elderly. He knows how to use a smartphone, but technology isn’t really his thing.</p>
    <p><strong>Goals</strong></p>
    <p>Marco would like to get the “volunteer” certification so that he could go ahead and start helping his community. He is looking for the fastest and simplest way to achieve this goal.</p>
-   <p><strong>Values and Fears</strong></p>
+   <p><strong>Values and Fear</strong></p>
    <p>Marco cares about privacy in general and doesn’t want to be tracked or share his data with any large government or corporation<br> He is afraid of:</p>
    <ul>
     <li data-md>
@@ -1471,11 +1596,362 @@ However, the information in this document is still subject to change.
     <li data-md>
      <p>Not knowing how to use the application properly</p>
    </ul>
-   <p class="issue" id="issue-8a4184a0"><a class="self-link" href="#issue-8a4184a0"></a> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a></p>
+   <h4 class="heading settled" data-level="1.2.2" id="Paola"><span class="secno">1.2.2. </span><span class="content">Paola the Pharmacist</span><a class="self-link" href="#Paola"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Paola is 47, living in Milano, she’s been working in her pharmacy with her husband for over 12 years. She’s open minded and relaxed, taking life one step at a time. She hasn’t been tested for SARS-CoV-2, but none of his relatives was exposed so fairly confident of not being infectious.</p>
+   <p><strong>Goals</strong></p>
+   <p>Paola’s goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business. She’s now one of the few registered professionals that can test the virus antibodies and produce digital certificates for immunity. While she’s happy to contribute to solving the current crisis, her major interests stay with the pharmacy itself.</p>
+   <p><strong>Values and Fear</strong></p>
+   <p>Paola cares about her community, and especially their health. She’s afraid the current situation will be prolonged and that everyone will suffer, if not due to health conditions and access to treatment, due to the economic impact that this crisis will have.</p>
+   <h4 class="heading settled" data-level="1.2.3" id="Walter"><span class="secno">1.2.3. </span><span class="content">Walter the Institutional Force</span><a class="self-link" href="#Walter"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Walter is 51, he works with the Civil Defence forces and he is in charge of coordinating volunteering efforts in a large province with a population of 1.2M people.</p>
+   <p><strong>Goals</strong></p>
+   <p>Walter wants to leverage all existing resources to mitigate the damages of the current epidemic. Supporting all those in need with essentials and protective equipment. He needs to recruit the most immune volunteers possible to serve the local population.</p>
+   <p><strong>Values and Fear</strong></p>
+   <p>He fears to unknowingly spread the virus while trying to mitigate its damages. While he values privacy, he needs technological aid to gain visibility and make quick decisions.</p>
+   <h4 class="heading settled" data-level="1.2.4" id="Franca"><span class="secno">1.2.4. </span><span class="content">Franca the Fragile Person</span><a class="self-link" href="#Franca"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Franca is 72, already home-bound due to the government directions to the elderly. She’s getting essentials delivered at home by either supermarkets or volunteers. Living alone, with no family within her city she needs external support to survive.</p>
+   <p><strong>Goals</strong></p>
+   <p>Survive. She needs to rely on low-tech communication, not having a computer and having only limited experience on how to use her smartphone.</p>
+   <p><strong>Values and Fear</strong></p>
+   <p>Franca fears to be “left behind” and to have little means to request help/support.</p>
+   <h4 class="heading settled" data-level="1.2.5" id="Andrea"><span class="secno">1.2.5. </span><span class="content">Andrea the lorry driver</span><a class="self-link" href="#Andrea"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Andrea is 51, she is from Poland. She drives a lorry for work. Sometimes she has to travel across countries to deliver goods.</p>
+   <p><strong>Goals</strong></p>
+   <p>Andrea’s goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business.</p>
+   <p><strong>Values and Fear</strong></p>
+   <p>She fears that she might lose her job in case travel across Europe is restricted.
+Some countries may deny her access, even though she could be immune.</p>
+   <h4 class="heading settled" data-level="1.2.6" id="Natasha"><span class="secno">1.2.6. </span><span class="content">Natasha CEO of Lorry for women.</span><a class="self-link" href="#Natasha"></a></h4>
+   <p><strong>Details</strong></p>
+   <p>Natasha is 43, she owns the comapany where <a href="#Andrea">Andrea</a>.</p>
+   <p><strong>Goals</strong></p>
+   <p>She has been hit hard by the crisis, so she needs to get back to "business as usual" as soon as possible.</p>
+   <p><strong>Values and Fear</strong></p>
+   <ul>
+    <li data-md>
+     <p>She fears that due to travel restrictions her business might go under.</p>
+    <li data-md>
+     <p>She fears that her employees might be endangered, phisically and economically.</p>
+   </ul>
+   <p class="issue" id="issue-42386380"><a class="self-link" href="#issue-42386380"></a> merge personas defined in <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a></p>
    <h2 class="heading settled" data-level="2" id="user_stories"><span class="secno">2. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
-   <h3 class="heading settled" data-level="2.1" id="tracingg_stories"><span class="secno">2.1. </span><span class="content">stories index</span><a class="self-link" href="#tracingg_stories"></a></h3>
-   <p class="issue" id="issue-25af5c0e"><a class="self-link" href="#issue-25af5c0e"></a> add a table with story type and instances.</p>
-   <p class="issue" id="issue-8a4184a0①"><a class="self-link" href="#issue-8a4184a0①"></a> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a></p>
+   <h3 class="heading settled" data-level="2.1" id="US1"><span class="secno">2.1. </span><span class="content">TBD</span><a class="self-link" href="#US1"></a></h3>
+    tbd 
+   <h3 class="heading settled" data-level="2.2" id="US08"><span class="secno">2.2. </span><span class="content">US08 - Proof of Immunity</span><a class="self-link" href="#US08"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+    <li data-md>
+     <p><a href="#Walter">§ 1.2.3 Walter the Institutional Force</a></p>
+   </ul>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco’s state is immune</p>
+   <p><strong>Story:</strong></p>
+   <p>Marco is asked by
+Walter to prove that his state is immune. Marco opens the mobile app and authenticates. The app shows a QR code that contains Marco’s COC_ID. Walter scans the QR code using the operator app. The operator app checks Marco’s state on the backend (including the expiration date if the state is immune), and returns it to Walter.</p>
+   <h3 class="heading settled" data-level="2.3" id="US09"><span class="secno">2.3. </span><span class="content">US09 - Marco Volunteers to Join Shielding Program</span><a class="self-link" href="#US09"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+    <li data-md>
+     <p><a href="#Walter">§ 1.2.3 Walter the Institutional Force</a></p>
+   </ul>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco’s state is immune</p>
+   <p><strong>Story:</strong></p>
+   <p>Marco goes to Walter at
+protezione civile, and volunteers to join the shielding prohram for
+at-risk individuals. Marco proves that he is immune as described in <a href="#US08">§ 2.2 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
+photo, to protezione civile’s system. Protezione civile’s system
+uses the COC backend to send a notification to Marco mobile
+app. Marco authenticates in front of Walter, and the app records
+Marco as a volunteer.</p>
+   <h3 class="heading settled" data-level="2.4" id="US10"><span class="secno">2.4. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+   </ul>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco’s state is immune.</p>
+   <p>** Post-condition:**</p>
+   <p>Marco’s state is unknown</p>
+   <p><strong>Story:</strong></p>
+   <p>The mobile app notifies Marco that his state has expired, and
+that it is now unknown. Marco can now proceed with <a href="#US1">§ 2.1 TBD</a>.</p>
+   <h3 class="heading settled" data-level="2.5" id="US11"><span class="secno">2.5. </span><span class="content">US11 -  Marco is Tested (Tampon).</span><a class="self-link" href="#US11"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+    <li data-md>
+     <p><a href="#Walter">§ 1.2.3 Walter the Institutional Force</a></p>
+   </ul>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco state is unknown, immune, or negative.</p>
+   <p>** Post-condition:**</p>
+   <p>Marco state is quarantined, negative, or immune</p>
+   <p><strong>Story:</strong></p>
+   <p class="issue" id="issue-3c219a6d"><a class="self-link" href="#issue-3c219a6d"></a> who is Giovanni??</p>
+   <p>Marco feels
+sick, and goes to his doctor Giovanni. Giovanni records information
+about the test using the operator app, and updates Marco’s
+state to unknown - thus possibly revoking Marco’s immune
+state. After a few days, the test result is back. If the test is
+positive, Marco’s state becomes quarantined. If the test is
+negative, Marco’s state is set to negative or immune,
+depending on Marco’s state at the beginning of US11.</p>
+   <h3 class="heading settled" data-level="2.6" id="US12"><span class="secno">2.6. </span><span class="content">US12 - Marco Visits Franca.</span><a class="self-link" href="#US12"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+    <li data-md>
+     <p><a href="#Walter">§ 1.2.3 Walter the Institutional Force</a></p>
+    <li data-md>
+     <p><a href="#Franca">§ 1.2.4 Franca the Fragile Person</a></p>
+   </ul>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco’s state is immune</p>
+   <p><strong>Story:</strong></p>
+   <p class="issue" id="issue-64655c08"><a class="self-link" href="#issue-64655c08"></a> is Bluethoot really usefull? What happens if Franca lives in a big building and Mark ring apartment building intercom?</p>
+   <p>Walter sends Marco to Franca. Marco knocks Franca’s door, and
+Franca asks him to identify himself. Marco authenticates with the
+mobile app on his smartphone, which then broadcasts Marco’s
+certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
+devices and read’s Marco’s COC_ID using the mobile app on
+her smartphone. Franca’s mobile app sends the COC_ID to the
+backend, which returns Marco’s photo if his state is immune
+and he was registered by Walter. Otherwise, the mobile app tells
+Franca not to open the door. The backend records the interaction
+between Marco and Franca. Franca verifies that Marco matches the
+photo shown on her mobile app, and opens the door.</p>
+   <h3 class="heading settled" data-level="2.7" id="US13"><span class="secno">2.7. </span><span class="content">US13 - Antibodies test</span><a class="self-link" href="#US13"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+    <li data-md>
+     <p><a href="#Paola">§ 1.2.2 Paola the Pharmacist</a></p>
+   </ul>
+   <p><strong>Conditions:</strong></p>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco’s state is unknown</p>
+   <p><strong>Story:</strong></p>
+   <p>Marco goes to Paola in order to perform an antibodies test.
+If the test is positive Paola ask for Marco’s tax code and phone number and records them using operator app.
+The operator app notifies the institutional forces.</p>
+   <p>Otherwise Paola informs Marco that she can add the test-certificate on his user app if he wants.
+Marco can open the user-app that generates a QRcode (QRcode=f(timestamp,COC_ID)), Paola uses the operator-app to read the QRcode. After that she selects the test result (negative or immune) and the operetor app sands the information to the backend.</p>
+   <p>The information are stored in a db, morover they are sended to COC Backend that forwards the certificate to the user-app.
+The certificate will be stored Marco’s device memory.</p>
+   <h3 class="heading settled" data-level="2.8" id="US14"><span class="secno">2.8. </span><span class="content">US14 - expired immunity</span><a class="self-link" href="#US14"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+   </ul>
+   <p><strong>Conditions:</strong></p>
+   <p><a href="#US13">§ 2.7 US13 - Antibodies test</a></p>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco has a test-certificate</p>
+   <p><strong>Story:</strong></p>
+   <p>The test-certificate has an expiring-date. After this date Marco has to go back to Paola in order to update his immunity condition.</p>
+   <h3 class="heading settled" data-level="2.9" id="US15"><span class="secno">2.9. </span><span class="content">US15 - Marco is a bad person</span><a class="self-link" href="#US15"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.1 Marco the Immune Volunteer</a></p>
+   </ul>
+   <p><strong>Conditions:</strong></p>
+   <p><strong>Preconditions:</strong></p>
+   <p>Marco has a test-certificate</p>
+   <p><strong>Story:</strong></p>
+   <p class="issue" id="issue-5072c3bd"><a class="self-link" href="#issue-5072c3bd"></a> who is Stefano?</p>
+   <p class="issue" id="issue-367552ce"><a class="self-link" href="#issue-367552ce"></a> Who is Pietro?</p>
+   <p>When Marco goes to Franca robs her. Franca reports the crime to Carabinieri. Pietro, the policeman, uses the user-app to read Franca COC_ID, then He asks to Stefano, the app owner, Marco’s COC_ID stored in Franca’s contact logs. Pietro, the policeman, asks to Walter to revoke Marco’s volunteer certificate.</p>
+   <h3 class="heading settled" data-level="2.10" id="US16"><span class="secno">2.10. </span><span class="content">US16 - Natasha encourages her employees to take the test</span><a class="self-link" href="#US16"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Natasha">§ 1.2.6 Natasha CEO of Lorry for women.</a></p>
+   </ul>
+   <p><strong>Conditions:</strong></p>
+   <p><strong>Preconditions:</strong></p>
+   <p><strong>Story:</strong></p>
+   <p>Natasha wants to do business in Italy knowing that crossing the border is permitted only if her drivers have a certification of immunity. She encourages her employees to take the test and obtain permission to cross.</p>
+   <h3 class="heading settled" data-level="2.11" id="US17"><span class="secno">2.11. </span><span class="content">US17 - Andrea corsses the italian border</span><a class="self-link" href="#US17"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Natasha">§ 1.2.6 Natasha CEO of Lorry for women.</a></p>
+    <li data-md>
+     <p><a href="#Andrea">§ 1.2.5 Andrea the lorry driver</a></p>
+   </ul>
+   <p><strong>Conditions:</strong></p>
+   <p>[#US16]</p>
+   <p><strong>Preconditions:</strong></p>
+   <p>Andrea’s state is immune.</p>
+   <p>Natasha encourages her employees to take the test</p>
+   <p><strong>Story:</strong></p>
+   <p>Following Natasha’s advice Andrea takes the immunity test and obtains the certification.
+Now she can cross the Italian boarder.</p>
+   <p>At the border she authenticate herself using the user application and the COC_ID.
+Walter grants her access.</p>
+   <p class="issue" id="issue-42386380①"><a class="self-link" href="#issue-42386380①"></a> merge personas defined in <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a></p>
+   <p class="issue" id="issue-6835b6aa"><a class="self-link" href="#issue-6835b6aa"></a> Virus test is different from antibodies test, which one should we consider for specification purposing? Both?</p>
+   <p class="issue" id="issue-a5574c50"><a class="self-link" href="#issue-a5574c50"></a> The QRcode is generated upon onboarding or upon test result?</p>
+   <p class="issue" id="issue-b2e9bff1"><a class="self-link" href="#issue-b2e9bff1"></a> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?</p>
+   <p class="issue" id="issue-2d6120c0"><a class="self-link" href="#issue-2d6120c0"></a> How the sanitary personnel are enrolled? Is it a metter of the application or someone else?</p>
+   <p class="issue" id="issue-3ee7e758"><a class="self-link" href="#issue-3ee7e758"></a> Does a test machine update the test outcome in real time on the db? If so, is it a matter of the application or the backend should provide a sicure call to update test results?</p>
+   <h2 class="heading settled" data-level="3" id="user_needs"><span class="secno">3. </span><span class="content">User needs</span><a class="self-link" href="#user_needs"></a></h2>
+   <h3 class="heading settled" data-level="3.1" id="Marco-needs"><span class="secno">3.1. </span><span class="content">Marco – Volunteer</span><a class="self-link" href="#Marco-needs"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>M1 – Volunteer Onboarding</strong>:
+As a Volunteer, Marco wants to get registered quickly and smoothly so that he can start to help as soon as possible.</p>
+    <li data-md>
+     <p><strong>M2 – Volunteer Immunity Certification Registration</strong>:
+As a Volunteer, Marco needs to get a certification of his immunity and be able to display it upon request so that those he interacts with can trust him.</p>
+    <li data-md>
+     <p><strong>M3 – Volunteer Immunity Certification Renewal</strong>:
+As a Volunteer, Marco wants to renew his immunity certification smoothly and effectively so that he can carry on working as volunteer.</p>
+    <li data-md>
+     <p><strong>M4 – Volunteer Immunity Certification Cancellation</strong>:
+As a Volunteer, Marco needs to know if/when his immunity certification is cancelled or will expire so that he can either renew it or change his behavior effectively.</p>
+    <li data-md>
+     <p><strong>M5 – Volunteer Registration with Authorities</strong>:
+As a Volunteer, Marco wants to register as a Volunteer with the Authorities so that he can start helping out.</p>
+    <li data-md>
+     <p><strong>M6 – Volunteer Recognition</strong>:
+As a Volunteer, Marco needs to be easily recognizable (especially by fragile / high-risk citizens) so that he can perform his duties effectively.</p>
+   </ul>
+   <h3 class="heading settled" data-level="3.2" id="Paola-needs"><span class="secno">3.2. </span><span class="content">Paola – Pharmacist</span><a class="self-link" href="#Paola-needs"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>P1 – Sanitary Personnel Onboarding</strong>:
+As a Pharmacist, Paola wants to download and use the App easily so that she can start to add certifications and test results.</p>
+    <li data-md>
+     <p><strong>P2 – Sanitary Personnel Antibodies Test Submission Registration</strong>:
+As a Pharmacist, Paola wants to register the submission of an Antibodies test via the App (including the test subject ID) so that all data are shared and up to date.
+(maybe using the sanitary card if possible).</p>
+    <li data-md>
+     <p><strong>P3 – Sanitary Personnel Antibodies Test Results Registration</strong>:
+As a Pharmacist, Paola wants to register the Antibodies Test results updating the registration submission easily with the least amount of effort so that she can go back to work.</p>
+    <li data-md>
+     <p><strong>P4 – Sanitary Personnel Immunity Registration</strong>:
+As a Pharmacist, Paola wants to issue an Immunity Certification seamlessly after receiving a positive result on an Antibodies test so that the test subject is immediately alerted and can start working or helping others. We can consider the “positive antibodies test” registration as the element that triggers automatic certification.</p>
+    <li data-md>
+     <p><strong>P5 – Sanitary Personnel Immunity Renewal</strong>:
+As a Pharmacist, Paola wants to renew an Immunity Certification as quickly as possible after receiving test results. We can consider a further “positive antibodies test” registration as the element that triggers automatic renewal of the Immunity Certification.</p>
+    <li data-md>
+     <p><strong>P6 – Sanitary Personnel Immunity Revocation</strong>:
+As a Pharmacist, Paola wants to revoke an Immunity Certification by updating a Virus Test result or due to the subject showing symptoms of Covid-19.</p>
+   </ul>
+   <p>*Immunity status should be tied to tests performed and the results of those tests should affect the immunity status directly, without leaving the Pharmacist any direct control on the certification status control. We should also consider what test details we want/can include in the system.</p>
+   <h3 class="heading settled" data-level="3.3" id="Walter-needs"><span class="secno">3.3. </span><span class="content">Walter – Institutional Forces</span><a class="self-link" href="#Walter-needs"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>W1 – Institutional Forces Onboarding</strong>:
+As part of the Institutional Forces, Walter wants to download and use the App on his phone quickly and easily so that he can start using it.</p>
+    <li data-md>
+     <p><strong>W2 – Institutional Forces Citizen Status Check</strong>:
+As part of the Institutional Forces, Walter needs to check the status of a Citizen so that he could make decisions effectively.</p>
+    <li data-md>
+     <p><strong>W3 – Institutional Forces Volunteer Status Check</strong>:
+As part of the Institutional Forces, Walter wants to check the immunity status of a Volunteer so that he could register him/her as Volunteer or make related decisions.</p>
+    <li data-md>
+     <p><strong>W4 – Institutional Forces Volunteer Registration</strong>:
+As part of the Institutional Forces, Walter wants to register a Volunteer (who is immune) effectively with few clicks on the App so that she/he can start working soon.</p>
+    <li data-md>
+     <p><strong>W5 – Institutional Forces Volunteer Management</strong>:
+As part of the Institutional Forces, Walter wants to be regularly updated on the status of all Volunteers and forces under his management so that he can ensure a high quality and efficacy of his services.</p>
+   </ul>
+   <h3 class="heading settled" data-level="3.4" id="Franca-needs"><span class="secno">3.4. </span><span class="content">Franca – Fragile Population</span><a class="self-link" href="#Franca-needs"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>F1 – Fragile Population Onboarding</strong> As part of the Fragile Population, Franca wants to get access to the services but struggles to use digital devices. She needs step by step guidance on how to access, download and use the app (or something more rudimental) so that she can request and receive support.</p>
+    <li data-md>
+     <p><strong>F2 – Fragile Population Volunteer Recognition</strong>:
+As part of the Fragile Population, Franca needs to recognize a Volunteer when he/she reaches out to her to deliver goods or services so that she is safe.</p>
+    <li data-md>
+     <p><strong>F3 – Fragile Population FeedBack</strong>:
+As part of the Fragile Population, Franca needs to express her pleasure/displeasure of the service provided.</p>
+   </ul>
+   <h2 class="heading settled" data-level="4" id="app-functionalities"><span class="secno">4. </span><span class="content">App functionalities</span><a class="self-link" href="#app-functionalities"></a></h2>
+   <p class="issue" id="issue-d38edbfa"><a class="self-link" href="#issue-d38edbfa"></a> to be extended</p>
+   <h3 class="heading settled" data-level="4.1" id="user-app"><span class="secno">4.1. </span><span class="content">User App</span><a class="self-link" href="#user-app"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>Autentication</strong></p>
+    <li data-md>
+     <p><strong>User certification lookup</strong></p>
+    <li data-md>
+     <p><strong>User test lookup</strong></p>
+    <li data-md>
+     <p><strong>Request help</strong></p>
+    <li data-md>
+     <p><strong>Receive volunteer autentication</strong></p>
+   </ul>
+   <h3 class="heading settled" data-level="4.2" id="volunteer-app"><span class="secno">4.2. </span><span class="content">Operator App (Volunteer)</span><a class="self-link" href="#volunteer-app"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>Autentication</strong></p>
+    <li data-md>
+     <p><strong>User certification lookup</strong></p>
+    <li data-md>
+     <p><strong>User test lookup</strong></p>
+    <li data-md>
+     <p><strong>Request help</strong></p>
+    <li data-md>
+     <p><strong>Reply to help request</strong></p>
+    <li data-md>
+     <p><strong>Confirm autentication</strong></p>
+   </ul>
+   <h3 class="heading settled" data-level="4.3" id="doctor-app"><span class="secno">4.3. </span><span class="content">Operator App ( Sanitary Personnel )</span><a class="self-link" href="#doctor-app"></a></h3>
+   <ul>
+    <li data-md>
+     <p><strong>Autentication</strong></p>
+    <li data-md>
+     <p><strong>Certificate creation</strong></p>
+    <li data-md>
+     <p><strong>Certificate update</strong></p>
+    <li data-md>
+     <p><strong>Certificate removal</strong></p>
+    <li data-md>
+     <p><strong>Test creation</strong></p>
+   </ul>
+   <h3 class="heading settled" data-level="4.4" id="certificate-requirements"><span class="secno">4.4. </span><span class="content">Certificate Requirements</span><a class="self-link" href="#certificate-requirements"></a></h3>
+   <p class="note" role="note"><span>Note:</span> this section mus be improved</p>
+   <p>The immunity certificate must contain the following info:</p>
+<pre>&lt;certification id>
+&lt;test id>
+&lt;manifacturer id>
+&lt;lot id>
+&lt;identificativo entità che lo ha effettuato>
+&lt;DB url where test data are stored>
+&lt;Sanitary Personnel id, who submitted the test>
+&lt;test timestamp>
+&lt;test type (PCR, IGG, IGM)>
+&lt;test outcome>
+&lt;Identity document number>
+&lt;Identity document type>
+&lt;Identity document issuer>
+</pre>
+   <p>When a user wants to prove his/her immunity has to show a QRcode that contains these informations</p>
+<pre>&lt;DB url where test data are stored>
+&lt;test type (PCR, IGG, IGM)>
+&lt;test outcome>
+&lt;Identity document number>
+&lt;Identity document type>
+</pre>
+   <p class="issue" id="issue-e6b4553e"><a class="self-link" href="#issue-e6b4553e"></a> Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain?</p>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1623,11 +2099,6 @@ However, the information in this document is still subject to change.
 
 })();
 </script>
-  <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="#index"></a></h2>
-  <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="#index-defined-here"></a></h3>
-  <ul class="index">
-   <li><a href="#marco">Marco</a><span>, in §1.2.1</span>
-  </ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
@@ -1636,8 +2107,17 @@ However, the information in this document is still subject to change.
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"> detail personas<a href="#issue-0f9f400a"> ↵ </a></div>
-   <div class="issue"> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a><a href="#issue-8a4184a0"> ↵ </a></div>
-   <div class="issue"> add a table with story type and instances.<a href="#issue-25af5c0e"> ↵ </a></div>
-   <div class="issue"> merge personas defined in <a href="https://github.com/g0v-it/staysafe-shielding">shielding repo</a>, <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a><a href="#issue-8a4184a0①"> ↵ </a></div>
+   <div class="issue"> merge personas defined in <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a><a href="#issue-42386380"> ↵ </a></div>
+   <div class="issue"> who is Giovanni??<a href="#issue-3c219a6d"> ↵ </a></div>
+   <div class="issue"> is Bluethoot really usefull? What happens if Franca lives in a big building and Mark ring apartment building intercom?<a href="#issue-64655c08"> ↵ </a></div>
+   <div class="issue"> who is Stefano?<a href="#issue-5072c3bd"> ↵ </a></div>
+   <div class="issue"> Who is Pietro?<a href="#issue-367552ce"> ↵ </a></div>
+   <div class="issue"> merge personas defined in <a href="https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&amp;origin_channel=C011G7ES68N">keyless specs</a> , <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&amp;fileid=20773">Michele doc</a><a href="#issue-42386380①"> ↵ </a></div>
+   <div class="issue"> Virus test is different from antibodies test, which one should we consider for specification purposing? Both?<a href="#issue-6835b6aa"> ↵ </a></div>
+   <div class="issue"> The QRcode is generated upon onboarding or upon test result?<a href="#issue-a5574c50"> ↵ </a></div>
+   <div class="issue"> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?<a href="#issue-b2e9bff1"> ↵ </a></div>
+   <div class="issue"> How the sanitary personnel are enrolled? Is it a metter of the application or someone else?<a href="#issue-2d6120c0"> ↵ </a></div>
+   <div class="issue"> Does a test machine update the test outcome in real time on the db? If so, is it a matter of the application or the backend should provide a sicure call to update test results?<a href="#issue-3ee7e758"> ↵ </a></div>
+   <div class="issue"> to be extended<a href="#issue-d38edbfa"> ↵ </a></div>
+   <div class="issue"> Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain?<a href="#issue-e6b4553e"> ↵ </a></div>
   </div>
