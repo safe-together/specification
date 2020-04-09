@@ -38,11 +38,11 @@ For these cases, we have [[#panels]]
 # Stakeholders # {#stakeholders}
 
 Stakeholders are those affected by normative changes to the SafeTogether Specification. 
-There are two types of Stakeholders:
+There are two types of stakeholders:
 
-: user
+: users
 :: SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.
-: implementer
+: implementers
 :: SafeTogether Implementers are individuals, companies or organizations who are implementing portions of the SafeTogether Specification. 
 
 A Stakeholder may be both a user and an implementer.
@@ -98,15 +98,15 @@ Discussion about Requiementsm Protocols and Architecture about Shielding referen
 
 
 
-# Editorial rules 
+# Editorial rules # {#editorial-rules}
 
-## How to Make Changes
+## How to Make Changes ## {#how-to-make-changes}
 
 This section details how changes to the SafeTogether Specification may be drafted, proposed, and accepted by the community of the Editors
 
 Anyone may submit a proposal to alter this process. 
 
-## Drafting proposals
+## Drafting proposals ## {#drafting-proposal}
 
 Anyone may propose improvements to the SafeTogether Specification. Here are some examples of different ways to contribute:
 
@@ -117,13 +117,13 @@ Anyone may propose improvements to the SafeTogether Specification. Here are some
 Proposals for substantive changes to the SafeTogether Specification go through an editorial review process. 
 A change is considered substantive when it alters the normative text of the SafeTogether Specification or the SafeTogether Roadmap. 
 Any proposal must be realistic and reasonable to implement, preferably with example implementations, and demonstrable support from 
-[=implementers=].
+implementers.
 
 Any proposal should also be accompanied with a reasonable explanation of the need for the proposed change. For example:
 
 - Adding a new capability that satisfies one or more new use cases, or to reflect a new capability already incorporated consistently 
     into multiple implementations.
-- Removing something because it was never adopted by Implementers for legitimate reasons, 
+- Removing something because it was never adopted by implementers for legitimate reasons, 
     or because there has been a collective shift in focus away from that feature and it no longer makes sense to keep it.
 - Changing something to a simpler design that is able to address the same use case(s) with less complexity, 
     or a change that resolves one or more identified issues in real-world use.
@@ -132,7 +132,7 @@ A draft proposal often involves public discussion before being formally presente
 After these discussions have occurred and a draft proposal has reached a sufficient level of maturity, 
 t should be presented as a candidate proposal, asking Stakeholders and Panels if there are any major objections.
 
-When there are objections, notify the safetogether [[#Panels]] and [[#Stakeholders]] about the final proposal with an invitation to vote. 
+When there are objections, notify the safetogether [[#panels]] and [[#stakeholders]] about the final proposal with an invitation to vote. 
 If there are options, detail them along with the implications of the options. 
 The final proposal needs to be open for one week to give others a chance to vote. To show your support for a proposal write +1. 
 To show your disapproval for a proposal write -1 along with a detailed reason for the disapproval and a suggestion for a preferred alternative. 
@@ -145,7 +145,7 @@ and must include one or more requested editorial assignments as part of their ap
 These requests are reviewed by other Editors Editor applications that can demonstrate the support of a relevant panel or 
 group of community members will be favorably considered.
 
-## Repositories
+## Repositories ## {#repositories}
 
 Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.
 
@@ -159,7 +159,7 @@ of the threatening individual.
 Repeated and sustained straying from the defined aims of the communication channels
  may result in a ban of those individuals straying from those defined aims.
 
-## General Expectations
+## General Expectations ## {#general-expectations}
 Below are some general expectations around how participants of the  community are encouraged to behave.
 
 Participants in the  community are expected to behave professionally and respectfully.
@@ -173,26 +173,27 @@ This commitment calls for a community where participants behave according to the
 - Do not insult or put down other participants. Harassment (whether verbal, physical or sexual) and other exclusionary behavior is not acceptable.
 - Disagreements, both social and technical, happen all the time. Whenever inappropriate behaviors are observed members of the community should strive to bring the discussion back to a more professional level. In most cases misunderstandings and disagreements can be resolved informally.  We hope that most concerns can be solved this way. 
 
-## Best Practices
+## Best Practices ## {#best-practices}
+
 Best practices for the Community include:
 
 - Contribute! Help SafeTogether be the best it can be. Work together constructively toward the good working of the technology.
 - Stay on topic. Remember others voices need to be heard as well as yours and you must allow the space for other members to 
-   participate (e.g. don't monologue or respond to every comment).
+    participate (e.g. don't monologue or respond to every comment).
 - Respect the expertise and contributions of other members of the community (e.g. don't assume that you're "the smartest person in the room").
-   Remember that this is a community with different backgrounds who have valuable contributions to make.
+    Remember that this is a community with different backgrounds who have valuable contributions to make.
 - Listen first and be sure you understand the point of view of the other person (e.g. don't assume that others are disagreeing with 
-   you because they don't understand what you’re saying and don't suggest that another person's comments are invalid because they 
-   have a different opinion).
+    you because they don't understand what you’re saying and don't suggest that another person's comments are invalid because they 
+    have a different opinion).
 - Respond from an informed and inclusive point of view (e.g. don't respond to comments without reading the background information).
 - Do review the work of others to see if you are doing something that other groups have already done (i.e. don't “reinvent the wheel”).
 - Know that your contribution is still valuable even if it is not integrated.
 - Remember the work is about more than just your area of interest (e.g. don't let your personal or professional goals impede 
-  the progress of the group).
+    the progress of the group).
 - Do [contact](mailto:manager@SafeTogetherproject.org) the SafeTogether Manager if you feel someone has been working in a way 
-  that is having a negative impact on the work of the group, if they are insulting or harassing you, or unfairly impeding your own ability to work.
+    that is having a negative impact on the work of the group, if they are insulting or harassing you, or unfairly impeding your own ability to work.
 - Maintain an open mindset and encourage others to do the same. There might be things you or others haven't heard about yet, 
-  so be open to send and receive pointers to more info.
+    so be open to send and receive pointers to more info.
 - There are multiple ways of achieving the same goals, but when you build something new, check what already exists so we can better understand and help you with your contribution.
 
 Based on:
