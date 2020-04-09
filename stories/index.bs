@@ -1,5 +1,5 @@
 <pre class='metadata'>
-Title: SafeTogether Personas and Use Cases
+Title: SafeTogether Personas and User Stories
 Shortname: stories
 Level: 1
 Status: DREAM
@@ -10,7 +10,6 @@ Max ToC Depth: 2
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
   This document is a description about personas and user stories.
-  The current development is carried out in the [REPOSITORY] repository. 
   Anyone may participate in this process.
 </pre>
 

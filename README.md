@@ -4,9 +4,12 @@
 * Latest Published: https://safe-together.github.io/specification/
 * Working Drafts:
   * Currently in progress
-* Reference implementation repositories:
+* Related project sites:
+  * SafeTogether web site: *TBD*
+  * CovidApp - Covid Community Alert: https://coronavirus-outbreak-control.github.io/web/
+* Reference implementation source repositories:
   * Shielding app: https://github.com/g0v-it/staysafe-shielding
-  * Contat Tracing app: *TBD*
+  * Contat Tracing app: https://github.com/Coronavirus-Outbreak-Control/
   * Quarantine app: *TBD*
 
 This repository contains the source of the SafeTogether Specification
