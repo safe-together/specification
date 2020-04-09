@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="6c4029c41127a9cc60db3c38a52aec30013cf374" name="document-revision">
+  <meta content="1c3e5994afcec4fcdeb6eb9520a3a06b72e27653" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1425,57 +1425,51 @@ following the <a href="process/">SafeTogether Process</a>.
 However, the information in this document is still subject to change. 
    <p>You are invited to <a href="https://github.com/safe-together/specification/issues">contribute</a> any feedback, comments, or questions you might have.</p>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
-   <p class="issue" id="issue-e24eebe3"><a class="self-link" href="#issue-e24eebe3"></a> translate to english following section.</p>
-   <p>SafeTogether è un complesso di sistemi software e di servizi di supporto per fornire agli operatori
-incaricati un insieme di strumenti per contribuire ad affrontare la fase 2 dell’emergenza epidemica
-legata alla malattia Covid-19.</p>
-   <p>Essi sono realizzati da un gruppo internazionale di volontari, suddivisi in team tematici ed in coordinamento
-tra loro. Alcune aziende ed associazioni supportano pro bono l’operato del gruppo.</p>
-   <p>SafeTogether prevede la realizzazione di un insieme di protocolli, specifiche e applicazioni rilasciate con
-licenza Open Source che forniscano una <em>reference implementation</em> della SafeTogether Specification.</p>
-   <p>Sono attualmente parte di SafeTogether:</p>
+   <p>SafeTogether is a toolbox  to take
+on the Covid-19 pandemic emergency second stage.</p>
+   <p>An international volunteer group creates it; teams work in coordination with each other.
+Some companies and associations offer pro bono support.</p>
+   <p>SafeTogether involves the creation of a protocols, architectures and specifications together with <em>reference implementation</em> for applications and support services</p>
+   <p>It’s currently part of SafeTogether:</p>
    <ol>
     <li data-md>
-     <p><strong>Autocertificazione spostamenti</strong>: consente di prevedere i luoghi a rischio affollamento,
-segnalarli alle autorità, disincentivarne l’afflusso,
-consentendo alle persone di spostarsi in maggiore sicurezza. Digitalizzare la procedura per il cittadino e
-velocizzare drasticamente il controllo da parte delle forze dell’ordine.
-Viene proposto anche un articolo di legge per consentire all’attestazione presentata via QR code di 
-essere assimilato ad un documento elettronico.</p>
+     <p><strong>movement self-certification</strong>: it allows to predict overcrowded risk places,
+to advise authority, discourage influx, letting people to move in greater security.
+It enable processess digitalization and to drastically speed up low enforcement control.
+It’s proposed a law article too, to let certificate submitted by QR code to be assimilated to an electronic document.</p>
     <li data-md>
-     <p><strong>Shielding</strong> (Cordone Sanitario) : per la schermatura delle categorie ad alto rischio, il sistema supporta
-la gestione di un "buffer" con persone immuni, secondo la proposta del Weizmann Institute. 
-Gli operatori sanitari sono l’unica autorità che può registrare e associare sullo smartphone un certificato 
-digitale (la cui catena di trust è verificabile internazionalmente) che attesta l’immunità. 
-Pensata per il personale di supporto alle categorie ad alto rischio, consente di verificare direttamente veridicità 
-e validità della certificazione, evitando il rischio di truffe.</p>
+     <p><strong>Shielding</strong> (Cordone Sanitario): to shield high risk categories, the system support management of an immune people "buffer",
+according to Weizmann Institute proposal. Health workers are the only authority that can register and associate
+on smartphones an immunity digital certification (whose chain of trust is internationally verifiable)
+It’s thought for people in charge to support high-risk categories,
+avoiding fraud risk and allowing the control of certification truthfulness and validity, thus
+reducing fraud risk.</p>
     <li data-md>
-     <p><strong>Autocertificazione test</strong>: consente ad una persona di documentare lo svolgimento di un proprio test sierologico
-e di consentirgli di attestarne l’esito a terzi, per contesti in cui sia opportuno un livello di certezza inferiore 
-di quello richiesto dal cordone sanitario.</p>
+     <p><strong>Autocertification test</strong>: in contexts where guarantee can be lesser than <em>shielding level</em>,
+it allows people to provide documentary evidence of your own serological test and to communicate the results to 
+a third party.</p>
     <li data-md>
-     <p><a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>: le informazioni di contatto/esposizione degli utenti de-identificate vengono raccolte in modo efficiente
-e completamente anonimo. Consente alle autorità mediche e di gestione delle emergenze di intraprendere le azioni 
-corrette per allertare le persone che hanno avuto i contatti più stretti con un paziente risultato infetto. 
-Il sistema non tratta informazioni personali, sfruttando esclusivamente dati anonimi scambiati dal protocollo 
-di handshaking Bluetooth LE.</p>
+     <p><a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
+It allows medical and emergency management authorities to launch correct actions to alert people had close contact
+with patients found to be infected.
+The system doesn’t process personal information, it only uses anonymous data exchanged by Bluetooth LE
+handshaking protocol.</p>
     <li data-md>
-     <p><strong>Quarantena</strong>: per l’applicazione della quarantena, il problema di garantire la presenza fisica della persona specifica
-in un determinato luogo viene affrontato in un insieme di modi tra cui la verifica telefonica da parte di un call center e, 
-grazie ad una tecnologia concessa in uso gratuito dal titolare,  tramite un riconoscimento biometrico eseguito localmente 
-sullo smartphone,che non prevede la trasmissione di nessuna informazione di identificazione personale.</p>
+     <p><strong>Quarantine</strong>: for the quarantine application , the problem to ensure physical presence of a person
+in a given place is faced in multiple ways, including telephone verification  by a call center and, thanks to a
+tecnology left for free use by the owner, by biometric recognition locally run on the smartphone, 
+that doesn’t trasmit any personal identification information</p>
     <li data-md>
-     <p><strong>Gestione infrastrutture</strong>: supporto specialistico da parte di aziende specializzate nelle fasi di implementazione,
-testing e roll-out dei sistemi precedenti, affrontando i temi relativi agli aspetti di sicurezza e connessi alla 
-scalabilità delle infrastrutture. Gestione della manutenzione evolutiva degli applicativi.</p>
+     <p><strong>Infrastructure management</strong>: specialist support by companies during implementation stages,
+testing and roll-out of previous systems, addressing the issues related to security aspects and infrastructure scalability.
+Application maintenance management.</p>
     <li data-md>
-     <p><strong>User interaction e Process Management</strong>: supporto operativo nella gestione del flusso di una transazione dell’utente
-dall’inizio alla fine, accompagnando i tempi ed il flusso effettivo delle attività, 
-nonché supportando gli utenti per soddisfare le loro aspettative (o gli standard di prestazione) associati a ciascuno 
-dei punti di contatto previsti.</p>
+     <p><strong>User interaction and Process Management</strong>: operative support in user transaction flow management from start to finish,
+following activity effective flow and time, and also user support to satisfy his expectations (or presentation standards)
+associated with every planned contact point.</p>
    </ol>
-   <p>Le applicazioni sono sviluppate da gruppi indipendenti, alcune (e.g. <a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>) sono pronte per essere utilizzate,
-altre sono in corso di sviluppo.</p>
+   <p>Independent teams work in parallel to develop applications, some applications (e.g. [Tracing]) are  ready to use,
+some others others are in an early development stage.</p>
    <h2 class="heading settled" data-level="2" id="organization"><span class="secno">2. </span><span class="content">Document organization</span><a class="self-link" href="#organization"></a></h2>
    <p class="issue" id="issue-b0a63dd3"><a class="self-link" href="#issue-b0a63dd3"></a> Write Introduction section to  specification (explain ortogonality).</p>
    <p>The SafeTogether Specification
@@ -1652,6 +1646,5 @@ describes architecture and protocols for the <a data-link-type="biblio" href="#b
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"> translate to english following section.<a href="#issue-e24eebe3"> ↵ </a></div>
    <div class="issue"> Write Introduction section to  specification (explain ortogonality).<a href="#issue-b0a63dd3"> ↵ </a></div>
   </div>
