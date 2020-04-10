@@ -442,7 +442,7 @@ She encourages her employees to take the test and obtain permission to cross.
 **Actors:**
 
 - [[#Natasha]]
-- [[#Andrea]]
+- [[#Aleksandra]]
 
 
 **Conditions:**
@@ -455,7 +455,7 @@ Aleksandra's state is immune.
 
 **Story:**
 
-Following Natasha's advice Andrea takes the immunity test and obtains the certification.
+Following Natasha's advice Aleksandra takes the immunity test and obtains the certification.
 Now she can cross the Italian boarder.
 At the border she authenticate herself using the user application and the COC_ID.
 The authorities grant her access.
