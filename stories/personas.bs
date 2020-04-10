@@ -138,7 +138,7 @@ Issue: could be Giovanni a duplicated persona of Paola?
 
 Issue: details of Maria Missing
 
-Issue: could be Maria a duplicated persona of Paola?
+Issue: could Maria be a duplicated persona of Paola?
 
 
 ### Marco the Immune Volunteer ### {#Marco}
@@ -232,6 +232,8 @@ Some countries may deny her access, even though she could be immune and therefor
 
 
 ### Anne a Regular Citizenr ### {#Anne}
+
+Isuue: could Anne be a dupplicated persona of Marco?
 
 **Details**
 

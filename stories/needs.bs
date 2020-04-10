@@ -32,6 +32,10 @@ User needs {#user_needs}
     As a Pharmacist, Paola wants to renew an Immunity Certification as quickly as possible after receiving test results. We can consider a further “positive antibodies test” registration as the element that triggers automatic renewal of the Immunity Certification.
 - **P6 – Sanitary Personnel Immunity Revocation**:
     As a Pharmacist, Paola wants to revoke an Immunity Certification by updating a Virus Test result or due to the subject showing symptoms of Covid-19.
+- **P7 – Sanitary Personnel Virus Test Submission Registration**
+    As a Pharmacist, Paola needs to register on the App a Virus Test submission to labs for results so that the systems could be updated quickly. 
+- **P8 – Sanitary Personnel Virus Test Results Registration**
+    As a Pharmacist, Paola needs to register on the App the results of a Virus Test easily and quickly so that the systems is updated. 
 
 
 
