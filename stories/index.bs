@@ -2,7 +2,7 @@
 Title: SafeTogether Personas and User Stories
 Shortname: stories
 Level: 1
-Status: DREAM
+Status: iso/CD
 Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/stories/
 Markup Shorthands: markdown yes

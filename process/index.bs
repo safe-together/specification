@@ -2,7 +2,7 @@
 Title: The SafeTogether Editorial Process
 Shortname: process
 Level: 1
-Status: DREAM
+Status: iso/CD
 Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/process/
 Markup Shorthands: markdown yes

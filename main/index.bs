@@ -2,7 +2,7 @@
 Title: The SafeTogether Ecosystem
 Shortname: safetogether
 Level: 1
-Status: DREAM
+Status: iso/CD
 Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/
 Markup Shorthands: markdown yes
