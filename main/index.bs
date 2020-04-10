@@ -16,7 +16,7 @@ Abstract:
 ## Status of This Document ## {#status}
 **This document is an incomplete draft.**
 The sections that have been incorporated have been reviewed
-following the [SafeTogether Process](process/).
+following the editorial [[!PROCESS]].
 However, the information in this document is still subject to change.
 
 You are invited to [contribute](https://github.com/safe-together/specification/issues)
@@ -48,7 +48,7 @@ Currently part of SafeTogether:
 1. **Autocertification test**: in contexts where guarantee can be lesser than *shielding level*, 
     it allows people to provide documentary evidence of your own serological test and to communicate the results to 
 	a third party.
-1. [[Tracing]]: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
+1. [[TRACING]]: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
     It allows medical and emergency management authorities to launch correct actions to alert people that had close contact
 	with patients found to be infected.
 	The system doesn't process personal information, it only uses anonymous data exchanged via Bluetooth LE
@@ -64,9 +64,10 @@ Currently part of SafeTogether:
     following an activity's actual flow and time and also, user support to satisfy his/her expectations (or presentation standards)
 	associated with every planned contact point.
 
-Independent teams work in parallel to develop applications, some applications (e.g. [[Tracing]]) are ready for use, 
+Independent teams work in parallel to develop applications, some applications (e.g. [[TRACING]]) are ready for use, 
 some others others are in an early development stage.
 
+Other information is published in the [SafeTogether Web Site](https://safetogether.com).
 
 # Document organization # {#organization}
 
@@ -74,10 +75,10 @@ Issue: Write Introduction section to specification (explain ortogonality).
 
 
 The SafeTogether Specification
-describes architecture and protocols for the [[Project]] and is composed by a set of related documents:
+describes architecture and protocols for the project and is composed by set of related documents:
 
-- [[!Process]]: that describes how to contribute to the SafeTogheter Specifications
-- [[!Stories]]: that describes personas and user stories that are inspiring the SafeTogheter initiative
+- [[!PROCESS]]: that describes how to change the SafeTogheter Specifications
+- [[!STORIES]]: that describes personas and user stories inspiring the SafeTogheter
 
 
 # Contributors # {#contributors}
@@ -118,12 +119,12 @@ Issue: compile here the list of official Stakeholder
 
 # Panels # {#panels}
 
-SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant tothe SafeTogether.
-Anyone may join a panel or suggest a new panel.
+SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to the SafeTogether project.
+Anyone can join a panel or suggest a new panel.
 
-Anyone can create a Panel by by making a pull request directly to this document.
+Anyone can create a Panel by making a pull request directly to this document.
 
-Domains may be technical, non-technical, or some combination of the two.
+Domains may be technical, non-technical, or a combination of both.
 
 This listing helps people find panels they may want to participate in, and helps editors find panels to consult 
 as part of the editorial process.
@@ -145,7 +146,7 @@ A description of the panel, including its focus and goal, should go here.
 
 **Editorial Assignment:**
  
-Candidate Proposals to the  Specification produced by this panel are likely to be associated with the 
+Candidate Proposals to the Specification produced by this panel are likely to be associated with the 
 [[!PROCESS|Editorial process]].
 
 ## Index of Panels ## {#index-of-panels}
@@ -157,8 +158,8 @@ Candidate Proposals to the  Specification produced by this panel are likely to b
 
 
 More or less there is a weekly SafeTogether Community Group call to review all panels. 
-See general channel in [[#project-panel]] to  find out the agenda and exact time of the next call and the address to connect,
-or to add an item to the next agenda.
+See general channel in [[#project-panel]] to find out the agenda and exact time of the next call and the address to connect to it,
+or to add put item on the next agenda.
 
 
 ## General discussion Panel ## {#project-panel}
@@ -216,12 +217,13 @@ Discussion about Requiementsm Protocols and Architecture about Shielding referen
 - [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)>
 - [Luca Mearelli](https://github.com/luca), <[l.mearelli@spazidigitali.com ](mailto:l.mearelli@spazidigitali.com )>
 - [Yassine Ouahidi](https://github.com/YassineOuahidi), <[yass.ouahidi@gmail.com](mailto:yass.ouahidi@gmail.com)> 
-- [Mohd Ehtesham Miah](https://github.com/miahmohd), <[miahmohd98@gmail.com](mailto:miahmohd98@gmail.com)> 
+- [Mohd Ehtesham Miah](https://github.com/miahmohd), <[miahmohd98@gmail.com](mailto:miahmohd98@gmail.com)>
+- [Leonardo Longhi](https://github.com/LeonardoLonghi), <[leonardolonghi64@gmail.com](mailto:leonardolonghi64@gmail.com )>
 
 
 **Editorial Assignment:**
  
-Develop a reference application for the Shielding application 
+Develop a reference application for the Shielding . 
 
 
 
