@@ -27,28 +27,28 @@ Personas {#personas}
 Albert is 48, he's the owner of a successful small software company. He has developed websites, 
 web applications and mobile applications for customers all over Europe. He's been very successfull 
 on the market and his company is considered a leader for mobile development. 
-His company's operations haven't been disrupted by SARS-CoV-2 but is worried that the economic 
+His company's operations haven't been disrupted by SARS-CoV-2 but he is worried that the economic 
 downturn following the epidemic could severly impact his business. He believes that the usage of tracing 
-technology could help the socity  to recover more rapidly and keep it working while waiting for 
+technology could help the socity to recover more rapidly and keep it working while waiting for 
 more definitive solutions to the disease.
 
 **Goals**
 
-Albert would like to create an application to help with contact tracing and wants to use his company experience 
-in building mobile apps to 
+Albert would like to create an application to help with contact tracing and wants to use his company's experience 
+in building mobile apps to do so.
 
 **Values and Fears**
 
 Albert cares about:
 - helping the local community through using his company know how
-- consolidating his company position as a leader in his market
+- consolidating his company's position as a leader in the market
 
 He is afraid of:
-- Being cut-out from the upcoming platform
+- Being cut-out from upcoming platforms
 - Having a solution that is not privacy compliant because of the interoperability platform
 - Having an application that has security issues
 - Being unable to anticipate the shifts in the digital and mobile apps market
-- To reach an insufficent population coverage with his app to make the contact tracing effective
+- To reach an insufficent population coverage with his app hence making the contact tracing uneffective
 - Loosing his distintive company know how
 
 
@@ -57,7 +57,7 @@ He is afraid of:
 **Details**
 
 Alice is 31, she’s a product manager for digital companies. She has worked mostly on B2C facing online services and consumer mobile apps. 
-She wants to crafti applications that are easy to use and pleasant and wants to create experiences that users love. 
+She wants to craft applications that are pleasant and easy to use and wants to create experiences that users love. 
 When her current company owner had started exploring the idea of developing a contact tracing application for SARS-CoV-2 
 she has jumped right into the opportunity since she feels that it could be a great way to make an impact. 
 She also believes that developing an effective application will require a deep understanding of end users and how to build great UXes
@@ -71,11 +71,11 @@ it effective.
 
 Alice cares about:
 - having the freedom to build the best user experience 
-- being able design a responsive application for both Android and iOS phones
+- being able to design a responsive application for both Android and iOS phones
 
 She is afraid of:
 - Having to design cumbersome user onboarding and identification flows
-- Being limited with the way the app should be designed
+- Having a limited influence over the way the app should be designed
 
 
 ### Bob the App Developer ### {#Bob}
@@ -86,7 +86,7 @@ Bob is 25, he’s an experienced mobile software developer. He has worked with a
 freelancer and helped to create apps for both Android and iOS ecosystems. 
 His current company has decided to participate in the development of a contact tracing application that integrates 
 into the SafeTogether project and he has been tasked with being compliant with SafeTogether Specification. 
-He is expert in  native development but lately moved to cross-platform tools to improve the time-to-market and have a common
+He is expert in native development but lately moved to cross-platform tools to improve the time-to-market and have a common
 codebase across both mobile app stores. 
 
 **Goals**
@@ -102,7 +102,7 @@ Bob cares about:
     - that can be monetized well (they rely on in-app purchases)
     - that are responsive to the user input
     - that work on phones and tablets
-- being efficient in coding the application, and being able to code [[#Alice]] requirements
+- being efficient in coding the application, and being able to code [[#Alice]]'s requirements
 - being able to easily track down errors and issues, specially with with external SDKs
 
 He is afraid of:
@@ -145,11 +145,14 @@ Issue: could be Maria a duplicated persona of Paola?
 
 **Details**
 
-Marco is 34, he’s a proactive with strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered. He is keen to get back to work soon after a long quarantine. In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile elderly. He knows how to use a smartphone, but technology isn’t really his thing.
+Marco is 34, he’s a proactive with a strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered. He is keen to get back to work after a long quarantine.
+In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile people.
+He knows how to use a smartphone, but technology isn’t really his thing.
 
 **Goals**
 
-Marco would like to get the “volunteer” certification so that he could go ahead and start helping his community. He is looking for the fastest and simplest way to achieve this goal.
+Marco would like to get the “volunteer” certification/status so that he could go ahead and start helping his community.
+He is looking for the fastest and simplest way to achieve this goal.
 
 **Values and Fear**
 
@@ -165,21 +168,23 @@ He is afraid of:
 
 **Details**
 
-Paola is 47, living in Milano, she’s been working in her pharmacy with her husband for over 12 years. She’s open minded and relaxed, taking life one step at a time. She hasn’t been tested for SARS-CoV-2, but none of his relatives was exposed so fairly confident of not being infectious.
+Paola is 47, living in Milan, she’s been working in her pharmacy with her husband for over 12 years. She’s open minded and relaxed, taking life one step at a time.
+She hasn’t been tested for SARS-CoV-2, but none of hes relatives was exposed so she's fairly confident of not being infectious.
 
 **Goals**
 
-Paola's goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business. She’s now one of the few registered professionals that can test the virus antibodies and produce digital certificates for immunity. While she’s happy to contribute to solving the current crisis, her major interests stay with the pharmacy itself.
+Paola's goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business.
+She’s now one of the few registered professionals that can test the virus antibodies and produce digital certificates for immunity.
+While she’s happy to contribute solving the current crisis, her major interests stay with the pharmacy itself.
 
 **Values and Fear**
 
-Paola cares about her community, and especially their health. She’s afraid the current situation will be prolonged and that everyone will suffer, if not due to health conditions and access to treatment, due to the economic impact that this crisis will have.
+Paola cares about her community, and especially their health. She’s afraid the current situation will be prolonged and that everyone will suffer,
+if not due to health conditions and access to treatment, due to the economic impact that this crisis will have.
 
 
+### Walter the Civil Defence ### {#Walter}
 
-### Walter the Institutional Force ### {#Walter}
-
-Issue: Role mistmach Waklteris used as a member of "protezione civile in keyless document
 
 **Details**
 
@@ -187,7 +192,8 @@ Walter is 51, he works with the Civil Defence forces and he is in charge of coor
 
 **Goals**
 
-Walter wants to leverage all existing resources to mitigate the damages of the current epidemic. Supporting all those in need with essentials and protective equipment. He needs to recruit the most immune volunteers possible to serve the local population.
+Walter wants to leverage all existing resources to mitigate the damages of the current epidemic. Supporting all those in need with essentials and protective equipment.
+He needs to recruit the most immune volunteers possible to serve the local population.
 
 **Values and Fear**
 
@@ -198,7 +204,8 @@ He fears to unknowingly spread the virus while trying to mitigate its damages. W
 
 **Details**
 
-Franca is 72, already home-bound due to the government directions to the elderly. She’s getting essentials delivered at home by either supermarkets or volunteers. Living alone, with no family within her city she needs external support to survive.
+Franca is 72, already home-bound due to the government directions to the elderly. She’s getting essentials delivered at home by either supermarkets or volunteers.
+Living alone, with no family within her city she needs external support to survive.
 
 **Goals**
 
@@ -206,34 +213,30 @@ Survive. She needs to rely on low-tech communication, not having a computer and 
 
 **Values and Fear**
 
-Franca fears to be “left behind” and to have little means to request help/support.
+Franca fears to be “left behind” and to have little means to request help and support.
 
-
-### Andrea the lorry driver ### {#Andrea}
-
-
-Issue: Andrea is a duplicate name, it was used bt Keyless fo the police officer
+### Aleksandra the lorry driver ### {#Andrea}
 
 **Details**
 
-Andrea is 51, she is from Poland. She drives a lorry for work. Sometimes she has to travel across countries to deliver goods.
+Aleksandra is 39, she is from Poland. She drives a lorry for work. Sometimes she has to travel across countries to deliver goods.
 
 **Goals**
 
-Andrea's goal is to get back to “business as usual" as soon as possible. Her family depends on the pharmacy business.
+Aleksandra's goal is to get back to “business as usual" as soon as possible. Her family depends on her.
 
 **Values and Fear**
 
 She fears that she might lose her job in case travel across Europe is restricted.
-Some countries may deny her access, even though she could be immune.
+Some countries may deny her access, even though she could be immune and therefore not a threat.
 
 
 ### Anne a Regular Citizenr ### {#Anne}
 
 **Details**
 
-Anneis a general adult with a family of 3, living and working in a medium
-size city. She’s a smartphone and uses it regularly in her daily life.
+Anne is a general adult with a family of 3, living and working in a medium
+size city. She has a smartphone and uses it regularly in her daily life.
 
 **Goals**
 
@@ -243,9 +246,9 @@ Staying healthy, while being able to live and work as normal.
 
 Anne values privacy and freedom, she’s aware of abuse of controlling
 measures some governments have been enacting. Anne fears to have the
-virus, to be passing it to his family members. She’s afraid for her
-own health, that her family could be in hard economic conditions,
-that she might be fired.
+virus and to be passing it to her family members. She cares about her
+own health and she is afraid that her family could face hard economic conditions
+due to the fact that she might be fired.
 
 ### Jack a patient under treatment ### {#Jack}
 
@@ -266,14 +269,13 @@ Fear of death, loss and overall feeling of grief.
 
 **Details**
 
-Natasha is 43, she owns the comapany where [Andrea](#Andrea).
+Natasha is 43, she owns the comapany where [Aleksandra](#Aleksandra) works.
 
 **Goals**
 
-She has been hit hard by the crisis, so she needs to get back to "business as usual" as soon as possible.
+She has been hit hard by the crisis, so she needs to get back to business as soon as possible.
 
 **Values and Fear**
 
 - She fears that due to travel restrictions her business might go under.
 - She fears that her employees might be endangered, phisically and economically.
-
