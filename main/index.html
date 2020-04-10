@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 3d0743c, updated Mon Apr 6 16:15:57 2020 +0200" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="be68ba3d74f2d636dffd42efaa2d7c26938e251c" name="document-revision">
+  <meta content="c7a995eb1c3760cbf9a83aa0f599e97cab5363ad" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">The SafeTogether Ecosystem</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">A Collection of Interesting Ideas, <time class="dt-updated" datetime="2020-04-09">9 April 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">A Collection of Interesting Ideas, <time class="dt-updated" datetime="2020-04-10">10 April 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 9 April 2020,
+In addition, as of 10 April 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1408,6 +1408,19 @@ Parts of this work may be from another specification document.  If so, those par
    <ol class="toc" role="directory">
     <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
     <li><a href="#organization"><span class="secno">2</span> <span class="content">Document organization</span></a>
+    <li><a href="#contributors"><span class="secno">3</span> <span class="content">Contributors</span></a>
+    <li><a href="#stakeholders"><span class="secno">4</span> <span class="content">Stakeholders</span></a>
+    <li>
+     <a href="#panels"><span class="secno">5</span> <span class="content">Panels</span></a>
+     <ol class="toc">
+      <li><a href="#example-panel"><span class="secno">5.1</span> <span class="content">Example Panel</span></a>
+      <li><a href="#index-of-panels"><span class="secno">5.2</span> <span class="content">Index of Panels</span></a>
+      <li><a href="#project-panel"><span class="secno">5.3</span> <span class="content">General discussion Panel</span></a>
+      <li><a href="#stories-panel"><span class="secno">5.4</span> <span class="content">Stories Panel</span></a>
+      <li><a href="#shielding-panel"><span class="secno">5.5</span> <span class="content">Shielding panel</span></a>
+      <li><a href="#tracing-panel"><span class="secno">5.6</span> <span class="content">Tracing panel</span></a>
+     </ol>
+    <li><a href="#repositories"><span class="secno">6</span> <span class="content">Repositories</span></a>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
@@ -1421,7 +1434,7 @@ Parts of this work may be from another specification document.  If so, those par
   <main>
    <h3 class="heading settled" id="status"><span class="content">Status of This Document</span></h3>
     <strong>This document is an incomplete draft.</strong> The sections that have been incorporated have been reviewed
-following the <a href="process/">SafeTogether Process</a>.
+following the editorial <a data-link-type="biblio" href="#biblio-process">[PROCESS]</a>.
 However, the information in this document is still subject to change. 
    <p>You are invited to <a href="https://github.com/safe-together/specification/issues">contribute</a> any feedback, comments, or questions you might have.</p>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
@@ -1448,7 +1461,7 @@ reducing fraud risk.</p>
 it allows people to provide documentary evidence of your own serological test and to communicate the results to 
 a third party.</p>
     <li data-md>
-     <p><a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
+     <p><a data-link-type="biblio" href="#biblio-tracing">[TRACING]</a>: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
 It allows medical and emergency management authorities to launch correct actions to alert people had close contact
 with patients found to be infected.
 The system doesn’t process personal information, it only uses anonymous data exchanged by Bluetooth LE
@@ -1467,18 +1480,172 @@ Application maintenance management.</p>
 following activity effective flow and time, and also user support to satisfy his expectations (or presentation standards)
 associated with every planned contact point.</p>
    </ol>
-   <p>Independent teams work in parallel to develop applications, some applications (e.g. <a data-link-type="biblio" href="#biblio-tracing">[Tracing]</a>) are  ready to use,
+   <p>Independent teams work in parallel to develop applications, some applications (e.g. <a data-link-type="biblio" href="#biblio-tracing">[TRACING]</a>) are  ready to use,
 some others others are in an early development stage.</p>
+   <p>Other information is published in the <a href="https://safetogether.com">SafeTogether Web Site</a></p>
    <h2 class="heading settled" data-level="2" id="organization"><span class="secno">2. </span><span class="content">Document organization</span><a class="self-link" href="#organization"></a></h2>
    <p class="issue" id="issue-b0a63dd3"><a class="self-link" href="#issue-b0a63dd3"></a> Write Introduction section to  specification (explain ortogonality).</p>
    <p>The SafeTogether Specification
-describes architecture and protocols for the <a data-link-type="biblio" href="#biblio-project">[Project]</a> and is composed by set of related documents:</p>
+describes architecture and protocols for the project and is composed by set of related documents:</p>
    <ul>
     <li data-md>
-     <p><a data-link-type="biblio" href="#biblio-process">[Process]</a>: that describes  how to change the SafeTogheter Specifications</p>
+     <p><a data-link-type="biblio" href="#biblio-process">[PROCESS]</a>: that describes how to change the SafeTogheter Specifications</p>
     <li data-md>
-     <p><a data-link-type="biblio" href="#biblio-stories">[Stories]</a>: that describes personas and user stories inspiring the SafeTogheter</p>
+     <p><a data-link-type="biblio" href="#biblio-stories">[STORIES]</a>: that describes personas and user stories inspiring the SafeTogheter</p>
    </ul>
+   <h2 class="heading settled" data-level="3" id="contributors"><span class="secno">3. </span><span class="content">Contributors</span><a class="self-link" href="#contributors"></a></h2>
+   <p>Any individual that has been involved in proposals to improve the SafeTogether Specification has provided a valuable service to
+SafeTogether Project and is encouraged to continue.</p>
+   <p>All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.</p>
+   <p>There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise.
+For these cases, we have <a href="#panels">§ 5 Panels</a></p>
+   <h2 class="heading settled" data-level="4" id="stakeholders"><span class="secno">4. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h2>
+   <p>Stakeholders are those affected by normative changes to the SafeTogether Specification.
+There are two types of stakeholders:</p>
+   <dl>
+    <dt data-md>users
+    <dd data-md>
+     <p>SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.</p>
+    <dt data-md>implementers
+    <dd data-md>
+     <p>SafeTogether Implementers are individuals, companies or organizations who are implementing portions of the SafeTogether Specification.</p>
+   </dl>
+   <p>A Stakeholder may be both a user and an implementer. It is important to consider them both when proposing changes.</p>
+   <p>Anyone may decide to identify themselves publicly as a SafeTogether Stakeholder,
+but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.</p>
+   <p>Stakeholders who have opted to identify themselves publicly are listed below:</p>
+   <p class="issue" id="issue-0caabc37"><a class="self-link" href="#issue-0caabc37"></a> compile here the list of official Stakeholder</p>
+   <ul>
+    <li data-md>
+     <p>User name or company name, home page, role (user | implementer)</p>
+    <li data-md>
+     <p>...</p>
+   </ul>
+   <h2 class="heading settled" data-level="5" id="panels"><span class="secno">5. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h2>
+   <p>SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant tothe SafeTogether.
+Anyone may join a panel or suggest a new panel.</p>
+   <p>Anyone can create a Panel by by making a pull request directly to this document.</p>
+   <p>Domains may be technical, non-technical, or some combination of the two.</p>
+   <p>This listing helps people find panels they may want to participate in, and helps editors find panels to consult
+as part of the editorial process.</p>
+   <h3 class="heading settled" data-level="5.1" id="example-panel"><span class="secno">5.1. </span><span class="content">Example Panel</span><a class="self-link" href="#example-panel"></a></h3>
+    This is an example that people can use as a template for submitting their own panels. 
+A description of the panel, including its focus and goal, should go here. 
+   <p><strong>Communication channels:</strong></p>
+   <ul>
+    <li data-md>
+     <p>Link to join mailing list goes here</p>
+    <li data-md>
+     <p>Link to public chat goes here</p>
+    <li data-md>
+     <p>Any other public communication link goes here</p>
+   </ul>
+   <p><strong>Panelists:</strong></p>
+   <ul>
+    <li data-md>
+     <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
+    <li data-md>
+     <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
+   </ul>
+   <p><strong>Editorial Assignment:</strong></p>
+   <p>Candidate Proposals to the  Specification produced by this panel are likely to be associated with the <a data-link-type="biblio" href="#biblio-process">Editorial process</a>.</p>
+   <h3 class="heading settled" data-level="5.2" id="index-of-panels"><span class="secno">5.2. </span><span class="content">Index of Panels</span><a class="self-link" href="#index-of-panels"></a></h3>
+   <ul>
+    <li data-md>
+     <p><a href="#project-panel">§ 5.3 General discussion Panel</a></p>
+    <li data-md>
+     <p><a href="#stories-panel">§ 5.4 Stories Panel</a></p>
+    <li data-md>
+     <p><a href="#shielding-panel">§ 5.5 Shielding panel</a></p>
+    <li data-md>
+     <p><a href="#tracing-panel">§ 5.6 Tracing panel</a></p>
+   </ul>
+   <p>More or less there is a weekly SafeTogether Community Group call to review all panels.
+See general channel in <a href="#project-panel">§ 5.3 General discussion Panel</a> to  find out the agenda and exact time of the next call and the address to connect,
+or to add an item to the next agenda.</p>
+   <h3 class="heading settled" data-level="5.3" id="project-panel"><span class="secno">5.3. </span><span class="content">General discussion Panel</span><a class="self-link" href="#project-panel"></a></h3>
+    General Discussion about project governances, process and news 
+   <p><strong>Communication channels:</strong></p>
+   <ul>
+    <li data-md>
+     <p>general channel: https://safetogether2020.slack.com/app_redirect?channel=general</p>
+    <li data-md>
+     <p>daily-discussion channel: https://safetogether2020.slack.com/app_redirect?channel=daily-discussion</p>
+    <li data-md>
+     <p>news channel : https://safetogether2020.slack.com/app_redirect?channel=safetogether</p>
+    <li data-md>
+     <p>Web site: https://safetogether.com/</p>
+   </ul>
+   <p><strong>Panelists:</strong></p>
+   <ul>
+    <li data-md>
+     <p>Stefano Quintarelli</p>
+   </ul>
+   <p><strong>Editorial Assignment:</strong></p>
+   <p>Relevant news should be inserted in the project web site</p>
+   <h3 class="heading settled" data-level="5.4" id="stories-panel"><span class="secno">5.4. </span><span class="content">Stories Panel</span><a class="self-link" href="#stories-panel"></a></h3>
+    Definition of personas and user stories inspiring SafeTogether 
+   <p><strong>Communication channels:</strong></p>
+   <ul>
+    <li data-md>
+     <p>#Slack channel: https://safetogether2020.slack.com/app_redirect?channel=stories</p>
+   </ul>
+   <p><strong>Panelists:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="https://github.com/ecow">Enrico Fagnoni</a>, &lt;<a href="mailto:enrico@LinkedData.Center">enrico@LinkedData.Center</a>></p>
+    <li data-md>
+     <p>[Michele D’Aliessi](), &lt;<a href="mailto:michele.daliessi@gmail.com">michele.daliessi@gmail.com</a>></p>
+    <li data-md>
+     <p>[Andrea Carmignani](), &lt;<a href="mailto:andrea@keyless.io">andrea@keyless.io</a>></p>
+   </ul>
+   <p><strong>Editorial Assignment:</strong></p>
+   <p>Candidate Proposals to the SafeTogether Specification produced by this panel are likely to
+be associated with the <a data-link-type="biblio" href="#biblio-stories">[STORIES]</a> soecifications, and will be principally reviewed 
+by any editors assigned to it.</p>
+   <h3 class="heading settled" data-level="5.5" id="shielding-panel"><span class="secno">5.5. </span><span class="content">Shielding panel</span><a class="self-link" href="#shielding-panel"></a></h3>
+    Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
+   <p><strong>Communication channels:</strong></p>
+   <ul>
+    <li data-md>
+     <p>#Slack channel: https://copernicani.slack.com/app_redirect?channel=g0v-it-shielding</p>
+    <li data-md>
+     <p>Git: https://github.com/g0v-it/safetogether-shielding</p>
+   </ul>
+   <p><strong>Panelists:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="https://github.com/ecow">Enrico Fagnoni</a>, &lt;<a href="mailto:enrico@LinkedData.Center">enrico@LinkedData.Center</a>></p>
+    <li data-md>
+     <p><a href="https://github.com/luca">Luca Mearelli</a>, &lt;<a href="mailto:l.mearelli@spazidigitali.com">l.mearelli@spazidigitali.com </a>></p>
+    <li data-md>
+     <p><a href="https://github.com/YassineOuahidi">Yassine Ouahidi</a>, &lt;<a href="mailto:yass.ouahidi@gmail.com">yass.ouahidi@gmail.com</a>></p>
+    <li data-md>
+     <p><a href="https://github.com/miahmohd">Mohd Ehtesham Miah</a>, &lt;<a href="mailto:miahmohd98@gmail.com">miahmohd98@gmail.com</a>></p>
+   </ul>
+   <p><strong>Editorial Assignment:</strong></p>
+   <p>Develop a reference application for the Shielding application</p>
+   <h3 class="heading settled" data-level="5.6" id="tracing-panel"><span class="secno">5.6. </span><span class="content">Tracing panel</span><a class="self-link" href="#tracing-panel"></a></h3>
+    Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
+   <p><strong>Communication channels</strong></p>
+   <ul>
+    <li data-md>
+     <p>Official web site: https://coronavirus-outbreak-control.github.io/web/</p>
+    <li data-md>
+     <p>Git: https://github.com/coronavirus-outbreak-control/</p>
+    <li data-md>
+     <p>email : coronavirus.outbreak.control@gmail.com</p>
+   </ul>
+   <p><strong>Panelists:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="https://github.com/ecow">Luca Mastrostefano</a>, &lt;<a href="mailto:luca.mastrostefano90@gmail.com">luca.mastrostefano90@gmail.com </a>></p>
+   </ul>
+   <p><strong>Editorial Assignment:</strong></p>
+   <p>Develop a reference application for the Tracing  application (<a data-link-type="biblio" href="#biblio-tracing">[TRACING]</a>)</p>
+   <h2 class="heading settled" data-level="6" id="repositories"><span class="secno">6. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h2>
+   <p>Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.</p>
+   <p>Editors have <a href="https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization">_Admin Permissions_</a> on the repositories they are assigned to.</p>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1629,21 +1796,20 @@ describes architecture and protocols for the <a data-link-type="biblio" href="#b
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
-   <dt id="biblio-process">[Process]
-   <dd> SafeTogheter Process Panel. <a href="https://safe-together.github.io/specification/process">The SafeTogether Process</a>. URL: <a href="https://safe-together.github.io/specification/process">https://safe-together.github.io/specification/process</a>
+   <dt id="biblio-process">[PROCESS]
+   <dd>E.Fagnoni. <a href="https://safe-together.github.io/specification/process">The SafeTogether Process</a>. URL: <a href="https://safe-together.github.io/specification/process">https://safe-together.github.io/specification/process</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-stories">[Stories]
-   <dd> SafeTogheter Stories Panel. <a href="https://safe-together.github.io/specification/stories">Personas and User Stories</a>. URL: <a href="https://safe-together.github.io/specification/stories">https://safe-together.github.io/specification/stories</a>
+   <dt id="biblio-stories">[STORIES]
+   <dd>E.Fagnoni; M.D'Aliessi; A.Carmignani. <a href="https://safe-together.github.io/specification/stories">Personas and User Stories</a>. URL: <a href="https://safe-together.github.io/specification/stories">https://safe-together.github.io/specification/stories</a>
   </dl>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="#informative"></a></h3>
   <dl>
-   <dt id="biblio-project">[Project]
-   <dd> SafeTogheter Web Panel. <a href="https://safetogether.com">The SafeTogether web site</a>. URL: <a href="https://safetogether.com">https://safetogether.com</a>
-   <dt id="biblio-tracing">[Tracing]
-   <dd>coronavirus Outbreak Control Team. <a href="https://coronavirus-outbreak-control.github.io/web/">CovidApp - Covid Community Alert</a>. URL: <a href="https://coronavirus-outbreak-control.github.io/web/">https://coronavirus-outbreak-control.github.io/web/</a>
+   <dt id="biblio-tracing">[TRACING]
+   <dd>L.Mastrostefano. <a href="https://coronavirus-outbreak-control.github.io/web/">CovidApp - Covid Community Alert</a>. URL: <a href="https://coronavirus-outbreak-control.github.io/web/">https://coronavirus-outbreak-control.github.io/web/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
    <div class="issue"> Write Introduction section to  specification (explain ortogonality).<a href="#issue-b0a63dd3"> ↵ </a></div>
+   <div class="issue"> compile here the list of official Stakeholder<a href="#issue-0caabc37"> ↵ </a></div>
   </div>
