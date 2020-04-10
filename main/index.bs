@@ -16,7 +16,7 @@ Abstract:
 ## Status of This Document ## {#status}
 **This document is an incomplete draft.**
 The sections that have been incorporated have been reviewed
-following the [SafeTogether Process](process/).
+following the editorial [[!PROCESS]].
 However, the information in this document is still subject to change.
 
 You are invited to [contribute](https://github.com/safe-together/specification/issues)
@@ -48,7 +48,7 @@ It's currently part of SafeTogether:
 1. **Autocertification test**: in contexts where guarantee can be lesser than *shielding level*, 
     it allows people to provide documentary evidence of your own serological test and to communicate the results to 
 	a third party.
-1. [[Tracing]]: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
+1. [[TRACING]]: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
     It allows medical and emergency management authorities to launch correct actions to alert people had close contact
 	with patients found to be infected.
 	The system doesn't process personal information, it only uses anonymous data exchanged by Bluetooth LE
@@ -64,8 +64,10 @@ It's currently part of SafeTogether:
     following activity effective flow and time, and also user support to satisfy his expectations (or presentation standards)
 	associated with every planned contact point.
 
-Independent teams work in parallel to develop applications, some applications (e.g. [[Tracing]]) are  ready to use, 
+Independent teams work in parallel to develop applications, some applications (e.g. [[TRACING]]) are  ready to use, 
 some others others are in an early development stage.
+
+Other information is published in the [SafeTogether Web Site](https://safetogether.com)
 
 
 # Document organization # {#organization}
@@ -74,40 +76,205 @@ Issue: Write Introduction section to  specification (explain ortogonality).
 
 
 The SafeTogether Specification
-describes architecture and protocols for the [[Project]] and is composed by set of related documents:
+describes architecture and protocols for the project and is composed by set of related documents:
 
-- [[!Process]]: that describes  how to change the SafeTogheter Specifications
-- [[!Stories]]: that describes personas and user stories inspiring the SafeTogheter
+- [[!PROCESS]]: that describes how to change the SafeTogheter Specifications
+- [[!STORIES]]: that describes personas and user stories inspiring the SafeTogheter
+
+
+# Contributors # {#contributors}
+
+Any individual that has been involved in proposals to improve the SafeTogether Specification has provided a valuable service to 
+SafeTogether Project and is encouraged to continue.
+
+All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.
+
+There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise. 
+For these cases, we have [[#panels]]
+
+
+# Stakeholders # {#stakeholders}
+
+Stakeholders are those affected by normative changes to the SafeTogether Specification. 
+There are two types of stakeholders:
+
+: users
+:: SafeTogether Users are individuals, companies, or organizations who access a SafeTogether Application.
+: implementers
+:: SafeTogether Implementers are individuals, companies or organizations who are implementing portions of the SafeTogether Specification. 
+
+A Stakeholder may be both a user and an implementer. It is important to consider them both when proposing changes. 
+
+Anyone may decide to identify themselves publicly as a SafeTogether Stakeholder, 
+but it is not mandatory. Identified stakeholders may be consulted for feedback as part of the editorial process.
+
+
+Stakeholders who have opted to identify themselves publicly are listed below:
+
+Issue: compile here the list of official Stakeholder
+
+* User name or company name, home page, role (user | implementer)
+* ...
+
+
+
+# Panels # {#panels}
+
+SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant tothe SafeTogether.
+Anyone may join a panel or suggest a new panel.
+
+Anyone can create a Panel by by making a pull request directly to this document.
+
+Domains may be technical, non-technical, or some combination of the two.
+
+This listing helps people find panels they may want to participate in, and helps editors find panels to consult 
+as part of the editorial process.
+
+## Example Panel ## {#example-panel}
+This is an example that people can use as a template for submitting their own panels. 
+A description of the panel, including its focus and goal, should go here.
+
+**Communication channels:**
+
+- Link to join mailing list goes here
+- Link to public chat goes here
+- Any other public communication link goes here
+
+**Panelists:**
+
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+- [Panellist Name](link to github profile) <[email@example.org](mailto:email@example.org)> (@github handle)
+
+**Editorial Assignment:**
+ 
+Candidate Proposals to the  Specification produced by this panel are likely to be associated with the 
+[[!PROCESS|Editorial process]].
+
+## Index of Panels ## {#index-of-panels}
+
+- [[#project-panel]]
+- [[#stories-panel]]
+- [[#shielding-panel]]
+- [[#tracing-panel]]
+
+
+More or less there is a weekly SafeTogether Community Group call to review all panels. 
+See general channel in [[#project-panel]] to  find out the agenda and exact time of the next call and the address to connect,
+or to add an item to the next agenda.
+
+
+## General discussion Panel ## {#project-panel}
+General Discussion about project governances, process and news
+
+**Communication channels:**
+
+- general channel: https://safetogether2020.slack.com/app_redirect?channel=general
+- daily-discussion channel: https://safetogether2020.slack.com/app_redirect?channel=daily-discussion
+- news channel : https://safetogether2020.slack.com/app_redirect?channel=safetogether
+- Web site: https://safetogether.com/
+
+**Panelists:**
+
+- Stefano Quintarelli
+
+**Editorial Assignment:**
+ 
+Relevant news should be inserted in the project web site
+
+
+
+## Stories Panel ## {#stories-panel}
+Definition of personas and user stories inspiring SafeTogether
+
+**Communication channels:**
+
+- #Slack channel: https://safetogether2020.slack.com/app_redirect?channel=stories
+
+
+**Panelists:**
+
+- [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)>
+- [Michele D'Aliessi](), <[michele.daliessi@gmail.com](mailto:michele.daliessi@gmail.com)>
+- [Andrea Carmignani](), <[andrea@keyless.io](mailto:andrea@keyless.io)>
+
+
+**Editorial Assignment:**
+ 
+Candidate Proposals to the SafeTogether Specification produced by this panel are likely to 
+be associated with the [[!STORIES]] soecifications, and will be principally reviewed 
+by any editors assigned to it.
+
+
+## Shielding panel ## {#shielding-panel}
+Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
+
+**Communication channels:**
+
+- #Slack channel: https://copernicani.slack.com/app_redirect?channel=g0v-it-shielding
+- Git: https://github.com/g0v-it/safetogether-shielding 
+ 
+**Panelists:**
+
+- [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)>
+- [Luca Mearelli](https://github.com/luca), <[l.mearelli@spazidigitali.com ](mailto:l.mearelli@spazidigitali.com )>
+- [Yassine Ouahidi](https://github.com/YassineOuahidi), <[yass.ouahidi@gmail.com](mailto:yass.ouahidi@gmail.com)> 
+- [Mohd Ehtesham Miah](https://github.com/miahmohd), <[miahmohd98@gmail.com](mailto:miahmohd98@gmail.com)> 
+
+
+**Editorial Assignment:**
+ 
+Develop a reference application for the Shielding application 
+
+
+
+## Tracing panel ## {#tracing-panel}
+Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
+
+**Communication channels**
+- Official web site: https://coronavirus-outbreak-control.github.io/web/
+- Git: https://github.com/coronavirus-outbreak-control/
+- email : coronavirus.outbreak.control@gmail.com
+
+
+**Panelists:**
+
+- [Luca Mastrostefano](https://github.com/ecow), <[luca.mastrostefano90@gmail.com ](mailto:luca.mastrostefano90@gmail.com )>
+
+
+**Editorial Assignment:**
+ 
+Develop a reference application for the Tracing  application ([[TRACING]])
+
+# Repositories # {#repositories}
+
+Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.
+
+Editors have [_Admin Permissions_](https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization) on the repositories they are assigned to.
 
 
 <pre class=biblio>
 {
-	"tracing": {
+	"TRACING": {
 		"href": "https://coronavirus-outbreak-control.github.io/web/",
 		"title": "CovidApp - Covid Community Alert",
 		"authors": [
-	      "coronavirus Outbreak Control Team"
+	      "L.Mastrostefano"
 	    ]
 	},
-	"process": {
+	"PROCESS": {
 		"href": "https://safe-together.github.io/specification/process",
 		"title": "The SafeTogether Process",
 		"authors": [
-	      " SafeTogheter Process Panel"
+	      "E.Fagnoni"
 	    ]
 	},
-	"stories": {
+	"STORIES": {
 		"href": "https://safe-together.github.io/specification/stories",
 		"title": "Personas and User Stories",
 		"authors": [
-	      " SafeTogheter Stories Panel"
-	    ]
-	},
-	"project": {
-		"href": "https://safetogether.com",
-		"title": "The SafeTogether web site",
-		"authors": [
-	      " SafeTogheter Web Panel"
+	      "E.Fagnoni",
+	      "M.D'Aliessi",
+	      "A.Carmignani"
 	    ]
 	}
 }
