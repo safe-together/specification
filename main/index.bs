@@ -67,7 +67,7 @@ Currently part of SafeTogether:
 Independent teams work in parallel to develop applications, some applications (e.g. [[TRACING]]) are ready for use, 
 some others others are in an early development stage.
 
-Other information is published in the [SafeTogether Web Site](https://safetogether.com).
+Other information will be published soon in the [SafeTogether Web Site](https://safetogether.com).
 
 # Document organization # {#organization}
 
@@ -188,11 +188,12 @@ Definition of personas and user stories inspiring SafeTogether
 **Communication channels:**
 
 - #Slack channel: https://safetogether2020.slack.com/app_redirect?channel=stories
+- repository: https://github.com/safe-thogether/stories-panel
 
 
 **Panelists:**
 
-- [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)>
+- [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)> (@ecow)
 - [Michele D'Aliessi](), <[michele.daliessi@gmail.com](mailto:michele.daliessi@gmail.com)>
 - [Andrea Carmignani](), <[andrea@keyless.io](mailto:andrea@keyless.io)>
 
@@ -214,11 +215,11 @@ Discussion about Requiementsm Protocols and Architecture about Shielding referen
  
 **Panelists:**
 
-- [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)>
-- [Luca Mearelli](https://github.com/luca), <[l.mearelli@spazidigitali.com ](mailto:l.mearelli@spazidigitali.com )>
-- [Yassine Ouahidi](https://github.com/YassineOuahidi), <[yass.ouahidi@gmail.com](mailto:yass.ouahidi@gmail.com)> 
-- [Mohd Ehtesham Miah](https://github.com/miahmohd), <[miahmohd98@gmail.com](mailto:miahmohd98@gmail.com)>
-- [Leonardo Longhi](https://github.com/LeonardoLonghi), <[leonardolonghi64@gmail.com](mailto:leonardolonghi64@gmail.com )>
+- [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)> (@ecow)
+- [Luca Mearelli](https://github.com/luca), <[l.mearelli@spazidigitali.com ](mailto:l.mearelli@spazidigitali.com )> (@luca)
+- [Yassine Ouahidi](https://github.com/YassineOuahidi), <[yass.ouahidi@gmail.com](mailto:yass.ouahidi@gmail.com)>  (@YassineOuahidi)
+- [Mohd Ehtesham Miah](https://github.com/miahmohd), <[miahmohd98@gmail.com](mailto:miahmohd98@gmail.com)> (@miahmohd)
+- [Leonardo Longhi](https://github.com/LeonardoLonghi), <[leonardolonghi64@gmail.com](mailto:leonardolonghi64@gmail.com )> (@LeonardoLonghi)
 
 
 **Editorial Assignment:**

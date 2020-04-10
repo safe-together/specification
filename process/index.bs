@@ -7,7 +7,7 @@ Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/process/
 Markup Shorthands: markdown yes
 Max ToC Depth: 2
-Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Editor: Enrico Fagnoni, LinkedData.Center http://LinkedData.Center, enrico@LinkedData.Center, https://www.linkedin.com/in/efagnoni/
 Abstract:
   This document is a description about how changes to the specifications in the SafeTogether Ecosystem may be proposed and accepted.
   Anyone may participate in this process.
