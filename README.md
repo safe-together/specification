@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/safe-together/specification.svg?style=flat-square)](http://travis-ci.org/safe-together/specification)
+
 # SafeTogether Specification repository
 
 * Editor's Draft: https://safe-together.github.io/specification/
