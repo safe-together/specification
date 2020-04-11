@@ -10,7 +10,7 @@ Max ToC Depth: 3
 Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
 Abstract:
   This document is a description about personas and user stories.
-  Anyone may participate in this process.
+  Anyone can take part in the editing process.
 </pre>
 
 ## Status of This Document ## {#status}

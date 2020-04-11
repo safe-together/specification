@@ -23,6 +23,7 @@ initially in this state. Users are enrolled in the system in US1.
 
 # User stories #{#user_stories}
 
+Issue: Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen
 
 ## US01: Marco is Tested (Antibody Test) ## {#US01}
 
@@ -238,7 +239,9 @@ Marco’s state is immune
 **Story:**
 
 Marco is asked by
-Walter to prove that his state is immune. Marco opens the *Mobile App* and authenticates. The app shows a QR code that contains Marco’s COC_ID. Walter scans the QR code using the operator app. The operator app checks Marco’s state on the backend (including the expiration date if the state is immune), and returns it to Walter.
+Walter to prove that his state is immune. Marco opens the *Mobile App* and authenticates. The app shows a QR code that contains Marco’s COC_ID. 
+Walter scans the QR code using the operator app.
+The operator app checks Marco’s state on the backend (including the expiration date if the state is immune and if the immunity has an expiration date), and returns it to Walter.
 
 
 ## US09 - Marco Volunteers to Join Shielding Program ## {#US09}
@@ -287,7 +290,7 @@ that it is now unknown. Marco can now proceed with [[#US01]].
 
 
 
-## US11 -  Marco is Tested (Tampon). ## {#US11}
+## US11 -  Marco is Tested. ## {#US11}
 
 **Actors:**
 
@@ -297,14 +300,16 @@ that it is now unknown. Marco can now proceed with [[#US01]].
 **Preconditions:**
 
 Marco state is unknown, immune, or negative.
+
  
 ** Post-condition:**
 
 Marco state is quarantined, negative, or immune
 
+Issue: The antibodies test and the swab test are two different tests, hence the result cannot be immune.
+
 **Story:**
 
-issue: who is Giovanni??
 
 Marco feels
 sick, and goes to his doctor Giovanni. Giovanni records information
@@ -331,7 +336,7 @@ Marco’s state is immune
  
 **Story:**
 
-Issue: is Bluethoot really usefull? What happens if Franca lives in a big building and Mark ring apartment building intercom? 
+Issue: is Bluethoot really usefull? What happens if Franca lives in a big building and Mark rings apartment building intercom? 
 
 Walter sends Marco to Franca. Marco knocks Franca’s door, and
 Franca asks him to identify himself. Marco authenticates with the
@@ -348,6 +353,8 @@ photo shown on her *Mobile App*, and opens the door.
 
 
 ## US13 - Antibodies test ## {#US13}
+
+Issue: Could this be [[#US01]]
 
 **Actors:**
 
@@ -373,7 +380,9 @@ The information are stored in a db, morover they are sended to COC Backend that 
 The certificate will be stored Marco's device memory.
 
 
-## US14 - expired immunity ## {#US14}
+## US14 - Expired Immunity ## {#US14}
+
+Issue: Could this be a duplicate for [[#US01]]
 
 **Actors:**
 
@@ -385,11 +394,11 @@ The certificate will be stored Marco's device memory.
 
 **Preconditions:**
 
-Marco has a test-certificate
+Marco has an immunity certification
 
 **Story:**
 
-The test-certificate has an expiring-date. After this date Marco has to go back to Paola in order to update his immunity condition.
+The Immunity certification may have an expiration date (it's unknown). After this date Marco has to go back to Paola in order to update his immunity condition.
 
 
 ## US15 - Marco is a bad person ## {#US15}
@@ -402,15 +411,14 @@ The test-certificate has an expiring-date. After this date Marco has to go back 
 
 **Preconditions:**
 
-Marco has a test-certificate
+Marco has an immunity certification and has the volonteer status
 
 **Story:**
 
-Issue: who is Stefano? 
 
-Issue: Who is Pietro?
-
-When Marco goes to Franca robs her. Franca reports the crime to Carabinieri. Pietro, the policeman, uses the user-app to read Franca COC_ID, then He asks to Stefano, the app owner, Marco's COC_ID stored in Franca's contact logs. Pietro, the policeman, asks to Walter to revoke Marco's volunteer certificate.
+When Marco goes to Franca he robs her. Franca reports the crime to the cops. 
+One of the policeman uses the user-app to read Franca COC_ID, then he asks Albert, the app owner, for Marco's COC_ID stored in Franca's contact logs. 
+The policeman asks Walter to revoke Marco's volunteer status.
 
 
 ## US16 - Natasha encourages her employees to take the test ## {#US16}
@@ -425,15 +433,16 @@ When Marco goes to Franca robs her. Franca reports the crime to Carabinieri. Pie
 
 **Story:**
 
-Natasha wants to do business in Italy knowing that crossing the border is permitted only if her drivers have a certification of immunity. She encourages her employees to take the test and obtain permission to cross.
+Natasha wants to do business in Italy knowing that crossing the border is permitted only if her drivers have a certification of immunity.
+She encourages her employees to take the test and obtain permission to cross.
 
 
-## US17 - Andrea corsses the italian border ## {#US17}
+## US17 - Aleksandra crosses the italian border ## {#US17}
 
 **Actors:**
 
 - [[#Natasha]]
-- [[#Andrea]]
+- [[#Aleksandra]]
 
 
 **Conditions:**
@@ -442,17 +451,14 @@ Natasha wants to do business in Italy knowing that crossing the border is permit
 
 **Preconditions:**
 
-Andrea’s state is immune.
-
-Natasha encourages her employees to take the test
+Aleksandra's state is immune.
 
 **Story:**
 
-Following Natasha's advice Andrea takes the immunity test and obtains the certification.
+Following Natasha's advice Aleksandra takes the immunity test and obtains the certification.
 Now she can cross the Italian boarder.
-
 At the border she authenticate herself using the user application and the COC_ID.
-Walter grants her access.
+The authorities grant her access.
 
 
 
@@ -462,8 +468,6 @@ Issue: merge personas defined in
   [Michele doc](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&fileid=20773)
   
 
-
-Issue: Virus test is different from antibodies test, which one should we consider for specification purposing? Both?
 
 Issue: The QRcode is generated upon onboarding or upon test result?
 
