@@ -22,6 +22,24 @@ However, the information in this document is still subject to change.
 You are invited to [contribute](https://github.com/safe-together/specification/issues)
 any feedback, comments, or questions you might have.
 
+Issue: editor must be defined.
+
+## Contributors ## {#contributors}
+
+Many people contributed to this specification; here is an incomplete list (please contact editor to add your name in this list):
+
+- Andrea Carmignani
+- Enrico Fagnoni
+- Leonardo Longhi
+- Luciano Baresi
+- Michele D'Aliessi
+- Mohd Ehtesham Miah
+- Stefano Quintarelli
+- Yassine Ouahidi
+
+Many thanks to [all contributors in GitHub](https://github.com/safe-together/specification/graphs/contributors)
+
+
 <pre class=include>path: personas.bs</pre>
 <pre class=include>path: stories.bs</pre>
 <pre class=include>path: needs.bs</pre>
