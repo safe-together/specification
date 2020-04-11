@@ -25,6 +25,38 @@ initially in this state. Users are enrolled in the system in US1.
 
 Issue: Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen
 
+## Cross-index by application domain ## {#cross-index}
+
+Here is a crosss-reference index between stories and application domains:
+
+**Quarantine**:
+
+- [[#US01]],
+- [[#US01]],
+- [[#US02]],
+- [[#US03]],
+- [[#US04]],
+- [[#US05]],
+- [[#US05]],
+- [[#US06]],
+- [[#US07]]
+
+
+**Shielding**:
+
+- [[#US08]],
+- [[#US09]],
+- [[#US10]],
+- [[#US11]],
+- [[#US12]],
+- [[#US13]],
+- [[#US14]],
+- [[#US15]],
+- [[#US16]],
+- [[#US17]]
+
+Issue: check the cross index
+
 ## US01: Marco is Tested (Antibody Test) ## {#US01}
 
 **Actors:**
@@ -460,13 +492,6 @@ Now she can cross the Italian boarder.
 At the border she authenticate herself using the user application and the COC_ID.
 The authorities grant her access.
 
-
-
-
-Issue: merge personas defined in 
-  [keyless specs](https://safetogether2020.slack.com/files/U011DV6ARFV/F011EFYJUFL/keyless___covid-19_support__3___1_.pdf?origin_team=T011G7ERZP0&origin_channel=C011G7ES68N) ,
-  [Michele doc](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO&fileid=20773)
-  
 
 
 Issue: The QRcode is generated upon onboarding or upon test result?

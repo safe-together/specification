@@ -17,6 +17,8 @@ User needs {#user_needs}
     As a Volunteer, Marco needs to be easily recognizable (especially by fragile / high-risk citizens) so that he can perform his duties effectively. 
 
 
+Issue: [Luciano] sembra che M1 e M5 siano simili e M2 la consequenza di M1/M5
+
 ## Paola – Pharmacist ## {#Paola-needs}
 
 - **P1 – Sanitary Personnel Onboarding**:
@@ -37,6 +39,9 @@ User needs {#user_needs}
 - **P8 – Sanitary Personnel Virus Test Results Registration**
     As a Pharmacist, Paola needs to register on the App the results of a Virus Test easily and quickly so that the systems is updated. 
 
+Issue: [Luciano] P1 è una precondizione di alto livello, non una funzionalità del sistema
+
+Issue: [Luciano] P2 e P3 siano molto simili. Non chiara la differenza con P8
 
 
 *Immunity status should be tied to tests performed and the results of those tests should affect the immunity status directly, without leaving the Pharmacist any direct control on the certification status control. We should also consider what test details we want/can include in the system.
@@ -54,6 +59,11 @@ User needs {#user_needs}
 - **W5 – Institutional Forces Volunteer Management**:
     As part of the Institutional Forces, Walter wants to be regularly updated on the status of all Volunteers and forces under his management so that he can ensure a high quality and efficacy of his services.
 
+Issue: [Luciano] W1 è come P1. Credo tutti lo vogliano
+
+Issue: [Luciano] W2 e W3 siano molto simili
+
+
 ## Franca – Fragile Population ## {#Franca-needs}
 
 - **F1 – Fragile Population Onboarding** As part of the Fragile Population, Franca wants to get access to the services but struggles to use digital devices. She needs step by step guidance on how to access, download and use the app (or something more rudimental) so that she can request and receive support.
@@ -63,8 +73,6 @@ User needs {#user_needs}
     As part of the Fragile Population, Franca needs to express her pleasure/displeasure of the service provided.
 
 ## Anne – Status Unknown, then positive in Quarantine ## {#Anne-needs}
-
-Issue: Anne need details missing
 
 - **A1 – Citizen Onboarding** 
 - **A2 – Citizen Symptoms check ** 
@@ -83,8 +91,6 @@ Issue: Anne need details missing
 - **A14 – Citizen Recovery Procedure & Guidance** 
 
 ## Jack – Positive with Symptoms under treatment (recovery) ## {#Jack-needs}
-
-Issue: Jack need details missing
 
 - **J1 – Patient Onboarding**
 - **J2 – Patient Post-Recovery Guidance**
