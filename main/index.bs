@@ -7,7 +7,9 @@ Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/
 Markup Shorthands: markdown yes
 Max ToC Depth: 2
-Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Editor: Stefano Quintarelli, Copernicani.it https://copernicani.it/ , stefano@quintarelli.it  
+Editor: Luca Mastrostefano, Coronavirus Outbreak Control  https://coronavirus-outbreak-control.github.io/web/, luca.mastrostefano90@gmail.com 
+Editor: Enrico Fagnoni, g0v-it core team http://g0v-it/, enrico@LinkedData.Center
 Abstract:
   This document connects a set of specifications that, together,
   provide an interoperability framework for SafeTogether applications.
@@ -15,7 +17,7 @@ Abstract:
 
 ## Status of This Document ## {#status}
 **This document is an incomplete draft.**
-The sections that have been incorporated have been reviewed
+The sections that have been incorporated have not yet been reviewed
 following the editorial [[!PROCESS]].
 However, the information in this document is still subject to change.
 
@@ -28,18 +30,24 @@ any feedback, comments, or questions you might have.
 SafeTogether is a toolbox to take on the second stage of Covid-19 pandemic emergency.
 
 An international volunteer group created it; teams work in coordination with each other.
-Some companies and associations offer pro bono support. 
+Some companies, universities and associations offer pro bono support. 
 
 SafeTogether involves the creation of protocols, architectures and specifications together with
 *reference implementation* for applications and support services.
 
 Currently part of SafeTogether:
 
-1. **movement self-certification**: it allows to predict overcrowded places
+
+1. **Contact Tracing**: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
+    It allows medical and emergency management authorities to launch correct actions to alert people that had close contact
+	with patients found to be infected.
+	The system doesn't process personal information, it only uses anonymous data exchanged via Bluetooth LE
+	handshaking protocol.   
+1. **Movement self-certification**: it allows to predict overcrowded places
 	to notify authorities and discourage large influx of people letting them move in greater security.
 	It enables processes digitalization and it drastically speeds up law enforcement control.
 	A law article is proposed too, to let certificate submitted by QR code to be assimilated to an electronic document.
-1. **Shielding** (Cordone Sanitario): to shield high risk categories, the system support management of an immune people "buffer",
+1. **Shielding** (Sanitary Cordon): to shield high risk categories, the system support management of an immune people "buffer",
     according to Weizmann Institute proposal. Health care professionals are the only authority that can register and associate
 	a person (that owns a smartphone) with an immunity digital certification (whose chain of trust is internationally verifiable).
 	It is thought for people in charge to seamlessly support high-risk categories by
@@ -48,11 +56,6 @@ Currently part of SafeTogether:
 1. **Autocertification test**: in contexts where guarantee can be lesser than *shielding level*, 
     it allows people to provide documentary evidence of your own serological test and to communicate the results to 
 	a third party.
-1. [[TRACING]]: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
-    It allows medical and emergency management authorities to launch correct actions to alert people that had close contact
-	with patients found to be infected.
-	The system doesn't process personal information, it only uses anonymous data exchanged via Bluetooth LE
-	handshaking protocol.   
 1. **Quarantine**: for the quarantine application, the problem is to ensure physical presence of a person
     in a given place is faced in two ways, by telephone call verification and, thanks to a
 	technology left for free use by the owner, by biometric recognition locally run on the smartphone
@@ -64,21 +67,35 @@ Currently part of SafeTogether:
     following an activity's actual flow and time and also, user support to satisfy his/her expectations (or presentation standards)
 	associated with every planned contact point.
 
-Independent teams work in parallel to develop applications, some applications (e.g. [[TRACING]]) are ready for use, 
+Independent teams work in parallel to develop reference implementations, some applications are ready for use, 
 some others others are in an early development stage.
 
-Other information will be published soon in the [SafeTogether Web Site](https://safetogether.com).
+Other information available in the [SafeTogether Web Site](https://safetogether.app).
 
-# Document organization # {#organization}
-
-Issue: Write Introduction section to specification (explain ortogonality).
-
+# SafeTogether Applications # {#application}
 
 The SafeTogether Specification
-describes architecture and protocols for the project and is composed by set of related documents:
+describes requirements and protocols for *SafeTogether applications* and is composed by set of related documents:
 
-- [[!PROCESS]]: that describes how to change the SafeTogheter Specifications
-- [[!STORIES]]: that describes personas and user stories inspiring the SafeTogheter
+- [[!STORIES]]: that describes personas and user stories inspiring the SafeTogheter project
+- [[!PROTOCOLS]]: that describe protocols and interfaces to be implemented by applications
+
+*SafeTogether applications* **SHOULD** implement at least one of the [[!STORIES]] 
+
+*SafeTogether applications* **SHOULD** implement all relevant [[!PROTOCOLS]]. 
+
+*SafeTogether applications* define their own life cycle and **MAY** be developed independently of each other.
+
+*Reference Implementations* are  *SafeTogether applications* that  **MUST** be publicly released with one of the Open Source
+License defined as free by Free Software Fondation definition ([[FSF]]).
+
+Here is a known list of *SafeTogether applications*:
+
+- [CovidApp - Covid Community Alert](https://coronavirus-outbreak-control.github.io/web), source available [[TRACING]], is a ready to use  reference implementation for *Contact Tracing*
+- [[QUARANTINE]], in development, demo exists for **Quarantine** user stories.
+- [[SHIELDING]], just starting development with the objective to be one of the reference implementation for *Shielding*
+
+Please, contat Editors to update this list.
 
 
 # Contributors # {#contributors}
@@ -110,12 +127,20 @@ but it is not mandatory. Identified stakeholders may be consulted for feedback a
 
 Stakeholders who have opted to identify themselves publicly are listed below:
 
-Issue: compile here the list of official Stakeholder
-
-* User name or company name, home page, role (user | implementer)
+* Associazione Copernicani, https://copernicani.it/
+* Comdata, https://www.comdatagroup.com/
+* Coronavirus Outbreak Control developers community, https://coronavirus-outbreak-control.github.io/web/
+* g0v.it civic hacking community, http://g0v.it/
+* Keyless, https://keyless.io/
+* LinkedData.Center, http://LinkedData.Center/
+* Politecnico di Milano, https://www.polimi.it/
+* SIA, https://www.sia.eu/
+* TeamSystem, https://www.teamsystem.com/
+* Tesla Consulting, https://www.teslaconsulting.it/
+* SiamoSoci - MamaCrowd, https://mamacrowd.com/
 * ...
 
-
+Please, contat Editors to add your name here
 
 # Panels # {#panels}
 
@@ -169,8 +194,8 @@ General Discussion about project governances, process and news
 
 - general channel: https://safetogether2020.slack.com/app_redirect?channel=general
 - daily-discussion channel: https://safetogether2020.slack.com/app_redirect?channel=daily-discussion
-- news channel : https://safetogether2020.slack.com/app_redirect?channel=safetogether
-- Web site: https://safetogether.com/
+- press channel : https://safetogether2020.slack.com/app_redirect?channel=press
+- Web site: https://safetogether.app/
 
 **Panelists:**
 
@@ -256,10 +281,23 @@ Editors have [_Admin Permissions_](https://help.github.com/en/articles/repositor
 <pre class=biblio>
 {
 	"TRACING": {
-		"href": "https://coronavirus-outbreak-control.github.io/web/",
-		"title": "CovidApp - Covid Community Alert",
+		"href": "https://github.com/coronavirus-outbreak-control/",
+		"title": "Coronavirus Outbreak Control repositories",
 		"authors": [
-	      "L.Mastrostefano"
+	      "Coronavirus Outbreak Control Team"
+	    ]
+	},
+	"QUARANTINE": {
+		"title": "...waiting for source repository and demo URLs",
+		"authors": [
+	      "Keeless"
+	    ]
+	},
+	"SHIELDING": {
+		"href": "https://github.com/g0v-it/safetogether-shielding",
+		"title": "SafeTogether Shielding",
+		"authors": [
+	      "g0v.it core team"
 	    ]
 	},
 	"PROCESS": {
@@ -277,6 +315,13 @@ Editors have [_Admin Permissions_](https://help.github.com/en/articles/repositor
 	      "M.D'Aliessi",
 	      "A.Carmignani"
 	    ]
+	},
+	"PROTOCOLS": {
+		"title": "Protocols and Architectures (NOT YET RELEASED)"
+	},
+	"FSF": {
+		"href": "https://www.gnu.org/licenses/license-list.html",
+		"title": "Free Software Licenses"
 	}
 }
 </pre>

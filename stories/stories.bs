@@ -25,9 +25,14 @@ initially in this state. Users are enrolled in the system in US1.
 
 Issue: Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen
 
+
 ## Cross-index by application domain ## {#cross-index}
 
 Here is a crosss-reference index between stories and application domains:
+
+**Tracing***:
+
+Issue: add stories about contact tracing domain.
 
 **Quarantine**:
 
