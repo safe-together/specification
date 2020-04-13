@@ -9,7 +9,7 @@ Markup Shorthands: markdown yes
 Max ToC Depth: 2
 Editor: Stefano Quintarelli, Copernicani.it https://copernicani.it/ , stefano@quintarelli.it  
 Editor: Luca Mastrostefano, Coronavirus Outbreak Control  https://coronavirus-outbreak-control.github.io/web/, luca.mastrostefano90@gmail.com 
-Editor: Enrico Fagnoni, g0v-it core team http://g0v-it/, enrico@LinkedData.Center
+Editor: Enrico Fagnoni, g0v-it core team https://g0v.it/, enrico@LinkedData.Center
 Abstract:
   This document connects a set of specifications that, together,
   provide an interoperability framework for SafeTogether applications.
