@@ -1,17 +1,18 @@
 [![Build Status](https://img.shields.io/travis/safe-together/specification.svg?style=flat-square)](http://travis-ci.org/safe-together/specification)
 
-# SafeTogether Specification repository
+# SafeTogether Specification
 
 * Editor's Draft: https://safe-together.github.io/specification/
 * Latest Published: https://safe-together.github.io/specification/
+* Git repository: https://github.com/safe-together/specification
 * Working Drafts:
-  * Currently in progress
-* Related project sites:
-  * SafeTogether web site: *TBD*
+  * Git repository: https://github.com/safe-together/specification (master branch)
+* Related web sites:
+  * SafeTogether web site: http://safetogether.app/
   * CovidApp - Covid Community Alert: https://coronavirus-outbreak-control.github.io/web/
 * Reference implementation source repositories:
-  * Shielding app: https://github.com/g0v-it/staysafe-shielding
   * Contat Tracing app: https://github.com/Coronavirus-Outbreak-Control/
+  * Shielding app: *TBD*
   * Quarantine app: *TBD*
 
 This repository contains the source of the SafeTogether Specification
@@ -27,15 +28,14 @@ The specification is built using [Bikeshed](https://tabatkins.github.io/bikeshed
 
 Pushing to master triggers the  compliation and publishing in GitHub pages.
 
-## Local building
+## Local building & test
  
 If needed, download and install [docker community engine](https://hub.docker.com/search/?type=edition&offering=community)
 
-You can use the public `linkeddatacenter/bikeshed` docker avaliable in doker hub to generate locally specs HTML code.
-For example, to generate the html documentation for stories type:
+This command will generated html files in project root, main, stories and process direcories:
 
 ```
-docker run --rm -v ${PWD}:/data linkeddatacenter/bikeshed bikeshed spec /data/stories/index.bs 
+docker run --rm -t -v ${PWD}:/data  -w /data linkeddatacenter/bikeshed ./build 
 ```
 
-Note that by default .html files are not pushed to repository
+Note that by default, the generated  .html files will not pushed to repository.
