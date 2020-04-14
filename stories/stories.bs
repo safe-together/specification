@@ -23,7 +23,7 @@ initially in this state. Users are enrolled in the system in US1.
 
 # User stories #{#user_stories}
 
-Issue: Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen
+Issue: Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen/patient
 
 
 ## Cross-index by application domain ## {#cross-index}
@@ -141,7 +141,7 @@ authorities.
 **Actors:**
 
 - [[#Marco]]
-
+- [[#Maria]]
 
 **Preconditions:**
 
@@ -373,7 +373,7 @@ Marco’s state is immune
  
 **Story:**
 
-Issue: is Bluethoot really usefull? What happens if Franca lives in a big building and Mark rings apartment building intercom? 
+Issue: is Bluetooth really usefull? What happens if Franca lives in a big building and Mark rings apartment building intercom? 
 
 Walter sends Marco to Franca. Marco knocks Franca’s door, and
 Franca asks him to identify himself. Marco authenticates with the

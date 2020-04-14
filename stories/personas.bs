@@ -134,17 +134,41 @@ He is afraid of:
 
 <img src="personas-icon-placehoder.svg" width="200" />
 
-Issue: details of Giovanni Missing
+**Details**
 
-Issue: could be Giovanni a duplicated persona of Paola?
+Giovanni is 60 years old, he has been a physician for over 30 years so he knows his way around.
+Like many physitians Giovanni has been overwhelmed by the Covid-19 crisis seeing the effect it had 
+on the population with visists from his patients decreasing and calls going the other way.
+
+**Goals**
+
+As a physician Giovanni wants to help as many people as possible, even if this means providing health care remotely.
+
+**Values and Fear**
+
+He values technology as a useful tool in everyday life but he prefers a more human touch when it comes to treating people.
+
 
 ### Maria the hospital physician ### {#Maria}
 
 <img src="personas-icon-placehoder.svg" width="200" />
 
-Issue: details of Maria Missing
+**Details**
 
-Issue: could Maria be a duplicated persona of Paola?
+Maria is 35, and she is one of the poople that have been hit the hardest by the crisis forsing her to pull long hours exausting shifts.
+She's waiting and hoping for things to cool down but she understands that it will require a lot of effort to move on.
+
+**Goals**
+
+As a physician Maria wants to help as many people as possible and she wants a system of testing infrastructure and 
+protocols put in place to do so as seamlessly as possible.
+
+**Values and Fear**
+
+Maria values the privacy of her patients and she tries to connect with them in the least intrusive way.
+She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.
+
+Issue: could Maria, Giovanni and Paola be merged into a unique persona under the tagline "Medical Personnel"?
 
 
 ### Marco the Immune Volunteer ### {#Marco}
@@ -153,7 +177,8 @@ Issue: could Maria be a duplicated persona of Paola?
 
 **Details**
 
-Marco is 34, he’s a proactive with a strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered. He is keen to get back to work after a long quarantine.
+Marco is 34, he’s a proactive with a strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered.
+He is keen to get back to work after a long quarantine.
 In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile people.
 He knows how to use a smartphone, but technology isn’t really his thing.
 
