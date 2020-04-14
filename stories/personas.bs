@@ -14,7 +14,7 @@ Personas {#personas}
 
 ## Implementers ## {#implementers}
 
-Issue: find license free icons for personas (svg if possible)
+Issue(6): find license free icons for personas (svg if possible)
 
 ### Albert the App Business Owner ### {#Albert}
 
@@ -167,7 +167,7 @@ protocols put in place to do so as seamlessly as possible.
 Maria values the privacy of her patients and she tries to connect with them in the least intrusive way.
 She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.
 
-Issue: could Maria, Giovanni and Paola be merged into a unique persona under the tagline "Medical Personnel"?
+Issue(7): could Maria, Giovanni and Paola be merged into a unique persona under the tagline "Medical Personnel"?
 
 
 ### Marco the Immune Volunteer ### {#Marco}
