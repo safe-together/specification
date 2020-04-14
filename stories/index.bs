@@ -7,7 +7,7 @@ Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/stories/
 Markup Shorthands: markdown yes
 Max ToC Depth: 3
-Editor: Your Name, Your Company http://example.com/your-company, your-email@example.com, http://example.com/your-personal-website
+Editor: Enrico Fagnoni, g0v-it core team http://g0v-it/, enrico@LinkedData.Center
 Abstract:
   This document is a description about personas and user stories.
   Anyone can take part in the editing process.
@@ -22,7 +22,6 @@ However, the information in this document is still subject to change.
 You are invited to [contribute](https://github.com/safe-together/specification/issues)
 any feedback, comments, or questions you might have.
 
-Issue: editor must be defined.
 
 ## Contributors ## {#contributors}
 
