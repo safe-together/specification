@@ -1,7 +1,6 @@
 Personas {#personas}
 =====================
 
-Issue: add short introduction about personas and personas categories ( max 200 chars)
 
 <!--
 ████ ██     ██ ████████  ██       ████████ ██     ██ ████████ ██    ██ ████████ ████████ ████████   ██████ 
@@ -19,7 +18,7 @@ Issue: find license free icons for personas (svg if possible)
 
 ### Albert the App Business Owner ### {#Albert}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Albert.png" width="200" />
 
 
 **Details**
@@ -54,7 +53,7 @@ He is afraid of:
 
 ### Alice the App Product Owner ### {#Alice}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Alice.png" width="200" />
 
 **Details**
 
@@ -82,7 +81,7 @@ She is afraid of:
 
 ### Bob the App Developer ### {#Bob}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Bob.png" width="200" />
 
 **Details**
 
@@ -132,7 +131,7 @@ He is afraid of:
 
 ### Giovanni the physician ### {#Giovanni}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Giovanni.png" width="200" />
 
 **Details**
 
@@ -151,7 +150,7 @@ He values technology as a useful tool in everyday life but he prefers a more hum
 
 ### Maria the hospital physician ### {#Maria}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Maria.png" width="200" />
 
 **Details**
 
@@ -173,7 +172,7 @@ Issue: could Maria, Giovanni and Paola be merged into a unique persona under the
 
 ### Marco the Immune Volunteer ### {#Marco}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Marco.png" width="200" />
 
 **Details**
 
@@ -199,7 +198,7 @@ He is afraid of:
 
 ### Paola the Pharmacist ### {#Paola}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Paola.png" width="200" />
 
 **Details**
 
@@ -220,7 +219,7 @@ if not due to health conditions and access to treatment, due to the economic imp
 
 ### Walter the Civil Defence ### {#Walter}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Walter.png" width="200" />
 
 
 **Details**
@@ -239,7 +238,7 @@ He fears to unknowingly spread the virus while trying to mitigate its damages. W
 
 ### Franca the Fragile Person ### {#Franca}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Franca.png" width="200" />
 
 **Details**
 
@@ -256,7 +255,7 @@ Franca fears to be “left behind” and to have little means to request help an
 
 ### Aleksandra the lorry driver ### {#Aleksandra}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Aleksandra.png" width="200" />
 
 **Details**
 
@@ -274,7 +273,7 @@ Some countries may deny her access, even though she could be immune and therefor
 
 ### Anne a Regular Citizenr ### {#Anne}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Anne.png" width="200" />
 
 Isuue: could Anne be a dupplicated persona of Marco?
 
@@ -297,7 +296,7 @@ due to the fact that she might be fired.
 
 ### Jack a patient under treatment ### {#Jack}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Jack.png" width="200" />
 
 **Details**
 
@@ -314,7 +313,7 @@ Fear of death, loss and overall feeling of grief.
 
 ### Natasha CEO of Lorry for women. ### {#Natasha}
 
-<img src="personas-icon-placehoder.svg" width="200" />
+<img src="images/Natasha.png" width="200" />
 
 **Details**
 
