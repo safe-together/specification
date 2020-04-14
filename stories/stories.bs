@@ -23,7 +23,7 @@ initially in this state. Users are enrolled in the system in US1.
 
 # User stories #{#user_stories}
 
-Issue: Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen/patient
+Issue(9): Marco is listed as an Immune volunteer but in these stories he takes the form of a regular citizen/patient
 
 
 ## Cross-index by application domain ## {#cross-index}
@@ -32,7 +32,7 @@ Here is a crosss-reference index between stories and application domains:
 
 **Tracing***:
 
-Issue: add stories about contact tracing domain.
+Issue(10): add stories about contact tracing domain.
 
 **Quarantine**:
 
@@ -60,7 +60,7 @@ Issue: add stories about contact tracing domain.
 - [[#US16]],
 - [[#US17]]
 
-Issue: check the cross index
+Issue(11): check the cross index
 
 ## US01: Marco is Tested (Antibody Test) ## {#US01}
 
@@ -255,7 +255,7 @@ Marco’s state is immune
 
 **Story:**
 
-Issue: who certificates that Marco is Immune?
+Issue(12): who certificates that Marco is Immune?
 
 Marco’s quarantine is over, and he has recovered. The app notifies
 Marco that is state is now immune.
@@ -343,7 +343,7 @@ Marco state is unknown, immune, or negative.
 
 Marco state is quarantined, negative, or immune
 
-Issue: The antibodies test and the swab test are two different tests, hence the result cannot be immune.
+Issue(13): The antibodies test and the swab test are two different tests, hence the result cannot be immune.
 
 **Story:**
 
@@ -391,7 +391,7 @@ photo shown on her *Mobile App*, and opens the door.
 
 ## US13 - Antibodies test ## {#US13}
 
-Issue: Could this be [[#US01]]
+Issue(14): Could this be [[#US01]]
 
 **Actors:**
 
@@ -419,7 +419,7 @@ The certificate will be stored Marco's device memory.
 
 ## US14 - Expired Immunity ## {#US14}
 
-Issue: Could this be a duplicate for [[#US01]]
+Issue(15): Could this be a duplicate for [[#US01]]
 
 **Actors:**
 
@@ -499,11 +499,11 @@ The authorities grant her access.
 
 
 
-Issue: The QRcode is generated upon onboarding or upon test result?
+Issue(16): The QRcode is generated upon onboarding or upon test result?
 
-Issue: Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?
+Issue(17): Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?
 
-Issue: How the sanitary personnel are enrolled? Is it a metter of the application or someone else?
+Issue(18): How the sanitary personnel are enrolled? Is it a metter of the application or someone else?
 
-Issue: Does a test machine update the test outcome in real time on the db? If so, is it a matter of the application or the backend should provide a sicure call to update test results?
+Issue(19): Does a test machine update the test outcome in real time on the db? If so, is it a matter of the application or the backend should provide a sicure call to update test results?
   
