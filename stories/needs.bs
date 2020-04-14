@@ -39,9 +39,9 @@ Issue: [Luciano] sembra che M1 e M5 siano simili e M2 la consequenza di M1/M5
 - **P8 – Sanitary Personnel Virus Test Results Registration**
     As a Pharmacist, Paola needs to register on the App the results of a Virus Test easily and quickly so that the systems is updated. 
 
-Issue: [Luciano] P1 è una precondizione di alto livello, non una funzionalità del sistema
+Issue: P1 è una precondizione di alto livello, non una funzionalità del sistema
 
-Issue: [Luciano] P2 e P3 siano molto simili. Non chiara la differenza con P8
+Issue: P2 e P3 siano molto simili. Non chiara la differenza con P8
 
 
 *Immunity status should be tied to tests performed and the results of those tests should affect the immunity status directly, without leaving the Pharmacist any direct control on the certification status control. We should also consider what test details we want/can include in the system.
@@ -59,9 +59,9 @@ Issue: [Luciano] P2 e P3 siano molto simili. Non chiara la differenza con P8
 - **W5 – Institutional Forces Volunteer Management**:
     As part of the Institutional Forces, Walter wants to be regularly updated on the status of all Volunteers and forces under his management so that he can ensure a high quality and efficacy of his services.
 
-Issue: [Luciano] W1 è come P1. Credo tutti lo vogliano
+Issue:  W1 è come P1. Credo tutti lo vogliano
 
-Issue: [Luciano] W2 e W3 siano molto simili
+Issue:  W2 e W3 siano molto simili
 
 
 ## Franca – Fragile Population ## {#Franca-needs}
@@ -164,4 +164,4 @@ When a user wants to prove his/her immunity has to show a QRcode that contains t
 <Identity document type>
 ```
 
-Issue: Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain? 
+Issu(20)e: Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain? 
