@@ -54,35 +54,6 @@ The volunteers are divided into sub-projects teams and in coordination with each
 1. **Infrastructure management**: specialized support from companies specializing in the implementation, testing and roll-out phases of previous systems, addressing issues related to security aspects and related to infrastructure scalability. Management of the evolutionary maintenance of applications.
 1. **User interaction and Process Management**: operational support in managing the flow of a user’s transaction from start to finish, accompanying the timing and actual flow of activities, as well as supporting users to meet their expectations (or performance standards) associated with each of the contact points provided.
 
-1. **Contact Tracing**: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
-    It allows medical and emergency management authorities to launch correct actions to alert people that had close contact
-	with patients found to be infected.
-	The system doesn't process personal information, it only uses anonymous data exchanged via Bluetooth LE
-	handshaking protocol.   
-1. **Movement self-certification**: it allows to predict overcrowded places
-	to notify authorities and discourage large influx of people letting them move in greater security.
-	It enables processes digitalization and it drastically speeds up law enforcement control.
-	A law article is proposed too, to let certificate submitted by QR code to be assimilated to an electronic document.
-1. **Shielding** (Sanitary Cordon): to shield high risk categories, the system support management of an immune people "buffer",
-    according to Weizmann Institute proposal. Health care professionals are the only authority that can register and associate
-	a person (that owns a smartphone) with an immunity digital certification (whose chain of trust is internationally verifiable).
-	It is thought for people in charge to seamlessly support high-risk categories by
-	providing a certification truthfulness and validity control, thus
-	reducing fraud risk.
-1. **Autocertification test**: in contexts where guarantee can be lesser than *shielding level*, 
-    it allows people to provide documentary evidence of your own serological test and to communicate the results to 
-	a third party.
-1. **Quarantine**: for the quarantine application, the problem is to ensure physical presence of a person
-    in a given place is faced in two ways, by telephone call verification and, thanks to a
-	technology left for free use by the owner, by biometric recognition locally run on the smartphone
-	that doesn't trasmit any personal identification information.
-1.	**Infrastructure management**: specialist support by companies during implementation stages,
-    testing and roll-out of previous systems, addressing issues related to security aspects and infrastructure scalability.
-	Application maintenance management.
-1.  **User interaction and Process Management**: operative support in user transaction flow management from start to finish,
-    following an activity's actual flow and time and also, user support to satisfy his/her expectations (or presentation standards)
-	associated with every planned contact point.
-
 We are aware that authorities are requiring direct control of the platforms they deploy and they want to run them from 
 infrastructure under their control, often inside their borders, therefore our approach is focused on the definition of a set 
 of protocols, the implementation of the supporting backends and the provision of a *reference implementation* of the user facing clients.
@@ -92,7 +63,7 @@ Some components are ready to be used, others are under development.
 Those interested in providing their input or support the initiative can send an email to [info@safetogether.app](mailto:info@safetogether.app)
  or [SafeTogether Web Site](https://safetogether.app).
 
-# SafeTogether Applications requiremets # {#application}
+# SafeTogether Applications requirements # {#application}
 
 The SafeTogether Specification
 describes requirements and protocols for *SafeTogether applications* and is composed by set of related documents:
