@@ -192,12 +192,12 @@ General Discussion about the project governances, process and news
 
 **Communication channels:**
 
-- general channel: https://safetogether2020.slack.com/app_redirect?channel=general
-- daily-discussion channel: https://safetogether2020.slack.com/app_redirect?channel=daily-discussion
-- press channel : https://safetogether2020.slack.com/app_redirect?channel=press
+- #Slack channels: [#general](https://safetogether2020.slack.com/app_redirect?channel=general), 
+    [#daily-discussion](https://safetogether2020.slack.com/app_redirect?channel=daily-discussion),
+    [#press channel](https://safetogether2020.slack.com/app_redirect?channel=press)
 - Web site: https://safetogether.app/
 - Email: [info@safetogether.app](mailto:info@safetogether.app)
-- Fundraising campaign: https://mamacrowd.com/project/una-tecnologia-per-ripartire
+- Fundraising campaign: [MamaCrowd campaign](https://mamacrowd.com/project/una-tecnologia-per-ripartire)
 
 **Panelists:**
 
@@ -223,8 +223,8 @@ Definition of personas and user stories inspiring SafeTogether
 
 **Communication channels:**
 
-- #Slack channel: https://safetogether2020.slack.com/app_redirect?channel=stories
-- repository: https://github.com/safe-thogether/stories-panel
+- #Slack channel: [#stories](https://safetogether2020.slack.com/app_redirect?channel=stories)
+- meetings minutes and agenda: [see repository](https://github.com/safe-together/stories-panel)
 
 
 **Panelists:**
@@ -258,8 +258,8 @@ Discussion about Requiementsm Protocols and Architecture about Shielding referen
 **Communication channels**
 
 - Official web site: https://coronavirus-outbreak-control.github.io/web/
-- Git: https://github.com/coronavirus-outbreak-control/
-- email : coronavirus.outbreak.control@gmail.com
+- Git: [all repositories](https://github.com/coronavirus-outbreak-control/)
+- Eemail : coronavirus.outbreak.control@gmail.com
 
 
 **Panelists:**
@@ -287,8 +287,8 @@ Discussion about Requiementsm Protocols and Architecture about Shielding referen
 
 **Communication channels:**
 
-- #Slack channel: https://copernicani.slack.com/app_redirect?channel=g0v-it-shielding
-- Git: https://github.com/g0v-it/safetogether-shielding 
+- #Slack channel: [copernicani#g0v-it-shielding](https://copernicani.slack.com/app_redirect?channel=g0v-it-shielding)
+- Git: [source repository](https://github.com/g0v-it/safetogether-shielding) 
  
 **Panelists:**
 
