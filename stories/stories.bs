@@ -20,6 +20,20 @@ initially in this state. Users are enrolled in the system in US1.
 :: immune
 
 
+Note: above section is informative only <img src="tab1.png"/>
+
+: Citizens– view only rights
+:: citizens can view their status
+: Institutional Forces (Police, etc) – view only rights
+:: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
+: SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – edit right
+:: Operator who can change the “Status” of a citizen based on medical evidence.
+: Volunteers (Immune Citizens) – view only rights
+:: Citizens that have recovered, are immune and want to help during the crisis
+
+Issue: can assume that an immune person doesn’t carrying the virus? How about behaviour re-safety in cleaning/hygiene?
+
+
 
 # User stories #{#user_stories}
 
@@ -247,8 +261,6 @@ Jack’s state is quarantined
 Jack’s state is negative
 
 **Story:**
-
-Issue(12): who certificates that Marco is Immune?
 
 Jack’s quarantine is over, and he has recovered. The app notifies
 Jack that his state is now negative.

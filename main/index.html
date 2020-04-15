@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version b76f905, updated Mon Apr 13 16:17:21 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="3e56aac357efea426795dcd401a6a550ebae5678" name="document-revision">
+  <meta content="515e389ba87fa074f66d4764dedaa00961813e25" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1408,20 +1408,19 @@ Parts of this work may be from another specification document.  If so, those par
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
-    <li><a href="#application"><span class="secno">2</span> <span class="content">SafeTogether Applications</span></a>
+    <li><a href="#application"><span class="secno">2</span> <span class="content">SafeTogether Applications requiremets</span></a>
     <li><a href="#contributors"><span class="secno">3</span> <span class="content">Contributors</span></a>
     <li><a href="#stakeholders"><span class="secno">4</span> <span class="content">Stakeholders</span></a>
+    <li><a href="#fundraising"><span class="secno">5</span> <span class="content">Fundraising</span></a>
     <li>
-     <a href="#panels"><span class="secno">5</span> <span class="content">Panels</span></a>
+     <a href="#panels"><span class="secno">6</span> <span class="content">Panels</span></a>
      <ol class="toc">
-      <li><a href="#example-panel"><span class="secno">5.1</span> <span class="content">Example Panel</span></a>
-      <li><a href="#index-of-panels"><span class="secno">5.2</span> <span class="content">Index of Panels</span></a>
-      <li><a href="#project-panel"><span class="secno">5.3</span> <span class="content">General discussion Panel</span></a>
-      <li><a href="#stories-panel"><span class="secno">5.4</span> <span class="content">Stories Panel</span></a>
-      <li><a href="#shielding-panel"><span class="secno">5.5</span> <span class="content">Shielding panel</span></a>
-      <li><a href="#tracing-panel"><span class="secno">5.6</span> <span class="content">Tracing panel</span></a>
+      <li><a href="#project-panel"><span class="secno">6.1</span> <span class="content">General discussion Panel</span></a>
+      <li><a href="#stories-panel"><span class="secno">6.2</span> <span class="content">Stories Panel</span></a>
+      <li><a href="#tracing-panel"><span class="secno">6.3</span> <span class="content">Tracing panel</span></a>
+      <li><a href="#shielding-panel"><span class="secno">6.4</span> <span class="content">Shielding panel</span></a>
      </ol>
-    <li><a href="#repositories"><span class="secno">6</span> <span class="content">Repositories</span></a>
+    <li><a href="#repositories"><span class="secno">7</span> <span class="content">Repositories</span></a>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
@@ -1438,12 +1437,27 @@ following the editorial <a data-link-type="biblio" href="#biblio-process">[PROCE
 However, the information in this document is still subject to change. 
    <p>You are invited to <a href="https://github.com/safe-together/specification/issues">contribute</a> any feedback, comments, or questions you might have.</p>
    <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
-   <p>SafeTogether is a toolbox to take on the second stage of Covid-19 pandemic emergency.</p>
-   <p>An international volunteer group created it; teams work in coordination with each other.
-Some companies, universities and associations offer pro bono support.</p>
-   <p>SafeTogether involves the creation of protocols, architectures and specifications together with <em>reference implementation</em> for applications and support services.</p>
-   <p>Currently part of SafeTogether:</p>
+   <p>SafeTogether is an ecosystem of software components and support services to provide
+the operators in charge with a set of tools to help tackle phase 2 of the epidemic emergency.</p>
+   <p>SafeTogether is created by a wide group of international volunteers.
+Volunteers are private individuals, professionals, students and people connected 
+or belonging to supporting institutions and private companies who joined pro bono the endeavour.</p>
+   <p>The volunteers are divided into sub-projects teams and in coordination with each other.</p>
    <ol>
+    <li data-md>
+     <p><strong>Self-certification of movements</strong>: measure to comply with State or regional requirements. It allows to forecast places at risk of crowding, to report them to the authorities, to discourage the influx of people, informing people so they can decide to move in greater safety. It digitizes the procedure for the citizen and drastically speeds up the control by the authorities.</p>
+    <li data-md>
+     <p><strong>Cordon sanitaire</strong> : for shielding high-risk categories, the system supports the management of a “buffer” with immune persons, according to the proposal of Prof. Udi Shapiro from the Weizmann Institute. Healthcare professionals are the only authority that can register and associate a digital certificate (whose chain of trusts is internationally verifiable) certifying immunity on the smartphone. Designed for support staff for high-risk categories, it enables to verify directly the truthfulness and validity of the certificate, avoiding the risk of fraud.</p>
+    <li data-md>
+     <p><strong>Self-certification test</strong>: allows a person to document the performance of her own serology test and allows her to certify the result to third parties, for circumstances where lower level of certainty than required by the cordon sanitaire, is appropriate.</p>
+    <li data-md>
+     <p><strong>Tracing</strong>: contact/exposure information from de-identified users is collected efficiently and completely anonymously. It allows medical and emergency management authorities to take the correct actions to alert people who have had the closest contact with a person found to be infected. The system does not process personal information, using only anonymous data exchanged via Bluetooth LE. More details about tracing is provided below.</p>
+    <li data-md>
+     <p><strong>Quarantine</strong>: to guarantee physically the presence of the specific person in a set place is addressed in a number of ways including telephone check by a call center and, thanks to an IPR provided pro bono by the rightsholder, through a biometric recognition performed locally on the smartphone, which does not involve the transmission of any identifiable personal data.</p>
+    <li data-md>
+     <p><strong>Infrastructure management</strong>: specialized support from companies specializing in the implementation, testing and roll-out phases of previous systems, addressing issues related to security aspects and related to infrastructure scalability. Management of the evolutionary maintenance of applications.</p>
+    <li data-md>
+     <p><strong>User interaction and Process Management</strong>: operational support in managing the flow of a user’s transaction from start to finish, accompanying the timing and actual flow of activities, as well as supporting users to meet their expectations (or performance standards) associated with each of the contact points provided.</p>
     <li data-md>
      <p><strong>Contact Tracing</strong>: de-identified contact/exposition user information are efficiently gathered and totally anonymous.
 It allows medical and emergency management authorities to launch correct actions to alert people that had close contact
@@ -1480,10 +1494,12 @@ Application maintenance management.</p>
 following an activity’s actual flow and time and also, user support to satisfy his/her expectations (or presentation standards)
 associated with every planned contact point.</p>
    </ol>
-   <p>Independent teams work in parallel to develop reference implementations, some applications are ready for use,
-some others others are in an early development stage.</p>
-   <p>Other information available in the <a href="https://safetogether.app">SafeTogether Web Site</a>.</p>
-   <h2 class="heading settled" data-level="2" id="application"><span class="secno">2. </span><span class="content">SafeTogether Applications</span><a class="self-link" href="#application"></a></h2>
+   <p>We are aware that authorities are requiring direct control of the platforms they deploy and they want to run them from
+infrastructure under their control, often inside their borders, therefore our approach is focused on the definition of a set 
+of protocols, the implementation of the supporting backends and the provision of a <em>reference implementation</em> of the user facing clients.</p>
+   <p>Some components are ready to be used, others are under development.</p>
+   <p>Those interested in providing their input or support the initiative can send an email to <a href="mailto:info@safetogether.app">info@safetogether.app</a> or <a href="https://safetogether.app">SafeTogether Web Site</a>.</p>
+   <h2 class="heading settled" data-level="2" id="application"><span class="secno">2. </span><span class="content">SafeTogether Applications requiremets</span><a class="self-link" href="#application"></a></h2>
    <p>The SafeTogether Specification
 describes requirements and protocols for <em>SafeTogether applications</em> and is composed by set of related documents:</p>
    <ul>
@@ -1512,7 +1528,7 @@ License defined as free by Free Software Fondation definition (<a data-link-type
 SafeTogether Project and is encouraged to continue.</p>
    <p>All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.</p>
    <p>There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise.
-For these cases, we have <a href="#panels">§ 5 Panels</a></p>
+For these cases, we have <a href="#panels">§ 6 Panels</a></p>
    <h2 class="heading settled" data-level="4" id="stakeholders"><span class="secno">4. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h2>
    <p>Stakeholders are those affected by normative changes to the SafeTogether Specification.
 There are two types of stakeholders:</p>
@@ -1530,75 +1546,58 @@ but it is not mandatory. Identified stakeholders may be consulted for feedback a
    <p>Stakeholders who have opted to identify themselves publicly are listed below:</p>
    <ul>
     <li data-md>
-     <p>Associazione Copernicani, https://copernicani.it/</p>
+     <p><a href="https://copernicani.it/">Associazione Copernicani</a></p>
     <li data-md>
-     <p>Comdata, https://www.comdatagroup.com/</p>
+     <p><a href="https://www.comdatagroup.com/">Comdata</a></p>
     <li data-md>
-     <p>Coronavirus Outbreak Control developers community, https://coronavirus-outbreak-control.github.io/web/</p>
+     <p><a href="https://coronavirus-outbreak-control.github.io/web/">Coronavirus Outbreak Control</a></p>
     <li data-md>
-     <p>g0v.it civic hacking community, http://g0v.it/</p>
+     <p><a href="http://g0v.it/">gOv.it civic hacking community</a></p>
     <li data-md>
-     <p>Keyless, https://keyless.io/</p>
+     <p><a href="https://keyless.io/">Keyless</a></p>
     <li data-md>
-     <p>LinkedData.Center, http://LinkedData.Center/</p>
+     <p><a href="http://LinkedData.Center/">LinkedData.Center</a></p>
     <li data-md>
-     <p>Politecnico di Milano, https://www.polimi.it/</p>
+     <p><a href="https://www.polimi.it/">Politecnico di Milano</a></p>
     <li data-md>
-     <p>SIA, https://www.sia.eu/</p>
+     <p><a href="https://www.sia.eu/">SIA S.p.A</a></p>
     <li data-md>
-     <p>TeamSystem, https://www.teamsystem.com/</p>
+     <p><a href="https://www.teamsystem.com/">TeamSystem</a></p>
     <li data-md>
-     <p>Tesla Consulting, https://www.teslaconsulting.it/</p>
+     <p><a href="https://www.teslaconsulting.it/">Tesla Consulting</a></p>
     <li data-md>
-     <p>SiamoSoci - MamaCrowd, https://mamacrowd.com/</p>
+     <p><a href="https://mamacrowd.com/">SiamoSoci - MamaCrowd</a></p>
     <li data-md>
-     <p>...</p>
+     <p><em>...please, contact Editors to add your name here</em></p>
    </ul>
-   <p>Please, contat Editors to add your name here</p>
-   <h2 class="heading settled" data-level="5" id="panels"><span class="secno">5. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h2>
+   <h2 class="heading settled" data-level="5" id="fundraising"><span class="secno">5. </span><span class="content">Fundraising</span><a class="self-link" href="#fundraising"></a></h2>
+   <p>Mamacrowd, the highly reputable and leading crowdfunding platform in Italy has launched
+a <a href="https://mamacrowd.com/project/una-tecnologia-per-ripartire">fundraising campaign</a> to support those volunteers who are economically penalized while devoting their time to this effort.</p>
+   <p>All fund raised are going to flow in the participating volunteer accounts directly from Mamacrowd,
+with no go between passage and complete accountability.</p>
+   <h2 class="heading settled" data-level="6" id="panels"><span class="secno">6. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h2>
    <p>SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to the SafeTogether project.
 Anyone can join a panel or suggest a new panel.</p>
    <p>Anyone can create a Panel by making a pull request directly to this document.</p>
    <p>Domains may be technical, non-technical, or a combination of both.</p>
    <p>This listing helps people find panels they may want to participate in, and helps editors find panels to consult
 as part of the editorial process.</p>
-   <h3 class="heading settled" data-level="5.1" id="example-panel"><span class="secno">5.1. </span><span class="content">Example Panel</span><a class="self-link" href="#example-panel"></a></h3>
-    This is an example that people can use as a template for submitting their own panels. 
-A description of the panel, including its focus and goal, should go here. 
-   <p><strong>Communication channels:</strong></p>
+   <p>Index of available Panels:</p>
    <ul>
     <li data-md>
-     <p>Link to join mailing list goes here</p>
+     <p><a href="#project-panel">§ 6.1 General discussion Panel</a></p>
     <li data-md>
-     <p>Link to public chat goes here</p>
+     <p><a href="#stories-panel">§ 6.2 Stories Panel</a></p>
     <li data-md>
-     <p>Any other public communication link goes here</p>
-   </ul>
-   <p><strong>Panelists:</strong></p>
-   <ul>
+     <p><a href="#tracing-panel">§ 6.3 Tracing panel</a></p>
     <li data-md>
-     <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
-    <li data-md>
-     <p>[Panellist Name](link to github profile) &lt;<a href="mailto:email@example.org">email@example.org</a>> (@github handle)</p>
-   </ul>
-   <p><strong>Editorial Assignment:</strong></p>
-   <p>Candidate Proposals to the Specification produced by this panel are likely to be associated with the <a data-link-type="biblio" href="#biblio-process">Editorial process</a>.</p>
-   <h3 class="heading settled" data-level="5.2" id="index-of-panels"><span class="secno">5.2. </span><span class="content">Index of Panels</span><a class="self-link" href="#index-of-panels"></a></h3>
-   <ul>
-    <li data-md>
-     <p><a href="#project-panel">§ 5.3 General discussion Panel</a></p>
-    <li data-md>
-     <p><a href="#stories-panel">§ 5.4 Stories Panel</a></p>
-    <li data-md>
-     <p><a href="#shielding-panel">§ 5.5 Shielding panel</a></p>
-    <li data-md>
-     <p><a href="#tracing-panel">§ 5.6 Tracing panel</a></p>
+     <p><a href="#shielding-panel">§ 6.4 Shielding panel</a></p>
    </ul>
    <p>More or less there is a weekly SafeTogether Community Group call to review all panels.
-See general channel in <a href="#project-panel">§ 5.3 General discussion Panel</a> to find out the agenda and exact time of the next call and the address to connect to it,
+See general channel in <a href="#project-panel">§ 6.1 General discussion Panel</a> to find out the agenda and exact time of the next call and the address to connect to it,
 or to add put item on the next agenda.</p>
-   <h3 class="heading settled" data-level="5.3" id="project-panel"><span class="secno">5.3. </span><span class="content">General discussion Panel</span><a class="self-link" href="#project-panel"></a></h3>
-    General Discussion about project governances, process and news 
+   <h3 class="heading settled" data-level="6.1" id="project-panel"><span class="secno">6.1. </span><span class="content">General discussion Panel</span><a class="self-link" href="#project-panel"></a></h3>
+   <p>General Discussion about the project governances, process and news</p>
    <p><strong>Communication channels:</strong></p>
    <ul>
     <li data-md>
@@ -1609,6 +1608,10 @@ or to add put item on the next agenda.</p>
      <p>press channel : https://safetogether2020.slack.com/app_redirect?channel=press</p>
     <li data-md>
      <p>Web site: https://safetogether.app/</p>
+    <li data-md>
+     <p>Email: <a href="mailto:info@safetogether.app">info@safetogether.app</a></p>
+    <li data-md>
+     <p>Fundraising campaign: https://mamacrowd.com/project/una-tecnologia-per-ripartire</p>
    </ul>
    <p><strong>Panelists:</strong></p>
    <ul>
@@ -1617,7 +1620,7 @@ or to add put item on the next agenda.</p>
    </ul>
    <p><strong>Editorial Assignment:</strong></p>
    <p>Relevant news should be inserted in the project web site</p>
-   <h3 class="heading settled" data-level="5.4" id="stories-panel"><span class="secno">5.4. </span><span class="content">Stories Panel</span><a class="self-link" href="#stories-panel"></a></h3>
+   <h3 class="heading settled" data-level="6.2" id="stories-panel"><span class="secno">6.2. </span><span class="content">Stories Panel</span><a class="self-link" href="#stories-panel"></a></h3>
     Definition of personas and user stories inspiring SafeTogether 
    <p><strong>Communication channels:</strong></p>
    <ul>
@@ -1639,7 +1642,25 @@ or to add put item on the next agenda.</p>
    <p>Candidate Proposals to the SafeTogether Specification produced by this panel are likely to
 be associated with the <a data-link-type="biblio" href="#biblio-stories">[STORIES]</a> soecifications, and will be principally reviewed 
 by any editors assigned to it.</p>
-   <h3 class="heading settled" data-level="5.5" id="shielding-panel"><span class="secno">5.5. </span><span class="content">Shielding panel</span><a class="self-link" href="#shielding-panel"></a></h3>
+   <h3 class="heading settled" data-level="6.3" id="tracing-panel"><span class="secno">6.3. </span><span class="content">Tracing panel</span><a class="self-link" href="#tracing-panel"></a></h3>
+    Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
+   <p><strong>Communication channels</strong></p>
+   <ul>
+    <li data-md>
+     <p>Official web site: https://coronavirus-outbreak-control.github.io/web/</p>
+    <li data-md>
+     <p>Git: https://github.com/coronavirus-outbreak-control/</p>
+    <li data-md>
+     <p>email : coronavirus.outbreak.control@gmail.com</p>
+   </ul>
+   <p><strong>Panelists:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="https://github.com/ecow">Luca Mastrostefano</a>, &lt;<a href="mailto:luca.mastrostefano90@gmail.com">luca.mastrostefano90@gmail.com </a>></p>
+   </ul>
+   <p><strong>Editorial Assignment:</strong></p>
+   <p>Develop a reference application for the Tracing  application (<a data-link-type="biblio" href="#biblio-tracing">[TRACING]</a>)</p>
+   <h3 class="heading settled" data-level="6.4" id="shielding-panel"><span class="secno">6.4. </span><span class="content">Shielding panel</span><a class="self-link" href="#shielding-panel"></a></h3>
     Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
    <p><strong>Communication channels:</strong></p>
    <ul>
@@ -1663,25 +1684,7 @@ by any editors assigned to it.</p>
    </ul>
    <p><strong>Editorial Assignment:</strong></p>
    <p>Develop a reference application for the Shielding .</p>
-   <h3 class="heading settled" data-level="5.6" id="tracing-panel"><span class="secno">5.6. </span><span class="content">Tracing panel</span><a class="self-link" href="#tracing-panel"></a></h3>
-    Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
-   <p><strong>Communication channels</strong></p>
-   <ul>
-    <li data-md>
-     <p>Official web site: https://coronavirus-outbreak-control.github.io/web/</p>
-    <li data-md>
-     <p>Git: https://github.com/coronavirus-outbreak-control/</p>
-    <li data-md>
-     <p>email : coronavirus.outbreak.control@gmail.com</p>
-   </ul>
-   <p><strong>Panelists:</strong></p>
-   <ul>
-    <li data-md>
-     <p><a href="https://github.com/ecow">Luca Mastrostefano</a>, &lt;<a href="mailto:luca.mastrostefano90@gmail.com">luca.mastrostefano90@gmail.com </a>></p>
-   </ul>
-   <p><strong>Editorial Assignment:</strong></p>
-   <p>Develop a reference application for the Tracing  application (<a data-link-type="biblio" href="#biblio-tracing">[TRACING]</a>)</p>
-   <h2 class="heading settled" data-level="6" id="repositories"><span class="secno">6. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h2>
+   <h2 class="heading settled" data-level="7" id="repositories"><span class="secno">7. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h2>
    <p>Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.</p>
    <p>Editors have <a href="https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization">_Admin Permissions_</a> on the repositories they are assigned to.</p>
   </main>

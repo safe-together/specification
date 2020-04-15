@@ -14,8 +14,6 @@ Personas {#personas}
 
 ## Implementers ## {#implementers}
 
-Issue(6): find license free icons for personas (svg if possible)
-
 ### Albert the App Business Owner ### {#Albert}
 
 <img src="images/Albert.png" width="200" />

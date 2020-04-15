@@ -11,55 +11,41 @@ User needs {#user_needs}
     As a Volunteer, Marco wants to renew his immunity certification smoothly and effectively so that he can carry on working as volunteer. 
 - **M4 – Volunteer Immunity Certification Cancellation**:
     As a Volunteer, Marco needs to know if/when his immunity certification is cancelled or will expire so that he can either renew it or change his behavior effectively.
-- **M5 – Volunteer Registration with Authorities**:
-    As a Volunteer, Marco wants to register as a Volunteer with the Authorities so that he can start helping out. 
-- **M6 – Volunteer Recognition**:
+- **M5 – Volunteer Recognition**:
     As a Volunteer, Marco needs to be easily recognizable (especially by fragile / high-risk citizens) so that he can perform his duties effectively. 
 
-
-Issue: [Luciano] sembra che M1 e M5 siano simili e M2 la consequenza di M1/M5
 
 ## Paola – Pharmacist ## {#Paola-needs}
 
 - **P1 – Sanitary Personnel Onboarding**:
-    As a Pharmacist, Paola wants to download and use the App easily so that she can start to add certifications and test results.
+    As a Pharmacist, to sell/execute Antibody tests, Paola is requested to download the App easily so that she can start to add certifications and test results.
 - **P2 – Sanitary Personnel Antibodies Test Submission Registration**:
     As a Pharmacist, Paola wants to register the submission of an Antibodies test via the App (including the test subject ID) so that all data are shared and up to date.
     (maybe using the sanitary card if possible).
-- **P3 – Sanitary Personnel Antibodies Test Results Registration**:
     As a Pharmacist, Paola wants to register the Antibodies Test results updating the registration submission easily with the least amount of effort so that she can go back to work. 
-- **P4 – Sanitary Personnel Immunity Registration**:
+- **P3 – Sanitary Personnel Immunity Registration**:
     As a Pharmacist, Paola wants to issue an Immunity Certification seamlessly after receiving a positive result on an Antibodies test so that the test subject is immediately alerted and can start working or helping others. We can consider the “positive antibodies test” registration as the element that triggers automatic certification.
-- **P5 – Sanitary Personnel Immunity Renewal**:
+- **P4 – Sanitary Personnel Immunity Renewal**:
     As a Pharmacist, Paola wants to renew an Immunity Certification as quickly as possible after receiving test results. We can consider a further “positive antibodies test” registration as the element that triggers automatic renewal of the Immunity Certification.
-- **P6 – Sanitary Personnel Immunity Revocation**:
+- **P5 – Sanitary Personnel Immunity Revocation**:
     As a Pharmacist, Paola wants to revoke an Immunity Certification by updating a Virus Test result or due to the subject showing symptoms of Covid-19.
-- **P7 – Sanitary Personnel Virus Test Submission Registration**
+- **P6 – Sanitary Personnel Virus Test Submission Registration**
     As a Pharmacist, Paola needs to register on the App a Virus Test submission to labs for results so that the systems could be updated quickly. 
-- **P8 – Sanitary Personnel Virus Test Results Registration**
-    As a Pharmacist, Paola needs to register on the App the results of a Virus Test easily and quickly so that the systems is updated. 
-
-Issue: P1 è una precondizione di alto livello, non una funzionalità del sistema
-
-Issue: P2 e P3 siano molto simili. Non chiara la differenza con P8
-
+ 
 
 ## Walter – Institutional Forces ## {#Walter-needs}
 
 - **W1 – Institutional Forces Onboarding**:
-    As part of the Institutional Forces, Walter wants to download and use the App on his phone quickly and easily so that he can start using it. 
+    As part of the Institutional Forces, Walter is requested to download and use the App on his phone quickly and easily so that he can start using it. 
 - **W2 – Institutional Forces Citizen Status Check**:
     As part of the Institutional Forces, Walter needs to check the status of a Citizen so that he could make decisions effectively.
 - **W3 – Institutional Forces Volunteer Status Check**:
-    As part of the Institutional Forces, Walter wants to check the immunity status of a Volunteer so that he could register him/her as Volunteer or make related decisions. 
+    As part of the Institutional Forces, Walter wants to register immune Volunteers. 
 - **W4 – Institutional Forces Volunteer Registration**:
     As part of the Institutional Forces, Walter wants to register a Volunteer (who is immune) effectively with few clicks on the App so that she/he can start working soon. 
 - **W5 – Institutional Forces Volunteer Management**:
     As part of the Institutional Forces, Walter wants to be regularly updated on the status of all Volunteers and forces under his management so that he can ensure a high quality and efficacy of his services.
 
-Issue:  W1 è come P1. Credo tutti lo vogliano
-
-Issue:  W2 e W3 siano molto simili
 
 
 ## Franca – Fragile Population ## {#Franca-needs}
@@ -71,6 +57,8 @@ Issue:  W2 e W3 siano molto simili
     As part of the Fragile Population, Franca needs to express her pleasure/displeasure of the service provided.
 
 ## Anne – Status Unknown, then positive in Quarantine ## {#Anne-needs}
+
+Issue: Anne needs shoud be detailed
 
 - **A1 – Citizen Onboarding** 
 - **A2 – Citizen Symptoms check ** 
@@ -90,6 +78,9 @@ Issue:  W2 e W3 siano molto simili
 
 ## Jack – Positive with Symptoms under treatment (recovery) ## {#Jack-needs}
 
+
+Issue: Jack needs shoud be detailed
+
 - **J1 – Patient Onboarding**
 - **J2 – Patient Post-Recovery Guidance**
 - **J3 – Patient Silent Tracking**
@@ -105,7 +96,7 @@ Issue:  W2 e W3 siano molto simili
 App functionalities {#app-functionalities}
 =====================
 
-Issue: to be extended
+Issue: App functionalities is to be extended
 
 ## User App ## {#user-app}
 - **Autentication**
@@ -129,10 +120,11 @@ Issue: to be extended
 - **Certificate removal**
 - **Test creation**
 
+Issue: an app for civil force/ police is needed?
 
 ## Certificate Requirements ## {#certificate-requirements}
 
-Note: this section mus be improved
+Note: this section must be carefully inspected
 
 The immunity certificate must contain the following info:
 
