@@ -63,7 +63,7 @@ Some components are ready to be used, others are under development.
 Those interested in providing their input or support the initiative can send an email to [info@safetogether.app](mailto:info@safetogether.app)
  or [SafeTogether Web Site](https://safetogether.app).
 
-# SafeTogether Applications requiremets # {#application}
+# SafeTogether Applications requirements # {#application}
 
 The SafeTogether Specification
 describes requirements and protocols for *SafeTogether applications* and is composed by set of related documents:
