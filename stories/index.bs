@@ -50,7 +50,7 @@ Many thanks to [all contributors in GitHub](https://github.com/safe-together/spe
 		"href": "https://safe-together.github.io/specification/process",
 		"title": "The SafeTogether Process",
 		"authors": [
-	      " SafeTogheter Process Panel"
+	      " SafeTogether Process Panel"
 	    ]
 	}
 }

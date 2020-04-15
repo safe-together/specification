@@ -68,7 +68,7 @@ Those interested in providing their input or support the initiative can send an 
 The SafeTogether Specification
 describes requirements and protocols for *SafeTogether applications* and is composed by set of related documents:
 
-- [[!STORIES]]: that describes personas and user stories inspiring the SafeTogheter project
+- [[!STORIES]]: that describes personas and user stories inspiring the SafeTogether project
 - [[!PROTOCOLS]]: that describe protocols and interfaces to be implemented by applications
 
 *SafeTogether applications* **SHOULD** implement at least one of the [[!STORIES]] 
