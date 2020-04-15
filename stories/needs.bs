@@ -44,8 +44,6 @@ Issue: P1 è una precondizione di alto livello, non una funzionalità del sistem
 Issue: P2 e P3 siano molto simili. Non chiara la differenza con P8
 
 
-*Immunity status should be tied to tests performed and the results of those tests should affect the immunity status directly, without leaving the Pharmacist any direct control on the certification status control. We should also consider what test details we want/can include in the system.
-
 ## Walter – Institutional Forces ## {#Walter-needs}
 
 - **W1 – Institutional Forces Onboarding**:

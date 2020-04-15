@@ -167,8 +167,6 @@ protocols put in place to do so as seamlessly as possible.
 Maria values the privacy of her patients and she tries to connect with them in the least intrusive way.
 She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.
 
-Issue(7): could Maria, Giovanni and Paola be merged into a unique persona under the tagline "Medical Personnel"?
-
 
 ### Marco the Immune Volunteer ### {#Marco}
 
@@ -275,7 +273,6 @@ Some countries may deny her access, even though she could be immune and therefor
 
 <img src="images/Anne.png" width="200" />
 
-Isuue: could Anne be a dupplicated persona of Marco?
 
 **Details**
 
@@ -300,7 +297,7 @@ due to the fact that she might be fired.
 
 **Details**
 
-Jack is a patient under treatment for Covid-19, he could either be
+Jack is a patient under treatment for Covid-19, he could be either quarantined,
 hospitalized or in ICUs.
 
 **Goals**
@@ -311,19 +308,3 @@ Fight the disease, connect with loved ones.
 
 Fear of death, loss and overall feeling of grief.
 
-### Natasha CEO of Lorry for women. ### {#Natasha}
-
-<img src="images/Natasha.png" width="200" />
-
-**Details**
-
-Natasha is 43, she owns the comapany where [Aleksandra](#Aleksandra) works.
-
-**Goals**
-
-She has been hit hard by the crisis, so she needs to get back to business as soon as possible.
-
-**Values and Fear**
-
-- She fears that due to travel restrictions her business might go under.
-- She fears that her employees might be endangered, phisically and economically.
