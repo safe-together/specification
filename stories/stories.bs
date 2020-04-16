@@ -73,6 +73,10 @@ Issue(10): add stories about contact tracing domain.
 - [[#US07]]
 
 
+This diagram summarizes the state transition diagram for a citizen can go through while part of the SafeTogether system. 
+
+<img src="safeTogetherCitizen.svg" width="100%"/>
+
 **Shielding**:
 
 - [[#US08]],
@@ -85,13 +89,6 @@ Issue(10): add stories about contact tracing domain.
 - [[#US15]]
 
 Issue(11): check the cross index
-
-## Stories by user state transition ## {#index-by-state}
-
-This diagram summarizes the main states a persona can go through while part of the SafeTogether system. 
-
-<img src="fig1.png"/>
-
 
 
 ## US01: Anne is Tested (Swab Test) ## {#US01}
@@ -242,6 +239,7 @@ mobile app no longer receives notifications and no longer
 checks Jack’s location.
 
 
+Issue: US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?
 
 ## US06 - Jack Dies while at the Hospital -- Immune ## {#US06}
 
