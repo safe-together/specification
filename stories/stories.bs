@@ -1,12 +1,10 @@
-# User State # {#use-state}
+# User stories #{#user_stories}
 
-Issue: need a short intro to state transition
+This section describes some paradigmatic stakeholder journeys (story)
 
-The following diagram summarizes the transitions between user states. 
-The initial state is N (unknown). All users are
-initially in this state. Users are enrolled in the system in US1.
+## User state  ##  {#user-state-machine}
 
-<img src="fig1.png"/>
+There are five user state that MUST be considered inside SafeTogether application : 
 
 : U
 :: unknown
@@ -20,26 +18,43 @@ initially in this state. Users are enrolled in the system in US1.
 :: immune
 
 
-Note: above section is informative only <img src="tab1.png"/>
+The state **Unknown** says that the system knows nothing about her health status. 
+State **Negative** materializes the negative outcome of a swab test, while 
+**Quarantined** (at home) means that the outcome was positive, and the citizen is now quarantined. 
+if the heath conditions worsen, the citizen is hospitalized, and quarantine **Suspended**. When the patient recovers, 
+she becomes **Immune**.
 
-: Citizens– view only rights
-:: citizens can view their status
-: Institutional Forces (Police, etc) – view only rights
-:: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
-: SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – edit right
-:: Operator who can change the “Status” of a citizen based on medical evidence.
-: Volunteers (Immune Citizens) – view only rights
-:: Citizens that have recovered, are immune and want to help during the crisis
+### Virtual state ### {#virtual-state}
+
+SafeTogether purposes some other *virtual state* **MAY** be introduced:
+
+- some SafeTogether application **MAY** consider the additional virtial state **positive** (P)  defined as  the union of **quarantined** and **suspended** state.
+- some SafeTogether stories MAY consider the additional state **pending** (D)  to qualify the  "Unknown" state after the execution of a medical test but before
+    the test result. For SafeTogether purposes the **Pending** virtual state **MUST** be considered equivalent to the **Unknown** state.
 
 Issue: can assume that an immune person doesn’t carrying the virus? How about behaviour re-safety in cleaning/hygiene?
 
 
-
-# User stories #{#user_stories}
-
+### state privacy ###  {#state-privacy}
 
 
-## Cross-index by application domain ## {#cross-index}
+Note: The above table  is informative only <img src="tab1.png"/>
+
+Privacy and rights:
+
+: Citizens **MUST** have *view only* rights on their state
+:: citizens can view their status but they are not allowed to change it.
+: Institutional Forces (Police, etc) – **MAY** have *view only* rights citizen's state
+:: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
+: SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
+:: Authorized operators  can change the “Status” of a citizen based on medical evidence.
+: Volunteers (Immune Citizens) – other citizen can have *view only* rights
+:: Citizens that have recovered, are immune and want to help during the crisis
+
+
+
+
+## Stories by application domain ## {#index-by-domain}
 
 Here is a crosss-reference index between stories and application domains:
 
@@ -70,6 +85,14 @@ Issue(10): add stories about contact tracing domain.
 - [[#US15]]
 
 Issue(11): check the cross index
+
+## Stories by user state transition ## {#index-by-state}
+
+This diagram summarizes the main states a persona can go through while part of the SafeTogether system. 
+
+<img src="fig1.png"/>
+
+
 
 ## US01: Anne is Tested (Swab Test) ## {#US01}
 
@@ -234,7 +257,11 @@ Jack’s state is suspended
 
 **Postconditions:**
 
-Jack’s state is immune.
+Jack’s state is immune
+
+Issue: it is true that a death patient could be considered immune?
+
+Issue: a dead patient shoud exit te SafeTogether system
 
 **Story:**
 
@@ -243,6 +270,7 @@ into the system, and marks his state in the backend as immune.
 The mobile app no longer receives notifications and no longer
 checks Jack’s location.
 
+Issue: who and how to remove Jack from SafeTogether system?
 
 
 ## US07 - Jack is Removed from Quarantine -- Recovery ## {#US07}
