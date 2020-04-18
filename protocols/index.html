@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version bb42a6a, updated Thu Apr 16 07:15:51 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/protocols/" rel="canonical">
-  <meta content="a241bf71484a3013e0d59250d53bf166867ec370" name="document-revision">
+  <meta content="200cde6e5e9ed42a0c1f0442f9e57649086fd12b" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1382,6 +1382,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <dd><a class="u-url" href="https://safe-together.github.io/specification/protocols/">https://safe-together.github.io/specification/protocols/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/safe-together/specification/issues/">GitHub</a>
+     <dd><a href="#issues-index">Inline In Spec</a>
      <dt class="editor">Editor:
      <dd class="editor p-author h-card vcard"><span class="p-name fn">TBD</span>
     </dl>
@@ -1408,7 +1409,8 @@ Parts of this work may be from another specification document.  If so, those par
     <li>
      <a href="#architecture"><span class="secno">1</span> <span class="content">Architectures</span></a>
      <ol class="toc">
-      <li><a href="#shielding-architecture"><span class="secno">1.1</span> <span class="content">Shielding</span></a>
+      <li><a href="#architecture-references"><span class="secno">1.1</span> <span class="content">References architectures</span></a>
+      <li><a href="#shielding-architecture"><span class="secno">1.2</span> <span class="content">Shielding</span></a>
      </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
@@ -1416,6 +1418,7 @@ Parts of this work may be from another specification document.  If so, those par
      <ol class="toc">
       <li><a href="#normative"><span class="secno"></span> <span class="content">Normative References</span></a>
      </ol>
+    <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
@@ -1438,9 +1441,25 @@ However, the information in this document is still subject to change.
    </ul>
    <p>Many thanks to <a href="https://github.com/safe-together/specification/graphs/contributors">all contributors in GitHub</a></p>
    <h2 class="heading settled" data-level="1" id="architecture"><span class="secno">1. </span><span class="content">Architectures</span><a class="self-link" href="#architecture"></a></h2>
-   <h3 class="heading settled" data-level="1.1" id="shielding-architecture"><span class="secno">1.1. </span><span class="content">Shielding</span><a class="self-link" href="#shielding-architecture"></a></h3>
+   <h3 class="heading settled" data-level="1.1" id="architecture-references"><span class="secno">1.1. </span><span class="content">References architectures</span><a class="self-link" href="#architecture-references"></a></h3>
+   <p>These documents SHOULD be taken into consideration:</p>
+   <ul>
+    <li data-md>
+     <p><a href="https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf">CovidApp - Covid Community Alert</a></p>
+    <li data-md>
+     <p>keyless protocols <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO/keyless.io&amp;fileid=27514">see documentation in restricted SafeTogether space</a></p>
+    <li data-md>
+     <p>PEEP-PT protocols <a href="https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO/PEEP-PT&amp;fileid=27513">see documentation in restricted SafeTogether space</a></p>
+    <li data-md>
+     <p><a href="https://github.com/dirkx/DP-3T-Documents/blob/implementation-profile-start/meta-arch/meta-arch.md">DP-3T protocols</a></p>
+   </ul>
+   <p>Note that <a href="https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t">DP-3T  is not  PEEP-PT</a></p>
+   <h3 class="heading settled" data-level="1.2" id="shielding-architecture"><span class="secno">1.2. </span><span class="content">Shielding</span><a class="self-link" href="#shielding-architecture"></a></h3>
    <p class="note" role="note"><span>Note:</span> just a firts draft
 Note: <img src="Architecture.svg" width="100%"></p>
+   <p class="issue" id="issue-61e9c230"><a class="self-link" href="#issue-61e9c230"></a> volunteers are not the only target of the shielding system.
+Issue: See also <a href="https://safe-together.github.io/specification/stories#US15">The SafeTogether personas &amp; user stories §US15</a> . 
+Issue: We could imagine that the same (or similar) app used by the fragile people can be used by anyone that requires to check someone’s immunity.</p>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1596,3 +1615,9 @@ Note: <img src="Architecture.svg" width="100%"></p>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
   </dl>
+  <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
+  <div style="counter-reset:issue">
+   <div class="issue"> volunteers are not the only target of the shielding system.
+Issue: See also <a href="https://safe-together.github.io/specification/stories#US15">The SafeTogether personas &amp; user stories §US15</a> . 
+Issue: We could imagine that the same (or similar) app used by the fragile people can be used by anyone that requires to check someone’s immunity.<a href="#issue-61e9c230"> ↵ </a></div>
+  </div>

@@ -176,16 +176,6 @@ See general channel in [[#project-panel]] to find out the agenda and exact time 
 or to add put item on the next agenda.
 
 
-<!--
- ██████   ████████ ██    ██ ████████ ████████     ███    ██             ████████     ███    ██    ██ ████████ ██      
-██    ██  ██       ███   ██ ██       ██     ██   ██ ██   ██             ██     ██   ██ ██   ███   ██ ██       ██      
-██        ██       ████  ██ ██       ██     ██  ██   ██  ██             ██     ██  ██   ██  ████  ██ ██       ██      
-██   ████ ██████   ██ ██ ██ ██████   ████████  ██     ██ ██             ████████  ██     ██ ██ ██ ██ ██████   ██      
-██    ██  ██       ██  ████ ██       ██   ██   █████████ ██             ██        █████████ ██  ████ ██       ██      
-██    ██  ██       ██   ███ ██       ██    ██  ██     ██ ██             ██        ██     ██ ██   ███ ██       ██      
- ██████   ████████ ██    ██ ████████ ██     ██ ██     ██ ████████       ██        ██     ██ ██    ██ ████████ ████████
--->
-
 ## General discussion Panel ## {#project-panel}
 
 General Discussion about the project governances, process and news
@@ -208,15 +198,6 @@ General Discussion about the project governances, process and news
 Relevant news should be inserted in the project web site
 
 
-<!--
- ██████  ████████  ███████  ████████  ████ ████████  ██████        ████████     ███    ██    ██ ████████ ██      
-██    ██    ██    ██     ██ ██     ██  ██  ██       ██    ██       ██     ██   ██ ██   ███   ██ ██       ██      
-██          ██    ██     ██ ██     ██  ██  ██       ██             ██     ██  ██   ██  ████  ██ ██       ██      
- ██████     ██    ██     ██ ████████   ██  ██████    ██████        ████████  ██     ██ ██ ██ ██ ██████   ██      
-      ██    ██    ██     ██ ██   ██    ██  ██             ██       ██        █████████ ██  ████ ██       ██      
-██    ██    ██    ██     ██ ██    ██   ██  ██       ██    ██       ██        ██     ██ ██   ███ ██       ██      
- ██████     ██     ███████  ██     ██ ████ ████████  ██████        ██        ██     ██ ██    ██ ████████ ████████
--->
 
 ## Stories Panel ## {#stories-panel}
 Definition of personas and user stories inspiring SafeTogether
@@ -237,19 +218,36 @@ Definition of personas and user stories inspiring SafeTogether
 **Editorial Assignment:**
  
 Candidate Proposals to the SafeTogether Specification produced by this panel are likely to 
-be associated with the [[!STORIES]] soecifications, and will be principally reviewed 
+be associated with the [[!STORIES]] specifications, and will be principally reviewed 
 by any editors assigned to it.
 
 
-<!--
-████████ ████████     ███     ██████  ████ ██    ██  ██████         ████████     ███    ██    ██ ████████ ██      
-   ██    ██     ██   ██ ██   ██    ██  ██  ███   ██ ██    ██        ██     ██   ██ ██   ███   ██ ██       ██      
-   ██    ██     ██  ██   ██  ██        ██  ████  ██ ██              ██     ██  ██   ██  ████  ██ ██       ██      
-   ██    ████████  ██     ██ ██        ██  ██ ██ ██ ██   ████       ████████  ██     ██ ██ ██ ██ ██████   ██      
-   ██    ██   ██   █████████ ██        ██  ██  ████ ██    ██        ██        █████████ ██  ████ ██       ██      
-   ██    ██    ██  ██     ██ ██    ██  ██  ██   ███ ██    ██        ██        ██     ██ ██   ███ ██       ██      
-   ██    ██     ██ ██     ██  ██████  ████ ██    ██  ██████         ██        ██     ██ ██    ██ ████████ ████████
--->
+
+
+## Protocols Panel ## {#protocols-panel}
+Definition of aprotocols and architectures in SafeTogether systems
+
+**Communication channels:**
+
+- #Slack channel: [#stories](https://safetogether2020.slack.com/app_redirect?channel=protocols)
+
+
+**Panelists:**
+
+- [Enrico Fagnoni]()
+- [Luca Merealli]()
+- [Andrea Carmignani]()
+- [Stefano Quintarelli]()
+- [Luciano Baresi]()
+
+
+**Editorial Assignment:**
+ 
+Candidate Proposals to the SafeTogether Specification produced by this panel are likely to 
+be associated with the [[!PROTOCOLS]] specifications, and will be principally reviewed 
+by any editors assigned to it.
+
+
 
 
 ## Tracing panel ## {#tracing-panel}
@@ -272,15 +270,6 @@ Discussion about Requiementsm Protocols and Architecture about Shielding referen
 Develop a reference application for the Tracing  application ([[TRACING]])
 
 
-<!--
- ██████  ██     ██ ████ ████████ ██       ████████  ████ ██    ██  ██████         ████████     ███    ██    ██ ████████ ██      
-██    ██ ██     ██  ██  ██       ██       ██     ██  ██  ███   ██ ██    ██        ██     ██   ██ ██   ███   ██ ██       ██      
-██       ██     ██  ██  ██       ██       ██     ██  ██  ████  ██ ██              ██     ██  ██   ██  ████  ██ ██       ██      
- ██████  █████████  ██  ██████   ██       ██     ██  ██  ██ ██ ██ ██   ████       ████████  ██     ██ ██ ██ ██ ██████   ██      
-      ██ ██     ██  ██  ██       ██       ██     ██  ██  ██  ████ ██    ██        ██        █████████ ██  ████ ██       ██      
-██    ██ ██     ██  ██  ██       ██       ██     ██  ██  ██   ███ ██    ██        ██        ██     ██ ██   ███ ██       ██      
- ██████  ██     ██ ████ ████████ ████████ ████████  ████ ██    ██  ██████         ██        ██     ██ ██    ██ ████████ ████████
--->
 
 ## Shielding panel ## {#shielding-panel}
 Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
@@ -352,7 +341,8 @@ Editors have [_Admin Permissions_](https://help.github.com/en/articles/repositor
 	    ]
 	},
 	"PROTOCOLS": {
-		"title": "Protocols and Architectures (NOT YET RELEASED)"
+		"href": "https://safe-together.github.io/specification/protocols",
+		"title": "Protocols and Architectures"
 	},
 	"FSF": {
 		"href": "https://www.gnu.org/licenses/license-list.html",
