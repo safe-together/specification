@@ -88,8 +88,10 @@ This diagram summarizes the state transition diagram for a citizen can go throug
 - [[#US14]],
 - [[#US15]]
 
-Issue(11): check the cross index
 
+<img src="safeTogetherVolunteer.svg" width="100%"/>
+
+Issue: utilizza  tre stati non definiti  (volunteer, autenticated fraudolent) 
 
 ## US01: Anne is Tested (Swab Test) ## {#US01}
 
