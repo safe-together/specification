@@ -34,11 +34,9 @@ Many people contributed to this specification; here is an incomplete list (pleas
 
 Many thanks to [all contributors in GitHub](https://github.com/safe-together/specification/graphs/contributors)
 
-# Architectures # {#architecture}
+# References # {#references}
 
-## References architectures ## {#architecture-references}
-
-These documents SHOULD be taken into consideration:
+These documents **SHOULD** be taken into consideration:
 
 - [CovidApp - Covid Community Alert](https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf)
 - keyless protocols [see documentation in restricted SafeTogether space](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO/keyless.io&fileid=27514)
@@ -47,7 +45,10 @@ These documents SHOULD be taken into consideration:
 
 Note that [DP-3T  is not  PEEP-PT](https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t)
 
-## Shielding ## {#shielding-architecture}
+
+# Architectures # {#architecture}
+
+## Shielding system architecture ## {#shielding-architecture}
 
 Note: just a firts draft
 Note: <img src="Architecture.svg" width="100%"/>
