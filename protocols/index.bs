@@ -1,15 +1,15 @@
 <pre class='metadata'>
-Title: SafeTogether Personas and User Stories
+Title: SafeTogether Protocols and Architectures
 Shortname: stories
 Level: 1
 Status: iso/CD
 Group: SafeTogether Community Group
-URL: https://safe-together.github.io/specification/stories/
+URL: https://safe-together.github.io/specification/protocols/
 Markup Shorthands: markdown yes
 Max ToC Depth: 3
-Editor: Enrico Fagnoni, g0v-it core team http://g0v-it/, enrico@LinkedData.Center
+Editor: TBD
 Abstract:
-  This document is a description about personas and user stories.
+  This document is a high level description of  protocolos and architectures in SafeTogether systems.
   Anyone can take part in the editing process.
 </pre>
 
@@ -28,21 +28,18 @@ any feedback, comments, or questions you might have.
 Many people contributed to this specification; here is an incomplete list (please contact editor to add your name in this list):
 
 - Andrea Carmignani
-- Enrico Fagnoni
-- Leonardo Longhi
 - Luca Merealli
+- Luca Mastrostefano
 - Luciano Baresi
-- Michele D'Aliessi
-- Mohd Ehtesham Miah
-- Stefano Quintarelli
-- Yassine Ouahidi
 
 Many thanks to [all contributors in GitHub](https://github.com/safe-together/specification/graphs/contributors)
 
+# Architectures # {#architecture}
 
-<pre class=include>path: personas.bs</pre>
-<pre class=include>path: stories.bs</pre>
-<pre class=include>path: needs.bs</pre>
+## Shielding ## {#shielding-architecture}
+
+Note: just a firts draft
+Note: <img src="Architecture.svg" width="100%"/>
 
 
 <pre class=biblio>
@@ -52,6 +49,13 @@ Many thanks to [all contributors in GitHub](https://github.com/safe-together/spe
 		"title": "The SafeTogether Process",
 		"authors": [
 	      " SafeTogether Process Panel"
+	    ]
+	},
+	"stories": {
+		"href": "https://safe-together.github.io/specification/stories",
+		"title": "The SafeTogether personas & user stories",
+		"authors": [
+	      " SafeTogether Stories Panel"
 	    ]
 	}
 }
