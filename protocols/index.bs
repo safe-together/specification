@@ -38,10 +38,11 @@ Many thanks to [all contributors in GitHub](https://github.com/safe-together/spe
 
 These documents **SHOULD** be taken into consideration:
 
-- [CovidApp - Covid Community Alert](https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf)
+- [CovidApp - Covid Community Alert Protocol Description](https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf)
 - keyless protocols [see documentation in restricted SafeTogether space](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO/keyless.io&fileid=27514)
 - PEEP-PT protocols [see documentation in restricted SafeTogether space](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO/PEEP-PT&fileid=27513)
 - [DP-3T protocols](https://github.com/dirkx/DP-3T-Documents/blob/implementation-profile-start/meta-arch/meta-arch.md)
+- [Apple-Google Protocol description](https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-BluetoothSpecification.pdf)
 
 Note that [DP-3T  is not  PEEP-PT](https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t)
 
