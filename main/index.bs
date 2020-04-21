@@ -12,7 +12,9 @@ Editor: Luca Mastrostefano, Coronavirus Outbreak Control  https://coronavirus-ou
 Editor: Enrico Fagnoni, g0v-it core team https://g0v.it/, enrico@LinkedData.Center
 Abstract:
   This document connects a set of specifications that, together,
-  provide an interoperability framework for SafeTogether applications.
+  provide an interoperability framework for SafeTogether project,
+  an ecosystem of software components and support services to provide
+  the operators in charge with a set of tools to help tackle phase 2 of the epidemic emergency.
 </pre>
 
 ## Status of This Document ## {#status}
