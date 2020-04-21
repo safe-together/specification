@@ -58,7 +58,7 @@ User needs {#user_needs}
 
 ## Anne – Status Unknown, then positive in Quarantine ## {#Anne-needs}
 
-Issue: Anne needs shoud be detailed
+Issue: the "Anne needs" should be detailed
 
 - **A1 – Citizen Onboarding** 
 - **A2 – Citizen Symptoms check ** 
@@ -79,7 +79,7 @@ Issue: Anne needs shoud be detailed
 ## Jack – Positive with Symptoms under treatment (recovery) ## {#Jack-needs}
 
 
-Issue: Jack needs shoud be detailed
+Issue: the "Jack needs" should be detailed
 
 - **J1 – Patient Onboarding**
 - **J2 – Patient Post-Recovery Guidance**
