@@ -15,6 +15,10 @@
   * Shielding app: *TBD*
   * Quarantine app: *TBD*
 
+
+SafeTogether is an ecosystem of software components and support services to provide
+the operators in charge with a set of tools to help tackle phase 2 of the epidemic emergency.
+
 This repository contains the source of the SafeTogether Specification
 which aims to be a clear, unambiguous, free and implementable documentation for SafeTogether Project.
 
