@@ -48,9 +48,9 @@ Privacy and rights:
 :: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
 : SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
 ::The only person who can digitally sign the report on the patient's state of health.
-In the case of immunities, he is the only person who can decide the period of validity and its revocation.
-:Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical 
-certificate in which the state of health is present.
+:In the case of immunities, he is the only person who can decide the period of validity and its revocation.
+::Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical 
+:certificate in which the state of health is present.
 :: Authorized operators  can change the “Status” of a citizen based on medical evidence.
 : Volunteers (Immune Citizens) – other citizen can have *view only* rights
 :: Citizens that have recovered, are immune and want to help during the crisis
