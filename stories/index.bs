@@ -34,6 +34,7 @@ Many people contributed to this specification; here is an incomplete list (pleas
 - Luciano Baresi
 - Michele D'Aliessi
 - Mohd Ehtesham Miah
+- Silvia Loffi
 - Stefano Quintarelli
 - Yassine Ouahidi
 
