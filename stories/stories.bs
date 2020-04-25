@@ -47,10 +47,9 @@ Privacy and rights:
 : Institutional Forces (Police, etc) – **MAY** have *view only* rights citizen's state
 :: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
 : SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
-::The only person who can digitally sign the report on the patient's state of health.
-:In the case of immunities, he is the only person who can decide the period of validity and its revocation.
-::Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical 
-:certificate in which the state of health is present.
+:: The only person who can digitally sign the report on the patient's state of health.
+:: In the case of immunities, he is the only person who can decide the period of validity and its revocation.
+: Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical certificate in which the state of health is present.
 :: Authorized operators  can change the “Status” of a citizen based on medical evidence.
 : Volunteers (Immune Citizens) – other citizen can have *view only* rights
 :: Citizens that have recovered, are immune and want to help during the crisis
@@ -111,6 +110,9 @@ In addition, this report must be sent in encrypted mode to the patient.
 The medical certificate must be saved in the device inside the App.
 Giovanni has the task of recording the biometric data of the patients.
 
+Issue: no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.
+
+
 **Postcondition:**
 
 Anne’s state is quarantined or negative.
@@ -145,6 +147,11 @@ result in the operator app, which also notifies Anne’s
 - if the test result is positive, the app enters in quarantine mode (see [[#US02]])
 - if the test result is negative, Anne is notified via the mobile app.
 
+Issue(29): story mistsmatch with quarnatine app video (QR codes and personas)
+
+Issue: Giovanni is NOT in charge of collecting any biometric data. No bieometric data must be stored under institutional  control
+
+Issue: why we need to store certificate on Anne device?
 
 ## US02 - Jack Confirms His Location -- Enforce Quarantine ## {#US02}
 
@@ -351,6 +358,7 @@ app. Marco authenticates in front of Walter, and the app records
 Marco as a volunteer.
 
 
+Issue: No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?
 
 
 ## US10 - Marco’s Immunity Expires ## {#US10}
