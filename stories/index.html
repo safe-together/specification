@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 34b5d8b, updated Mon Apr 20 13:04:45 2020 -0700" name="generator">
+  <meta content="Bikeshed version d2959a4, updated Fri Apr 24 17:44:40 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="a7023e1995df1a5d9e0878bc88c388c7c7aca8a7" name="document-revision">
+  <meta content="598edf294456d9f92a0b409f92a9f605375eb739" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Personas and User Stories</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-04-21">21 April 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-04-25">25 April 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 21 April 2020,
+In addition, as of 25 April 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1772,6 +1772,11 @@ the test result. For SafeTogether purposes the <strong>Pending</strong> virtual 
      <p>Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives.</p>
     <dt data-md>SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – <em>MAY</em>* have view and edit right
     <dd data-md>
+     <p>The only person who can digitally sign the report on the patient’s state of health.</p>
+    <dd data-md>
+     <p>In the case of immunities, he is the only person who can decide the period of validity and its revocation.</p>
+    <dt data-md>Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical certificate in which the state of health is present.
+    <dd data-md>
      <p>Authorized operators  can change the “Status” of a citizen based on medical evidence.</p>
     <dt data-md>Volunteers (Immune Citizens) – other citizen can have <em>view only</em> rights
     <dd data-md>
@@ -1830,7 +1835,13 @@ the test result. For SafeTogether purposes the <strong>Pending</strong> virtual 
      <p><a href="#Giovanni">§ 1.2.1 Giovanni the physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Anne’s state is unknown</p>
+   <p>Anne’s state is unknown
+Giovanni has produced the medical certificate with the patient’s state of health and digitally signed it 
+using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
+In addition, this report must be sent in encrypted mode to the patient.
+The medical certificate must be saved in the device inside the App.
+Giovanni has the task of recording the biometric data of the patients.</p>
+   <p class="issue" id="issue-7e293c91"><a class="self-link" href="#issue-7e293c91"></a> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.</p>
    <p><strong>Postcondition:</strong></p>
    <p>Anne’s state is quarantined or negative.</p>
    <p><strong>Story:</strong></p>
@@ -1838,7 +1849,9 @@ the test result. For SafeTogether purposes the <strong>Pending</strong> virtual 
 Giovanni asks Anne to install the <em>Mobile App</em>. The <em>Mobile App</em> requests Anne to show her face, then she is enrolled in the system. The
 app also creates a unique COC_ID, which is associated with Anne’s
 information. As a result, the app presents a QR code on the screen.
-Giovanni starts the operator app, scans the QR code, and
+Giovanni is in charge of collecting the biometric data of each patient for recognition and subsequent association of 
+the medical certificate in which the state of health is present.
+Giovanni starts  completes the registration starts the operator app, scans the QR code, and
 enters Anne’s codice fiscale and phone number in the operator
 app. At this point, the <em>Mobile App</em> shows a single-button
 interface that, when pressed, records the current location and sets
@@ -1858,6 +1871,9 @@ result in the operator app, which also notifies Anne’s <em>Mobile App</em>, as
     <li data-md>
      <p>if the test result is negative, Anne is notified via the mobile app.</p>
    </ul>
+   <p class="issue" id="issue-40445879"><a class="self-link" href="#issue-40445879"></a> story mistsmatch with quarnatine app video (QR codes and personas) <a href="https://github.com/safe-together/specification/issues/29">&lt;https://github.com/safe-together/specification/issues/29></a></p>
+   <p class="issue" id="issue-43e8c8ec"><a class="self-link" href="#issue-43e8c8ec"></a> Giovanni is NOT in charge of collecting any biometric data. No bieometric data must be stored under institutional  control</p>
+   <p class="issue" id="issue-8deb5d37"><a class="self-link" href="#issue-8deb5d37"></a> why we need to store certificate on Anne device?</p>
    <h3 class="heading settled" data-level="2.4" id="US02"><span class="secno">2.4. </span><span class="content">US02 - Jack Confirms His Location -- Enforce Quarantine</span><a class="self-link" href="#US02"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -1993,15 +2009,21 @@ The operator app checks Marco’s state (including the expiration date if the im
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Marco’s state is immune</p>
-   <p><strong>Story:</strong></p>
+   <p>Marco’s state is immune
+Marco must have already been recognized by Giovanni (see ISSUE 1) and must have on board his device the medical certificate 
+in which Giovanni reported his immunity. <strong>Story:</strong></p>
    <p>Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individuals. Marco proves that he is immune as described in <a href="#US08">§ 2.10 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
+at-risk individuals. The recognition is done by comparing the biopmetric data in 
+the blockchain and the Hash of the report saved inside Marco’s device. 
+Only the merging of all data associated with Marco gives access to the report 
+(biometric data, hash of the report and user id).
+Marco proves that he is immune as described in <a href="#US08">§ 2.10 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
 photo, to protezione civile’s system. Protezione civile’s system
 uses the COC backend to send a notification to Marco’s mobile
 app. Marco authenticates in front of Walter, and the app records
 Marco as a volunteer.</p>
+   <p class="issue" id="issue-db98b45a"><a class="self-link" href="#issue-db98b45a"></a> No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?</p>
    <h3 class="heading settled" data-level="2.12" id="US10"><span class="secno">2.12. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -2458,10 +2480,15 @@ As part of the Fragile Population, Franca needs to express her pleasure/displeas
    <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behaviour re-safety in cleaning/hygiene?<a href="#issue-8c063841"> ↵ </a></div>
    <div class="issue"> add stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-89cfdeb4"> ↵ </a></div>
    <div class="issue"> utilizza  tre stati non definiti  (volunteer, autenticated fraudolent)<a href="#issue-7296e7af"> ↵ </a></div>
+   <div class="issue"> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.<a href="#issue-7e293c91"> ↵ </a></div>
+   <div class="issue"> story mistsmatch with quarnatine app video (QR codes and personas) <a href="https://github.com/safe-together/specification/issues/29">&lt;https://github.com/safe-together/specification/issues/29></a><a href="#issue-40445879"> ↵ </a></div>
+   <div class="issue"> Giovanni is NOT in charge of collecting any biometric data. No bieometric data must be stored under institutional  control<a href="#issue-43e8c8ec"> ↵ </a></div>
+   <div class="issue"> why we need to store certificate on Anne device?<a href="#issue-8deb5d37"> ↵ </a></div>
    <div class="issue"> US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?<a href="#issue-6f5099aa"> ↵ </a></div>
    <div class="issue"> it is true that a death patient could be considered immune?<a href="#issue-5dc068e9"> ↵ </a></div>
    <div class="issue"> a dead patient shoud exit te SafeTogether system<a href="#issue-9465b706"> ↵ </a></div>
    <div class="issue"> who and how to remove Jack from SafeTogether system?<a href="#issue-c5edac81"> ↵ </a></div>
+   <div class="issue"> No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?<a href="#issue-db98b45a"> ↵ </a></div>
    <div class="issue"> is Bluetooth really usefull? What happens if Franca lives in a big building and Mark rings apartment building intercom?<a href="#issue-8fb5f011"> ↵ </a></div>
    <div class="issue"> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB? <a href="https://github.com/safe-together/specification/issues/17">&lt;https://github.com/safe-together/specification/issues/17></a><a href="#issue-b2e9bff1"> ↵ </a></div>
    <div class="issue"> How the sanitary personnel are enrolled? Is it a metter of the application or someone else? <a href="https://github.com/safe-together/specification/issues/18">&lt;https://github.com/safe-together/specification/issues/18></a><a href="#issue-2d6120c0"> ↵ </a></div>

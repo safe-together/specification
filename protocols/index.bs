@@ -34,7 +34,7 @@ Many people contributed to this specification; here is an incomplete list (pleas
 
 Many thanks to [all contributors in GitHub](https://github.com/safe-together/specification/graphs/contributors)
 
-# References # {#references}
+# References # {#protocols_references}
 
 These documents **SHOULD** be taken into consideration:
 
@@ -53,6 +53,7 @@ These documents **SHOULD** be taken into consideration:
 
 Note: just a firts draft
 Note: <img src="Architecture.svg" width="100%"/>
+See also [[!stories]]
 
 Issue: volunteers are not the only target of the shielding system. 
 Issue: See also [[stories#US15]] . 
