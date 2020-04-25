@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version d2959a4, updated Fri Apr 24 17:44:40 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="c1ae8c27ea7a2e452f2a523e229b308aff94aa1b" name="document-revision">
+  <meta content="af5bc3dc4e9443d89c818385d4ccfa29c393fb67" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1433,12 +1433,7 @@ Parts of this work may be from another specification document.  If so, those par
     <li>
      <a href="#user_stories"><span class="secno">2</span> <span class="content">User stories</span></a>
      <ol class="toc">
-      <li>
-       <a href="#user-state-machine"><span class="secno">2.1</span> <span class="content">User state</span></a>
-       <ol class="toc">
-        <li><a href="#virtual-state"><span class="secno">2.1.1</span> <span class="content">Virtual state</span></a>
-        <li><a href="#state-privacy"><span class="secno">2.1.2</span> <span class="content">state privacy</span></a>
-       </ol>
+      <li><a href="#user-state-machine"><span class="secno">2.1</span> <span class="content">User state</span></a>
       <li><a href="#index-by-domain"><span class="secno">2.2</span> <span class="content">Stories by application domain</span></a>
       <li><a href="#US01"><span class="secno">2.3</span> <span class="content">US01: Anne is Tested (Swab Test)</span></a>
       <li><a href="#US02"><span class="secno">2.4</span> <span class="content">US02 - Jack Confirms His Location -- Enforce Quarantine</span></a>
@@ -1730,7 +1725,7 @@ hospitalized or in ICUs.</p>
    <h2 class="heading settled" data-level="2" id="user_stories"><span class="secno">2. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
    <p>This section describes some paradigmatic stakeholder journeys (story)</p>
    <h3 class="heading settled" data-level="2.1" id="user-state-machine"><span class="secno">2.1. </span><span class="content">User state</span><a class="self-link" href="#user-state-machine"></a></h3>
-   <p>There are five user state that MUST be considered inside SafeTogether application :</p>
+   <p>There are five <em>core</em> user state that MUST be considered inside SafeTogether application :</p>
    <dl>
     <dt data-md>U
     <dd data-md>
@@ -1752,17 +1747,23 @@ hospitalized or in ICUs.</p>
 State <strong>Negative</strong> materializes the negative outcome of a swab test, while <strong>Quarantined</strong> (at home) means that the outcome was positive, and the citizen is now quarantined. 
 if the heath conditions worsen, the citizen is hospitalized, and quarantine <strong>Suspended</strong>. When the patient recovers, 
 she becomes <strong>Immune</strong>.</p>
-   <h4 class="heading settled" data-level="2.1.1" id="virtual-state"><span class="secno">2.1.1. </span><span class="content">Virtual state</span><a class="self-link" href="#virtual-state"></a></h4>
-   <p>SafeTogether purposes some other <em>virtual state</em> <strong>MAY</strong> be introduced:</p>
+   <p>For SafeTogether purposes some other <em>application state</em> <strong>MAY</strong> be introduced as generalization or specialization of the five <em>core</em> user state , for example :</p>
    <ul>
     <li data-md>
-     <p>some SafeTogether application <strong>MAY</strong> consider the additional virtial state <strong>positive</strong> (P)  defined as  the union of <strong>quarantined</strong> and <strong>suspended</strong> state.</p>
+     <p>some SafeTogether application <strong>MAY</strong> consider the additional  state <strong>positive</strong> (P)  defined as  the union of <strong>quarantined</strong> and <strong>suspended</strong> state.</p>
     <li data-md>
      <p>some SafeTogether stories MAY consider the additional state <strong>pending</strong> (D)  to qualify the  "Unknown" state after the execution of a medical test but before
 the test result. For SafeTogether purposes the <strong>Pending</strong> virtual state <strong>MUST</strong> be considered equivalent to the <strong>Unknown</strong> state.</p>
    </ul>
-   <p class="issue" id="issue-8c063841"><a class="self-link" href="#issue-8c063841"></a> can assume that an immune person doesn’t carrying the virus? How about behaviour re-safety in cleaning/hygiene?</p>
-   <h4 class="heading settled" data-level="2.1.2" id="state-privacy"><span class="secno">2.1.2. </span><span class="content">state privacy</span><a class="self-link" href="#state-privacy"></a></h4>
+   <p>This diagram summarizes the state transition diagram for a citizen can go through while part of the SafeTogether system.</p>
+   <p><img src="safeTogetherCitizen.svg" width="100%"></p>
+   <p class="issue" id="issue-93115805"><a class="self-link" href="#issue-93115805"></a> propongo di aggiungere un arco da immune a unknow a causa dell’expiration dell’immunità e da immune a unknown (con il riferimento alle storie) per rendere il diagramma omnicomprensivo
+Issue: inoltre si potrebbe eliminare il riferimento a Anne lasciandolo indefinito</p>
+   <p>This diagram shows an example of <em>application state</em> that can be assumed in some stories about volunteers:</p>
+   <p><img src="safeTogetherVolunteer.svg" width="100%"></p>
+   <p>In previous diagram <em>Volunteer</em> can be defined as a specialization of the <em>Immune</em> state, <em>Autenticated</em> a specialization of "<em>Volunteer</em> and <em>Fraudolent</em> a specialization of <em>Autenticated</em></p>
+   <p class="issue" id="issue-00c1d945"><a class="self-link" href="#issue-00c1d945"></a> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?</p>
+   <p><strong>state privacy:</strong></p>
    <p class="note" role="note"><span>Note:</span> The above table  is informative only <img src="tab1.png"></p>
    <p>Privacy and rights:</p>
    <dl>
@@ -1777,13 +1778,17 @@ the test result. For SafeTogether purposes the <strong>Pending</strong> virtual 
      <p>The only person who can digitally sign the report on the patient’s state of health.</p>
     <dd data-md>
      <p>In the case of immunities, he is the only person who can decide the period of validity and its revocation.</p>
-    <dt data-md>Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical certificate in which the state of health is present.
+    <dt data-md>Certification agents (partial editing)
     <dd data-md>
-     <p>Authorized operators  can change the “Status” of a citizen based on medical evidence.</p>
+     <p>Authorized operators that  can change the “Status” of a citizen based on medical evidence.</p>
+    <dd data-md>
+     <p>Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical certificate in which the state of health is present.</p>
     <dt data-md>Volunteers (Immune Citizens) – other citizen can have <em>view only</em> rights
     <dd data-md>
      <p>Citizens that have recovered, are immune and want to help during the crisis</p>
    </dl>
+   <p class="issue" id="issue-95c571f6"><a class="self-link" href="#issue-95c571f6"></a> Certification agents role is not clear</p>
+   <p class="issue" id="issue-9d7388e0"><a class="self-link" href="#issue-9d7388e0"></a> no biometric info should be stored</p>
    <h3 class="heading settled" data-level="2.2" id="index-by-domain"><span class="secno">2.2. </span><span class="content">Stories by application domain</span><a class="self-link" href="#index-by-domain"></a></h3>
    <p>Here is a crosss-reference index between stories and application domains:</p>
    <p><strong>Tracing</strong>*:</p>
@@ -1805,8 +1810,6 @@ the test result. For SafeTogether purposes the <strong>Pending</strong> virtual 
     <li data-md>
      <p><a href="#US07">§ 2.9 US07 - Jack is Removed from Quarantine -- Recovery</a></p>
    </ul>
-   <p>This diagram summarizes the state transition diagram for a citizen can go through while part of the SafeTogether system.</p>
-   <p><img src="safeTogetherCitizen.svg" width="100%"></p>
    <p><strong>Shielding</strong>:</p>
    <ul>
     <li data-md>
@@ -1826,8 +1829,6 @@ the test result. For SafeTogether purposes the <strong>Pending</strong> virtual 
     <li data-md>
      <p><a href="#US15">§ 2.17 US15 - Aleksandra crosses the italian border</a></p>
    </ul>
-   <p><img src="safeTogetherVolunteer.svg" width="100%"></p>
-   <p class="issue" id="issue-7296e7af"><a class="self-link" href="#issue-7296e7af"></a> utilizza  tre stati non definiti  (volunteer, autenticated fraudolent)</p>
    <h3 class="heading settled" data-level="2.3" id="US01"><span class="secno">2.3. </span><span class="content">US01: Anne is Tested (Swab Test)</span><a class="self-link" href="#US01"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -2479,9 +2480,12 @@ As part of the Fragile Population, Franca needs to express her pleasure/displeas
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behaviour re-safety in cleaning/hygiene?<a href="#issue-8c063841"> ↵ </a></div>
+   <div class="issue"> propongo di aggiungere un arco da immune a unknow a causa dell’expiration dell’immunità e da immune a unknown (con il riferimento alle storie) per rendere il diagramma omnicomprensivo
+Issue: inoltre si potrebbe eliminare il riferimento a Anne lasciandolo indefinito<a href="#issue-93115805"> ↵ </a></div>
+   <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?<a href="#issue-00c1d945"> ↵ </a></div>
+   <div class="issue"> Certification agents role is not clear<a href="#issue-95c571f6"> ↵ </a></div>
+   <div class="issue"> no biometric info should be stored<a href="#issue-9d7388e0"> ↵ </a></div>
    <div class="issue"> add stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-89cfdeb4"> ↵ </a></div>
-   <div class="issue"> utilizza  tre stati non definiti  (volunteer, autenticated fraudolent)<a href="#issue-7296e7af"> ↵ </a></div>
    <div class="issue"> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.<a href="#issue-7e293c91"> ↵ </a></div>
    <div class="issue"> story mistsmatch with quarnatine app video (QR codes and personas) <a href="https://github.com/safe-together/specification/issues/29">&lt;https://github.com/safe-together/specification/issues/29></a><a href="#issue-40445879"> ↵ </a></div>
    <div class="issue"> Giovanni is NOT in charge of collecting any biometric data. No bieometric data must be stored under institutional  control<a href="#issue-43e8c8ec"> ↵ </a></div>
