@@ -42,6 +42,8 @@ Many thanks to [all contributors in GitHub](https://github.com/safe-together/spe
 
 
 <pre class=include>path: personas.bs</pre>
+<pre class=include>path: state.bs</pre>
+<pre class=include>path: crossindex.bs</pre>
 <pre class=include>path: stories.bs</pre>
 <pre class=include>path: needs.bs</pre>
 

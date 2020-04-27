@@ -1,0 +1,32 @@
+# Stories cross index # {#cross-index}
+
+Here is a cross-reference index between stories and application domains:
+
+**Tracing***:
+
+Issue(10): add stories about contact tracing domain.
+
+**Quarantine**:
+
+- [[#US01]],
+- [[#US02]],
+- [[#US03]],
+- [[#US04]],
+- [[#US05]],
+- [[#US06]],
+- [[#US07]]
+
+
+
+**Shielding**:
+
+- [[#US08]],
+- [[#US09]],
+- [[#US10]],
+- [[#US11]],
+- [[#US12]],
+- [[#US13]],
+- [[#US14]],
+- [[#US15]]
+
+

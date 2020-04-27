@@ -1,0 +1,63 @@
+# User state  #  {#user-state-machine}
+
+There are four **core user state** that **MUST** be considered inside SafeTogether application : 
+
+: U (unknown)
+:: the state *Unknown* says that the system knows nothing about citizen health status. 
+: Q (quarantined)
+:: the state *Quarantined* (at home) means that the outcome of a swab test was positive, and the citizen is now quarantined. 
+: S (suspended)
+:: if the citizen is hospitalized, the quarantine *Suspended*
+: I (immune)
+:: when the patient is not hill and antybodies test are positive (i.e. he/she recovers from Covid-19) becomes *Immune*
+
+
+This diagram summarizes the state transition diagram for a citizen can go through while part of the SafeTogether system. 
+
+<img src="safeTogetherStateMachine.png" width="100%"/>
+
+
+ **application state:**
+
+SafeTogether applications **MAY** introduce some additional  *application state*  as generalization or as specialization of the four *core* user state, for example :
+
+- a SafeTogether application **MAY** consider the additional  state *positive* (P)  defined as  the union of *quarantined* and *suspended* state.
+- some SafeTogether stories MAY consider the additional state *pending* (D)  to qualify the  "Unknown" state after the execution of a medical test but before
+    the test result. For SafeTogether purposes the *Pending* virtual state **MUST** be considered equivalent to the *Unknown* state.
+
+This diagram shows an example of a more complex design of *application state* that can be assumed in some stories about volunteers:
+
+<img src="safeTogetherVolunteer.svg" width="100%"/>
+
+In previous diagram *Volunteer* can be defined as a specialization of the *Immune* state, *Autenticated* a specialization of "*Volunteer* and *Fraudolent* a specialization of *Autenticated* 
+
+
+Issue: can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?
+
+
+**state privacy:**
+
+
+Note: The above table  is informative only <img src="tab1.png"/>
+
+Issue: remove the Negative status from the table
+
+Privacy and rights:
+
+: Citizens **MUST** have *view only* rights on their state
+:: citizens can view their status but they are not allowed to change it.
+: Institutional Forces (Police, etc) – **MAY** have *view only* rights citizen's state
+:: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
+: SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
+:: The only person who can digitally sign the report on the patient's state of health.
+:: In the case of immunities, he is the only person who can decide the period of validity and its revocation.
+: Certification agents (partial editing)
+:: Authorized operators that  can change the “Status” of a citizen based on medical evidence.
+:: Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical certificate in which the state of health is present.
+: Volunteers (Immune Citizens) – other citizen can have *view only* rights
+:: Citizens that have recovered, are immune and want to help during the crisis
+
+Issue: Certification agents role is not clear
+
+Issue: no biometric info should be stored
+

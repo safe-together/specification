@@ -2,113 +2,7 @@
 
 This section describes some paradigmatic stakeholder journeys (story)
 
-## User state  ##  {#user-state-machine}
-
-There are five *core* user state that MUST be considered inside SafeTogether application : 
-
-: U
-:: unknown
-: N
-:: negative
-: Q
-:: quarantined
-: S
-:: suspended
-: I
-:: immune
-
-
-The state **Unknown** says that the system knows nothing about her health status. 
-State **Negative** materializes the negative outcome of a swab test, while 
-**Quarantined** (at home) means that the outcome was positive, and the citizen is now quarantined. 
-if the heath conditions worsen, the citizen is hospitalized, and quarantine **Suspended**. When the patient recovers, 
-she becomes **Immune**.
-
-
-For SafeTogether purposes some other *application state* **MAY** be introduced as generalization or specialization of the five *core* user state , for example :
-
-- some SafeTogether application **MAY** consider the additional  state **positive** (P)  defined as  the union of **quarantined** and **suspended** state.
-- some SafeTogether stories MAY consider the additional state **pending** (D)  to qualify the  "Unknown" state after the execution of a medical test but before
-    the test result. For SafeTogether purposes the **Pending** virtual state **MUST** be considered equivalent to the **Unknown** state.
-
-
-
-This diagram summarizes the state transition diagram for a citizen can go through while part of the SafeTogether system. 
-
-<img src="safeTogetherCitizen.svg" width="100%"/>
-
-Issue: propongo di aggiungere un arco da immune a unknow a causa dell'expiration dell'immunità e da immune a unknown (con il riferimento alle storie) per rendere il diagramma omnicomprensivo
-Issue: inoltre si potrebbe eliminare il riferimento a Anne lasciandolo indefinito
-
-
-This diagram shows an example of *application state* that can be assumed in some stories about volunteers:
-
-<img src="safeTogetherVolunteer.svg" width="100%"/>
-
-In previous diagram *Volunteer* can be defined as a specialization of the *Immune* state, *Autenticated* a specialization of "*Volunteer* and *Fraudolent* a specialization of *Autenticated* 
-
-
-Issue: can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?
-
-
-**state privacy:**
-
-
-Note: The above table  is informative only <img src="tab1.png"/>
-
-Privacy and rights:
-
-: Citizens **MUST** have *view only* rights on their state
-:: citizens can view their status but they are not allowed to change it.
-: Institutional Forces (Police, etc) – **MAY** have *view only* rights citizen's state
-:: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
-: SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
-:: The only person who can digitally sign the report on the patient's state of health.
-:: In the case of immunities, he is the only person who can decide the period of validity and its revocation.
-: Certification agents (partial editing)
-:: Authorized operators that  can change the “Status” of a citizen based on medical evidence.
-:: Subject in charge of collecting the biometric data of each patient for recognition and subsequent association of the medical certificate in which the state of health is present.
-: Volunteers (Immune Citizens) – other citizen can have *view only* rights
-:: Citizens that have recovered, are immune and want to help during the crisis
-
-Issue: Certification agents role is not clear
-
-Issue: no biometric info should be stored
-
-## Stories by application domain ## {#index-by-domain}
-
-Here is a crosss-reference index between stories and application domains:
-
-**Tracing***:
-
-Issue(10): add stories about contact tracing domain.
-
-**Quarantine**:
-
-- [[#US01]],
-- [[#US02]],
-- [[#US03]],
-- [[#US04]],
-- [[#US05]],
-- [[#US06]],
-- [[#US07]]
-
-
-
-**Shielding**:
-
-- [[#US08]],
-- [[#US09]],
-- [[#US10]],
-- [[#US11]],
-- [[#US12]],
-- [[#US13]],
-- [[#US14]],
-- [[#US15]]
-
-
-
-## US01: Anne is Tested (Swab Test) ## {#US01}
+## US01: Anne is positive to the Swab Test ## {#US01}
 
 **Actors:**
 
@@ -129,7 +23,7 @@ Issue: no biometric data MUST BE RECORDED in any case. We can use keyless method
 
 **Postcondition:**
 
-Anne’s state is quarantined or negative.
+Anne’s state is quarantined.
 
 **Story:**
 
@@ -157,9 +51,6 @@ completes the enrollment process.
 After some time, the result of the test is back. Giovanni enters the
 result in the operator app, which also notifies Anne’s
 *Mobile App*, as well as the authorities.
-
-- if the test result is positive, the app enters in quarantine mode (see [[#US02]])
-- if the test result is negative, Anne is notified via the mobile app.
 
 Issue(29): story mistsmatch with quarnatine app video (QR codes and personas)
 
