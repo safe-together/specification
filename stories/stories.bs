@@ -27,16 +27,14 @@ Anne’s state is quarantined.
 
 **Story:**
 
-Anne visits Giovanni, who runs a Swab test on Anne (whose result will be available in a few days).
+Anne visits Giovanni, who runs a Swab test on her (the result will be available in a few days dependending on the test).
 Giovanni asks Anne to install the *Mobile App*. The *Mobile App*
 requests Anne to show her face, then she is enrolled in the system. The
 app also creates a unique COC_ID, which is associated with Anne’s
-information. As a result, the app presents a QR code on the screen.
-Giovanni is in charge of collecting the biometric data of each patient for recognition and subsequent association of 
-the medical certificate in which the state of health is present.
-Giovanni starts  completes the registration starts the operator app, scans the QR code, and
-enters Anne’s codice fiscale and phone number in the operator
-app. At this point, the *Mobile App* shows a single-button
+information.
+Giovanni registers Anne in the operator app which shows a QR-code.
+Anne scans the QR-code using her phone then she authenticates herself to complete the registeration.
+At this point, the *Mobile App* shows a single-button
 interface that, when pressed, records the current location and sets
 it as a possible quarantine location (depending on the test result).
 Giovanni instructs Anne to go home
@@ -53,8 +51,6 @@ result in the operator app, which also notifies Anne’s
 *Mobile App*, as well as the authorities.
 
 Issue(29): story mistsmatch with quarnatine app video (QR codes and personas)
-
-Issue: Giovanni is NOT in charge of collecting any biometric data. No bieometric data must be stored under institutional  control
 
 Issue: why we need to store certificate on Anne device?
 
@@ -330,20 +326,14 @@ Marco’s state is immune and he is an official volonteer.
  
 **Story:**
 
-Issue: is Bluetooth really usefull? What happens if Franca lives in a big building and Mark rings apartment building intercom? 
-
 Walter sends Marco to Franca. Marco knocks on Franca’s door, who
 asks him to identify himself. Marco authenticates with the
-*Mobile App* on his smartphone, which then broadcasts Marco’s
-certified COC_ID over Bluetooth LE. Franca’s app scans Bluetooth
-devices and read’s Marco’s COC_ID using the *Mobile App* on
-her smartphone. Franca’s *Mobile App* sends the COC_ID to the
-backend, which returns Marco’s photo if his state is immune
-and he was registered by Walter. Otherwise, the *Mobile App* tells
-Franca not to open the door. The backend records the interaction
-between Marco and Franca. Franca verifies that Marco matches the
-photo shown on her *Mobile App*, and opens the door.
+*Mobile App* on his smartphone using his face (simalar to [[#US02]]),
+this sends a notification to the backend which verifies tha Marco is in fact immune and he is in fact a volonteer.
+the backend informs Franca’s device that Marco is or isn't who he claims to be.
+If he is Franca can trust him and open the door otherwise she will be instructed by her device not to open the door.
 
+Issue: in the previous version of this story there was a mention about photo verification, should we keep it?
 
 
 ## US13 - Antibodies test ## {#US13}
