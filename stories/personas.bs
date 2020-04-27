@@ -2,7 +2,12 @@ Personas {#personas}
 =====================
 
 This section descrbes the *personas*.
-A  persona, is a fictional character created to represent a user type that might use a SafetTogether application in a similar way.
+A  persona, is a fictional character created to represent a SafetTogether stakeholder.
+
+The SafeTogether specification distinguishes two kinds of personas:
+
+- who are interested in implementing SafeTogether specification (Implementers)
+- who are are using SafeTogether application
 
 
 
