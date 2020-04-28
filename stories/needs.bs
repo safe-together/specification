@@ -133,7 +133,7 @@ The immunity certificate must contain the following info:
 <test id>
 <manifacturer id>
 <lot id>
-<identificativo entità che lo ha effettuato>
+<entity's id that submitted the test>
 <DB url where test data are stored>
 <Sanitary Personnel id, who submitted the test>
 <test timestamp>
@@ -144,7 +144,9 @@ The immunity certificate must contain the following info:
 <Identity document issuer>
 ```
 
-When a user wants to prove his/her immunity has to show a QRcode that contains these informations
+Issue: if it is an immunity certification, the test outcome MUST be positive (has the antibodies), therefore this field is redundant.
+
+When a user wants to prove his/her immunity has to show a QRcode that contains these information
 
 ```
 <DB url where test data are stored>
@@ -154,4 +156,4 @@ When a user wants to prove his/her immunity has to show a QRcode that contains t
 <Identity document type>
 ```
 
-Issu(20)e: Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain? 
+Issue(20): Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain? 
