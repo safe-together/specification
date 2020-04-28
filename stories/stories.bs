@@ -2,16 +2,16 @@
 
 This section describes some paradigmatic stakeholder journeys (story)
 
-## US01: Anne is positive to the Swab Test ## {#US01}
+## US01: Marco is positive to the Swab Test ## {#US01}
 
 **Actors:**
 
-- [[#Anne]]
+- [[#Marco]]
 - [[#Giovanni]]
 
 **Preconditions:**
 
-Anne's state is unknown
+Marco's state is unknown
 Giovanni has produced the medical certificate with the patient's state of health and digitally signed it 
 using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
 In addition, this report must be sent in encrypted mode to the patient.
@@ -23,171 +23,35 @@ Issue: no biometric data MUST BE RECORDED in any case. We can use keyless method
 
 **Postcondition:**
 
-Anne’s state is quarantined.
+Marco’s state is quarantined.
 
 **Story:**
 
-Anne visits Giovanni, who runs a Swab test on her (the result will be available in a few days dependending on the test).
-Giovanni asks Anne to install the *Mobile App*. The *Mobile App*
-requests Anne to show her face, then she is enrolled in the system. The
-app also creates a unique COC_ID, which is associated with Anne’s
+Marco visits Giovanni, who runs a Swab test on him (the result will be available in a few days dependending on the test).
+Giovanni asks Marco to install the *Mobile App*. The *Mobile App*
+requests Marco to show his face, then he is enrolled in the system. The
+app also creates a unique COC_ID, which is associated with Marco’s
 information.
-Giovanni registers Anne in the operator app which shows a QR-code.
-Anne scans the QR-code using her phone then she authenticates herself to complete the registeration.
+Giovanni registers Marco in the operator app which shows a QR-code.
+Marco scans the QR-code using his phone then he authenticates himelf to complete the registeration.
 At this point, the *Mobile App* shows a single-button
 interface that, when pressed, records the current location and sets
 it as a possible quarantine location (depending on the test result).
-Giovanni instructs Anne to go home
+Giovanni instructs Marco to go home
 immediately and to press the button on the *Mobile App* once she
 arrives. After a predetermined amount of time (e.g., one hour) the
-*Mobile App* reminds Anne to press the button. Once at home
-Anne opens the *Mobile App* and presses the button. The mobile
-app shows a confirmation prompt, and then authenticates Anne
-using her face. This saves the current location in the app, and
+*Mobile App* reminds Marco to press the button. Once at home
+Marco opens the *Mobile App* and presses the button. The mobile
+app shows a confirmation prompt, and then authenticates Marco
+using his face. This saves the current location in the app, and
 completes the enrollment process.
 
 After some time, the result of the test is back. Giovanni enters the
-result in the operator app, which also notifies Anne’s
+result in the operator app, which also notifies Marco’s
 *Mobile App*, as well as the authorities.
 
-Issue(29): story mistsmatch with quarnatine app video (QR codes and personas)
 
-Issue: why we need to store certificate on Anne device?
-
-## US02 - Jack Confirms His Location -- Enforce Quarantine ## {#US02}
-
-**Actors:**
-
-- [[#Jack]]
-
-
-**Preconditions:**
-
-Jack’s swab test is positive.
-
-**Story:**
-
-Jack receives a notification on the *Mobile App* that requires
-him to confirm his location. He taps on the notification, which
-brings him into the *Mobile App*. The *Mobile App* asks him
-to authenticate using his face and checks that his current location
-is close to the location that was selected to complete the
-enrollment. The result of this check is reported to the authorities.
-If Jack does not respond to the notification in a timely manner
-(e.g., within 3 minutes), the *Mobile App* notifies him again.
-After a predetermined number of unanswered notifications (say 2),
-the *Mobile App* notifies the authorities.
-The *Mobile App*
-periodically polls Jack’s phone location. If the phone is outside
-of the designated quarantine area, it notifies Jack as well as the
-authorities.
-
-
-## US03 -  Jack Goes to the Hospital -- Suspend Quarantine ## {#US03}
-
-**Actors:**
-
-- [[#Jack]]
-- [[#Maria]]
-
-**Preconditions:**
-
-Jack’s state is quarantined.
-
-**Postconditions:**
-
-Jack’s state is suspended.
-
-**Story:**
-
-Jack feels sick and calls an ambulance. He is taken to the hospital.
-At the hospital, Maria enters Jack’s codice fiscale into the
-system, marking his state on the backend as suspended. This
-dismisses any pending notification received by Jack’s Mobile App
-in the last 1-2 hours, and suspends the quarantine until further
-notice.
-
-
-## US04 - Jack Goes Back Home from the Hospital -- Restore Quarantine ## {#US04}
-
-**Actors:**
-
-- [[#Jack]]
-- [[#Maria]]
-
-**Preconditions:**
-
-Jack’s state is suspended
-
-**Postconditions:**
-
-Jack’s state is quarantined.
-
-**Story:**
-
-Jack is still sick, but he no longer needs hospital care. Maria
-enters Jack’s codice fiscale into the system, marking his state on
-the backend as quarantined again. At this point, Jack has a
-predetermined amount of time (say, 2 hours) to go home. After the
-predetermined amount of time, Jack receives a notification, which
-asks him to authenticate as described in [[#US02]].
-
-
-
-## US05 - Jack Recovers while at the Hospital -- Immune ## {#US05}
-
-**Actors:**
-
-- [[#Jack]]
-- [[#Maria]]
-
-
-**Preconditions:**
-
-Jack’s state is suspended
-
-**Postconditions:**
-
-Jack’s state is negative.
-
-**Story:**
-
-Jack is now healthy. Maria enters Jack’s codice fiscale into the
-system, and marks his state in the backend as negative. The
-mobile app no longer receives notifications and no longer
-checks Jack’s location.
-
-
-Issue: US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?
-
-## US06 - Jack Dies while at the Hospital -- Immune ## {#US06}
-
-**Actors:**
-
-- [[#Jack]]
-- [[#Maria]]
-
-
-**Preconditions:**
-
-Jack’s state is suspended
-
-**Postconditions:**
-
-Jack is removed from the SafeTogether system
-
-
-**Story:**
-
-Jack dies at the hospital. Maria enters Jack’s codice fiscale
-into the system, and marks his state in the backend as immune.
-The mobile app no longer receives notifications and no longer
-checks Jack’s location.
-Maria uses the operator app to delete Jack from the system.
-
-
-
-## US07 - Jack is Removed from Quarantine -- Recovery ## {#US07}
+## US02 - Marco Confirms His Location -- Enforce Quarantine ## {#US02}
 
 **Actors:**
 
@@ -196,16 +60,149 @@ Maria uses the operator app to delete Jack from the system.
 
 **Preconditions:**
 
-Jack’s state is quarantined
-
-**Postconditions:**
-
-Jack’s state is negative
+Marco’s swab test is positive.
 
 **Story:**
 
-Jack’s quarantine is over, and he has recovered. The app notifies
-Jack that his state is now negative.
+Marco receives a notification on the *Mobile App* that requires
+him to confirm his location. He taps on the notification, which
+brings him into the *Mobile App*. The *Mobile App* asks him
+to authenticate using his face and checks that his current location
+is close to the location that was selected to complete the
+enrollment. The result of this check is reported to the authorities.
+If Marco does not respond to the notification in a timely manner
+(e.g., within 3 minutes), the *Mobile App* notifies him again.
+After a predetermined number of unanswered notifications (say 2),
+the *Mobile App* notifies the authorities.
+The *Mobile App*
+periodically polls Marco’s phone location. If the phone is outside
+of the designated quarantine area, it notifies Marco as well as the
+authorities.
+
+
+## US03 -  Marco Goes to the Hospital -- Suspend Quarantine ## {#US03}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Maria]]
+
+**Preconditions:**
+
+Marco’s state is quarantined.
+
+**Postconditions:**
+
+Marco’s state is suspended.
+
+**Story:**
+
+Marco feels sick and calls an ambulance. He is taken to the hospital.
+At the hospital, Maria enters Marco’s codice fiscale into the
+system, marking his state on the backend as suspended. This
+dismisses any pending notification received by Marco’s Mobile App
+in the last 1-2 hours, and suspends the quarantine until further
+notice.
+
+
+## US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine ## {#US04}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Maria]]
+
+**Preconditions:**
+
+Marco’s state is suspended
+
+**Postconditions:**
+
+Marco’s state is quarantined.
+
+**Story:**
+
+Marco is still sick, but he no longer needs hospital care. Maria
+enters Marco’s codice fiscale into the system, marking his state on
+the backend as quarantined again. At this point, Marco has a
+predetermined amount of time (say, 2 hours) to go home. After the
+predetermined amount of time, Marco receives a notification, which
+asks him to authenticate as described in [[#US02]].
+
+
+
+## US05 - Marco Recovers while at the Hospital -- Immune ## {#US05}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Maria]]
+
+
+**Preconditions:**
+
+Marco’s state is suspended
+
+**Postconditions:**
+
+Marco’s state is negative.
+
+**Story:**
+
+Marco is now healthy. Maria enters Marco’s codice fiscale into the
+system, and marks his state in the backend as negative. The
+mobile app no longer receives notifications and no longer
+checks Marco’s location.
+
+
+Issue: US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?
+
+## US06 - Marco Dies while at the Hospital -- Immune ## {#US06}
+
+**Actors:**
+
+- [[#Marco]]
+- [[#Maria]]
+
+
+**Preconditions:**
+
+Marco’s state is suspended
+
+**Postconditions:**
+
+Marco is removed from the SafeTogether system
+
+
+**Story:**
+
+Marco dies at the hospital. Maria enters Marco’s codice fiscale
+into the system, and marks his state in the backend as immune.
+The mobile app no longer receives notifications and no longer
+checks Marco’s location.
+Maria uses the operator app to delete Marco from the system.
+
+
+
+## US07 - Marco is Removed from Quarantine -- Recovery ## {#US07}
+
+**Actors:**
+
+- [[#Marco]]
+
+
+**Preconditions:**
+
+Marco’s state is quarantined
+
+**Postconditions:**
+
+Marco’s state is negative
+
+**Story:**
+
+Marco’s quarantine is over, and he has recovered. The app notifies
+Marco that his state is now negative.
 
 
 
