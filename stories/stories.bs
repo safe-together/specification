@@ -13,12 +13,10 @@ This section describes some paradigmatic stakeholder journeys (story)
 
 Marco's state is unknown
 Giovanni has produced the medical certificate with the patient's state of health and digitally signed it 
-using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
-In addition, this report must be sent in encrypted mode to the patient.
-The medical certificate must be saved in the device inside the App.
-Giovanni has the task of recording the biometric data of the patients.
 
-Issue: no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.
+
+NOTES: Self Dofraigni Identity could apply
+
 
 
 **Postcondition:**
@@ -155,9 +153,7 @@ mobile app no longer receives notifications and no longer
 checks Marco’s location.
 
 
-Issue: US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?
-
-## US06 - Marco Dies while at the Hospital -- Immune ## {#US06}
+## US06 - Jack Dies while at the Hospital -- Immune ## {#US06}
 
 **Actors:**
 
@@ -240,19 +236,13 @@ Marco’s state is immune
 
 Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individuals. The recognition is done by comparing the biopmetric data in 
-the blockchain and the Hash of the report saved inside Marco's device. 
-Only the merging of all data associated with Marco gives access to the report 
-(biometric data, hash of the report and user id).
+at-risk individuals. 
 Marco proves that he is immune as described in
 [[#US08]]. Walter registers Marco’s information, including his COC_ID and
 photo, to protezione civile’s system. Protezione civile’s system
 uses the COC backend to send a notification to Marco's mobile
 app. Marco authenticates in front of Walter, and the app records
 Marco as a volunteer.
-
-
-Issue: No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?
 
 
 ## US10 - Marco’s Immunity Expires ## {#US10}
@@ -404,9 +394,3 @@ Following her bosse's advice Aleksandra takes the immunity test and obtains an i
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status. 
-
-
-
-Issue(17): Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?
-
-Issue(18): How the sanitary personnel are enrolled? Is it a metter of the application or someone else?
