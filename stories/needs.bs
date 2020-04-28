@@ -155,5 +155,3 @@ When a user wants to prove his/her immunity has to show a QRcode that contains t
 <Identity document number>
 <Identity document type>
 ```
-
-Issue(20): Dove sta il certificato? Sul device? In un pod solid? In un datacenter protetto crittografia omomorfica o multiparty computation? Da ISS? Su blockchain? 
