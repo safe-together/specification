@@ -79,16 +79,45 @@ describes requirements and protocols for *SafeTogether applications* and is comp
 
 *SafeTogether applications* define their own life cycle and **MAY** be developed independently of each other.
 
-*Reference Implementations* are  *SafeTogether applications* that  **MUST** be publicly released with one of the Open Source
-License defined as free by Free Software Fondation definition ([[FSF]]).
+# Reference Implementations # {#reference-implementations}
 
-Here is a known list of *SafeTogether applications*:
+**Reference Implementations** are  *SafeTogether applications* that  **MUST** be publicly released with one of the Open Source
+License defined as free by Free Software Fondation definition ([[FSF]]). Here is a known list:
 
-- [CovidApp - Covid Community Alert](https://coronavirus-outbreak-control.github.io/web), source available [[TRACING]], is a ready to use  reference implementation for *Contact Tracing*
-- [[QUARANTINE]], in development, demo exists for **Quarantine** user stories.
-- [[SHIELDING]], just starting development with the objective to be one of the reference implementation for *Shielding*
+<table border="1">
+<tr><th>Application</th><th>State</th><th>Resources</th></tr>
+<tr>
+	<td>[CovidApp - Covid Community Alert](https://coronavirus-outbreak-control.github.io/web)</td>
+	<td>ready to deploy</td>
+	<td>
+	    Reference implementation for *Contact Tracing*
+	    - [source repository](https://github.com/coronavirus-outbreak-control/) available
+	    - [video available](https://youtu.be/k2OcIFyb9GE)
+	</td>
+</tr>
 
-Please, contat Editors to update this list.
+<tr>
+	<td>[[QUARANTINE]]</td>
+	<td>ready to test</td>
+	<td> 
+	    Reference implementation for *Quarantine*
+	    - [source repository](https://github.com/KeylessTech/kl_quarantine_auth) available (ask access)
+	    - [video demo available](https://www.youtube.com/watch?v=nScyb1bLXn8&feature=youtu.be) from keyless.io
+	</td>
+</tr>
+
+<tr>
+	<td>[[SHIELDING]]</td>
+	<td>in development</td>
+	<td> 
+	    Reference implementation for *Shielding*
+	    - [source repository](https://github.com/g0v-it/safetogether-shielding)
+	</td>
+</tr>
+</table>
+
+
+Please, contact editors to update this list.
 
 
 # Contributors # {#contributors}
