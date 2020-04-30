@@ -175,26 +175,25 @@ Maria values the privacy of her patients and she tries to connect with them in t
 She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.
 
 
-### Marco the Immune Volunteer ### {#Marco}
+### Marco the Volunteer  ### {#Marco}
 
 <img src="images/Marco.png" width="200" />
 
 **Details**
 
-Marco is 34, he’s a proactive with a strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered.
-He is keen to get back to work after a long quarantine.
-In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile people.
+Marco is 34, he's a general adult with a strong civic sense.
 He knows how to use a smartphone, but technology isn’t really his thing.
 
 **Goals**
 
-Marco would like to get the “volunteer” certification/status so that he could go ahead and start helping his community.
+Marco would like to help his local community, specially provide care to fragile people.
 He is looking for the fastest and simplest way to achieve this goal.
 
 **Values and Fear**
 
 Marco cares about privacy in general and doesn’t want to be tracked or share his data with any large government or corporation</br>
 He is afraid of:
+- Getting sick
 - Carrying the virus to the fragile people he is helping
 - Being tracked and observed in his daily life
 - Not knowing how to use the application properly
@@ -276,42 +275,8 @@ She fears that she might lose her job in case travel across Europe is restricted
 Some countries may deny her access, even though she could be immune and therefore not a threat.
 
 
-### Anne a Regular Citizen ### {#Anne}
-
-<img src="images/Anne.png" width="200" />
+ 
 
 
-**Details**
 
-Anne is a general adult with a family of 3, living and working in a medium
-size city. She has a smartphone and uses it regularly in her daily life.
-
-**Goals**
-
-Staying healthy, while being able to live and work as normal.
-
-**Values and Fear**
-
-Anne values privacy and freedom, she’s aware of abuse of controlling
-measures some governments have been enacting. Anne fears to have the
-virus and to be passing it to her family members. She cares about her
-own health and she is afraid that her family could face hard economic conditions
-due to the fact that she might be fired.
-
-### Jack a patient under treatment ### {#Jack}
-
-<img src="images/Jack.png" width="200" />
-
-**Details**
-
-Jack is a patient under treatment for Covid-19, he could be either quarantined,
-hospitalized or in ICUs.
-
-**Goals**
-
-Fight the disease, connect with loved ones.
-
-**Values and Fear**
-
-Fear of death, loss and overall feeling of grief.
 
