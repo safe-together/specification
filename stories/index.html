@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version d2959a4, updated Fri Apr 24 17:44:40 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="5e98861fb85beb6f3d7fe4dfbf816785adcf34c7" name="document-revision">
+  <meta content="ccb83b0f3b301ef0f0d815fd304ebf3b78b412d8" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1421,7 +1421,7 @@ Parts of this work may be from another specification document.  If so, those par
        <ol class="toc">
         <li><a href="#Giovanni"><span class="secno">1.2.1</span> <span class="content">Giovanni the physician</span></a>
         <li><a href="#Maria"><span class="secno">1.2.2</span> <span class="content">Maria the hospital physician</span></a>
-        <li><a href="#Marco"><span class="secno">1.2.3</span> <span class="content">Marco a Regular Citizen</span></a>
+        <li><a href="#Marco"><span class="secno">1.2.3</span> <span class="content">Marco the Volunteer</span></a>
         <li><a href="#Paola"><span class="secno">1.2.4</span> <span class="content">Paola the Pharmacist</span></a>
         <li><a href="#Walter"><span class="secno">1.2.5</span> <span class="content">Walter the Civil Defence</span></a>
         <li><a href="#Franca"><span class="secno">1.2.6</span> <span class="content">Franca the Fragile Person</span></a>
@@ -1438,7 +1438,7 @@ Parts of this work may be from another specification document.  If so, those par
       <li><a href="#US03"><span class="secno">4.3</span> <span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span></a>
       <li><a href="#US04"><span class="secno">4.4</span> <span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span></a>
       <li><a href="#US05"><span class="secno">4.5</span> <span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span></a>
-      <li><a href="#US06"><span class="secno">4.6</span> <span class="content">US06 - Jack Dies while at the Hospital -- Immune</span></a>
+      <li><a href="#US06"><span class="secno">4.6</span> <span class="content">US06 - Marco Dies while at the Hospital -- Immune</span></a>
       <li><a href="#US07"><span class="secno">4.7</span> <span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span></a>
       <li><a href="#US08"><span class="secno">4.8</span> <span class="content">US08 - Proof of Immunity</span></a>
       <li><a href="#US09"><span class="secno">4.9</span> <span class="content">US09 - Marco Volunteers to Join Shielding Program</span></a>
@@ -1456,9 +1456,7 @@ Parts of this work may be from another specification document.  If so, those par
       <li><a href="#Paola-needs"><span class="secno">5.2</span> <span class="content">Paola – Pharmacist</span></a>
       <li><a href="#Walter-needs"><span class="secno">5.3</span> <span class="content">Walter – Institutional Forces</span></a>
       <li><a href="#Franca-needs"><span class="secno">5.4</span> <span class="content">Franca – Fragile Population</span></a>
-      <li><a href="#Anne-needs"><span class="secno">5.5</span> <span class="content">Anne – Status Unknown, then positive in Quarantine</span></a>
-      <li><a href="#Jack-needs"><span class="secno">5.6</span> <span class="content">Jack – Positive with Symptoms under treatment (recovery)</span></a>
-      <li><a href="#other-needs"><span class="secno">5.7</span> <span class="content">Other needs</span></a>
+      <li><a href="#other-needs"><span class="secno">5.5</span> <span class="content">Other needs</span></a>
      </ol>
     <li>
      <a href="#app-functionalities"><span class="secno">6</span> <span class="content">App functionalities</span></a>
@@ -1646,7 +1644,7 @@ protocols put in place to do so as seamlessly as possible.</p>
    <p><strong>Values and Fear</strong></p>
    <p>Maria values the privacy of her patients and she tries to connect with them in the least intrusive way.
 She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.</p>
-   <h4 class="heading settled" data-level="1.2.3" id="Marco"><span class="secno">1.2.3. </span><span class="content">Marco a Regular Citizen</span><a class="self-link" href="#Marco"></a></h4>
+   <h4 class="heading settled" data-level="1.2.3" id="Marco"><span class="secno">1.2.3. </span><span class="content">Marco the Volunteer</span><a class="self-link" href="#Marco"></a></h4>
    <p><img src="images/Marco.png" width="200"></p>
    <p><strong>Details</strong></p>
    <p>Marco is 34, he’s a general adult with a strong civic sense.
@@ -1703,8 +1701,8 @@ Living alone, with no family within her city she needs external support to survi
    <p><strong>Goals</strong></p>
    <p>Aleksandra’s goal is to get back to “business as usual" as soon as possible. Her family depends on her.</p>
    <p><strong>Values and Fear</strong></p>
-   <p>She fears that she might lose her job in case travel across Europe is restricted.
-Some countries may deny her access, even though she could be immune and therefore not a threat.</p>
+   <p>She fears that she might lose her job in case travel across Europe is restricted.</p>
+   <p>Some countries may deny her access, even though she could be immune and therefore not a threat.</p>
    <h2 class="heading settled" data-level="2" id="user-state-machine"><span class="secno">2. </span><span class="content">User state</span><a class="self-link" href="#user-state-machine"></a></h2>
    <p>There are four <strong>core user state</strong> that <strong>MUST</strong> be considered inside SafeTogether application :</p>
    <dl>
@@ -1773,7 +1771,7 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
     <li data-md>
      <p><a href="#US05">§ 4.5 US05 - Marco Recovers while at the Hospital -- Immune</a>,</p>
     <li data-md>
-     <p><a href="#US06">§ 4.6 US06 - Jack Dies while at the Hospital -- Immune</a>,</p>
+     <p><a href="#US06">§ 4.6 US06 - Marco Dies while at the Hospital -- Immune</a>,</p>
     <li data-md>
      <p><a href="#US07">§ 4.7 US07 - Marco is Removed from Quarantine -- Recovery</a></p>
    </ul>
@@ -1802,14 +1800,18 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Giovanni">§ 1.2.1 Giovanni the physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s state is unknown
-Giovanni has produced the medical certificate with the patient’s state of health and digitally signed it</p>
-   <p>NOTES: Self Dofraigni Identity could apply</p>
+Giovanni has produced the medical certificate with the patient’s state of health and digitally signed it 
+using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
+In addition, this report must be sent in encrypted mode to the patient.
+The medical certificate must be saved in the device inside the App.
+Giovanni has the task of recording the biometric data of the patients.</p>
+   <p class="issue" id="issue-7e293c91"><a class="self-link" href="#issue-7e293c91"></a> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.</p>
    <p><strong>Postcondition:</strong></p>
    <p>Marco’s state is quarantined.</p>
    <p><strong>Story:</strong></p>
@@ -1835,7 +1837,7 @@ result in the operator app, which also notifies Marco’s <em>Mobile App</em>, a
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s swab test is positive.</p>
@@ -1857,7 +1859,7 @@ authorities.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
@@ -1876,7 +1878,7 @@ notice.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
@@ -1895,7 +1897,7 @@ asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Marco C
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
@@ -1908,11 +1910,12 @@ asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Marco C
 system, and marks his state in the backend as negative. The
 mobile app no longer receives notifications and no longer
 checks Marco’s location.</p>
-   <h3 class="heading settled" data-level="4.6" id="US06"><span class="secno">4.6. </span><span class="content">US06 - Jack Dies while at the Hospital -- Immune</span><a class="self-link" href="#US06"></a></h3>
+   <p class="issue" id="issue-6f5099aa"><a class="self-link" href="#issue-6f5099aa"></a> US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?</p>
+   <h3 class="heading settled" data-level="4.6" id="US06"><span class="secno">4.6. </span><span class="content">US06 - Marco Dies while at the Hospital -- Immune</span><a class="self-link" href="#US06"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
@@ -1930,7 +1933,7 @@ Maria uses the operator app to delete Marco from the system.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s state is quarantined</p>
@@ -1943,7 +1946,7 @@ Marco that his state is now negative.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
    </ul>
@@ -1958,7 +1961,7 @@ The operator app checks Marco’s state (including the expiration date if the im
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
    </ul>
@@ -1967,17 +1970,21 @@ The operator app checks Marco’s state (including the expiration date if the im
    <p><strong>Story:</strong></p>
    <p>Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individuals. 
+at-risk individuals. The recognition is done by comparing the biopmetric data in 
+the blockchain and the Hash of the report saved inside Marco’s device. 
+Only the merging of all data associated with Marco gives access to the report 
+(biometric data, hash of the report and user id).
 Marco proves that he is immune as described in <a href="#US08">§ 4.8 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
 photo, to protezione civile’s system. Protezione civile’s system
 uses the COC backend to send a notification to Marco’s mobile
 app. Marco authenticates in front of Walter, and the app records
 Marco as a volunteer.</p>
+   <p class="issue" id="issue-db98b45a"><a class="self-link" href="#issue-db98b45a"></a> No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?</p>
    <h3 class="heading settled" data-level="4.10" id="US10"><span class="secno">4.10. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s state is immune and an official volonteer</p>
@@ -1990,7 +1997,7 @@ His state is now unknown and his volonteer can no longer be carried out.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco state is unknown, immune, or negative.</p>
@@ -2008,7 +2015,7 @@ negative, Marco’s state is set to negative.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
     <li data-md>
@@ -2027,7 +2034,7 @@ If he is in the shielding program Franca can trust him and open the door otherwi
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
     <li data-md>
      <p><a href="#Paola">§ 1.2.4 Paola the Pharmacist</a></p>
    </ul>
@@ -2051,7 +2058,7 @@ When the certification is generated, this prompts a QRcode which Marco scans via
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
    </ul>
    <p><strong>Conditions:</strong></p>
    <p><strong>Preconditions:</strong></p>
@@ -2076,23 +2083,58 @@ The policeman asks Walter to revoke Marco’s volunteer status.</p>
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status.</p>
+   <p class="issue" id="issue-b2e9bff1"><a class="self-link" href="#issue-b2e9bff1"></a> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB? <a href="https://github.com/safe-together/specification/issues/17">&lt;https://github.com/safe-together/specification/issues/17></a></p>
+   <p class="issue" id="issue-2d6120c0"><a class="self-link" href="#issue-2d6120c0"></a> How the sanitary personnel are enrolled? Is it a metter of the application or someone else? <a href="https://github.com/safe-together/specification/issues/18">&lt;https://github.com/safe-together/specification/issues/18></a></p>
    <h2 class="heading settled" data-level="5" id="user_needs"><span class="secno">5. </span><span class="content">User needs</span><a class="self-link" href="#user_needs"></a></h2>
    <h3 class="heading settled" data-level="5.1" id="Marco-needs"><span class="secno">5.1. </span><span class="content">Marco – Volunteer</span><a class="self-link" href="#Marco-needs"></a></h3>
+    Issue: the Marco needs [1 - 17] should be detailed 
    <ul>
     <li data-md>
-     <p><strong>M1 – Volunteer Onboarding</strong>:
+     <p><strong>M1 – Citizen Onboarding</strong></p>
+    <li data-md>
+     <p><strong>M2 – Citizen Symptoms check</strong></p>
+    <li data-md>
+     <p><strong>M3 – Citizen Recent Contacts/Places Notes (is suspect positive)</strong></p>
+    <li data-md>
+     <p><strong>M4 – Citizen Recent Contacts/Places Form (if confirmed positive)</strong></p>
+    <li data-md>
+     <p><strong>M5 – Citizen Virus Detection Test Request (suspect positive)</strong></p>
+    <li data-md>
+     <p><strong>M6 – Citizen Status Positive Procedure</strong></p>
+    <li data-md>
+     <p><strong>M7 – Citizen Quarantine Reporting</strong></p>
+    <li data-md>
+     <p><strong>M8 – Citizen Quarantine Escape Alarm</strong></p>
+    <li data-md>
+     <p><strong>M9 – Citizen Daily Symptoms Reporting</strong></p>
+    <li data-md>
+     <p><strong>M10 – Citizen Hospitalization/Treatment Update</strong></p>
+    <li data-md>
+     <p><strong>M11 – Citizen Symptoms End Reporting</strong></p>
+    <li data-md>
+     <p><strong>M12 – Citizen Virus Absence Test Request</strong></p>
+    <li data-md>
+     <p><strong>M13 – Citizen Antibodies Test Request</strong></p>
+    <li data-md>
+     <p><strong>M14 – Citizen Atibodies Result</strong></p>
+    <li data-md>
+     <p><strong>M15 – Citizen Recovery Procedure &amp; Guidance</strong></p>
+    <li data-md>
+     <p><strong>M16 – Patient Post-Recovery Guidance</strong></p>
+    <li data-md>
+     <p><strong>M17 – Volunteer Onboarding</strong>:
 As a Volunteer, Marco wants to get registered quickly and smoothly so that he can start to help as soon as possible.</p>
     <li data-md>
-     <p><strong>M2 – Volunteer Immunity Certification Registration</strong>:
+     <p><strong>M18 – Volunteer Immunity Certification Registration</strong>:
 As a Volunteer, Marco needs to get a certification of his immunity and be able to display it upon request so that those he interacts with can trust him.</p>
     <li data-md>
-     <p><strong>M3 – Volunteer Immunity Certification Renewal</strong>:
+     <p><strong>M19 – Volunteer Immunity Certification Renewal</strong>:
 As a Volunteer, Marco wants to renew his immunity certification smoothly and effectively so that he can carry on working as volunteer.</p>
     <li data-md>
-     <p><strong>M4 – Volunteer Immunity Certification Cancellation</strong>:
+     <p><strong>M20 – Volunteer Immunity Certification Cancellation</strong>:
 As a Volunteer, Marco needs to know if/when his immunity certification is cancelled or will expire so that he can either renew it or change his behavior effectively.</p>
     <li data-md>
-     <p><strong>M5 – Volunteer Recognition</strong>:
+     <p><strong>M21 – Volunteer Recognition</strong>:
 As a Volunteer, Marco needs to be easily recognizable (especially by fragile / high-risk citizens) so that he can perform his duties effectively.</p>
    </ul>
    <h3 class="heading settled" data-level="5.2" id="Paola-needs"><span class="secno">5.2. </span><span class="content">Paola – Pharmacist</span><a class="self-link" href="#Paola-needs"></a></h3>
@@ -2146,55 +2188,7 @@ As part of the Fragile Population, Franca needs to recognize a Volunteer when he
      <p><strong>F3 – Fragile Population FeedBack</strong>:
 As part of the Fragile Population, Franca needs to express her pleasure/displeasure of the service provided.</p>
    </ul>
-   <h3 class="heading settled" data-level="5.5" id="Anne-needs"><span class="secno">5.5. </span><span class="content">Anne – Status Unknown, then positive in Quarantine</span><a class="self-link" href="#Anne-needs"></a></h3>
-   <p class="issue" id="issue-e1d4457f"><a class="self-link" href="#issue-e1d4457f"></a> the "Anne needs" should be detailed</p>
-   <ul>
-    <li data-md>
-     <p><strong>A1 – Citizen Onboarding</strong></p>
-    <li data-md>
-     <p><strong>A2 – Citizen Symptoms check </strong></p>
-    <li data-md>
-     <p><strong>A3 – Citizen Recent Contacts/Places Notes</strong> (is suspect positive)</p>
-    <li data-md>
-     <p><strong>A4 – Citizen Recent Contacts/Places Form </strong> (if confirmed positive)</p>
-    <li data-md>
-     <p><strong>A5 – Citizen Virus Detection Test Request</strong> (suspect positive)</p>
-    <li data-md>
-     <p><strong>A6 – Citizen Status Positive Procedure</strong></p>
-    <li data-md>
-     <p><strong>A7 – Citizen Quarantine Reporting</strong></p>
-    <li data-md>
-     <p><strong>A8 – Citizen Quarantine Escape Alarm</strong></p>
-    <li data-md>
-     <p><strong>A9 – Citizen Daily Symptoms Reporting</strong></p>
-    <li data-md>
-     <p><strong>A10 – Citizen Hospitalization/Treatment Update</strong></p>
-    <li data-md>
-     <p><strong>A11 – Citizen Symptoms End Reporting</strong></p>
-    <li data-md>
-     <p><strong>A12 – Citizen Virus Absence Test Request</strong></p>
-    <li data-md>
-     <p><strong>A12 – Citizen Antibodies Test Request</strong></p>
-    <li data-md>
-     <p><strong>A13 – Citizen Antibodies Result</strong></p>
-    <li data-md>
-     <p><strong>A14 – Citizen Recovery Procedure &amp; Guidance</strong></p>
-   </ul>
-   <h3 class="heading settled" data-level="5.6" id="Jack-needs"><span class="secno">5.6. </span><span class="content">Jack – Positive with Symptoms under treatment (recovery)</span><a class="self-link" href="#Jack-needs"></a></h3>
-   <p class="issue" id="issue-18002a8d"><a class="self-link" href="#issue-18002a8d"></a> the "Jack needs" should be detailed</p>
-   <ul>
-    <li data-md>
-     <p><strong>J1 – Patient Onboarding</strong></p>
-    <li data-md>
-     <p><strong>J2 – Patient Post-Recovery Guidance</strong></p>
-    <li data-md>
-     <p><strong>J3 – Patient Silent Tracking</strong></p>
-    <li data-md>
-     <p><strong>J4 – Patient Volunteering Push Adv</strong></p>
-    <li data-md>
-     <p><strong>J5 – Patient to Volunteer Onboarding</strong> > M1</p>
-   </ul>
-   <h3 class="heading settled" data-level="5.7" id="other-needs"><span class="secno">5.7. </span><span class="content">Other needs</span><a class="self-link" href="#other-needs"></a></h3>
+   <h3 class="heading settled" data-level="5.5" id="other-needs"><span class="secno">5.5. </span><span class="content">Other needs</span><a class="self-link" href="#other-needs"></a></h3>
    <ul>
     <li data-md>
      <p><strong>X1 Phone is lost</strong>, App re-sync on new device</p>
@@ -2428,8 +2422,11 @@ As part of the Fragile Population, Franca needs to express her pleasure/displeas
    <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?<a href="#issue-00c1d945"> ↵ </a></div>
    <div class="issue"> remove the Negative status from the table<a href="#issue-70d0909a"> ↵ </a></div>
    <div class="issue"> add stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-89cfdeb4"> ↵ </a></div>
-   <div class="issue"> the "Anne needs" should be detailed<a href="#issue-e1d4457f"> ↵ </a></div>
-   <div class="issue"> the "Jack needs" should be detailed<a href="#issue-18002a8d"> ↵ </a></div>
+   <div class="issue"> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.<a href="#issue-7e293c91"> ↵ </a></div>
+   <div class="issue"> US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?<a href="#issue-6f5099aa"> ↵ </a></div>
+   <div class="issue"> No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?<a href="#issue-db98b45a"> ↵ </a></div>
+   <div class="issue"> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB? <a href="https://github.com/safe-together/specification/issues/17">&lt;https://github.com/safe-together/specification/issues/17></a><a href="#issue-b2e9bff1"> ↵ </a></div>
+   <div class="issue"> How the sanitary personnel are enrolled? Is it a metter of the application or someone else? <a href="https://github.com/safe-together/specification/issues/18">&lt;https://github.com/safe-together/specification/issues/18></a><a href="#issue-2d6120c0"> ↵ </a></div>
    <div class="issue"> App functionalities is to be extended<a href="#issue-4560eae2"> ↵ </a></div>
    <div class="issue"> an app for civil force/ police is needed?<a href="#issue-0bd43c78"> ↵ </a></div>
    <div class="issue"> if it is an immunity certification, the test outcome MUST be positive (has the antibodies), therefore this field is redundant.<a href="#issue-c55111ac"> ↵ </a></div>

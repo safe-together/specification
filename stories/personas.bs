@@ -175,7 +175,7 @@ Maria values the privacy of her patients and she tries to connect with them in t
 She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.
 
 
-### Marco a Regular Citizen  ### {#Marco}
+### Marco the Volunteer  ### {#Marco}
 
 <img src="images/Marco.png" width="200" />
 
@@ -272,4 +272,5 @@ Aleksandra's goal is to get back to “business as usual" as soon as possible. H
 **Values and Fear**
 
 She fears that she might lose her job in case travel across Europe is restricted.
+
 Some countries may deny her access, even though she could be immune and therefore not a threat.
