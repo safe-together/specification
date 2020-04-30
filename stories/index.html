@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version d2959a4, updated Fri Apr 24 17:44:40 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="3707e92e7962cc07a8dcbc839af5e181d0f8da18" name="document-revision">
+  <meta content="5e98861fb85beb6f3d7fe4dfbf816785adcf34c7" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Personas and User Stories</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-04-28">28 April 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-04-30">30 April 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 28 April 2020,
+In addition, as of 30 April 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1421,13 +1421,11 @@ Parts of this work may be from another specification document.  If so, those par
        <ol class="toc">
         <li><a href="#Giovanni"><span class="secno">1.2.1</span> <span class="content">Giovanni the physician</span></a>
         <li><a href="#Maria"><span class="secno">1.2.2</span> <span class="content">Maria the hospital physician</span></a>
-        <li><a href="#Marco"><span class="secno">1.2.3</span> <span class="content">Marco the Immune Volunteer</span></a>
+        <li><a href="#Marco"><span class="secno">1.2.3</span> <span class="content">Marco a Regular Citizen</span></a>
         <li><a href="#Paola"><span class="secno">1.2.4</span> <span class="content">Paola the Pharmacist</span></a>
         <li><a href="#Walter"><span class="secno">1.2.5</span> <span class="content">Walter the Civil Defence</span></a>
         <li><a href="#Franca"><span class="secno">1.2.6</span> <span class="content">Franca the Fragile Person</span></a>
         <li><a href="#Aleksandra"><span class="secno">1.2.7</span> <span class="content">Aleksandra the lorry driver</span></a>
-        <li><a href="#Anne"><span class="secno">1.2.8</span> <span class="content">Anne a Regular Citizen</span></a>
-        <li><a href="#Jack"><span class="secno">1.2.9</span> <span class="content">Jack a patient under treatment</span></a>
        </ol>
      </ol>
     <li><a href="#user-state-machine"><span class="secno">2</span> <span class="content">User state</span></a>
@@ -1435,13 +1433,13 @@ Parts of this work may be from another specification document.  If so, those par
     <li>
      <a href="#user_stories"><span class="secno">4</span> <span class="content">User stories</span></a>
      <ol class="toc">
-      <li><a href="#US01"><span class="secno">4.1</span> <span class="content">US01: Anne is positive to the Swab Test</span></a>
-      <li><a href="#US02"><span class="secno">4.2</span> <span class="content">US02 - Jack Confirms His Location -- Enforce Quarantine</span></a>
-      <li><a href="#US03"><span class="secno">4.3</span> <span class="content">US03 -  Jack Goes to the Hospital -- Suspend Quarantine</span></a>
-      <li><a href="#US04"><span class="secno">4.4</span> <span class="content">US04 - Jack Goes Back Home from the Hospital -- Restore Quarantine</span></a>
-      <li><a href="#US05"><span class="secno">4.5</span> <span class="content">US05 - Jack Recovers while at the Hospital -- Immune</span></a>
+      <li><a href="#US01"><span class="secno">4.1</span> <span class="content">US01: Marco is positive to the Swab Test</span></a>
+      <li><a href="#US02"><span class="secno">4.2</span> <span class="content">US02 - Marco Confirms His Location -- Enforce Quarantine</span></a>
+      <li><a href="#US03"><span class="secno">4.3</span> <span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span></a>
+      <li><a href="#US04"><span class="secno">4.4</span> <span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span></a>
+      <li><a href="#US05"><span class="secno">4.5</span> <span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span></a>
       <li><a href="#US06"><span class="secno">4.6</span> <span class="content">US06 - Jack Dies while at the Hospital -- Immune</span></a>
-      <li><a href="#US07"><span class="secno">4.7</span> <span class="content">US07 - Jack is Removed from Quarantine -- Recovery</span></a>
+      <li><a href="#US07"><span class="secno">4.7</span> <span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span></a>
       <li><a href="#US08"><span class="secno">4.8</span> <span class="content">US08 - Proof of Immunity</span></a>
       <li><a href="#US09"><span class="secno">4.9</span> <span class="content">US09 - Marco Volunteers to Join Shielding Program</span></a>
       <li><a href="#US10"><span class="secno">4.10</span> <span class="content">US10 - Marco’s Immunity Expires</span></a>
@@ -1648,19 +1646,19 @@ protocols put in place to do so as seamlessly as possible.</p>
    <p><strong>Values and Fear</strong></p>
    <p>Maria values the privacy of her patients and she tries to connect with them in the least intrusive way.
 She fears that the protocol and guidelines might be too complicated to take on the second step of the outbreak.</p>
-   <h4 class="heading settled" data-level="1.2.3" id="Marco"><span class="secno">1.2.3. </span><span class="content">Marco the Immune Volunteer</span><a class="self-link" href="#Marco"></a></h4>
+   <h4 class="heading settled" data-level="1.2.3" id="Marco"><span class="secno">1.2.3. </span><span class="content">Marco a Regular Citizen</span><a class="self-link" href="#Marco"></a></h4>
    <p><img src="images/Marco.png" width="200"></p>
    <p><strong>Details</strong></p>
-   <p>Marco is 34, he’s a proactive with a strong civic sense. He was diagnosed with SARS-CoV-2 but has now fully recovered.
-He is keen to get back to work after a long quarantine.
-In the spirit of helping his local community he has taken steps to become a volunteer and provide care to fragile people.
+   <p>Marco is 34, he’s a general adult with a strong civic sense.
 He knows how to use a smartphone, but technology isn’t really his thing.</p>
    <p><strong>Goals</strong></p>
-   <p>Marco would like to get the “volunteer” certification/status so that he could go ahead and start helping his community.
+   <p>Marco would like to help his local community, specially provide care to fragile people.
 He is looking for the fastest and simplest way to achieve this goal.</p>
    <p><strong>Values and Fear</strong></p>
    <p>Marco cares about privacy in general and doesn’t want to be tracked or share his data with any large government or corporation<br> He is afraid of:</p>
    <ul>
+    <li data-md>
+     <p>Getting sick</p>
     <li data-md>
      <p>Carrying the virus to the fragile people he is helping</p>
     <li data-md>
@@ -1707,28 +1705,6 @@ Living alone, with no family within her city she needs external support to survi
    <p><strong>Values and Fear</strong></p>
    <p>She fears that she might lose her job in case travel across Europe is restricted.
 Some countries may deny her access, even though she could be immune and therefore not a threat.</p>
-   <h4 class="heading settled" data-level="1.2.8" id="Anne"><span class="secno">1.2.8. </span><span class="content">Anne a Regular Citizen</span><a class="self-link" href="#Anne"></a></h4>
-   <p><img src="images/Anne.png" width="200"></p>
-   <p><strong>Details</strong></p>
-   <p>Anne is a general adult with a family of 3, living and working in a medium
-size city. She has a smartphone and uses it regularly in her daily life.</p>
-   <p><strong>Goals</strong></p>
-   <p>Staying healthy, while being able to live and work as normal.</p>
-   <p><strong>Values and Fear</strong></p>
-   <p>Anne values privacy and freedom, she’s aware of abuse of controlling
-measures some governments have been enacting. Anne fears to have the
-virus and to be passing it to her family members. She cares about her
-own health and she is afraid that her family could face hard economic conditions
-due to the fact that she might be fired.</p>
-   <h4 class="heading settled" data-level="1.2.9" id="Jack"><span class="secno">1.2.9. </span><span class="content">Jack a patient under treatment</span><a class="self-link" href="#Jack"></a></h4>
-   <p><img src="images/Jack.png" width="200"></p>
-   <p><strong>Details</strong></p>
-   <p>Jack is a patient under treatment for Covid-19, he could be either quarantined,
-hospitalized or in ICUs.</p>
-   <p><strong>Goals</strong></p>
-   <p>Fight the disease, connect with loved ones.</p>
-   <p><strong>Values and Fear</strong></p>
-   <p>Fear of death, loss and overall feeling of grief.</p>
    <h2 class="heading settled" data-level="2" id="user-state-machine"><span class="secno">2. </span><span class="content">User state</span><a class="self-link" href="#user-state-machine"></a></h2>
    <p>There are four <strong>core user state</strong> that <strong>MUST</strong> be considered inside SafeTogether application :</p>
    <dl>
@@ -1787,19 +1763,19 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    <p><strong>Quarantine</strong>:</p>
    <ul>
     <li data-md>
-     <p><a href="#US01">§ 4.1 US01: Anne is positive to the Swab Test</a>,</p>
+     <p><a href="#US01">§ 4.1 US01: Marco is positive to the Swab Test</a>,</p>
     <li data-md>
-     <p><a href="#US02">§ 4.2 US02 - Jack Confirms His Location -- Enforce Quarantine</a>,</p>
+     <p><a href="#US02">§ 4.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>,</p>
     <li data-md>
-     <p><a href="#US03">§ 4.3 US03 -  Jack Goes to the Hospital -- Suspend Quarantine</a>,</p>
+     <p><a href="#US03">§ 4.3 US03 -  Marco Goes to the Hospital -- Suspend Quarantine</a>,</p>
     <li data-md>
-     <p><a href="#US04">§ 4.4 US04 - Jack Goes Back Home from the Hospital -- Restore Quarantine</a>,</p>
+     <p><a href="#US04">§ 4.4 US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</a>,</p>
     <li data-md>
-     <p><a href="#US05">§ 4.5 US05 - Jack Recovers while at the Hospital -- Immune</a>,</p>
+     <p><a href="#US05">§ 4.5 US05 - Marco Recovers while at the Hospital -- Immune</a>,</p>
     <li data-md>
      <p><a href="#US06">§ 4.6 US06 - Jack Dies while at the Hospital -- Immune</a>,</p>
     <li data-md>
-     <p><a href="#US07">§ 4.7 US07 - Jack is Removed from Quarantine -- Recovery</a></p>
+     <p><a href="#US07">§ 4.7 US07 - Marco is Removed from Quarantine -- Recovery</a></p>
    </ul>
    <p><strong>Shielding</strong>:</p>
    <ul>
@@ -1822,153 +1798,152 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    </ul>
    <h2 class="heading settled" data-level="4" id="user_stories"><span class="secno">4. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
    <p>This section describes some paradigmatic stakeholder journeys (story)</p>
-   <h3 class="heading settled" data-level="4.1" id="US01"><span class="secno">4.1. </span><span class="content">US01: Anne is positive to the Swab Test</span><a class="self-link" href="#US01"></a></h3>
+   <h3 class="heading settled" data-level="4.1" id="US01"><span class="secno">4.1. </span><span class="content">US01: Marco is positive to the Swab Test</span><a class="self-link" href="#US01"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Anne">§ 1.2.8 Anne a Regular Citizen</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Giovanni">§ 1.2.1 Giovanni the physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Anne’s state is unknown
+   <p>Marco’s state is unknown
 Giovanni has produced the medical certificate with the patient’s state of health and digitally signed it</p>
    <p>NOTES: Self Dofraigni Identity could apply</p>
    <p><strong>Postcondition:</strong></p>
-   <p>Anne’s state is quarantined.</p>
+   <p>Marco’s state is quarantined.</p>
    <p><strong>Story:</strong></p>
-   <p>Anne visits Giovanni, who runs a Swab test on her (the result could be available in a few days depending on the test).
-Giovanni asks Anne to install the <em>Mobile App</em>. The <em>Mobile App</em> requests Anne to show her face, then she is enrolled in the system. The
-app also creates a unique COC_ID, which is associated with Anne’s
+   <p>Marco visits Giovanni, who runs a Swab test on him (the result will be available in a few days dependending on the test).
+Giovanni asks Marco to install the <em>Mobile App</em>. The <em>Mobile App</em> requests Marco to show his face, then he is enrolled in the system. The
+app also creates a unique COC_ID, which is associated with Marco’s
 information.
-Giovanni registers Anne in the operator app which shows a QR-code.
-Anne scans the QR-code using her phone then she authenticates herself to complete the registeration.
+Giovanni registers Marco in the operator app which shows a QR-code.
+Marco scans the QR-code using his phone then he authenticates himelf to complete the registeration.
 At this point, the <em>Mobile App</em> shows a single-button
 interface that, when pressed, records the current location and sets
 it as a possible quarantine location (depending on the test result).
-Giovanni instructs Anne to go home
+Giovanni instructs Marco to go home
 immediately and to press the button on the <em>Mobile App</em> once she
-arrives. After a predetermined amount of time (e.g., one hour) the <em>Mobile App</em> reminds Anne to press the button. Once at home
-Anne opens the <em>Mobile App</em> and presses the button. The mobile
-app shows a confirmation prompt, and then authenticates Anne
-using her face. This saves the current location in the app, and
+arrives. After a predetermined amount of time (e.g., one hour) the <em>Mobile App</em> reminds Marco to press the button. Once at home
+Marco opens the <em>Mobile App</em> and presses the button. The mobile
+app shows a confirmation prompt, and then authenticates Marco
+using his face. This saves the current location in the app, and
 completes the enrollment process.</p>
    <p>After some time, the result of the test is back. Giovanni enters the
-result in the operator app, which also notifies Anne’s <em>Mobile App</em>, as well as the authorities.</p>
-   <p class="issue" id="issue-40445879"><a class="self-link" href="#issue-40445879"></a> story mistsmatch with quarnatine app video (QR codes and personas) <a href="https://github.com/safe-together/specification/issues/29">&lt;https://github.com/safe-together/specification/issues/29></a></p>
-   <h3 class="heading settled" data-level="4.2" id="US02"><span class="secno">4.2. </span><span class="content">US02 - Jack Confirms His Location -- Enforce Quarantine</span><a class="self-link" href="#US02"></a></h3>
+result in the operator app, which also notifies Marco’s <em>Mobile App</em>, as well as the authorities.</p>
+   <h3 class="heading settled" data-level="4.2" id="US02"><span class="secno">4.2. </span><span class="content">US02 - Marco Confirms His Location -- Enforce Quarantine</span><a class="self-link" href="#US02"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Jack">§ 1.2.9 Jack a patient under treatment</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Jack’s swab test is positive.</p>
+   <p>Marco’s swab test is positive.</p>
    <p><strong>Story:</strong></p>
-   <p>Jack receives a notification on the <em>Mobile App</em> that requires
+   <p>Marco receives a notification on the <em>Mobile App</em> that requires
 him to confirm his location. He taps on the notification, which
 brings him into the <em>Mobile App</em>. The <em>Mobile App</em> asks him
 to authenticate using his face and checks that his current location
 is close to the location that was selected to complete the
 enrollment. The result of this check is reported to the authorities.
-If Jack does not respond to the notification in a timely manner
+If Marco does not respond to the notification in a timely manner
 (e.g., within 3 minutes), the <em>Mobile App</em> notifies him again.
 After a predetermined number of unanswered notifications (say 2),
 the <em>Mobile App</em> notifies the authorities.
-The <em>Mobile App</em> periodically polls Jack’s phone location. If the phone is outside
-of the designated quarantine area, it notifies Jack as well as the
+The <em>Mobile App</em> periodically polls Marco’s phone location. If the phone is outside
+of the designated quarantine area, it notifies Marco as well as the
 authorities.</p>
-   <h3 class="heading settled" data-level="4.3" id="US03"><span class="secno">4.3. </span><span class="content">US03 -  Jack Goes to the Hospital -- Suspend Quarantine</span><a class="self-link" href="#US03"></a></h3>
+   <h3 class="heading settled" data-level="4.3" id="US03"><span class="secno">4.3. </span><span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span><a class="self-link" href="#US03"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Jack">§ 1.2.9 Jack a patient under treatment</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Jack’s state is quarantined.</p>
+   <p>Marco’s state is quarantined.</p>
    <p><strong>Postconditions:</strong></p>
-   <p>Jack’s state is suspended.</p>
+   <p>Marco’s state is suspended.</p>
    <p><strong>Story:</strong></p>
-   <p>Jack feels sick and calls an ambulance. He is taken to the hospital.
-At the hospital, Maria enters Jack’s codice fiscale into the
+   <p>Marco feels sick and calls an ambulance. He is taken to the hospital.
+At the hospital, Maria enters Marco’s codice fiscale into the
 system, marking his state on the backend as suspended. This
-dismisses any pending notification received by Jack’s Mobile App
+dismisses any pending notification received by Marco’s Mobile App
 in the last 1-2 hours, and suspends the quarantine until further
 notice.</p>
-   <h3 class="heading settled" data-level="4.4" id="US04"><span class="secno">4.4. </span><span class="content">US04 - Jack Goes Back Home from the Hospital -- Restore Quarantine</span><a class="self-link" href="#US04"></a></h3>
+   <h3 class="heading settled" data-level="4.4" id="US04"><span class="secno">4.4. </span><span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span><a class="self-link" href="#US04"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Jack">§ 1.2.9 Jack a patient under treatment</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Jack’s state is suspended</p>
+   <p>Marco’s state is suspended</p>
    <p><strong>Postconditions:</strong></p>
-   <p>Jack’s state is quarantined.</p>
+   <p>Marco’s state is quarantined.</p>
    <p><strong>Story:</strong></p>
-   <p>Jack is still sick, but he no longer needs hospital care. Maria
-enters Jack’s codice fiscale into the system, marking his state on
-the backend as quarantined again. At this point, Jack has a
+   <p>Marco is still sick, but he no longer needs hospital care. Maria
+enters Marco’s codice fiscale into the system, marking his state on
+the backend as quarantined again. At this point, Marco has a
 predetermined amount of time (say, 2 hours) to go home. After the
-predetermined amount of time, Jack receives a notification, which
-asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Jack Confirms His Location -- Enforce Quarantine</a>.</p>
-   <h3 class="heading settled" data-level="4.5" id="US05"><span class="secno">4.5. </span><span class="content">US05 - Jack Recovers while at the Hospital -- Immune</span><a class="self-link" href="#US05"></a></h3>
+predetermined amount of time, Marco receives a notification, which
+asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>.</p>
+   <h3 class="heading settled" data-level="4.5" id="US05"><span class="secno">4.5. </span><span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span><a class="self-link" href="#US05"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Jack">§ 1.2.9 Jack a patient under treatment</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Jack’s state is suspended</p>
+   <p>Marco’s state is suspended</p>
    <p><strong>Postconditions:</strong></p>
-   <p>Jack’s state is negative.</p>
+   <p>Marco’s state is negative.</p>
    <p><strong>Story:</strong></p>
-   <p>Jack is now healthy. Maria enters Jack’s codice fiscale into the
+   <p>Marco is now healthy. Maria enters Marco’s codice fiscale into the
 system, and marks his state in the backend as negative. The
 mobile app no longer receives notifications and no longer
-checks Jack’s location.</p>
+checks Marco’s location.</p>
    <h3 class="heading settled" data-level="4.6" id="US06"><span class="secno">4.6. </span><span class="content">US06 - Jack Dies while at the Hospital -- Immune</span><a class="self-link" href="#US06"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Jack">§ 1.2.9 Jack a patient under treatment</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Maria">§ 1.2.2 Maria the hospital physician</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Jack’s state is suspended</p>
+   <p>Marco’s state is suspended</p>
    <p><strong>Postconditions:</strong></p>
-   <p>Jack is removed from the SafeTogether system</p>
+   <p>Marco is removed from the SafeTogether system</p>
    <p><strong>Story:</strong></p>
-   <p>Jack dies at the hospital. Maria enters Jack’s codice fiscale
+   <p>Marco dies at the hospital. Maria enters Marco’s codice fiscale
 into the system, and marks his state in the backend as immune.
 The mobile app no longer receives notifications and no longer
-checks Jack’s location.
-Maria uses the operator app to delete Jack from the system.</p>
-   <h3 class="heading settled" data-level="4.7" id="US07"><span class="secno">4.7. </span><span class="content">US07 - Jack is Removed from Quarantine -- Recovery</span><a class="self-link" href="#US07"></a></h3>
+checks Marco’s location.
+Maria uses the operator app to delete Marco from the system.</p>
+   <h3 class="heading settled" data-level="4.7" id="US07"><span class="secno">4.7. </span><span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span><a class="self-link" href="#US07"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
-   <p>Jack’s state is quarantined</p>
+   <p>Marco’s state is quarantined</p>
    <p><strong>Postconditions:</strong></p>
-   <p>Jack’s state is negative</p>
+   <p>Marco’s state is negative</p>
    <p><strong>Story:</strong></p>
-   <p>Jack’s quarantine is over, and he has recovered. The app notifies
-Jack that his state is now negative.</p>
+   <p>Marco’s quarantine is over, and he has recovered. The app notifies
+Marco that his state is now negative.</p>
    <h3 class="heading settled" data-level="4.8" id="US08"><span class="secno">4.8. </span><span class="content">US08 - Proof of Immunity</span><a class="self-link" href="#US08"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
    </ul>
@@ -1983,7 +1958,7 @@ The operator app checks Marco’s state (including the expiration date if the im
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
    </ul>
@@ -2002,7 +1977,7 @@ Marco as a volunteer.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s state is immune and an official volonteer</p>
@@ -2015,7 +1990,7 @@ His state is now unknown and his volonteer can no longer be carried out.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
    </ul>
    <p><strong>Preconditions:</strong></p>
    <p>Marco state is unknown, immune, or negative.</p>
@@ -2033,7 +2008,7 @@ negative, Marco’s state is set to negative.</p>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Walter">§ 1.2.5 Walter the Civil Defence</a></p>
     <li data-md>
@@ -2043,7 +2018,7 @@ negative, Marco’s state is set to negative.</p>
    <p>Marco’s state is immune and he is an official volonteer.</p>
    <p><strong>Story:</strong></p>
    <p>Walter sends Marco to Franca. Marco knocks on Franca’s door, who
-asks him to identify himself. Marco authenticates with the <em>Mobile App</em> on his smartphone using his face (simalar to <a href="#US02">§ 4.2 US02 - Jack Confirms His Location -- Enforce Quarantine</a>),
+asks him to identify himself. Marco authenticates with the <em>Mobile App</em> on his smartphone using his face (simalar to <a href="#US02">§ 4.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>),
 this sends a notification to the backend which verifies tha Marco is in fact immune and he is in fact a volonteer.
 The backend informs Franca’s device (even via a call form a call center depending on Franca’s possibilities)
 that Marco is or isn’t who he claims to be.
@@ -2052,7 +2027,7 @@ If he is in the shielding program Franca can trust him and open the door otherwi
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
     <li data-md>
      <p><a href="#Paola">§ 1.2.4 Paola the Pharmacist</a></p>
    </ul>
@@ -2063,7 +2038,7 @@ If he is in the shielding program Franca can trust him and open the door otherwi
    <p>Marco’s state is immune or unknown</p>
    <p><strong>Story:</strong></p>
    <p>Marco goes to Paola in order to perform an antibodies test.
-Paola asks Marco to install and enroll in the Cordone Sanitario application (the process is similar to <a href="#US01">§ 4.1 US01: Anne is positive to the Swab Test</a>).
+Paola asks Marco to install and enroll in the Cordone Sanitario application (the process is similar to <a href="#US01">§ 4.1 US01: Marco is positive to the Swab Test</a>).
 Marco is presented with a QRcode which rappresents his COC_ID.
 Paola performs the test on Marco and given that the result will be avialable in a few hours
 she instructs him to get back later.</p>
@@ -2076,7 +2051,7 @@ When the certification is generated, this prompts a QRcode which Marco scans via
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
-     <p><a href="#Marco">§ 1.2.3 Marco the Immune Volunteer</a></p>
+     <p><a href="#Marco">§ 1.2.3 Marco a Regular Citizen</a></p>
    </ul>
    <p><strong>Conditions:</strong></p>
    <p><strong>Preconditions:</strong></p>
@@ -2453,7 +2428,6 @@ As part of the Fragile Population, Franca needs to express her pleasure/displeas
    <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?<a href="#issue-00c1d945"> ↵ </a></div>
    <div class="issue"> remove the Negative status from the table<a href="#issue-70d0909a"> ↵ </a></div>
    <div class="issue"> add stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-89cfdeb4"> ↵ </a></div>
-   <div class="issue"> story mistsmatch with quarnatine app video (QR codes and personas) <a href="https://github.com/safe-together/specification/issues/29">&lt;https://github.com/safe-together/specification/issues/29></a><a href="#issue-40445879"> ↵ </a></div>
    <div class="issue"> the "Anne needs" should be detailed<a href="#issue-e1d4457f"> ↵ </a></div>
    <div class="issue"> the "Jack needs" should be detailed<a href="#issue-18002a8d"> ↵ </a></div>
    <div class="issue"> App functionalities is to be extended<a href="#issue-4560eae2"> ↵ </a></div>
