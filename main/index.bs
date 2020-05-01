@@ -38,12 +38,9 @@ any feedback, comments, or questions you might have.
 
 # Introduction # {#intro}
 
-SafeTogether is an ecosystem of software components and support services to provide
-the operators in charge with a set of tools to help tackle phase 2 of the epidemic emergency. 
+SafeTogether is a non-for-profit efforts of a wide group of international volunteers to develop technologies helping and supporting practitioners in their fight against COVID-19.
 
-SafeTogether is created by a wide group of international volunteers. 
-Volunteers are private individuals, professionals, students and people connected 
-or belonging to supporting institutions and private companies who joined pro bono the endeavour.
+Volunteers are private individuals, professionals, students and people connected or belonging to supporting institutions and private companies who joined pro bono the endeavour.
 
 The volunteers are divided into sub-projects teams and in coordination with each other.
 
@@ -71,28 +68,27 @@ The SafeTogether Specification
 describes requirements and protocols for *SafeTogether applications* and is composed by set of related documents:
 
 - [[!STORIES]]: that describes personas and user stories inspiring the SafeTogether project
-- [[!PROTOCOLS]]: that describe protocols and interfaces to be implemented by applications
+- [[!PROTOCOLS]]: that describe public protocols and interfaces to be implemented by applications
 
-*SafeTogether applications* **SHOULD** implement at least one of the [[!STORIES]] 
+*SafeTogether applications* **MUST** participate to at least one of the published [[!STORIES]] 
 
-*SafeTogether applications* **SHOULD** implement all relevant [[!PROTOCOLS]]. 
+*SafeTogether applications* implementation **SHOULD** be conform to relevant [[!PROTOCOLS]]. 
 
 *SafeTogether applications* define their own life cycle and **MAY** be developed independently of each other.
 
 # Reference Implementations # {#reference-implementations}
 
-**Reference Implementations** are  *SafeTogether applications* that  **MUST** be publicly released with one of the Open Source
-License defined as free by Free Software Fondation definition ([[FSF]]). Here is a known list:
+**Reference Implementations** are  *SafeTogether applications* whose source **MUST**  be available open to the operators in charge or released with an Open Source
+License (possibly defined as free by Free Software Fondation definition ([[FSF]]). Here is a known list:
 
 <table border="1">
 <tr><th>Application</th><th>State</th><th>Resources</th></tr>
 <tr>
-	<td>[CovidApp - Covid Community Alert](https://coronavirus-outbreak-control.github.io/web)</td>
+	<td>[CovidApp - Covid Community Alert](https://coronavirus-outbreak-control.github.io/web) by Coronavirus Outbreak Control LTD</td>
 	<td>ready to deploy</td>
 	<td>
-	    Reference implementation for *Contact Tracing*
-	    - [source repository](https://github.com/coronavirus-outbreak-control/) available
-	    - [video available](https://youtu.be/k2OcIFyb9GE)
+	    the Coronavirus Outbreak Control released a reference implementation of [some Contact Tracing software components](https://github.com/coronavirus-outbreak-control/).
+	    a [video is available](https://youtu.be/k2OcIFyb9GE)
 	</td>
 </tr>
 
@@ -100,8 +96,9 @@ License defined as free by Free Software Fondation definition ([[FSF]]). Here is
 	<td>[[QUARANTINE]]</td>
 	<td>ready to test</td>
 	<td> 
-	    Reference implementation for *Quarantine*
-	    - [source repository](https://github.com/KeylessTech/kl_quarantine_auth) available (ask access)
+	    A reference implementation for *Quarantine* System  by [KeyLess](https://keyless.io/). The application uses a  biometric multi-factor authentication platform
+	    powered by patent pending privacy-enhancing security technology
+	    - [source repository](https://github.com/KeylessTech/kl_quarantine_auth) with Free Open Source License available on request
 	    - [video demo available](https://www.youtube.com/watch?v=nScyb1bLXn8&feature=youtu.be) from keyless.io
 	</td>
 </tr>
@@ -110,8 +107,7 @@ License defined as free by Free Software Fondation definition ([[FSF]]). Here is
 	<td>[[SHIELDING]]</td>
 	<td>in development</td>
 	<td> 
-	    Reference implementation for *Shielding*
-	    - [source repository](https://github.com/g0v-it/safetogether-shielding)
+	    Reference implementation for *Shielding* by the [g0v.it team](http://g0v.it). The [source repository](https://github.com/g0v-it/safetogether-shielding) was created
 	</td>
 </tr>
 </table>
@@ -198,7 +194,6 @@ Index of available Panels:
 
 - [[#project-panel]]
 - [[#stories-panel]]
-- [[#tracing-panel]]
 - [[#shielding-panel]]
 
 
@@ -281,27 +276,6 @@ by any editors assigned to it.
 
 
 
-## Tracing panel ## {#tracing-panel}
-Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
-
-**Communication channels**
-
-- Official web site: https://coronavirus-outbreak-control.github.io/web/
-- Git: [all repositories](https://github.com/coronavirus-outbreak-control/)
-- Eemail : coronavirus.outbreak.control@gmail.com
-
-
-**Panelists:**
-
-- [Luca Mastrostefano](https://github.com/ecow), <[luca.mastrostefano90@gmail.com ](mailto:luca.mastrostefano90@gmail.com )>
-
-
-**Editorial Assignment:**
- 
-Develop a reference application for the Tracing  application ([[TRACING]])
-
-
-
 ## Shielding panel ## {#shielding-panel}
 Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation
 
@@ -335,13 +309,6 @@ Editors have [_Admin Permissions_](https://help.github.com/en/articles/repositor
 
 <pre class=biblio>
 {
-	"TRACING": {
-		"href": "https://github.com/coronavirus-outbreak-control/",
-		"title": "Coronavirus Outbreak Control repositories",
-		"authors": [
-	      "Coronavirus Outbreak Control Team"
-	    ]
-	},
 	"QUARANTINE": {
 		"title": "...waiting for source repository and demo URLs",
 		"authors": [
