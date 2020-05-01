@@ -2,16 +2,32 @@ User needs {#user_needs}
 =====================
 
 ## Marco – Volunteer ## {#Marco-needs}
-
-- **M1 – Volunteer Onboarding**:
+Issue: the Marco needs [1 - 17] should be detailed
+- **M1 – Citizen Onboarding**
+- **M2 – Citizen Symptoms check**
+- **M3 – Citizen Recent Contacts/Places Notes (is suspect positive)**
+- **M4 – Citizen Recent Contacts/Places Form (if confirmed positive)**
+- **M5 – Citizen Virus Detection Test Request (suspect positive)**
+- **M6 – Citizen Status Positive Procedure**
+- **M7 – Citizen Quarantine Reporting**
+- **M8 – Citizen Quarantine Escape Alarm**
+- **M9 – Citizen Daily Symptoms Reporting**
+- **M10 – Citizen Hospitalization/Treatment Update**
+- **M11 – Citizen Symptoms End Reporting**
+- **M12 – Citizen Virus Absence Test Request**
+- **M13 – Citizen Antibodies Test Request**
+- **M14 – Citizen Atibodies Result**
+- **M15 – Citizen Recovery Procedure & Guidance**
+- **M16 – Patient Post-Recovery Guidance**
+- **M17 – Volunteer Onboarding**:
     As a Volunteer, Marco wants to get registered quickly and smoothly so that he can start to help as soon as possible. 
-- **M2 – Volunteer Immunity Certification Registration**:
+- **M18 – Volunteer Immunity Certification Registration**:
     As a Volunteer, Marco needs to get a certification of his immunity and be able to display it upon request so that those he interacts with can trust him. 
-- **M3 – Volunteer Immunity Certification Renewal**:
+- **M19 – Volunteer Immunity Certification Renewal**:
     As a Volunteer, Marco wants to renew his immunity certification smoothly and effectively so that he can carry on working as volunteer. 
-- **M4 – Volunteer Immunity Certification Cancellation**:
+- **M20 – Volunteer Immunity Certification Cancellation**:
     As a Volunteer, Marco needs to know if/when his immunity certification is cancelled or will expire so that he can either renew it or change his behavior effectively.
-- **M5 – Volunteer Recognition**:
+- **M21 – Volunteer Recognition**:
     As a Volunteer, Marco needs to be easily recognizable (especially by fragile / high-risk citizens) so that he can perform his duties effectively. 
 
 
@@ -56,37 +72,6 @@ User needs {#user_needs}
 - **F3 – Fragile Population FeedBack**:
     As part of the Fragile Population, Franca needs to express her pleasure/displeasure of the service provided.
 
-## Anne – Status Unknown, then positive in Quarantine ## {#Anne-needs}
-
-Issue: the "Anne needs" should be detailed
-
-- **A1 – Citizen Onboarding** 
-- **A2 – Citizen Symptoms check ** 
-- **A3 – Citizen Recent Contacts/Places Notes**  (is suspect positive)
-- **A4 – Citizen Recent Contacts/Places Form ** (if confirmed positive)
-- **A5 – Citizen Virus Detection Test Request**  (suspect positive)
-- **A6 – Citizen Status Positive Procedure**  
-- **A7 – Citizen Quarantine Reporting**  
-- **A8 – Citizen Quarantine Escape Alarm** 
-- **A9 – Citizen Daily Symptoms Reporting** 
-- **A10 – Citizen Hospitalization/Treatment Update** 
-- **A11 – Citizen Symptoms End Reporting** 
-- **A12 – Citizen Virus Absence Test Request** 
-- **A12 – Citizen Antibodies Test Request** 
-- **A13 – Citizen Antibodies Result**  
-- **A14 – Citizen Recovery Procedure & Guidance** 
-
-## Jack – Positive with Symptoms under treatment (recovery) ## {#Jack-needs}
-
-
-Issue: the "Jack needs" should be detailed
-
-- **J1 – Patient Onboarding**
-- **J2 – Patient Post-Recovery Guidance**
-- **J3 – Patient Silent Tracking**
-- **J4 – Patient Volunteering Push Adv**
-- **J5 – Patient to Volunteer Onboarding** > M1
-    
 ## Other needs ## {#other-needs}
 
 - **X1 Phone is lost**, App re-sync on new device
