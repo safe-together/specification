@@ -284,19 +284,6 @@ Editors have [_Admin Permissions_](https://help.github.com/en/articles/repositor
 
 <pre class=biblio>
 {
-	"QUARANTINE": {
-		"title": "...waiting for source repository and demo URLs",
-		"authors": [
-	      "Keeless"
-	    ]
-	},
-	"SHIELDING": {
-		"href": "https://github.com/g0v-it/safetogether-shielding",
-		"title": "SafeTogether Shielding",
-		"authors": [
-	      "g0v.it core team"
-	    ]
-	},
 	"PROCESS": {
 		"href": "https://safe-together.github.io/specification/process",
 		"title": "The SafeTogether Process",
