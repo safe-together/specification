@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version d2959a4, updated Fri Apr 24 17:44:40 2020 -0700" name="generator">
+  <meta content="Bikeshed version 70ffa93, updated Fri May 1 10:12:04 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="208bf633743fff8ccf94a8c20c9bd689a99a1571" name="document-revision">
+  <meta content="a9b7a3a391efaca99a4c60b09db405b6aaa0f758" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">The SafeTogether Ecosystem</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-01">1 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-02">2 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1391,7 +1391,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 1 May 2020,
+In addition, as of 2 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1410,20 +1410,18 @@ Parts of this work may be from another specification document.  If so, those par
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
-    <li><a href="#application"><span class="secno">2</span> <span class="content">SafeTogether Applications requirements</span></a>
+    <li><a href="#application"><span class="secno">2</span> <span class="content">SafeTogether Applications</span></a>
     <li><a href="#reference-implementations"><span class="secno">3</span> <span class="content">Reference Implementations</span></a>
     <li><a href="#contributors"><span class="secno">4</span> <span class="content">Contributors</span></a>
     <li><a href="#stakeholders"><span class="secno">5</span> <span class="content">Stakeholders</span></a>
-    <li><a href="#fundraising"><span class="secno">6</span> <span class="content">Fundraising</span></a>
     <li>
-     <a href="#panels"><span class="secno">7</span> <span class="content">Panels</span></a>
+     <a href="#panels"><span class="secno">6</span> <span class="content">Panels</span></a>
      <ol class="toc">
-      <li><a href="#project-panel"><span class="secno">7.1</span> <span class="content">General discussion Panel</span></a>
-      <li><a href="#stories-panel"><span class="secno">7.2</span> <span class="content">Stories Panel</span></a>
-      <li><a href="#protocols-panel"><span class="secno">7.3</span> <span class="content">Protocols Panel</span></a>
-      <li><a href="#shielding-panel"><span class="secno">7.4</span> <span class="content">Shielding panel</span></a>
+      <li><a href="#project-panel"><span class="secno">6.1</span> <span class="content">General discussion Panel</span></a>
+      <li><a href="#stories-panel"><span class="secno">6.2</span> <span class="content">Stories Panel</span></a>
+      <li><a href="#protocols-panel"><span class="secno">6.3</span> <span class="content">Protocols Panel</span></a>
      </ol>
-    <li><a href="#repositories"><span class="secno">8</span> <span class="content">Repositories</span></a>
+    <li><a href="#repositories"><span class="secno">7</span> <span class="content">Repositories</span></a>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
@@ -1447,7 +1445,7 @@ However, the information in this document is still subject to change.
     <li data-md>
      <p><strong>Self-certification of movements</strong>: measure to comply with State or regional requirements. It allows to forecast places at risk of crowding, to report them to the authorities, to discourage the influx of people, informing people so they can decide to move in greater safety. It digitizes the procedure for the citizen and drastically speeds up the control by the authorities.</p>
     <li data-md>
-     <p><strong>Cordon sanitaire</strong> : for shielding high-risk categories, the system supports the management of a “buffer” with immune persons, according to the proposal of Prof. Udi Shapiro from the Weizmann Institute. Healthcare professionals are the only authority that can register and associate a digital certificate (whose chain of trusts is internationally verifiable) certifying immunity on the smartphone. Designed for support staff for high-risk categories, it enables to verify directly the truthfulness and validity of the certificate, avoiding the risk of fraud.</p>
+     <p><strong>Cordon sanitaire</strong> (Schielding) : for shielding high-risk categories, the system supports the management of a “buffer” with immune persons, according to the proposal of Prof. Udi Shapiro from the Weizmann Institute. Healthcare professionals are the only authority that can register and associate a digital certificate (whose chain of trusts is internationally verifiable) certifying immunity on the smartphone. Designed for support staff for high-risk categories, it enables to verify directly the truthfulness and validity of the certificate, avoiding the risk of fraud.</p>
     <li data-md>
      <p><strong>Self-certification test</strong>: allows a person to document the performance of her own serology test and allows her to certify the result to third parties, for circumstances where lower level of certainty than required by the cordon sanitaire, is appropriate.</p>
     <li data-md>
@@ -1464,7 +1462,7 @@ infrastructure under their control, often inside their borders, therefore our ap
 of protocols, the implementation of the supporting backends and the provision of a <em>reference implementation</em> of the user facing clients.</p>
    <p>Some components are ready to be used, others are under development.</p>
    <p>Those interested in providing their input or support the initiative can send an email to <a href="mailto:info@safetogether.app">info@safetogether.app</a> or <a href="https://safetogether.app">SafeTogether Web Site</a>.</p>
-   <h2 class="heading settled" data-level="2" id="application"><span class="secno">2. </span><span class="content">SafeTogether Applications requirements</span><a class="self-link" href="#application"></a></h2>
+   <h2 class="heading settled" data-level="2" id="application"><span class="secno">2. </span><span class="content">SafeTogether Applications</span><a class="self-link" href="#application"></a></h2>
    <p>The SafeTogether Specification
 describes requirements and protocols for <em>SafeTogether applications</em> and is composed by set of related documents:</p>
    <ul>
@@ -1473,29 +1471,45 @@ describes requirements and protocols for <em>SafeTogether applications</em> and 
     <li data-md>
      <p><a data-link-type="biblio" href="#biblio-protocols">[PROTOCOLS]</a>: that describe public protocols and interfaces to be implemented by applications</p>
    </ul>
-   <p><em>SafeTogether applications</em> <strong>MUST</strong> participate to at least one of the published <a data-link-type="biblio" href="#biblio-stories">[STORIES]</a></p>
-   <p><em>SafeTogether applications</em> implementation <strong>SHOULD</strong> be conform to relevant <a data-link-type="biblio" href="#biblio-protocols">[PROTOCOLS]</a>.</p>
-   <p><em>SafeTogether applications</em> define their own life cycle and <strong>MAY</strong> be developed independently of each other.</p>
+   <p>Some requirements apply to <em>SafeTogether applications</em>:</p>
+   <ul>
+    <li data-md>
+     <p><em>SafeTogether applications</em> <strong>MUST</strong> participate to at least one of the published <a data-link-type="biblio" href="#biblio-stories">[STORIES]</a></p>
+    <li data-md>
+     <p><em>SafeTogether applications</em> implementation <strong>MUST</strong> be conform to relevant <a data-link-type="biblio" href="#biblio-protocols">[PROTOCOLS]</a>.</p>
+    <li data-md>
+     <p><em>SafeTogether applications</em> define their own life cycle and <strong>MAY</strong> be developed independently of each other.</p>
+   </ul>
    <h2 class="heading settled" data-level="3" id="reference-implementations"><span class="secno">3. </span><span class="content">Reference Implementations</span><a class="self-link" href="#reference-implementations"></a></h2>
-   <p><strong>Reference Implementations</strong> are <em>SafeTogether applications</em> whose source <strong>MUST</strong> be available open to the operators in charge or released with an Open Source
-License (possibly defined as free by Free Software Fondation definition (<a data-link-type="biblio" href="#biblio-fsf">[FSF]</a>). Here is a known list:</p>
+   <p><em>Reference Implementations</em> are <em>SafeTogether applications</em> that are compliant with following requirements:</p>
+   <ul>
+    <li data-md>
+     <p><em>Reference Implementations</em> source <strong>MUST</strong> be available at least to the the operators in charge</p>
+    <li data-md>
+     <p><em>Reference Implementations</em> <strong>SHOULD</strong> be released with an Open Source</p>
+    <li data-md>
+     <p><em>Reference Implementations</em> <strong>MUST</strong> clearly expose any IPR dependencies .</p>
+   </ul>
+   <p>License (possibly) defined as free by Free Software Fondation definition (<a data-link-type="biblio" href="#biblio-fsf">[FSF]</a>). Here is a known list:</p>
+    Quarantine
    <table border="1">
     <tbody>
      <tr>
-      <th>Application
+      <th>Application type 
       <th>State
       <th>Resources
      <tr>
-      <td><a href="https://coronavirus-outbreak-control.github.io/web">CovidApp - Covid Community Alert</a> by Coronavirus Outbreak Control LTD
+      <td>Tracing
       <td>ready to deploy
-      <td> the Coronavirus Outbreak Control released a reference implementation of <a href="https://github.com/coronavirus-outbreak-control/">some Contact Tracing software components</a>.
-	    a <a href="https://youtu.be/k2OcIFyb9GE">video is available</a> 
+      <td> the Coronavirus Outbreak Control team is working to the <a href="https://coronavirus-outbreak-control.github.io/web">Covid Community Alert</a> system (aka Covidapp).
+	    They released the the frontends of its system with an open source license in its <a href="https://github.com/coronavirus-outbreak-control/">repository</a>. 
+	    Authorities and authorized people were able to investigate the whole system. You can ask the team to access to the whole source code.
+	    A <a href="https://youtu.be/k2OcIFyb9GE">video is available</a> 
      <tr>
-      <td><a data-link-type="biblio" href="#biblio-quarantine">[QUARANTINE]</a>
       <td>ready to test
       <td>
-        A reference implementation for <em>Quarantine</em> System  by <a href="https://keyless.io/">KeyLess</a>. The application uses a  biometric multi-factor authentication platform
-	    powered by patent pending privacy-enhancing security technology 
+        A reference implementation for <em>Quarantine</em> System  by <a href="https://keyless.io/">KeyLess</a>. The application uses a biometric multi-factor authentication platform
+	    powered by patent pending privacy-enhancing security technology owned by KeyLess 
        <ul>
         <li data-md>
          <p><a href="https://github.com/KeylessTech/kl_quarantine_auth">source repository</a> with Free Open Source License available on request</p>
@@ -1503,9 +1517,10 @@ License (possibly defined as free by Free Software Fondation definition (<a data
          <p><a href="https://www.youtube.com/watch?v=nScyb1bLXn8&amp;feature=youtu.be">video demo available</a> from keyless.io</p>
        </ul>
      <tr>
-      <td><a data-link-type="biblio" href="#biblio-shielding">[SHIELDING]</a>
-      <td>in development
-      <td> Reference implementation for <em>Shielding</em> by the <a href="http://g0v.it">g0v.it team</a>. The <a href="https://github.com/g0v-it/safetogether-shielding">source repository</a> was created 
+      <td>Shielding
+      <td>in design
+      <td> A reference implementation for <em>Shielding</em> system by the <a href="http://g0v.it">g0v.it team</a>. The <a href="https://github.com/g0v-it/safetogether-shielding">source repository</a> was created. 
+	    The protocol design is carried-on in the SafeTogether <a data-link-type="biblio" href="#biblio-protocols">[PROTOCOLS]</a> specification. 
    </table>
    <p>Please, contact editors to update this list.</p>
    <h2 class="heading settled" data-level="4" id="contributors"><span class="secno">4. </span><span class="content">Contributors</span><a class="self-link" href="#contributors"></a></h2>
@@ -1513,7 +1528,7 @@ License (possibly defined as free by Free Software Fondation definition (<a data
 SafeTogether Project and is encouraged to continue.</p>
    <p>All manner of contributions are important - whether identifying problems, asking questions, or proposing normative changes.</p>
    <p>There are many topics, problems, or ideas best tackled by a group of people with a specific set of domain expertise.
-For these cases, we have <a href="#panels">§ 7 Panels</a></p>
+For these cases, we have <a href="#panels">§ 6 Panels</a></p>
    <h2 class="heading settled" data-level="5" id="stakeholders"><span class="secno">5. </span><span class="content">Stakeholders</span><a class="self-link" href="#stakeholders"></a></h2>
    <p>Stakeholders are those affected by normative changes to the SafeTogether Specification.
 There are two types of stakeholders:</p>
@@ -1555,12 +1570,7 @@ but it is not mandatory. Identified stakeholders may be consulted for feedback a
     <li data-md>
      <p><em>...please, contact Editors to add your name here</em></p>
    </ul>
-   <h2 class="heading settled" data-level="6" id="fundraising"><span class="secno">6. </span><span class="content">Fundraising</span><a class="self-link" href="#fundraising"></a></h2>
-   <p>Mamacrowd, the highly reputable and leading crowdfunding platform in Italy has launched
-a <a href="https://mamacrowd.com/project/una-tecnologia-per-ripartire">fundraising campaign</a> to support those volunteers who are economically penalized while devoting their time to this effort.</p>
-   <p>All fund raised are going to flow in the participating volunteer accounts directly from Mamacrowd,
-with no go between passage and complete accountability.</p>
-   <h2 class="heading settled" data-level="7" id="panels"><span class="secno">7. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h2>
+   <h2 class="heading settled" data-level="6" id="panels"><span class="secno">6. </span><span class="content">Panels</span><a class="self-link" href="#panels"></a></h2>
    <p>SafeTogether Panels are groups of individuals focused on a specific problem or domain relevant to the SafeTogether project.
 Anyone can join a panel or suggest a new panel.</p>
    <p>Anyone can create a Panel by making a pull request directly to this document.</p>
@@ -1570,16 +1580,17 @@ as part of the editorial process.</p>
    <p>Index of available Panels:</p>
    <ul>
     <li data-md>
-     <p><a href="#project-panel">§ 7.1 General discussion Panel</a></p>
+     <p><a href="#project-panel">§ 6.1 General discussion Panel</a></p>
     <li data-md>
-     <p><a href="#stories-panel">§ 7.2 Stories Panel</a></p>
+     <p><a href="#stories-panel">§ 6.2 Stories Panel</a></p>
     <li data-md>
-     <p><a href="#shielding-panel">§ 7.4 Shielding panel</a></p>
+     <p><a href="#protocols-panel">§ 6.3 Protocols Panel</a></p>
    </ul>
    <p>More or less there is a weekly SafeTogether Community Group call to review all panels.
-See general channel in <a href="#project-panel">§ 7.1 General discussion Panel</a> to find out the agenda and exact time of the next call and the address to connect to it,
+See general channel in <a href="#project-panel">§ 6.1 General discussion Panel</a> to find out the agenda and exact time of the next call and the address to connect to it,
 or to add put item on the next agenda.</p>
-   <h3 class="heading settled" data-level="7.1" id="project-panel"><span class="secno">7.1. </span><span class="content">General discussion Panel</span><a class="self-link" href="#project-panel"></a></h3>
+   <p>Development teams and community use thier own process and channel to communicate.</p>
+   <h3 class="heading settled" data-level="6.1" id="project-panel"><span class="secno">6.1. </span><span class="content">General discussion Panel</span><a class="self-link" href="#project-panel"></a></h3>
    <p>General Discussion about the project governances, process and news</p>
    <p><strong>Communication channels:</strong></p>
    <ul>
@@ -1599,7 +1610,7 @@ or to add put item on the next agenda.</p>
    </ul>
    <p><strong>Editorial Assignment:</strong></p>
    <p>Relevant news should be inserted in the project web site</p>
-   <h3 class="heading settled" data-level="7.2" id="stories-panel"><span class="secno">7.2. </span><span class="content">Stories Panel</span><a class="self-link" href="#stories-panel"></a></h3>
+   <h3 class="heading settled" data-level="6.2" id="stories-panel"><span class="secno">6.2. </span><span class="content">Stories Panel</span><a class="self-link" href="#stories-panel"></a></h3>
     Definition of personas and user stories inspiring SafeTogether 
    <p><strong>Communication channels:</strong></p>
    <ul>
@@ -1621,7 +1632,7 @@ or to add put item on the next agenda.</p>
    <p>Candidate Proposals to the SafeTogether Specification produced by this panel are likely to
 be associated with the <a data-link-type="biblio" href="#biblio-stories">[STORIES]</a> specifications, and will be principally reviewed 
 by any editors assigned to it.</p>
-   <h3 class="heading settled" data-level="7.3" id="protocols-panel"><span class="secno">7.3. </span><span class="content">Protocols Panel</span><a class="self-link" href="#protocols-panel"></a></h3>
+   <h3 class="heading settled" data-level="6.3" id="protocols-panel"><span class="secno">6.3. </span><span class="content">Protocols Panel</span><a class="self-link" href="#protocols-panel"></a></h3>
     Definition of aprotocols and architectures in SafeTogether systems 
    <p><strong>Communication channels:</strong></p>
    <ul>
@@ -1645,31 +1656,7 @@ by any editors assigned to it.</p>
    <p>Candidate Proposals to the SafeTogether Specification produced by this panel are likely to
 be associated with the <a data-link-type="biblio" href="#biblio-protocols">[PROTOCOLS]</a> specifications, and will be principally reviewed 
 by any editors assigned to it.</p>
-   <h3 class="heading settled" data-level="7.4" id="shielding-panel"><span class="secno">7.4. </span><span class="content">Shielding panel</span><a class="self-link" href="#shielding-panel"></a></h3>
-    Discussion about Requiementsm Protocols and Architecture about Shielding reference implementation 
-   <p><strong>Communication channels:</strong></p>
-   <ul>
-    <li data-md>
-     <p>#Slack channel: <a href="https://copernicani.slack.com/app_redirect?channel=g0v-it-shielding">copernicani#g0v-it-shielding</a></p>
-    <li data-md>
-     <p>Git: <a href="https://github.com/g0v-it/safetogether-shielding">source repository</a></p>
-   </ul>
-   <p><strong>Panelists:</strong></p>
-   <ul>
-    <li data-md>
-     <p><a href="https://github.com/ecow">Enrico Fagnoni</a>, &lt;<a href="mailto:enrico@LinkedData.Center">enrico@LinkedData.Center</a>> (@ecow)</p>
-    <li data-md>
-     <p><a href="https://github.com/luca">Luca Mearelli</a>, &lt;<a href="mailto:l.mearelli@spazidigitali.com">l.mearelli@spazidigitali.com </a>> (@luca)</p>
-    <li data-md>
-     <p><a href="https://github.com/YassineOuahidi">Yassine Ouahidi</a>, &lt;<a href="mailto:yass.ouahidi@gmail.com">yass.ouahidi@gmail.com</a>>  (@YassineOuahidi)</p>
-    <li data-md>
-     <p><a href="https://github.com/miahmohd">Mohd Ehtesham Miah</a>, &lt;<a href="mailto:miahmohd98@gmail.com">miahmohd98@gmail.com</a>> (@miahmohd)</p>
-    <li data-md>
-     <p><a href="https://github.com/LeonardoLonghi">Leonardo Longhi</a>, &lt;<a href="mailto:leonardolonghi64@gmail.com">leonardolonghi64@gmail.com</a>> (@LeonardoLonghi)</p>
-   </ul>
-   <p><strong>Editorial Assignment:</strong></p>
-   <p>Develop a reference application for the Shielding .</p>
-   <h2 class="heading settled" data-level="8" id="repositories"><span class="secno">8. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h2>
+   <h2 class="heading settled" data-level="7" id="repositories"><span class="secno">7. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h2>
    <p>Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.</p>
    <p>Editors have <a href="https://help.github.com/en/articles/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization">_Admin Permissions_</a> on the repositories they are assigned to.</p>
   </main>
@@ -1835,8 +1822,4 @@ by any editors assigned to it.</p>
   <dl>
    <dt id="biblio-fsf">[FSF]
    <dd><a href="https://www.gnu.org/licenses/license-list.html">Free Software Licenses</a>. URL: <a href="https://www.gnu.org/licenses/license-list.html">https://www.gnu.org/licenses/license-list.html</a>
-   <dt id="biblio-quarantine">[QUARANTINE]
-   <dd>Keeless. ...waiting for source repository and demo URLs. 
-   <dt id="biblio-shielding">[SHIELDING]
-   <dd>g0v.it core team. <a href="https://github.com/g0v-it/safetogether-shielding">SafeTogether Shielding</a>. URL: <a href="https://github.com/g0v-it/safetogether-shielding">https://github.com/g0v-it/safetogether-shielding</a>
   </dl>
