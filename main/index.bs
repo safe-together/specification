@@ -92,9 +92,8 @@ Here is a known list of *Reference Implementations*:
 	<td>Tracing</td>
 	<td>ready to deploy</td>
 	<td>
-	    the Coronavirus Outbreak Control team is working to the [Covid Community Alert](https://coronavirus-outbreak-control.github.io/web) system (aka Covidapp).
-	    They released the the frontends of its system with an open source license in its [repository](https://github.com/coronavirus-outbreak-control/). 
-	    Authorities and authorized people were able to investigate the whole system. You can ask the team to access to the whole source code.
+	    the Coronavirus Outbreak Control team is working to the [Covid Community Alert](https://coronavirus-outbreak-control.github.io/web) system (aka CovidApp).
+	    They released the whole system open source in its [GitLab repository](https://gitlab.com/coronavirus-outbreak-control). 
 	    A [video is available](https://youtu.be/k2OcIFyb9GE)
 	</td>
 </tr>
