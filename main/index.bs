@@ -80,14 +80,14 @@ Some requirements apply to *SafeTogether applications*:
 
 *Reference Implementations* are  *SafeTogether applications* that are compliant with following requirements:
 
-- *Reference Implementations* source **MUST**  be available at least to the the operators in charge 
-- *Reference Implementations* **SHOULD** be released with an Open Source
-- *Reference Implementations* **MUST** clearly expose any IPR dependencies .
+- *Reference Implementations* source **MUST**  be available at least to the the operators in charge;
+- *Reference Implementations* **SHOULD** be released with an Open Source license  ([[FSF]]);
+- *Reference Implementations* **MUST** clearly declare any IPR dependencies .
 
-License (possibly) defined as free by Free Software Fondation definition ([[FSF]]). Here is a known list:
+Here is a known list of *Reference Implementations*:
 
 <table border="1">
-<tr><th>Application type </th><th>State</th><th>Resources</th></tr>
+<tr><th>Type</th><th>Maturity</th><th>Resources</th></tr>
 <tr>
 	<td>Tracing</td>
 	<td>ready to deploy</td>
@@ -100,7 +100,8 @@ License (possibly) defined as free by Free Software Fondation definition ([[FSF]
 </tr>
 
 <tr>Quarantine</td>
-	<td>ready to test</td>
+	<td>Quarantine</td>
+	<td>demo ready</td>
 	<td> 
 	    A reference implementation for *Quarantine* System  by [KeyLess](https://keyless.io/). The application uses a biometric multi-factor authentication platform
 	    powered by patent pending privacy-enhancing security technology owned by KeyLess
