@@ -34,9 +34,9 @@ Many people contributed to this specification; here is an incomplete list (pleas
 
 Many thanks to [all contributors in GitHub](https://github.com/safe-together/specification/graphs/contributors)
 
-# References # {#protocols_references}
+# Protocol References # {#protocols_references}
 
-These documents **SHOULD** be taken into consideration:
+These documents **MUST** be taken into consideration for tracing domain :
 
 - [CovidApp - Covid Community Alert Protocol Description](https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf)
 - keyless protocols [see documentation in restricted SafeTogether space](https://nc.copernicani.it/apps/files/?dir=/COP.PIPPO/keyless.io&fileid=27514)
@@ -46,6 +46,13 @@ These documents **SHOULD** be taken into consideration:
 
 **Note that [DP-3T  is not  PEEP-PT](https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t)**
 
+These documents **MUST** be taken into consideration for certification domain: 
+
+- [[!verifiableCredentials]] for credential definition standard made by W3C
+- [[!indy]] a reference implementation for Self Sovereign Identity (SSI)
+- The [Sovrin Foundation](https://sovrin.org/) as an open source specification framework that implements SSI
+
+Note: to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it , but it states that you know it and you are able to describe why you adopt it or not.
 
 # Architectures # {#architecture}
 
@@ -73,6 +80,24 @@ Issue: We could imagine that the same (or similar) app used by the fragile peopl
 		"title": "The SafeTogether personas & user stories",
 		"authors": [
 	      " SafeTogether Stories Panel"
+	    ]
+	},
+	"verifiableCredentials":{
+		"href": "https://www.w3.org/TR/vc-data-model/",
+		"title": "Verifiable Credentials Data Model 1.0",
+		"authors": [
+	      "Manu Sporny",
+	      "Dave Longley",
+	      "David Chadwick"
+	    ]
+	},
+	"indy": {
+		"href": "https://github.com/hyperledger/indy-sdk",
+		"title": "hyperledger/indy-sdk repository",
+		"authors": [
+	      "Manu Sporny",
+	      "Dave Longley",
+	      "David Chadwick"
 	    ]
 	}
 }

@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 70ffa93, updated Fri May 1 10:12:04 2020 -0700" name="generator">
+  <meta content="Bikeshed version 34fcd98, updated Sun May 3 08:04:32 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/protocols/" rel="canonical">
-  <meta content="b30c610db4b2576851e1a97c9ed7749a5178ad5d" name="document-revision">
+  <meta content="13c60567190c8a47f48d5d3c015f412f4a965eff" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Protocols and Architectures</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-02">2 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-04">4 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 2 May 2020,
+In addition, as of 4 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1406,7 +1406,7 @@ Parts of this work may be from another specification document.  If so, those par
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
-    <li><a href="#protocols_references"><span class="secno">1</span> <span class="content">References</span></a>
+    <li><a href="#protocols_references"><span class="secno">1</span> <span class="content">Protocol References</span></a>
     <li>
      <a href="#architecture"><span class="secno">2</span> <span class="content">Architectures</span></a>
      <ol class="toc">
@@ -1440,8 +1440,8 @@ However, the information in this document is still subject to change.
      <p>Luciano Baresi</p>
    </ul>
    <p>Many thanks to <a href="https://github.com/safe-together/specification/graphs/contributors">all contributors in GitHub</a></p>
-   <h2 class="heading settled" data-level="1" id="protocols_references"><span class="secno">1. </span><span class="content">References</span><a class="self-link" href="#protocols_references"></a></h2>
-   <p>These documents <strong>SHOULD</strong> be taken into consideration:</p>
+   <h2 class="heading settled" data-level="1" id="protocols_references"><span class="secno">1. </span><span class="content">Protocol References</span><a class="self-link" href="#protocols_references"></a></h2>
+   <p>These documents <strong>MUST</strong> be taken into consideration for tracing domain :</p>
    <ul>
     <li data-md>
      <p><a href="https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf">CovidApp - Covid Community Alert Protocol Description</a></p>
@@ -1455,6 +1455,16 @@ However, the information in this document is still subject to change.
      <p><a href="https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-BluetoothSpecification.pdf">Apple-Google Protocol description</a></p>
    </ul>
    <p>**Note that <a href="https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t">DP-3T  is not  PEEP-PT</a>**</p>
+   <p>These documents <strong>MUST</strong> be taken into consideration for certification domain:</p>
+   <ul>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-verifiablecredentials">[verifiableCredentials]</a> for credential definition standard made by W3C</p>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-indy">[indy]</a> a reference implementation for Self Sovereign Identity (SSI)</p>
+    <li data-md>
+     <p>The <a href="https://sovrin.org/">Sovrin Foundation</a> as an open source specification framework that implements SSI</p>
+   </ul>
+   <p class="note" role="note"><span>Note:</span> to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it , but it states that you know it and you are able to describe why you adopt it or not.</p>
    <h2 class="heading settled" data-level="2" id="architecture"><span class="secno">2. </span><span class="content">Architectures</span><a class="self-link" href="#architecture"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="shielding-architecture"><span class="secno">2.1. </span><span class="content">Shielding system architecture</span><a class="self-link" href="#shielding-architecture"></a></h3>
    <p class="note" role="note"><span>Note:</span> just a firts draft
@@ -1612,12 +1622,16 @@ Issue: We could imagine that the same (or similar) app used by the fragile peopl
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-indy">[INDY]
+   <dd>Manu Sporny; Dave Longley; David Chadwick. <a href="https://github.com/hyperledger/indy-sdk">hyperledger/indy-sdk repository</a>. URL: <a href="https://github.com/hyperledger/indy-sdk">https://github.com/hyperledger/indy-sdk</a>
    <dt id="biblio-process">[Process]
    <dd> SafeTogether Process Panel. <a href="https://safe-together.github.io/specification/process">The SafeTogether Process</a>. URL: <a href="https://safe-together.github.io/specification/process">https://safe-together.github.io/specification/process</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
    <dt id="biblio-stories">[STORIES]
    <dd> SafeTogether Stories Panel. <a href="https://safe-together.github.io/specification/stories">The SafeTogether personas &amp; user stories</a>. URL: <a href="https://safe-together.github.io/specification/stories">https://safe-together.github.io/specification/stories</a>
+   <dt id="biblio-verifiablecredentials">[verifiableCredentials]
+   <dd>Manu Sporny; Dave Longley; David Chadwick. <a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials Data Model 1.0</a>. URL: <a href="https://www.w3.org/TR/vc-data-model/">https://www.w3.org/TR/vc-data-model/</a>
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
