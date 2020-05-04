@@ -61,7 +61,7 @@ Note: to say that a standard/protocol/specification must be taken into considera
 
 ## Shielding system architecture ## {#shielding-architecture}
 
-Note: just a firts draft
+Note: just a first draft, work in progress in the Shielding pane...
 Note: <img src="Architecture.svg" width="100%"/>
 See also [[!stories]]
 
