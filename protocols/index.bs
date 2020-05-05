@@ -71,6 +71,8 @@ The Shielding system adopts following standards and framework:
 
 Here  is an example of how such standards are user to implement a Marco Journey:
 
+Issue(37): check consistence with related user stories
+
 **step** - Marco si reca da Giovanni per verificare la sua immunità al Covid-19 ed esegue i test sierologici che danno esito positivo.
 
 **step** - Giovanni invita Marco a scaricare la app di shielding e ad effettuare l’onboarding, se gia non è inpossesso

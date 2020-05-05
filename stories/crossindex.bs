@@ -4,7 +4,10 @@ Here is a cross-reference index between stories and application domains:
 
 **Tracing***:
 
-Issue(10): add stories about contact tracing domain.
+Issue(10): missing stories about contact tracing domain.
+
+Issue: missing stories about auto-certification domain.
+
 
 **Quarantine**:
 

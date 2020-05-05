@@ -42,7 +42,7 @@ SafeTogether is a non-for-profit efforts of a wide group of international volunt
 
 Volunteers are private individuals, professionals, students and people connected or belonging to supporting institutions and private companies who joined pro bono the endeavour.
 
-The volunteers are divided into sub-projects teams and in coordination with each other.
+The volunteers are divided into sub-projects teams (i.e. *Application Domains*) and in coordination with each other.
 
 
 1. **Self-certification of movements**: measure to comply with State or regional requirements. It allows to forecast places at risk of crowding, to report them to the authorities, to discourage the influx of people, informing people so they can decide to move in greater safety. It digitizes the procedure for the citizen and drastically speeds up the control by the authorities.
@@ -84,10 +84,10 @@ Some requirements apply to *SafeTogether applications*:
 - *Reference Implementations* **SHOULD** be released with an Open Source license  ([[FSF]]);
 - *Reference Implementations* **MUST** clearly declare any IPR dependencies .
 
-Here is a known list of *Reference Implementations*:
+There **MAY** exists more than one *Reference Implementation" for each application domain. Here is a known list:
 
 <table border="1">
-<tr><th>Type</th><th>Maturity</th><th>Resources</th></tr>
+<tr><th>Domain </th><th>Maturity</th><th>Resources</th></tr>
 <tr>
 	<td>Tracing</td>
 	<td>ready to deploy</td>
