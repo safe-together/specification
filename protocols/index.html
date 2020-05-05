@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 34fcd98, updated Sun May 3 08:04:32 2020 -0700" name="generator">
+  <meta content="Bikeshed version 4be3a54, updated Mon May 4 06:47:10 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/protocols/" rel="canonical">
-  <meta content="3363c9a5514db9ab8239b77219147cac2db4235c" name="document-revision">
+  <meta content="983fe22896334f067b8f84872c7b945682a3d4bd" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Protocols and Architectures</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-04">4 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-05">5 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 4 May 2020,
+In addition, as of 5 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1410,7 +1410,12 @@ Parts of this work may be from another specification document.  If so, those par
     <li>
      <a href="#architecture"><span class="secno">2</span> <span class="content">Architectures</span></a>
      <ol class="toc">
-      <li><a href="#shielding-architecture"><span class="secno">2.1</span> <span class="content">Shielding system architecture</span></a>
+      <li>
+       <a href="#shielding-architecture"><span class="secno">2.1</span> <span class="content">Shielding system architecture</span></a>
+       <ol class="toc">
+        <li><a href="#shielding-protocol-usage"><span class="secno">2.1.1</span> <span class="content">Protocol usage</span></a>
+        <li><a href="#shielding-system-components"><span class="secno">2.1.2</span> <span class="content">System components</span></a>
+       </ol>
      </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
@@ -1470,6 +1475,98 @@ However, the information in this document is still subject to change.
    <p class="note" role="note"><span>Note:</span> to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it , but it states that you know it and you are able to describe why you adopt it or not.</p>
    <h2 class="heading settled" data-level="2" id="architecture"><span class="secno">2. </span><span class="content">Architectures</span><a class="self-link" href="#architecture"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="shielding-architecture"><span class="secno">2.1. </span><span class="content">Shielding system architecture</span><a class="self-link" href="#shielding-architecture"></a></h3>
+   <h4 class="heading settled" data-level="2.1.1" id="shielding-protocol-usage"><span class="secno">2.1.1. </span><span class="content">Protocol usage</span><a class="self-link" href="#shielding-protocol-usage"></a></h4>
+   <p>The Shielding system adopts following standards and framework:</p>
+   <ul>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-verifiablecredentials">[verifiableCredentials]</a> for credential definition standard made by W3C</p>
+    <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-indy">[indy]</a> a reference implementation for Self Sovereign Identity (SSI)</p>
+    <li data-md>
+     <p>The <a href="https://sovrin.org/">Sovrin Foundation</a> as an open source specification framework that implements SSI</p>
+   </ul>
+   <p>Here  is an example of how such standards are user to implement a Marco Journey:</p>
+   <p><strong>step</strong> - Marco si reca da Giovanni per verificare la sua immunità al Covid-19 ed esegue i test sierologici che danno esito positivo.</p>
+   <p><strong>step</strong> - Giovanni invita Marco a scaricare la app di shielding e ad effettuare l’onboarding, se gia non è inpossesso</p>
+   <ul>
+    <li data-md>
+     <p>La app di shielding è un edge agent di Sovrin che funziona da wallet dei certificati (verifiable claims) posseduti da Marco</p>
+    <li data-md>
+     <p>Il processo di onboarding dell’applicazione di shielding comprende la sua identificazione e la connessione di Marco al servizio sanitario nazionale che opera come issuer dei certificati</p>
+   </ul>
+   <p><strong>step</strong> - Giovanni il dottore emette (issues) il certificato di immunità per Marco e glielo invia:</p>
+   <ul>
+    <li data-md>
+     <p>Il certificato di immunità è una verifiable claim, con uno schema ben definito</p>
+    <li data-md>
+     <p>Il dottore operando sulla propria interfaccia verso il sistema di issuing dei certificati registra il risultato dell’esame (genera la verifiable claim)</p>
+    <li data-md>
+     <p>Il sistema di issuing dei certificati firma la verifiable claim nel ledger pubblico di Sovrin</p>
+    <li data-md>
+     <p>Il sistema di issuing dei certificati invia la verifiable claim al wallet di Marco</p>
+    <li data-md>
+     <p>La app di Marco si attiva notificandogli l’azione di Giovanni che intende rilasciare il certificato</p>
+    <li data-md>
+     <p>Marco accetta l’emissione del certificato, questa azione controfirma la claim nel ledger pubblico e salva i dati collegati nel wallet.</p>
+   </ul>
+   <p><strong>step</strong> - Marco si reca presso la protezione civile per chiedere di essere ammesso al programma di shielding</p>
+   <p><strong>step</strong> - Walter (protezione civile) chiede a Marco di presentare il certificato di immunità</p>
+   <ul>
+    <li data-md>
+     <p>Walter chiede a Marco di connettere la sua app di shielding alla app della protezione civile</p>
+    <li data-md>
+     <p>La app della protezione civile opera sia come issuer che come verifier di verifiable credentials possedute da Marco</p>
+    <li data-md>
+     <p>L’attivazione della connessione tra l’edge agent di Marco e il soggetto Protezione Civile permette a quest’ultima di chiedere la proof di un certificato e di emettere il certificato di appartenenza al programma di shielding</p>
+    <li data-md>
+     <p>Marco riceve la richiesta di connessione nella sua app e la conferma</p>
+    <li data-md>
+     <p>Da questo momento in poi Walter usando la app di Protezione Civile può chiedere a Marco dati contenuti nelle verifiable credentials che Marco possiede e può emettere nuove claims</p>
+    <li data-md>
+     <p>Attraverso la app di protezione civile, Walter chiede la proof a Marco del proprio certificato di immunità</p>
+    <li data-md>
+     <p>La richiesta di proof del possesso del certificato è accompagnata dalla richiesta di accesso ai dati firmati del certificato</p>
+    <li data-md>
+     <p>La app di shielding di Marco riceve notifica delle richiesta di accesso Marco approva la richiesta di accesso ai dati e invia la claim firmata alla app di protezione civile</p>
+    <li data-md>
+     <p>La app di Protezione Civile verifica la non revoca del certificato di immunità nel ledger pubblico e se ancora valido presenta il risultato a Walter</p>
+   </ul>
+   <p><strong>step</strong> - Walter verifica la validità del certificato</p>
+   <ul>
+    <li data-md>
+     <p>Walter utilizza i dati firmati nel certificato di Marco per decidere se il suo stato rientra nei parametri per l’acccesso al programma di shielding come volontario</p>
+   </ul>
+   <p><strong>step</strong> - Walter firma una attestazione di partecipazione di Marco al programma di Shielding della protezione Civile e la invia a Marco</p>
+   <ul>
+    <li data-md>
+     <p>La attestazione di partecipazione è una verifiable credential, con uno schema ben definito</p>
+    <li data-md>
+     <p>Walter operando sulla propria interfaccia verso il sistema di issuing dei certificati registra l’iscrizione di Marco (genera la verifiable claim)</p>
+    <li data-md>
+     <p>Il sistema di issuing dei certificati firma la verifiable claim nel ledger pubblico (e.g. di Sovrin)</p>
+    <li data-md>
+     <p>Il sistema di issuing dei certificati invia la verifiable claim al wallet di Marco</p>
+    <li data-md>
+     <p>La app di Marco si attiva notificandogli l’azione di Walter che intende rilasciare le credenziali</p>
+    <li data-md>
+     <p>Marco accetta l’emissione delle credenziali, questa azione controfirma la claim nel ledger pubblico e salva i dati collegati nel wallet.</p>
+   </ul>
+   <p><strong>step</strong> - Il call center del programma Shielding contatta Marco e gli chiede di fare una visita di cortesia alla signora Franca</p>
+   <ul>
+    <li data-md>
+     <p>Il call center utilizza il proprio sistema che agisce come verifier nell’architettura SSI per verificare le seguenti claim di Marco: stato di immunità, iscrizione al programma di protezione civile</p>
+    <li data-md>
+     <p>Il call center invia una richiesta di proof per le claim a Marco</p>
+    <li data-md>
+     <p>L’edge agent di Marco (la app di Shielding) si attiva notificando la richiesta di accesso del call center Marco approva la richiesta di accesso</p>
+    <li data-md>
+     <p>Il call center riceve i dati che confermano i claim di Marco e genera un codice di intervento per Marco con una durata definita, e lo invia alla app di Marco</p>
+   </ul>
+   <p><strong>step</strong> - Marco citofona alla signora Franca fornendole il codice ricevuto dal call center</p>
+   <p><strong>step</strong> - La signora Franca telefona al numero verde della protezione civile e comunica il codice di Marco</p>
+   <p><strong>step</strong> - Il call center rassicura la signora Franca sul fatto che Marco è un volontario autorizzato.</p>
+   <p class="issue" id="issue-f4ec7746"><a class="self-link" href="#issue-f4ec7746"></a> translate in english</p>
+   <h4 class="heading settled" data-level="2.1.2" id="shielding-system-components"><span class="secno">2.1.2. </span><span class="content">System components</span><a class="self-link" href="#shielding-system-components"></a></h4>
    <p class="note" role="note"><span>Note:</span> just a first draft, work in progress in the Shielding pane...
 Note: <img src="Architecture.svg" width="100%"> See also <a data-link-type="biblio" href="#biblio-stories">[stories]</a></p>
    <p class="issue" id="issue-61e9c230"><a class="self-link" href="#issue-61e9c230"></a> volunteers are not the only target of the shielding system.
@@ -1638,6 +1735,7 @@ Issue: We could imagine that the same (or similar) app used by the fragile peopl
   </dl>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
+   <div class="issue"> translate in english<a href="#issue-f4ec7746"> ↵ </a></div>
    <div class="issue"> volunteers are not the only target of the shielding system.
 Issue: See also <a href="https://safe-together.github.io/specification/stories#US15">The SafeTogether personas &amp; user stories §US15</a> . 
 Issue: We could imagine that the same (or similar) app used by the fragile people can be used by anyone that requires to check someone’s immunity.<a href="#issue-61e9c230"> ↵ </a></div>
