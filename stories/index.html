@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 4be3a54, updated Mon May 4 06:47:10 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="983fe22896334f067b8f84872c7b945682a3d4bd" name="document-revision">
+  <meta content="7d3c8787f04d3ab150adbe9d1bb45e081554bb42" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1736,7 +1736,6 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    <p class="issue" id="issue-00c1d945"><a class="self-link" href="#issue-00c1d945"></a> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?</p>
    <p><strong>state privacy:</strong></p>
    <p class="note" role="note"><span>Note:</span> The above table  is informative only <img src="tab1.png"></p>
-   <p class="issue" id="issue-70d0909a"><a class="self-link" href="#issue-70d0909a"></a> remove the Negative status from the table</p>
    <p>Privacy and rights:</p>
    <dl>
     <dt data-md>Citizens <strong>MUST</strong> have <em>view only</em> rights on their state
@@ -1757,7 +1756,8 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    <h2 class="heading settled" data-level="3" id="cross-index"><span class="secno">3. </span><span class="content">Stories cross index</span><a class="self-link" href="#cross-index"></a></h2>
    <p>Here is a cross-reference index between stories and application domains:</p>
    <p><strong>Tracing</strong>*:</p>
-   <p class="issue" id="issue-89cfdeb4"><a class="self-link" href="#issue-89cfdeb4"></a> add stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a></p>
+   <p class="issue" id="issue-b3ac7333"><a class="self-link" href="#issue-b3ac7333"></a> missing stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a></p>
+   <p class="issue" id="issue-cfa79c15"><a class="self-link" href="#issue-cfa79c15"></a> missing stories about auto-certification domain.</p>
    <p><strong>Quarantine</strong>:</p>
    <ul>
     <li data-md>
@@ -1809,9 +1809,7 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
 Giovanni has produced the medical certificate with the patient’s state of health and digitally signed it 
 using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
 In addition, this report must be sent in encrypted mode to the patient.
-The medical certificate must be saved in the device inside the App.
-Giovanni has the task of recording the biometric data of the patients.</p>
-   <p class="issue" id="issue-7e293c91"><a class="self-link" href="#issue-7e293c91"></a> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.</p>
+The medical certificate must be saved in the device inside the App.</p>
    <p><strong>Postcondition:</strong></p>
    <p>Marco’s state is quarantined.</p>
    <p><strong>Story:</strong></p>
@@ -1910,7 +1908,6 @@ asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Marco C
 system, and marks his state in the backend as negative. The
 mobile app no longer receives notifications and no longer
 checks Marco’s location.</p>
-   <p class="issue" id="issue-6f5099aa"><a class="self-link" href="#issue-6f5099aa"></a> US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?</p>
    <h3 class="heading settled" data-level="4.6" id="US06"><span class="secno">4.6. </span><span class="content">US06 - Marco Dies while at the Hospital -- Immune</span><a class="self-link" href="#US06"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -1970,16 +1967,7 @@ The operator app checks Marco’s state (including the expiration date if the im
    <p><strong>Story:</strong></p>
    <p>Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individuals. The recognition is done by comparing the biopmetric data in 
-the blockchain and the Hash of the report saved inside Marco’s device. 
-Only the merging of all data associated with Marco gives access to the report 
-(biometric data, hash of the report and user id).
-Marco proves that he is immune as described in <a href="#US08">§ 4.8 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
-photo, to protezione civile’s system. Protezione civile’s system
-uses the COC backend to send a notification to Marco’s mobile
-app. Marco authenticates in front of Walter, and the app records
-Marco as a volunteer.</p>
-   <p class="issue" id="issue-db98b45a"><a class="self-link" href="#issue-db98b45a"></a> No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?</p>
+at-risk individuals.</p>
    <h3 class="heading settled" data-level="4.10" id="US10"><span class="secno">4.10. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -2083,8 +2071,6 @@ The policeman asks Walter to revoke Marco’s volunteer status.</p>
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status.</p>
-   <p class="issue" id="issue-b2e9bff1"><a class="self-link" href="#issue-b2e9bff1"></a> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB? <a href="https://github.com/safe-together/specification/issues/17">&lt;https://github.com/safe-together/specification/issues/17></a></p>
-   <p class="issue" id="issue-2d6120c0"><a class="self-link" href="#issue-2d6120c0"></a> How the sanitary personnel are enrolled? Is it a metter of the application or someone else? <a href="https://github.com/safe-together/specification/issues/18">&lt;https://github.com/safe-together/specification/issues/18></a></p>
    <h2 class="heading settled" data-level="5" id="user_needs"><span class="secno">5. </span><span class="content">User needs</span><a class="self-link" href="#user_needs"></a></h2>
    <h3 class="heading settled" data-level="5.1" id="Marco-needs"><span class="secno">5.1. </span><span class="content">Marco – Volunteer</span><a class="self-link" href="#Marco-needs"></a></h3>
     Issue: the Marco needs [1 - 17] should be detailed 
@@ -2420,13 +2406,8 @@ As part of the Fragile Population, Franca needs to express her pleasure/displeas
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
    <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?<a href="#issue-00c1d945"> ↵ </a></div>
-   <div class="issue"> remove the Negative status from the table<a href="#issue-70d0909a"> ↵ </a></div>
-   <div class="issue"> add stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-89cfdeb4"> ↵ </a></div>
-   <div class="issue"> no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.<a href="#issue-7e293c91"> ↵ </a></div>
-   <div class="issue"> US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?<a href="#issue-6f5099aa"> ↵ </a></div>
-   <div class="issue"> No biometric data must be stored. Can we use keyless instead? Do we need a blockchain?<a href="#issue-db98b45a"> ↵ </a></div>
-   <div class="issue"> Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB? <a href="https://github.com/safe-together/specification/issues/17">&lt;https://github.com/safe-together/specification/issues/17></a><a href="#issue-b2e9bff1"> ↵ </a></div>
-   <div class="issue"> How the sanitary personnel are enrolled? Is it a metter of the application or someone else? <a href="https://github.com/safe-together/specification/issues/18">&lt;https://github.com/safe-together/specification/issues/18></a><a href="#issue-2d6120c0"> ↵ </a></div>
+   <div class="issue"> missing stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-b3ac7333"> ↵ </a></div>
+   <div class="issue"> missing stories about auto-certification domain.<a href="#issue-cfa79c15"> ↵ </a></div>
    <div class="issue"> App functionalities is to be extended<a href="#issue-4560eae2"> ↵ </a></div>
    <div class="issue"> an app for civil force/ police is needed?<a href="#issue-0bd43c78"> ↵ </a></div>
    <div class="issue"> if it is an immunity certification, the test outcome MUST be positive (has the antibodies), therefore this field is redundant.<a href="#issue-c55111ac"> ↵ </a></div>

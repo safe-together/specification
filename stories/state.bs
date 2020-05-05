@@ -40,8 +40,6 @@ Issue: can assume that an immune person doesn’t carrying the virus? How about 
 
 Note: The above table  is informative only <img src="tab1.png"/>
 
-Issue: remove the Negative status from the table
-
 Privacy and rights:
 
 : Citizens **MUST** have *view only* rights on their state
