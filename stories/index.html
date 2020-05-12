@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version 4be3a54, updated Mon May 4 06:47:10 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="7d3c8787f04d3ab150adbe9d1bb45e081554bb42" name="document-revision">
+  <meta content="e8ea0980580a8a4cfaa34df751bf491e7b8e9fce" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Personas and User Stories</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-05">5 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-12">12 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 5 May 2020,
+In addition, as of 12 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1950,10 +1950,9 @@ Marco that his state is now negative.</p>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s state is immune</p>
    <p><strong>Story:</strong></p>
-   <p>Marco is asked by
-Walter to prove that his state is immune. Marco opens the <em>Mobile App</em> and authenticates. The app shows a QR code that contains Marco’s COC_ID. 
-Walter scans the QR code using the operator app.
-The operator app checks Marco’s state (including the expiration date if the immunity has an expiration date), and returns it to Walter.</p>
+   <p>Marco is asked by Walter to prove that his state is immune. Walter sends an immunity request to Marco .
+Marco recives a notification on his smartphone, he opens the <em>Mobile App</em>, he authenticates and he responds to the request prooving his immunity.
+Walter’s app verifies Marco’s proof (including the expiration date if the immunity has an expiration date).</p>
    <h3 class="heading settled" data-level="4.9" id="US09"><span class="secno">4.9. </span><span class="content">US09 - Marco Volunteers to Join Shielding Program</span><a class="self-link" href="#US09"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -1967,7 +1966,10 @@ The operator app checks Marco’s state (including the expiration date if the im
    <p><strong>Story:</strong></p>
    <p>Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individuals.</p>
+at-risk individuals support. 
+Marco proves that he is immune as described in <a href="#US08">§ 4.8 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
+photo, to protezione civile’s system. Protezione civile’s system
+creates a volunteers certificate and sends it to Marco’s, that saves it on the his certificate wallet on the smarphone.</p>
    <h3 class="heading settled" data-level="4.10" id="US10"><span class="secno">4.10. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -2012,12 +2014,14 @@ negative, Marco’s state is set to negative.</p>
    <p><strong>Preconditions:</strong></p>
    <p>Marco’s state is immune and he is an official volonteer.</p>
    <p><strong>Story:</strong></p>
-   <p>Walter sends Marco to Franca. Marco knocks on Franca’s door, who
-asks him to identify himself. Marco authenticates with the <em>Mobile App</em> on his smartphone using his face (simalar to <a href="#US02">§ 4.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>),
-this sends a notification to the backend which verifies tha Marco is in fact immune and he is in fact a volonteer.
-The backend informs Franca’s device (even via a call form a call center depending on Franca’s possibilities)
-that Marco is or isn’t who he claims to be.
-If he is in the shielding program Franca can trust him and open the door otherwise she will be instructed by her device not to open the door.</p>
+   <p>Walter asks for Marco to bring Franca some medicines asking him for his volunteer and immunity certificate.
+Marco with his <em>Mobile App</em> sends his certificates to Walter for approval.
+Walter then sends an autentication code to Marco.
+Marco knocks on Franca’s door, who
+asks him to identify himself. Marco authenticates with the
+code.
+Franca calls the civil defence call center to check the truthfulness of the code.
+After that Franca can trust him and open the door otherwise she won’t open the door.</p>
    <h3 class="heading settled" data-level="4.13" id="US13"><span class="secno">4.13. </span><span class="content">US13 - Antibodies test</span><a class="self-link" href="#US13"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
@@ -2071,6 +2075,7 @@ The policeman asks Walter to revoke Marco’s volunteer status.</p>
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status.</p>
+   <p class="issue" id="issue-935fb4c9"><a class="self-link" href="#issue-935fb4c9"></a> add story about Marco is immune by Vaccine</p>
    <h2 class="heading settled" data-level="5" id="user_needs"><span class="secno">5. </span><span class="content">User needs</span><a class="self-link" href="#user_needs"></a></h2>
    <h3 class="heading settled" data-level="5.1" id="Marco-needs"><span class="secno">5.1. </span><span class="content">Marco – Volunteer</span><a class="self-link" href="#Marco-needs"></a></h3>
     Issue: the Marco needs [1 - 17] should be detailed 
@@ -2408,6 +2413,7 @@ As part of the Fragile Population, Franca needs to express her pleasure/displeas
    <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?<a href="#issue-00c1d945"> ↵ </a></div>
    <div class="issue"> missing stories about contact tracing domain. <a href="https://github.com/safe-together/specification/issues/10">&lt;https://github.com/safe-together/specification/issues/10></a><a href="#issue-b3ac7333"> ↵ </a></div>
    <div class="issue"> missing stories about auto-certification domain.<a href="#issue-cfa79c15"> ↵ </a></div>
+   <div class="issue"> add story about Marco is immune by Vaccine<a href="#issue-935fb4c9"> ↵ </a></div>
    <div class="issue"> App functionalities is to be extended<a href="#issue-4560eae2"> ↵ </a></div>
    <div class="issue"> an app for civil force/ police is needed?<a href="#issue-0bd43c78"> ↵ </a></div>
    <div class="issue"> if it is an immunity certification, the test outcome MUST be positive (has the antibodies), therefore this field is redundant.<a href="#issue-c55111ac"> ↵ </a></div>

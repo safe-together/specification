@@ -216,10 +216,9 @@ Marco’s state is immune
 
 **Story:**
 
-Marco is asked by
-Walter to prove that his state is immune. Marco opens the *Mobile App* and authenticates. The app shows a QR code that contains Marco’s COC_ID. 
-Walter scans the QR code using the operator app.
-The operator app checks Marco’s state (including the expiration date if the immunity has an expiration date), and returns it to Walter.
+Marco is asked by Walter to prove that his state is immune. Walter sends an immunity request to Marco . 
+Marco recives a notification on his smartphone, he opens the *Mobile App*, he authenticates and he responds to the request prooving his immunity.
+Walter's app verifies Marco’s proof (including the expiration date if the immunity has an expiration date).
 
 
 ## US09 - Marco Volunteers to Join Shielding Program ## {#US09}
@@ -237,7 +236,12 @@ Marco’s state is immune
 
 Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individuals. 
+at-risk individuals support. 
+Marco proves that he is immune as described in
+[[#US08]]. Walter registers Marco’s information, including his COC_ID and
+photo, to protezione civile’s system. Protezione civile’s system
+creates a volunteers certificate and sends it to Marco's, that saves it on the his certificate wallet on the smarphone.
+
 
 
 ## US10 - Marco’s Immunity Expires ## {#US10}
@@ -304,13 +308,14 @@ Marco’s state is immune and he is an official volonteer.
  
 **Story:**
 
-Walter sends Marco to Franca. Marco knocks on Franca’s door, who
+Walter asks for Marco to bring Franca some medicines asking him for his volunteer and immunity certificate.
+Marco with his *Mobile App* sends his certificates to Walter for approval.
+Walter then sends an autentication code to Marco.
+Marco knocks on Franca’s door, who
 asks him to identify himself. Marco authenticates with the
-*Mobile App* on his smartphone using his face (simalar to [[#US02]]),
-this sends a notification to the backend which verifies tha Marco is in fact immune and he is in fact a volonteer.
-The backend informs Franca’s device (even via a call form a call center depending on Franca's possibilities)
-that Marco is or isn't who he claims to be.
-If he is in the shielding program Franca can trust him and open the door otherwise she will be instructed by her device not to open the door.
+code.
+Franca calls the civil defence call center to check the truthfulness of the code.
+After that Franca can trust him and open the door otherwise she won't open the door.
 
 
 
@@ -389,3 +394,6 @@ Following her bosse's advice Aleksandra takes the immunity test and obtains an i
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status. 
+
+
+Issue: add story about Marco is immune by Vaccine
