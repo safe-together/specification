@@ -2,6 +2,7 @@
 
 This section describes some paradigmatic stakeholder journeys (story)
 
+
 ## US01: Marco is positive to the Swab Test ## {#US01}
 
 **Actors:**
@@ -16,9 +17,7 @@ Giovanni has produced the medical certificate with the patient's state of health
 using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
 In addition, this report must be sent in encrypted mode to the patient.
 The medical certificate must be saved in the device inside the App.
-Giovanni has the task of recording the biometric data of the patients.
 
-Issue: no biometric data MUST BE RECORDED in any case. We can use keyless method to avoid this.
 
 
 **Postcondition:**
@@ -155,8 +154,6 @@ mobile app no longer receives notifications and no longer
 checks Marco’s location.
 
 
-Issue: US05 serve? Si può guarire in ospedale o si presume ci debba comunque essere un periodo di convalescenza a casa?
-
 ## US06 - Marco Dies while at the Hospital -- Immune ## {#US06}
 
 **Actors:**
@@ -219,9 +216,9 @@ Marco’s state is immune
 
 **Story:**
 
-Marco is asked by Walter to prove that his state is immune. Walter sends an immunity request to Marco with the *Mobile app*. 
+Marco is asked by Walter to prove that his state is immune. Walter sends an immunity request to Marco . 
 Marco recives a notification on his smartphone, he opens the *Mobile App*, he authenticates and he responds to the request prooving his immunity.
-Walter's app checks Marco’s proof (including the expiration date if the immunity has an expiration date).
+Walter's app verifies Marco’s proof (including the expiration date if the immunity has an expiration date).
 
 
 ## US09 - Marco Volunteers to Join Shielding Program ## {#US09}
@@ -239,11 +236,11 @@ Marco’s state is immune
 
 Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
-at-risk individual s. 
+at-risk individuals support. 
 Marco proves that he is immune as described in
 [[#US08]]. Walter registers Marco’s information, including his COC_ID and
 photo, to protezione civile’s system. Protezione civile’s system
-creates a volunteers certificate and sends it to Marco's application, that saves it on the device.
+creates a volunteers certificate and sends it to Marco's, that saves it on the his certificate wallet on the smarphone.
 
 
 
@@ -399,7 +396,4 @@ At the border she authenticates herself using the user application by showing th
 The authorities grant her access after verifying her immunity status. 
 
 
-
-Issue(17): Should the volunteer have a specific certification that proves its status, or is the status just an information stored on the DB?
-
-Issue(18): How the sanitary personnel are enrolled? Is it a metter of the application or someone else?
+Issue: add story about Marco is immune by Vaccine
