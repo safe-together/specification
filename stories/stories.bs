@@ -352,6 +352,11 @@ Paola asks for Marco's identification document and via the operator app she gene
 When the certification is generated, this prompts a QRcode which Marco scans via the app and obtain his certification.
 
 
+
+Note: this story is very similar to the case where Marco is immune because of the vaccine.
+
+Note: see similar case in covidcreds.com workstream https://docs.google.com/document/d/1anv0qiqYJXypyprX7qbolVgJrA18QHZ8BQjBLBpIAcY
+
 ## US14 - Marco is a bad person ## {#US14}
 
 **Actors:**
@@ -396,4 +401,3 @@ At the border she authenticates herself using the user application by showing th
 The authorities grant her access after verifying her immunity status. 
 
 
-Issue: add story about Marco is immune by Vaccine
