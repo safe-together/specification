@@ -33,3 +33,9 @@ Issue: missing stories about auto-certification domain.
 - [[#US15]]
 
 
+
+**Self-certification **:
+
+- [[#US16]]
+
+
