@@ -33,6 +33,7 @@ Many people contributed to this specification; here is an incomplete list (pleas
 - Luca Merealli
 - Luciano Baresi
 - Michele D'Aliessi
+- Michele Mondora
 - Mohd Ehtesham Miah
 - Silvia Loffi
 - Stefano Quintarelli
