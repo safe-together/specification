@@ -400,4 +400,23 @@ Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status. 
 
+## US16 - Marco goes to pharmacy or to the shopping center ## {#US16}
 
+**Actors:**
+- [[#Marco]]
+
+**Conditions:**
+
+**Preconditions:**
+Marco's state is unknown.
+Marco's wants to avoid gathering of people.
+
+**Postcondition**
+Marco's state is unchanged and didnt meet anyone.
+
+**Story:**
+Marco needs to go out, and exit his safe zone, to shop for foods and medicals.
+In accordance with the Italian law, he must exibit the self-certification document to state the need of exiting the safe zone. 
+Using his app, Marco chooses his destination and the time he plans to get there.
+The app shows how many people declared to go in that place at the same time, so that Marco can choose whether to go or to change his plans.
+Marco confirms he will go there. The app thus produces the documentation (pdf) to be printed out and shown to the police once outside.
