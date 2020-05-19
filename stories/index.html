@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 4be3a54, updated Mon May 4 06:47:10 2020 -0700" name="generator">
+  <meta content="Bikeshed version b945a0a, updated Thu May 14 16:19:50 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="05b116e77524bca537e4a4802c723d8c699f7681" name="document-revision">
+  <meta content="1ddd27e86b862563a05690aab24e3f3b4b883f51" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Personas and User Stories</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-12">12 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-19">19 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1390,7 +1390,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 12 May 2020,
+In addition, as of 19 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1448,6 +1448,7 @@ Parts of this work may be from another specification document.  If so, those par
       <li><a href="#US13"><span class="secno">4.13</span> <span class="content">US13 - Antibodies test</span></a>
       <li><a href="#US14"><span class="secno">4.14</span> <span class="content">US14 - Marco is a bad person</span></a>
       <li><a href="#US15"><span class="secno">4.15</span> <span class="content">US15 - Aleksandra crosses the italian border</span></a>
+      <li><a href="#US16"><span class="secno">4.16</span> <span class="content">US16 - Marco goes to pharmacy or to the shopping center</span></a>
      </ol>
     <li>
      <a href="#user_needs"><span class="secno">5</span> <span class="content">User needs</span></a>
@@ -2077,6 +2078,21 @@ The policeman asks Walter to revoke Marco’s volunteer status.</p>
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status.</p>
+   <h3 class="heading settled" data-level="4.16" id="US16"><span class="secno">4.16. </span><span class="content">US16 - Marco goes to pharmacy or to the shopping center</span><a class="self-link" href="#US16"></a></h3>
+   <p><strong>Actors:</strong></p>
+   <ul>
+    <li data-md>
+     <p><a href="#Marco">§ 1.2.3 Marco the Volunteer</a></p>
+   </ul>
+   <p><strong>Conditions:</strong></p>
+   <p><strong>Preconditions:</strong> Marco’s state is unknown.
+Marco’s wants to avoid gathering of people.</p>
+   <p><strong>Postcondition</strong> Marco’s state is unchanged and didnt meet anyone.</p>
+   <p><strong>Story:</strong> Marco needs to go out, and exit his safe zone, to shop for foods and medicals.
+In accordance with the Italian law, he must exibit the self-certification document to state the need of exiting the safe zone. 
+Using his app, Marco chooses his destination and the time he plans to get there.
+The app shows how many people declared to go in that place at the same time, so that Marco can choose whether to go or to change his plans.
+Marco confirms he will go there. The app thus produces the documentation (pdf) to be printed out and shown to the police once outside.</p>
    <h2 class="heading settled" data-level="5" id="user_needs"><span class="secno">5. </span><span class="content">User needs</span><a class="self-link" href="#user_needs"></a></h2>
    <h3 class="heading settled" data-level="5.1" id="Marco-needs"><span class="secno">5.1. </span><span class="content">Marco – Volunteer</span><a class="self-link" href="#Marco-needs"></a></h3>
     Issue: the Marco needs [1 - 17] should be detailed 
