@@ -420,3 +420,7 @@ In accordance with the Italian law, he must exibit the self-certification docume
 Using his app, Marco chooses his destination and the time he plans to get there.
 The app shows how many people declared to go in that place at the same time, so that Marco can choose whether to go or to change his plans.
 Marco confirms he will go there. The app thus produces the documentation (pdf) to be printed out and shown to the police once outside.
+
+
+
+
