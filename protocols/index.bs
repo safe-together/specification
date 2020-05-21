@@ -73,6 +73,7 @@ The Shielding system adopts following standards and framework:
 - [[!verifiableCredentials]] for credential definition standard made by W3C
 - [[!indy]] a reference implementation for Self Sovereign Identity (SSI)
 - The [Sovrin Foundation](https://sovrin.org/) as an open source specification framework that implements SSI
+- The [CovidCreds](https://covidcreds.com) that propose a shared format for Covid Relate Verifiable Credential.
 
 The architecture and the protocols for Shielding Reference application is described in 
 the [Shielding Project repository documentation](https://github.com/g0v-it/safetogether-shielding/tree/master/docs/system)
