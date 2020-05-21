@@ -13,11 +13,6 @@ This section describes some paradigmatic stakeholder journeys (story)
 **Preconditions:**
 
 Marco's state is unknown
-Giovanni has produced the medical certificate with the patient's state of health and digitally signed it 
-using the computer procedures of the hospital in which he operates and stores it digitally in the health repositories. 
-In addition, this report must be sent in encrypted mode to the patient.
-The medical certificate must be saved in the device inside the App.
-
 
 
 **Postcondition:**
@@ -26,19 +21,24 @@ Marco’s state is quarantined.
 
 **Story:**
 
-Marco visits Giovanni, who runs a Swab test on him (the result will be available in a few days dependending on the test).
-Giovanni asks Marco to install the *Mobile App*. The *Mobile App*
-requests Marco to show his face, then he is enrolled in the system. The
-app also creates a unique COC_ID, which is associated with Marco’s
-information.
-Giovanni registers Marco in the operator app which shows a QR-code.
-Marco scans the QR-code using his phone then he authenticates himelf to complete the registeration.
+Marco visits Giovanni, who runs a Swab test on him (the result will be available in a few days depending on the test).
+The Swap test is positive, so Giovanni calls Marco instructs him to go home
+immediately and asking him to install the *Mobile App*
+
+The *Mobile App* requests Marco to show his face, then he is enrolled in the system. The
+app also creates a unique COC_ID, which is associated with Marco’s information.
+
+Giovanni registers Marco in the sanitary system which sends an email to Marco; the email contains a QR-code.
+
+Note: QR-code could be substituted by a smart notification to Marco's smart-phone.
+
+Marco scans the QR-code using his phone then he authenticates himself to complete the registration.
+
 At this point, the *Mobile App* shows a single-button
 interface that, when pressed, records the current location and sets
 it as a possible quarantine location (depending on the test result).
-Giovanni instructs Marco to go home
-immediately and to press the button on the *Mobile App* once she
-arrives. After a predetermined amount of time (e.g., one hour) the
+
+After a predetermined amount of time (e.g., one hour) the
 *Mobile App* reminds Marco to press the button. Once at home
 Marco opens the *Mobile App* and presses the button. The mobile
 app shows a confirmation prompt, and then authenticates Marco
@@ -56,10 +56,9 @@ result in the operator app, which also notifies Marco’s
 
 - [[#Marco]]
 
-
 **Preconditions:**
 
-Marco’s swab test is positive.
+Marco’s state is quarantined.
 
 **Story:**
 
@@ -69,10 +68,12 @@ brings him into the *Mobile App*. The *Mobile App* asks him
 to authenticate using his face and checks that his current location
 is close to the location that was selected to complete the
 enrollment. The result of this check is reported to the authorities.
+
 If Marco does not respond to the notification in a timely manner
 (e.g., within 3 minutes), the *Mobile App* notifies him again.
 After a predetermined number of unanswered notifications (say 2),
 the *Mobile App* notifies the authorities.
+
 The *Mobile App*
 periodically polls Marco’s phone location. If the phone is outside
 of the designated quarantine area, it notifies Marco as well as the
@@ -84,7 +85,7 @@ authorities.
 **Actors:**
 
 - [[#Marco]]
-- [[#Maria]]
+- [[#Giovanni]]
 
 **Preconditions:**
 
@@ -97,8 +98,7 @@ Marco’s state is suspended.
 **Story:**
 
 Marco feels sick and calls an ambulance. He is taken to the hospital.
-At the hospital, Maria enters Marco’s codice fiscale into the
-system, marking his state on the backend as suspended. This
+At the hospital, an operator markes Marco's state on the backend as suspended. This
 dismisses any pending notification received by Marco’s Mobile App
 in the last 1-2 hours, and suspends the quarantine until further
 notice.
@@ -109,7 +109,6 @@ notice.
 **Actors:**
 
 - [[#Marco]]
-- [[#Maria]]
 
 **Preconditions:**
 
@@ -121,9 +120,9 @@ Marco’s state is quarantined.
 
 **Story:**
 
-Marco is still sick, but he no longer needs hospital care. Maria
-enters Marco’s codice fiscale into the system, marking his state on
-the backend as quarantined again. At this point, Marco has a
+Marco is still sick, but he no longer needs hospital care. 
+On hospital discharge,  an operator make Marco's state on
+as quarantined again. At this point, Marco has a
 predetermined amount of time (say, 2 hours) to go home. After the
 predetermined amount of time, Marco receives a notification, which
 asks him to authenticate as described in [[#US02]].
@@ -135,7 +134,6 @@ asks him to authenticate as described in [[#US02]].
 **Actors:**
 
 - [[#Marco]]
-- [[#Maria]]
 
 
 **Preconditions:**
@@ -148,9 +146,8 @@ Marco’s state is negative.
 
 **Story:**
 
-Marco is now healthy. Maria enters Marco’s codice fiscale into the
-system, and marks his state in the backend as negative. The
-mobile app no longer receives notifications and no longer
+Marco is now healthy.  On hospital discharge,  an operator make Marco's state in the backend as negative.
+The mobile app no longer receives notifications and no longer
 checks Marco’s location.
 
 
@@ -159,7 +156,6 @@ checks Marco’s location.
 **Actors:**
 
 - [[#Marco]]
-- [[#Maria]]
 
 
 **Preconditions:**
@@ -168,16 +164,15 @@ Marco’s state is suspended
 
 **Postconditions:**
 
-Marco is removed from the SafeTogether system
+Marco is removed from the quarantine system
 
 
 **Story:**
 
-Marco dies at the hospital. Maria enters Marco’s codice fiscale
-into the system, and marks his state in the backend as immune.
+Marco dies at the hospital. An operator enters Marco’s codice fiscale
+into and remove him from the system.
 The mobile app no longer receives notifications and no longer
 checks Marco’s location.
-Maria uses the operator app to delete Marco from the system.
 
 
 
@@ -194,7 +189,7 @@ Marco’s state is quarantined
 
 **Postconditions:**
 
-Marco’s state is negative
+Marco’s state is unknown
 
 **Story:**
 
@@ -265,7 +260,7 @@ His state is now unknown and his volonteer can no longer be carried out.
 
 
 
-## US11 -  Marco is Tested -- Swab test ## {#US11}
+## US11 - Marco has a relapse from the illness ## {#US11}
 
 **Actors:**
 
@@ -273,24 +268,23 @@ His state is now unknown and his volonteer can no longer be carried out.
  
 **Preconditions:**
 
-Marco state is unknown, immune, or negative.
+Marco state is  immune.
 
  
 ** Post-condition:**
 
-Marco state is quarantined or negative.
+Marco state is quarantined.
 
 
 **Story:**
 
 
 Marco feels
-sick, and goes to his doctor Giovanni. Giovanni records information
-about the test using the operator app, and updates Marco’s
-state to unknown - thus possibly revoking Marco’s immunity
-certification. After a few days, the test result is back. If the test is
-positive, Marco’s state becomes quarantined. If the test is
-negative, Marco’s state is set to negative.
+sick again, and goes to  Giovanni who made a new swab-test.
+
+The test is positive, Giovanni updates Marco’s
+state to quarantined - thus revoking Marco’s immunity
+certification.
 
 
 
@@ -325,37 +319,34 @@ After that Franca can trust him and open the door otherwise she won't open the d
 **Actors:**
 
 - [[#Marco]]
-- [[#Paola]]
+- [[#Giovanni]]
 
 **Conditions:**
 
 **Preconditions:**
 
-Marco’s state is negative or unknown
+Marco’s state is unknown
 
 **Postconditions:**
 
-Marco's state is immune or unknown
+Marco's state is immune
 
 **Story:**
 
-Marco goes to Paola in order to perform an antibodies test.
-Paola asks Marco to install and enroll in the Cordone Sanitario application (the process is similar to [[#US01]]).
-Marco is presented with a QRcode which rappresents his COC_ID.
-Paola performs the test on Marco and given that the result will be avialable in a few hours
-she instructs him to get back later.
+Marco goes to Giovanni in order to perform an antibodies test because he want to be a certified Shielding Voluntary.
 
-When Marco comes back, the result is ready.
 If the result is negative (doesn't have the antibodies), Marco's state is unaltered and he does not obtain the certification.
-If the test is positive (does have the antibodies), 
-Paola asks for Marco's identification document and via the operator app she generates an immunity certification for Marco.
-When the certification is generated, this prompts a QRcode which Marco scans via the app and obtain his certification.
+If the test is positive (does have the antibodies), Marcoask to Giovanni a cartification to participate to the Shielding program.
+Giovanni via sanitary system  generates an immunity certification for Marco. 
+
+Giovanni asks Marco to install and enroll in a credential application.
+Marco is recieves a notification on his smarphone which enable the certificate transmission to his digital wallet.
+
+Note: the certificate transmission could be initiated also by scanning a QR-code printed on the paper certificate.
+
+Note: this story could very similar to the case where Marco is immune because of the vaccine. See similar use case in covidcreds.com workstream https://docs.google.com/document/d/1anv0qiqYJXypyprX7qbolVgJrA18QHZ8BQjBLBpIAcY
 
 
-
-Note: this story is very similar to the case where Marco is immune because of the vaccine.
-
-Note: see similar case in covidcreds.com workstream https://docs.google.com/document/d/1anv0qiqYJXypyprX7qbolVgJrA18QHZ8BQjBLBpIAcY
 
 ## US14 - Marco is a bad person ## {#US14}
 
@@ -372,7 +363,7 @@ Marco has an immunity certification and he is an official volonteer
 **Story:**
 
 When Marco goes to Franca he robs her. Franca reports the crime to the cops. 
-One of the policeman uses the user-app to read Franca COC_ID, then he asks Albert, the app owner, for Marco's COC_ID stored in Franca's contact logs. 
+
 The policeman asks Walter to revoke Marco's volunteer status.
 
 
@@ -399,6 +390,8 @@ Following her bosse's advice Aleksandra takes the immunity test and obtains an i
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status. 
+
+
 
 ## US16 - Marco goes to pharmacy or to the shopping center ## {#US16}
 

@@ -4,8 +4,10 @@ Here is a cross-reference index between stories and application domains:
 
 **Tracing***:
 
-Issue(10): missing stories about contact tracing domain.
+Tracing apps are a well known reality, you can find lot of user stories in the internet.
 
+About the user journey and use cases we suggest to use as reference the article
+[This Is What a Contact Tracing App Could Look Like](https://onezero.medium.com/openui-a6b9c3d741de) written by Jelle Prins.
 
 
 **Quarantine**:
@@ -17,7 +19,6 @@ Issue(10): missing stories about contact tracing domain.
 - [[#US05]],
 - [[#US06]],
 - [[#US07]]
-
 
 
 **Shielding**:

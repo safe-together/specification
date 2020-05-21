@@ -111,12 +111,12 @@ There **MAY** exists more than one *Reference Implementation" for each applicati
 
 <tr>
 	<td>Shielding</td>
-	<td>in design</td>
+	<td>in development</td>
 	<td> 
-	    A reference implementation for *Shielding* system by the [g0v.it team](http://g0v.it). The [source repository](https://github.com/g0v-it/safetogether-shielding) was created. 
-	    The protocol design is carried-on in the [[!PROTOCOLS#shielding-architecture]] .
+	    A reference implementation and the documentation for *Shielding* system by the [g0v.it team](http://g0v.it). 
+	    The [source repository](https://github.com/g0v-it/safetogether-shielding) was created. 
 	    
-	    A [video storyboard](https://www.powtoon.com/c/f2AjuQcsqg0/1/m) is available 
+	    A [video storyboard](https://www.powtoon.com/c/f2AjuQcsqg0/1/m) is available. 
 	</td>
 </tr>
 </table>
@@ -157,6 +157,7 @@ Stakeholders who have opted to identify themselves publicly are listed below:
 - [Comdata](https://www.comdatagroup.com/)
 - [Coronavirus Outbreak Control](https://coronavirus-outbreak-control.github.io/web/)
 - [gOv.it civic hacking community](http://g0v.it/)
+- [Inforcert](https://www.infocert.it/)
 - [Keyless](https://keyless.io/)
 - [LinkedData.Center](http://LinkedData.Center/)
 - [Politecnico di Milano](https://www.polimi.it/)
@@ -253,7 +254,7 @@ by any editors assigned to it.
 
 
 ## Protocols Panel ## {#protocols-panel}
-Definition of aprotocols and architectures in SafeTogether systems
+Definition of protocols and architectures in SafeTogether systems
 
 **Communication channels:**
 
