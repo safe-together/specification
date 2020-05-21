@@ -1,6 +1,8 @@
 User needs {#user_needs}
 =====================
 
+Note: this section  was removed from the main stories document. Could be used as a system test checklists index
+
 ## Marco – Volunteer ## {#Marco-needs}
 Issue: the Marco needs [1 - 17] should be detailed
 - **M1 – Citizen Onboarding**

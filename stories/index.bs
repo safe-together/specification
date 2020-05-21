@@ -9,7 +9,7 @@ Markup Shorthands: markdown yes
 Max ToC Depth: 3
 Editor: Enrico Fagnoni, g0v-it core team http://g0v-it/, enrico@LinkedData.Center
 Abstract:
-  This document is a description about personas and user stories.
+  This document is a description about personas and stories related to SafeTogether applications.
   Anyone can take part in the editing process.
 </pre>
 
@@ -46,8 +46,6 @@ Many thanks to [all contributors in GitHub](https://github.com/safe-together/spe
 <pre class=include>path: state.bs</pre>
 <pre class=include>path: crossindex.bs</pre>
 <pre class=include>path: stories.bs</pre>
-<pre class=include>path: needs.bs</pre>
-
 
 <pre class=biblio>
 {

@@ -1223,7 +1223,7 @@ Possible extra rowspan handling
 </style>
   <meta content="Bikeshed version cac0058, updated Tue May 19 10:56:43 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/protocols/" rel="canonical">
-  <meta content="8926bf8f37f2bf220785cbd0907b37aa6b534847" name="document-revision">
+  <meta content="ffa4ff273d38ae5c78b12a6613c43ab2f4b3eef5" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,14 +1375,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Protocols and Architectures</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-20">20 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-21">21 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
      <dd><a class="u-url" href="https://safe-together.github.io/specification/protocols/">https://safe-together.github.io/specification/protocols/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/safe-together/specification/issues/">GitHub</a>
-     <dd><a href="#issues-index">Inline In Spec</a>
      <dt class="editor">Editor:
      <dd class="editor p-author h-card vcard"><span class="p-name fn">TBD</span>
     </dl>
@@ -1390,7 +1389,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 20 May 2020,
+In addition, as of 21 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1398,7 +1397,7 @@ Parts of this work may be from another specification document.  If so, those par
   </div>
   <div class="p-summary" data-fill-with="abstract">
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>This document is a high level description of  protocolos and architectures in SafeTogether systems.
+   <p>This document is a high level description and reference to protocolos and architectures used in SafeTogether Applications.
 
   Anyone can take part in the editing process.</p>
   </div>
@@ -1406,24 +1405,15 @@ Parts of this work may be from another specification document.  If so, those par
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
-    <li><a href="#protocols_references"><span class="secno">1</span> <span class="content">Protocol References</span></a>
-    <li>
-     <a href="#architecture"><span class="secno">2</span> <span class="content">Architectures</span></a>
-     <ol class="toc">
-      <li>
-       <a href="#shielding-architecture"><span class="secno">2.1</span> <span class="content">Shielding system architecture</span></a>
-       <ol class="toc">
-        <li><a href="#shielding-protocol-usage"><span class="secno">2.1.1</span> <span class="content">Protocol usage</span></a>
-        <li><a href="#shielding-system-components"><span class="secno">2.1.2</span> <span class="content">System components</span></a>
-       </ol>
-     </ol>
+    <li><a href="#tracing-system"><span class="secno">1</span> <span class="content">Tracing System</span></a>
+    <li><a href="#quarantine-system"><span class="secno">2</span> <span class="content">Quarantine System</span></a>
+    <li><a href="#shielding-system"><span class="secno">3</span> <span class="content">Shielding System</span></a>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
      <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
      <ol class="toc">
       <li><a href="#normative"><span class="secno"></span> <span class="content">Normative References</span></a>
      </ol>
-    <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
@@ -1445,11 +1435,9 @@ However, the information in this document is still subject to change.
      <p>Luciano Baresi</p>
    </ul>
    <p>Many thanks to <a href="https://github.com/safe-together/specification/graphs/contributors">all contributors in GitHub</a></p>
-   <h2 class="heading settled" data-level="1" id="protocols_references"><span class="secno">1. </span><span class="content">Protocol References</span><a class="self-link" href="#protocols_references"></a></h2>
-   <p>These documents <strong>MUST</strong> be taken into consideration for tracing domain :</p>
+   <h2 class="heading settled" data-level="1" id="tracing-system"><span class="secno">1. </span><span class="content">Tracing System</span><a class="self-link" href="#tracing-system"></a></h2>
+   <p>These documents <strong>SHOLUD</strong> be taken into consideration for tracing domain :</p>
    <ul>
-    <li data-md>
-     <p><a href="https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf">CovidApp - Covid Community Alert Protocol Description</a></p>
     <li data-md>
      <p><a href="https://github.com/pepp-pt/pepp-pt-documentation">PEPP-PT protocols</a></p>
     <li data-md>
@@ -1458,24 +1446,19 @@ However, the information in this document is still subject to change.
      <p><a href="https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ContactTracing-BluetoothSpecification.pdf">Apple-Google Protocol description</a></p>
    </ul>
    <p>**Note that <a href="https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t">DP-3T  is not  PEEP-PT</a>**</p>
-   <p>These documents <strong>MUST</strong> be taken into consideration for certification domain:</p>
-   <ul>
-    <li data-md>
-     <p><a data-link-type="biblio" href="#biblio-verifiablecredentials">[verifiableCredentials]</a> for credential definition standard made by W3C</p>
-    <li data-md>
-     <p><a data-link-type="biblio" href="#biblio-indy">[indy]</a> a reference implementation for Self Sovereign Identity (SSI)</p>
-    <li data-md>
-     <p>The <a href="https://sovrin.org/">Sovrin Foundation</a> as an open source specification framework that implements SSI</p>
-   </ul>
-   <p>These documents <strong>MUST</strong> be taken into consideration for quarantine domain:</p>
+   <p class="note" role="note"><span>Note:</span> to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it,
+but it states that you know it and you are able to describe why you adopt it or not.</p>
+   <p>The architecture and the protocols for the Covid Community Alert reference application  is described in
+the <a href="https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf">project documentation</a></p>
+   <p>Here are some protocol interactions:</p>
+   <p><img src="https://raw.githubusercontent.com/Coronavirus-Outbreak-Control/Documentation/master/Images/registration.jpg" width="100%"> <img src="https://raw.githubusercontent.com/Coronavirus-Outbreak-Control/Documentation/master/Images/monitor_anonymous_interactions.jpg" width="100%"> <img src="https://raw.githubusercontent.com/Coronavirus-Outbreak-Control/Documentation/master/Images/notify_people_at_risk.jpg" width="100%"></p>
+   <h2 class="heading settled" data-level="2" id="quarantine-system"><span class="secno">2. </span><span class="content">Quarantine System</span><a class="self-link" href="#quarantine-system"></a></h2>
+   <p>These documents <strong>SHOULD</strong> be taken into consideration for quarantine domain:</p>
    <ul>
     <li data-md>
      <p>keyless protocols for zero knowledge biometric authentication <a href="https://keyless.io/resources">see keyless resources on web site</a></p>
    </ul>
-   <p class="note" role="note"><span>Note:</span> to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it , but it states that you know it and you are able to describe why you adopt it or not.</p>
-   <h2 class="heading settled" data-level="2" id="architecture"><span class="secno">2. </span><span class="content">Architectures</span><a class="self-link" href="#architecture"></a></h2>
-   <h3 class="heading settled" data-level="2.1" id="shielding-architecture"><span class="secno">2.1. </span><span class="content">Shielding system architecture</span><a class="self-link" href="#shielding-architecture"></a></h3>
-   <h4 class="heading settled" data-level="2.1.1" id="shielding-protocol-usage"><span class="secno">2.1.1. </span><span class="content">Protocol usage</span><a class="self-link" href="#shielding-protocol-usage"></a></h4>
+   <h2 class="heading settled" data-level="3" id="shielding-system"><span class="secno">3. </span><span class="content">Shielding System</span><a class="self-link" href="#shielding-system"></a></h2>
    <p>The Shielding system adopts following standards and framework:</p>
    <ul>
     <li data-md>
@@ -1485,94 +1468,10 @@ However, the information in this document is still subject to change.
     <li data-md>
      <p>The <a href="https://sovrin.org/">Sovrin Foundation</a> as an open source specification framework that implements SSI</p>
    </ul>
-   <p>Here  is an example of how such standards are user to implement a Marco Journey:</p>
-   <p class="issue" id="issue-2d5310d4"><a class="self-link" href="#issue-2d5310d4"></a> check consistence with related user stories <a href="https://github.com/safe-together/specification/issues/37">&lt;https://github.com/safe-together/specification/issues/37></a></p>
-   <p><strong>step</strong> - Marco si reca da Giovanni per verificare la sua immunità al Covid-19 ed esegue i test sierologici che danno esito positivo.</p>
-   <p><strong>step</strong> - Giovanni invita Marco a scaricare la app di shielding e ad effettuare l’onboarding, se gia non è inpossesso</p>
-   <ul>
-    <li data-md>
-     <p>La app di shielding è un edge agent di Sovrin che funziona da wallet dei certificati (verifiable claims) posseduti da Marco</p>
-    <li data-md>
-     <p>Il processo di onboarding dell’applicazione di shielding comprende la sua identificazione e la connessione di Marco al servizio sanitario nazionale che opera come issuer dei certificati</p>
-   </ul>
-   <p><strong>step</strong> - Giovanni il dottore emette (issues) il certificato di immunità per Marco e glielo invia:</p>
-   <ul>
-    <li data-md>
-     <p>Il certificato di immunità è una verifiable claim, con uno schema ben definito</p>
-    <li data-md>
-     <p>Il dottore operando sulla propria interfaccia verso il sistema di issuing dei certificati registra il risultato dell’esame (genera la verifiable claim)</p>
-    <li data-md>
-     <p>Il sistema di issuing dei certificati firma la verifiable claim nel ledger pubblico di Sovrin</p>
-    <li data-md>
-     <p>Il sistema di issuing dei certificati invia la verifiable claim al wallet di Marco</p>
-    <li data-md>
-     <p>La app di Marco si attiva notificandogli l’azione di Giovanni che intende rilasciare il certificato</p>
-    <li data-md>
-     <p>Marco accetta l’emissione del certificato, questa azione controfirma la claim nel ledger pubblico e salva i dati collegati nel wallet.</p>
-   </ul>
-   <p><strong>step</strong> - Marco si reca presso la protezione civile per chiedere di essere ammesso al programma di shielding</p>
-   <p><strong>step</strong> - Walter (protezione civile) chiede a Marco di presentare il certificato di immunità</p>
-   <ul>
-    <li data-md>
-     <p>Walter chiede a Marco di connettere la sua app di shielding alla app della protezione civile</p>
-    <li data-md>
-     <p>La app della protezione civile opera sia come issuer che come verifier di verifiable credentials possedute da Marco</p>
-    <li data-md>
-     <p>L’attivazione della connessione tra l’edge agent di Marco e il soggetto Protezione Civile permette a quest’ultima di chiedere la proof di un certificato e di emettere il certificato di appartenenza al programma di shielding</p>
-    <li data-md>
-     <p>Marco riceve la richiesta di connessione nella sua app e la conferma</p>
-    <li data-md>
-     <p>Da questo momento in poi Walter usando la app di Protezione Civile può chiedere a Marco dati contenuti nelle verifiable credentials che Marco possiede e può emettere nuove claims</p>
-    <li data-md>
-     <p>Attraverso la app di protezione civile, Walter chiede la proof a Marco del proprio certificato di immunità</p>
-    <li data-md>
-     <p>La richiesta di proof del possesso del certificato è accompagnata dalla richiesta di accesso ai dati firmati del certificato</p>
-    <li data-md>
-     <p>La app di shielding di Marco riceve notifica delle richiesta di accesso Marco approva la richiesta di accesso ai dati e invia la claim firmata alla app di protezione civile</p>
-    <li data-md>
-     <p>La app di Protezione Civile verifica la non revoca del certificato di immunità nel ledger pubblico e se ancora valido presenta il risultato a Walter</p>
-   </ul>
-   <p><strong>step</strong> - Walter verifica la validità del certificato</p>
-   <ul>
-    <li data-md>
-     <p>Walter utilizza i dati firmati nel certificato di Marco per decidere se il suo stato rientra nei parametri per l’acccesso al programma di shielding come volontario</p>
-   </ul>
-   <p><strong>step</strong> - Walter firma una attestazione di partecipazione di Marco al programma di Shielding della protezione Civile e la invia a Marco</p>
-   <ul>
-    <li data-md>
-     <p>La attestazione di partecipazione è una verifiable credential, con uno schema ben definito</p>
-    <li data-md>
-     <p>Walter operando sulla propria interfaccia verso il sistema di issuing dei certificati registra l’iscrizione di Marco (genera la verifiable claim)</p>
-    <li data-md>
-     <p>Il sistema di issuing dei certificati firma la verifiable claim nel ledger pubblico (e.g. di Sovrin)</p>
-    <li data-md>
-     <p>Il sistema di issuing dei certificati invia la verifiable claim al wallet di Marco</p>
-    <li data-md>
-     <p>La app di Marco si attiva notificandogli l’azione di Walter che intende rilasciare le credenziali</p>
-    <li data-md>
-     <p>Marco accetta l’emissione delle credenziali, questa azione controfirma la claim nel ledger pubblico e salva i dati collegati nel wallet.</p>
-   </ul>
-   <p><strong>step</strong> - Il call center del programma Shielding contatta Marco e gli chiede di fare una visita di cortesia alla signora Franca</p>
-   <ul>
-    <li data-md>
-     <p>Il call center utilizza il proprio sistema che agisce come verifier nell’architettura SSI per verificare le seguenti claim di Marco: stato di immunità, iscrizione al programma di protezione civile</p>
-    <li data-md>
-     <p>Il call center invia una richiesta di proof per le claim a Marco</p>
-    <li data-md>
-     <p>L’edge agent di Marco (la app di Shielding) si attiva notificando la richiesta di accesso del call center Marco approva la richiesta di accesso</p>
-    <li data-md>
-     <p>Il call center riceve i dati che confermano i claim di Marco e genera un codice di intervento per Marco con una durata definita, e lo invia alla app di Marco</p>
-   </ul>
-   <p><strong>step</strong> - Marco citofona alla signora Franca fornendole il codice ricevuto dal call center</p>
-   <p><strong>step</strong> - La signora Franca telefona al numero verde della protezione civile e comunica il codice di Marco</p>
-   <p><strong>step</strong> - Il call center rassicura la signora Franca sul fatto che Marco è un volontario autorizzato.</p>
-   <p class="issue" id="issue-f4ec7746"><a class="self-link" href="#issue-f4ec7746"></a> translate in english</p>
-   <h4 class="heading settled" data-level="2.1.2" id="shielding-system-components"><span class="secno">2.1.2. </span><span class="content">System components</span><a class="self-link" href="#shielding-system-components"></a></h4>
-   <p class="note" role="note"><span>Note:</span> just a first draft, work in progress in the Shielding pane...
-Note: <img src="Architecture.svg" width="100%"> See also <a data-link-type="biblio" href="#biblio-stories">[stories]</a></p>
-   <p class="issue" id="issue-61e9c230"><a class="self-link" href="#issue-61e9c230"></a> volunteers are not the only target of the shielding system.
-Issue: See also <a href="https://safe-together.github.io/specification/stories#US15">The SafeTogether personas &amp; user stories §US15</a> . 
-Issue: We could imagine that the same (or similar) app used by the fragile people can be used by anyone that requires to check someone’s immunity.</p>
+   <p>The architecture and the protocols for Shielding Reference application is described in
+the <a href="https://github.com/g0v-it/safetogether-shielding/tree/master/docs/system">Shielding Project repository documentation</a></p>
+   <p>The main components of the Shielding System are summarized in following  picture:</p>
+   <p><img src="https://raw.githubusercontent.com/g0v-it/safetogether-shielding/master/docs/system/Architecture-sovrin.svg" width="100%"></p>
   </main>
   <div data-fill-with="conformance">
    <h2 class="no-ref no-num heading settled" id="conformance"><span class="content"> Conformance</span><a class="self-link" href="#conformance"></a></h2>
@@ -1729,16 +1628,6 @@ Issue: We could imagine that the same (or similar) app used by the fragile peopl
    <dd> SafeTogether Process Panel. <a href="https://safe-together.github.io/specification/process">The SafeTogether Process</a>. URL: <a href="https://safe-together.github.io/specification/process">https://safe-together.github.io/specification/process</a>
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
-   <dt id="biblio-stories">[STORIES]
-   <dd> SafeTogether Stories Panel. <a href="https://safe-together.github.io/specification/stories">The SafeTogether personas &amp; user stories</a>. URL: <a href="https://safe-together.github.io/specification/stories">https://safe-together.github.io/specification/stories</a>
    <dt id="biblio-verifiablecredentials">[verifiableCredentials]
    <dd>Manu Sporny; Dave Longley; David Chadwick. <a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials Data Model 1.0</a>. URL: <a href="https://www.w3.org/TR/vc-data-model/">https://www.w3.org/TR/vc-data-model/</a>
   </dl>
-  <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
-  <div style="counter-reset:issue">
-   <div class="issue"> check consistence with related user stories <a href="https://github.com/safe-together/specification/issues/37">&lt;https://github.com/safe-together/specification/issues/37></a><a href="#issue-2d5310d4"> ↵ </a></div>
-   <div class="issue"> translate in english<a href="#issue-f4ec7746"> ↵ </a></div>
-   <div class="issue"> volunteers are not the only target of the shielding system.
-Issue: See also <a href="https://safe-together.github.io/specification/stories#US15">The SafeTogether personas &amp; user stories §US15</a> . 
-Issue: We could imagine that the same (or similar) app used by the fragile people can be used by anyone that requires to check someone’s immunity.<a href="#issue-61e9c230"> ↵ </a></div>
-  </div>
