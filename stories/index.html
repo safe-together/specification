@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version cac0058, updated Tue May 19 10:56:43 2020 -0700" name="generator">
+  <meta content="Bikeshed version 56380d9, updated Thu May 21 13:35:10 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/stories/" rel="canonical">
-  <meta content="a0458899a2a7676a0c8aa1b3ac265a46f84b4939" name="document-revision">
+  <meta content="f275ffe9e2eb3b28d43193381aee62487086a2d3" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,14 +1375,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Personas and User Stories</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-21">21 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-25">25 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
      <dd><a class="u-url" href="https://safe-together.github.io/specification/stories/">https://safe-together.github.io/specification/stories/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/safe-together/specification/issues/">GitHub</a>
-     <dd><a href="#issues-index">Inline In Spec</a>
      <dt class="editor">Editor:
      <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:enrico@LinkedData.Center">Enrico Fagnoni</a> (<a class="p-org org" href="http://g0v-it/">g0v-it core team</a>)
     </dl>
@@ -1390,7 +1389,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 21 May 2020,
+In addition, as of 25 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1416,26 +1415,27 @@ Parts of this work may be from another specification document.  If so, those par
       <li><a href="#Aleksandra"><span class="secno">1.5</span> <span class="content">Aleksandra the lorry driver</span></a>
      </ol>
     <li><a href="#user-state-machine"><span class="secno">2</span> <span class="content">User state</span></a>
-    <li><a href="#cross-index"><span class="secno">3</span> <span class="content">Stories cross index</span></a>
+    <li><a href="#user-privacy"><span class="secno">3</span> <span class="content">Privacy and rights requirements</span></a>
+    <li><a href="#cross-index"><span class="secno">4</span> <span class="content">Stories cross index</span></a>
     <li>
-     <a href="#user_stories"><span class="secno">4</span> <span class="content">User stories</span></a>
+     <a href="#user_stories"><span class="secno">5</span> <span class="content">User stories</span></a>
      <ol class="toc">
-      <li><a href="#US01"><span class="secno">4.1</span> <span class="content">US01: Marco is positive to the Swab Test</span></a>
-      <li><a href="#US02"><span class="secno">4.2</span> <span class="content">US02 - Marco Confirms His Location -- Enforce Quarantine</span></a>
-      <li><a href="#US03"><span class="secno">4.3</span> <span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span></a>
-      <li><a href="#US04"><span class="secno">4.4</span> <span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span></a>
-      <li><a href="#US05"><span class="secno">4.5</span> <span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span></a>
-      <li><a href="#US06"><span class="secno">4.6</span> <span class="content">US06 - Marco Dies while at the Hospital -- Immune</span></a>
-      <li><a href="#US07"><span class="secno">4.7</span> <span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span></a>
-      <li><a href="#US08"><span class="secno">4.8</span> <span class="content">US08 - Proof of Immunity</span></a>
-      <li><a href="#US09"><span class="secno">4.9</span> <span class="content">US09 - Marco Volunteers to Join Shielding Program</span></a>
-      <li><a href="#US10"><span class="secno">4.10</span> <span class="content">US10 - Marco’s Immunity Expires</span></a>
-      <li><a href="#US11"><span class="secno">4.11</span> <span class="content">US11 - Marco has a relapse from the illness</span></a>
-      <li><a href="#US12"><span class="secno">4.12</span> <span class="content">US12 - Marco Visits Franca.</span></a>
-      <li><a href="#US13"><span class="secno">4.13</span> <span class="content">US13 - Antibodies test</span></a>
-      <li><a href="#US14"><span class="secno">4.14</span> <span class="content">US14 - Marco is a bad person</span></a>
-      <li><a href="#US15"><span class="secno">4.15</span> <span class="content">US15 - Aleksandra crosses the italian border</span></a>
-      <li><a href="#US16"><span class="secno">4.16</span> <span class="content">US16 - Marco goes to pharmacy or to the shopping center</span></a>
+      <li><a href="#US01"><span class="secno">5.1</span> <span class="content">US01: Marco is positive to the Swab Test</span></a>
+      <li><a href="#US02"><span class="secno">5.2</span> <span class="content">US02 - Marco Confirms His Location -- Enforce Quarantine</span></a>
+      <li><a href="#US03"><span class="secno">5.3</span> <span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span></a>
+      <li><a href="#US04"><span class="secno">5.4</span> <span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span></a>
+      <li><a href="#US05"><span class="secno">5.5</span> <span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span></a>
+      <li><a href="#US06"><span class="secno">5.6</span> <span class="content">US06 - Marco Dies while at the Hospital -- Immune</span></a>
+      <li><a href="#US07"><span class="secno">5.7</span> <span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span></a>
+      <li><a href="#US08"><span class="secno">5.8</span> <span class="content">US08 - Proof of Immunity</span></a>
+      <li><a href="#US09"><span class="secno">5.9</span> <span class="content">US09 - Marco Volunteers to Join Shielding Program</span></a>
+      <li><a href="#US10"><span class="secno">5.10</span> <span class="content">US10 - Marco’s Immunity Expires</span></a>
+      <li><a href="#US11"><span class="secno">5.11</span> <span class="content">US11 - Marco has a relapse from the illness</span></a>
+      <li><a href="#US12"><span class="secno">5.12</span> <span class="content">US12 - Marco Visits Franca.</span></a>
+      <li><a href="#US13"><span class="secno">5.13</span> <span class="content">US13 - Antibodies test</span></a>
+      <li><a href="#US14"><span class="secno">5.14</span> <span class="content">US14 - Marco is a bad person</span></a>
+      <li><a href="#US15"><span class="secno">5.15</span> <span class="content">US15 - Aleksandra crosses the italian border</span></a>
+      <li><a href="#US16"><span class="secno">5.16</span> <span class="content">US16 - Marco goes to pharmacy or to the shopping center</span></a>
      </ol>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
     <li>
@@ -1443,7 +1443,6 @@ Parts of this work may be from another specification document.  If so, those par
      <ol class="toc">
       <li><a href="#normative"><span class="secno"></span> <span class="content">Normative References</span></a>
      </ol>
-    <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
@@ -1570,27 +1569,33 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    <p>This diagram shows an example of a more complex design of <em>application state</em> that can be assumed in some stories about volunteers:</p>
    <p><img src="safeTogetherVolunteer.svg" width="100%"></p>
    <p>In previous diagram <em>Volunteer</em> can be defined as a specialization of the <em>Immune</em> state, <em>Autenticated</em> a specialization of "<em>Volunteer</em> and <em>Fraudolent</em> a specialization of <em>Autenticated</em></p>
-   <p class="issue" id="issue-00c1d945"><a class="self-link" href="#issue-00c1d945"></a> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?</p>
-   <p><strong>state privacy:</strong></p>
-   <p class="note" role="note"><span>Note:</span> The above table  is informative only <img src="tab1.png"></p>
-   <p>Privacy and rights:</p>
+   <h2 class="heading settled" data-level="3" id="user-privacy"><span class="secno">3. </span><span class="content">Privacy and rights requirements</span><a class="self-link" href="#user-privacy"></a></h2>
    <dl>
     <dt data-md>Citizens <strong>MUST</strong> have <em>view only</em> rights on their state
     <dd data-md>
      <p>citizens can view their status but they are not allowed to change it.</p>
     <dt data-md>Institutional Forces (Police, etc) – <strong>MAY</strong> have <em>view only</em> rights citizen’s state
     <dd data-md>
-     <p>Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives.</p>
-    <dt data-md>SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – <em>MAY</em>* have view and edit right
+     <p>Policeman who needs to check circulation rights and citizen status to regulate and enforce government directives.</p>
+    <dt data-md>Sanitary Personnel (Doctors, Pharmacists, Nurses, etc) – <em>MAY</em>* have view and edit right
     <dd data-md>
-     <p>The only person who can digitally sign the report on the patient’s state of health.</p>
+     <p>Sanitary Personnel is the only person who can digitally sign the report on the patient’s state of health.</p>
     <dd data-md>
      <p>In the case of immunities, he is the only person who can decide the period of validity and its revocation.</p>
-    <dt data-md>Volunteers (Immune Citizens) – other citizen can have <em>view only</em> rights
     <dd data-md>
-     <p>Citizens that have recovered, are immune and want to help during the crisis</p>
+     <p>Citizens that have recovered, are immune and want to help during the crisis.</p>
+    <dt data-md>Immune volunteers *<em>MUST</em> authenticate
+    <dd data-md>
+     <p>they <strong>MUST</strong> be digitally identified to be part of a Shielding program. They <strong>SHOULD</strong> provide geographic position when operates for the program.</p>
+    <dd data-md>
+     <p>they <strong>MUST</strong> provide to authorized people their immunity credentials in order to accept a Shielding task.</p>
+    <dd data-md>
+     <p>like  other citizen they  have <em>view only</em> rights</p>
+    <dt data-md>Legally quarantined people *<em>MUST</em> authenticate
+    <dd data-md>
+     <p>they <strong>MUST</strong> provide a strong biometric authentication to quarantine system and They <strong>MUST</strong> provide to the aothority  their geographic position.</p>
    </dl>
-   <h2 class="heading settled" data-level="3" id="cross-index"><span class="secno">3. </span><span class="content">Stories cross index</span><a class="self-link" href="#cross-index"></a></h2>
+   <h2 class="heading settled" data-level="4" id="cross-index"><span class="secno">4. </span><span class="content">Stories cross index</span><a class="self-link" href="#cross-index"></a></h2>
    <p>Here is a cross-reference index between stories and application domains:</p>
    <p><strong>Tracing</strong>*:</p>
    <p>Tracing apps are a well known reality, you can find lot of user stories in the internet.</p>
@@ -1598,47 +1603,47 @@ the test result. For SafeTogether purposes the <em>Pending</em> virtual state <s
    <p><strong>Quarantine</strong>:</p>
    <ul>
     <li data-md>
-     <p><a href="#US01">§ 4.1 US01: Marco is positive to the Swab Test</a>,</p>
+     <p><a href="#US01">§ 5.1 US01: Marco is positive to the Swab Test</a>,</p>
     <li data-md>
-     <p><a href="#US02">§ 4.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>,</p>
+     <p><a href="#US02">§ 5.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>,</p>
     <li data-md>
-     <p><a href="#US03">§ 4.3 US03 -  Marco Goes to the Hospital -- Suspend Quarantine</a>,</p>
+     <p><a href="#US03">§ 5.3 US03 -  Marco Goes to the Hospital -- Suspend Quarantine</a>,</p>
     <li data-md>
-     <p><a href="#US04">§ 4.4 US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</a>,</p>
+     <p><a href="#US04">§ 5.4 US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</a>,</p>
     <li data-md>
-     <p><a href="#US05">§ 4.5 US05 - Marco Recovers while at the Hospital -- Immune</a>,</p>
+     <p><a href="#US05">§ 5.5 US05 - Marco Recovers while at the Hospital -- Immune</a>,</p>
     <li data-md>
-     <p><a href="#US06">§ 4.6 US06 - Marco Dies while at the Hospital -- Immune</a>,</p>
+     <p><a href="#US06">§ 5.6 US06 - Marco Dies while at the Hospital -- Immune</a>,</p>
     <li data-md>
-     <p><a href="#US07">§ 4.7 US07 - Marco is Removed from Quarantine -- Recovery</a></p>
+     <p><a href="#US07">§ 5.7 US07 - Marco is Removed from Quarantine -- Recovery</a></p>
    </ul>
    <p><strong>Shielding</strong>:</p>
    <ul>
     <li data-md>
-     <p><a href="#US08">§ 4.8 US08 - Proof of Immunity</a>,</p>
+     <p><a href="#US08">§ 5.8 US08 - Proof of Immunity</a>,</p>
     <li data-md>
-     <p><a href="#US09">§ 4.9 US09 - Marco Volunteers to Join Shielding Program</a>,</p>
+     <p><a href="#US09">§ 5.9 US09 - Marco Volunteers to Join Shielding Program</a>,</p>
     <li data-md>
-     <p><a href="#US10">§ 4.10 US10 - Marco’s Immunity Expires</a>,</p>
+     <p><a href="#US10">§ 5.10 US10 - Marco’s Immunity Expires</a>,</p>
     <li data-md>
-     <p><a href="#US11">§ 4.11 US11 - Marco has a relapse from the illness</a>,</p>
+     <p><a href="#US11">§ 5.11 US11 - Marco has a relapse from the illness</a>,</p>
     <li data-md>
-     <p><a href="#US12">§ 4.12 US12 - Marco Visits Franca.</a>,</p>
+     <p><a href="#US12">§ 5.12 US12 - Marco Visits Franca.</a>,</p>
     <li data-md>
-     <p><a href="#US13">§ 4.13 US13 - Antibodies test</a>,</p>
+     <p><a href="#US13">§ 5.13 US13 - Antibodies test</a>,</p>
     <li data-md>
-     <p><a href="#US14">§ 4.14 US14 - Marco is a bad person</a>,</p>
+     <p><a href="#US14">§ 5.14 US14 - Marco is a bad person</a>,</p>
     <li data-md>
-     <p><a href="#US15">§ 4.15 US15 - Aleksandra crosses the italian border</a></p>
+     <p><a href="#US15">§ 5.15 US15 - Aleksandra crosses the italian border</a></p>
    </ul>
    <p><strong>Self-certification </strong>:</p>
    <ul>
     <li data-md>
-     <p><a href="#US16">§ 4.16 US16 - Marco goes to pharmacy or to the shopping center</a></p>
+     <p><a href="#US16">§ 5.16 US16 - Marco goes to pharmacy or to the shopping center</a></p>
    </ul>
-   <h2 class="heading settled" data-level="4" id="user_stories"><span class="secno">4. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
+   <h2 class="heading settled" data-level="5" id="user_stories"><span class="secno">5. </span><span class="content">User stories</span><a class="self-link" href="#user_stories"></a></h2>
    <p>This section describes some paradigmatic stakeholder journeys (story)</p>
-   <h3 class="heading settled" data-level="4.1" id="US01"><span class="secno">4.1. </span><span class="content">US01: Marco is positive to the Swab Test</span><a class="self-link" href="#US01"></a></h3>
+   <h3 class="heading settled" data-level="5.1" id="US01"><span class="secno">5.1. </span><span class="content">US01: Marco is positive to the Swab Test</span><a class="self-link" href="#US01"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1669,7 +1674,7 @@ using his face. This saves the current location in the app, and
 completes the enrollment process.</p>
    <p>After some time, the result of the test is back. Giovanni enters the
 result in the operator app, which also notifies Marco’s <em>Mobile App</em>, as well as the authorities.</p>
-   <h3 class="heading settled" data-level="4.2" id="US02"><span class="secno">4.2. </span><span class="content">US02 - Marco Confirms His Location -- Enforce Quarantine</span><a class="self-link" href="#US02"></a></h3>
+   <h3 class="heading settled" data-level="5.2" id="US02"><span class="secno">5.2. </span><span class="content">US02 - Marco Confirms His Location -- Enforce Quarantine</span><a class="self-link" href="#US02"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1691,7 +1696,7 @@ the <em>Mobile App</em> notifies the authorities.</p>
    <p>The <em>Mobile App</em> periodically polls Marco’s phone location. If the phone is outside
 of the designated quarantine area, it notifies Marco as well as the
 authorities.</p>
-   <h3 class="heading settled" data-level="4.3" id="US03"><span class="secno">4.3. </span><span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span><a class="self-link" href="#US03"></a></h3>
+   <h3 class="heading settled" data-level="5.3" id="US03"><span class="secno">5.3. </span><span class="content">US03 -  Marco Goes to the Hospital -- Suspend Quarantine</span><a class="self-link" href="#US03"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1709,7 +1714,7 @@ At the hospital, an operator markes Marco’s state on the backend as suspended.
 dismisses any pending notification received by Marco’s Mobile App
 in the last 1-2 hours, and suspends the quarantine until further
 notice.</p>
-   <h3 class="heading settled" data-level="4.4" id="US04"><span class="secno">4.4. </span><span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span><a class="self-link" href="#US04"></a></h3>
+   <h3 class="heading settled" data-level="5.4" id="US04"><span class="secno">5.4. </span><span class="content">US04 - Marco Goes Back Home from the Hospital -- Restore Quarantine</span><a class="self-link" href="#US04"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1725,8 +1730,8 @@ On hospital discharge,  an operator make Marco’s state on
 as quarantined again. At this point, Marco has a
 predetermined amount of time (say, 2 hours) to go home. After the
 predetermined amount of time, Marco receives a notification, which
-asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>.</p>
-   <h3 class="heading settled" data-level="4.5" id="US05"><span class="secno">4.5. </span><span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span><a class="self-link" href="#US05"></a></h3>
+asks him to authenticate as described in <a href="#US02">§ 5.2 US02 - Marco Confirms His Location -- Enforce Quarantine</a>.</p>
+   <h3 class="heading settled" data-level="5.5" id="US05"><span class="secno">5.5. </span><span class="content">US05 - Marco Recovers while at the Hospital -- Immune</span><a class="self-link" href="#US05"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1740,7 +1745,7 @@ asks him to authenticate as described in <a href="#US02">§ 4.2 US02 - Marco C
    <p>Marco is now healthy.  On hospital discharge,  an operator make Marco’s state in the backend as negative.
 The mobile app no longer receives notifications and no longer
 checks Marco’s location.</p>
-   <h3 class="heading settled" data-level="4.6" id="US06"><span class="secno">4.6. </span><span class="content">US06 - Marco Dies while at the Hospital -- Immune</span><a class="self-link" href="#US06"></a></h3>
+   <h3 class="heading settled" data-level="5.6" id="US06"><span class="secno">5.6. </span><span class="content">US06 - Marco Dies while at the Hospital -- Immune</span><a class="self-link" href="#US06"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1755,7 +1760,7 @@ checks Marco’s location.</p>
 into and remove him from the system.
 The mobile app no longer receives notifications and no longer
 checks Marco’s location.</p>
-   <h3 class="heading settled" data-level="4.7" id="US07"><span class="secno">4.7. </span><span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span><a class="self-link" href="#US07"></a></h3>
+   <h3 class="heading settled" data-level="5.7" id="US07"><span class="secno">5.7. </span><span class="content">US07 - Marco is Removed from Quarantine -- Recovery</span><a class="self-link" href="#US07"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1768,7 +1773,7 @@ checks Marco’s location.</p>
    <p><strong>Story:</strong></p>
    <p>Marco’s quarantine is over, and he has recovered. The app notifies
 Marco that his state is now negative.</p>
-   <h3 class="heading settled" data-level="4.8" id="US08"><span class="secno">4.8. </span><span class="content">US08 - Proof of Immunity</span><a class="self-link" href="#US08"></a></h3>
+   <h3 class="heading settled" data-level="5.8" id="US08"><span class="secno">5.8. </span><span class="content">US08 - Proof of Immunity</span><a class="self-link" href="#US08"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1782,7 +1787,7 @@ Marco that his state is now negative.</p>
    <p>Marco is asked by Walter to prove that his state is immune. Walter sends an immunity request to Marco .
 Marco recives a notification on his smartphone, he opens the <em>Mobile App</em>, he authenticates and he responds to the request prooving his immunity.
 Walter’s app verifies Marco’s proof (including the expiration date if the immunity has an expiration date).</p>
-   <h3 class="heading settled" data-level="4.9" id="US09"><span class="secno">4.9. </span><span class="content">US09 - Marco Volunteers to Join Shielding Program</span><a class="self-link" href="#US09"></a></h3>
+   <h3 class="heading settled" data-level="5.9" id="US09"><span class="secno">5.9. </span><span class="content">US09 - Marco Volunteers to Join Shielding Program</span><a class="self-link" href="#US09"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1796,10 +1801,10 @@ Walter’s app verifies Marco’s proof (including the expiration date if the im
    <p>Marco goes to Walter at
 the civil defence and volunteers to join the shielding program for
 at-risk individuals support. 
-Marco proves that he is immune as described in <a href="#US08">§ 4.8 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
+Marco proves that he is immune as described in <a href="#US08">§ 5.8 US08 - Proof of Immunity</a>. Walter registers Marco’s information, including his COC_ID and
 photo, to protezione civile’s system. Protezione civile’s system
 creates a volunteers certificate and sends it to Marco’s, that saves it on the his certificate wallet on the smarphone.</p>
-   <h3 class="heading settled" data-level="4.10" id="US10"><span class="secno">4.10. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
+   <h3 class="heading settled" data-level="5.10" id="US10"><span class="secno">5.10. </span><span class="content">US10 - Marco’s Immunity Expires</span><a class="self-link" href="#US10"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1812,7 +1817,7 @@ creates a volunteers certificate and sends it to Marco’s, that saves it on the
    <p><strong>Story:</strong></p>
    <p>The <em>Mobile App</em> notifies Marco that his certification has expired.
 His state is now unknown and his volonteer can no longer be carried out.</p>
-   <h3 class="heading settled" data-level="4.11" id="US11"><span class="secno">4.11. </span><span class="content">US11 - Marco has a relapse from the illness</span><a class="self-link" href="#US11"></a></h3>
+   <h3 class="heading settled" data-level="5.11" id="US11"><span class="secno">5.11. </span><span class="content">US11 - Marco has a relapse from the illness</span><a class="self-link" href="#US11"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1828,7 +1833,7 @@ sick again, and goes to  Giovanni who made a new swab-test.</p>
    <p>The test is positive, Giovanni updates Marco’s
 state to quarantined - thus revoking Marco’s immunity
 certification.</p>
-   <h3 class="heading settled" data-level="4.12" id="US12"><span class="secno">4.12. </span><span class="content">US12 - Marco Visits Franca.</span><a class="self-link" href="#US12"></a></h3>
+   <h3 class="heading settled" data-level="5.12" id="US12"><span class="secno">5.12. </span><span class="content">US12 - Marco Visits Franca.</span><a class="self-link" href="#US12"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1849,7 +1854,7 @@ asks him to identify himself. Marco authenticates with the
 code.
 Franca calls the civil defence call center to check the truthfulness of the code.
 After that Franca can trust him and open the door otherwise she won’t open the door.</p>
-   <h3 class="heading settled" data-level="4.13" id="US13"><span class="secno">4.13. </span><span class="content">US13 - Antibodies test</span><a class="self-link" href="#US13"></a></h3>
+   <h3 class="heading settled" data-level="5.13" id="US13"><span class="secno">5.13. </span><span class="content">US13 - Antibodies test</span><a class="self-link" href="#US13"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1871,7 +1876,7 @@ Giovanni via sanitary system  generates an immunity certification for Marco.</p>
 Marco is recieves a notification on his smarphone which enable the certificate transmission to his digital wallet.</p>
    <p class="note" role="note"><span>Note:</span> the certificate transmission could be initiated also by scanning a QR-code printed on the paper certificate.</p>
    <p class="note" role="note"><span>Note:</span> this story could very similar to the case where Marco is immune because of the vaccine. See similar use case in covidcreds.com workstream https://docs.google.com/document/d/1anv0qiqYJXypyprX7qbolVgJrA18QHZ8BQjBLBpIAcY</p>
-   <h3 class="heading settled" data-level="4.14" id="US14"><span class="secno">4.14. </span><span class="content">US14 - Marco is a bad person</span><a class="self-link" href="#US14"></a></h3>
+   <h3 class="heading settled" data-level="5.14" id="US14"><span class="secno">5.14. </span><span class="content">US14 - Marco is a bad person</span><a class="self-link" href="#US14"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1883,7 +1888,7 @@ Marco is recieves a notification on his smarphone which enable the certificate t
    <p><strong>Story:</strong></p>
    <p>When Marco goes to Franca he robs her. Franca reports the crime to the cops.</p>
    <p>The policeman asks Walter to revoke Marco’s volunteer status.</p>
-   <h3 class="heading settled" data-level="4.15" id="US15"><span class="secno">4.15. </span><span class="content">US15 - Aleksandra crosses the italian border</span><a class="self-link" href="#US15"></a></h3>
+   <h3 class="heading settled" data-level="5.15" id="US15"><span class="secno">5.15. </span><span class="content">US15 - Aleksandra crosses the italian border</span><a class="self-link" href="#US15"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -1899,7 +1904,7 @@ Marco is recieves a notification on his smarphone which enable the certificate t
 Now she can cross the Italian boarder.
 At the border she authenticates herself using the user application by showing the associated QRcode.
 The authorities grant her access after verifying her immunity status.</p>
-   <h3 class="heading settled" data-level="4.16" id="US16"><span class="secno">4.16. </span><span class="content">US16 - Marco goes to pharmacy or to the shopping center</span><a class="self-link" href="#US16"></a></h3>
+   <h3 class="heading settled" data-level="5.16" id="US16"><span class="secno">5.16. </span><span class="content">US16 - Marco goes to pharmacy or to the shopping center</span><a class="self-link" href="#US16"></a></h3>
    <p><strong>Actors:</strong></p>
    <ul>
     <li data-md>
@@ -2069,7 +2074,3 @@ Marco confirms he will go there. The app thus produces the documentation (pdf) t
    <dt id="biblio-rfc2119">[RFC2119]
    <dd>S. Bradner. <a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>
   </dl>
-  <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
-  <div style="counter-reset:issue">
-   <div class="issue"> can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?<a href="#issue-00c1d945"> ↵ </a></div>
-  </div>

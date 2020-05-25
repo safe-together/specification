@@ -11,7 +11,6 @@ There are four **core user state** that **MUST** be considered inside SafeTogeth
 : I (immune)
 :: when the patient is not hill and antybodies test are positive (i.e. he/she recovers from Covid-19) becomes *Immune*
 
-
 This diagram summarizes the state transition diagram for a citizen can go through while part of the SafeTogether system. 
 
 <img src="safeTogetherStateMachine.png" width="100%"/>
@@ -31,24 +30,20 @@ This diagram shows an example of a more complex design of *application state* th
 
 In previous diagram *Volunteer* can be defined as a specialization of the *Immune* state, *Autenticated* a specialization of "*Volunteer* and *Fraudolent* a specialization of *Autenticated* 
 
-
-Issue: can assume that an immune person doesn’t carrying the virus? How about behavior re-safety in cleaning/hygiene?
-
-
-**state privacy:**
-
-
-Note: The above table  is informative only <img src="tab1.png"/>
-
-Privacy and rights:
+# Privacy and rights requirements # {#user-privacy}
 
 : Citizens **MUST** have *view only* rights on their state
 :: citizens can view their status but they are not allowed to change it.
 : Institutional Forces (Police, etc) – **MAY** have *view only* rights citizen's state
-:: Policeman who needs to check circulation rights and citizen status to regulateand enforce government directives. 	
-: SanitaryPersonnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
-:: The only person who can digitally sign the report on the patient's state of health.
+:: Policeman who needs to check circulation rights and citizen status to regulate and enforce government directives. 	
+: Sanitary Personnel (Doctors, Pharmacists, Nurses, etc) – *MAY** have view and edit right
+:: Sanitary Personnel is the only person who can digitally sign the report on the patient's state of health.
 :: In the case of immunities, he is the only person who can decide the period of validity and its revocation.
-: Volunteers (Immune Citizens) – other citizen can have *view only* rights
-:: Citizens that have recovered, are immune and want to help during the crisis
+:: Citizens that have recovered, are immune and want to help during the crisis.
+: Immune volunteers **MUST* authenticate
+:: they **MUST** be digitally identified to be part of a Shielding program. They **SHOULD** provide geographic position when operates for the program.
+:: they **MUST**  provide to authorized people their immunity credentials in order to accept a Shielding task.
+:: like  other citizen they  have *view only* rights
+: Legally quarantined people **MUST* authenticate
+:: they **MUST** provide a strong biometric authentication to quarantine system and They **MUST** provide to the aothority  their geographic position.
 

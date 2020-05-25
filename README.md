@@ -7,13 +7,6 @@
 * Git repository: https://github.com/safe-together/specification
 * Working Drafts:
   * Git repository: https://github.com/safe-together/specification (master branch)
-* Related web sites:
-  * SafeTogether web site: http://safetogether.app/
-  * CovidApp - Covid Community Alert: https://coronavirus-outbreak-control.github.io/web/
-* Reference implementation source repositories:
-  * Contat Tracing app: https://github.com/Coronavirus-Outbreak-Control/
-  * Shielding app: *TBD*
-  * Quarantine app: *TBD*
 
 
 SafeTogether is an ecosystem of software components and support services to provide
@@ -39,7 +32,7 @@ If needed, download and install [docker community engine](https://hub.docker.com
 This command will generated html files in project root, main, stories and process direcories:
 
 ```
-docker run --rm -t -v ${PWD}:/data  -w /data linkeddatacenter/bikeshed ./build 
+docker run --rm -t -v ${PWD}:/data  -w /data linkeddatacenter/bikeshed:1.0.0 ./build 
 ```
 
 Note that by default, the generated  .html files will not pushed to repository.
