@@ -67,7 +67,7 @@ Here are some protocol interactions:
 The Quarantine reference implementation is made by [Keyless team](https://keyless.io/) using its zero knowledge biometric 
 authentication  [see keyless resources](https://keyless.io/resources)
 
-The [source repository](https://github.com/KeylessTech/kl_quarantine_auth) with Free Open Source License is available on request (ref Andrea Armignani).
+The [source repository](https://github.com/KeylessTech/kl_quarantine_auth) with Free Open Source License is available on request contacting covid@keyless.io.
 
 
 # Shielding System # {#shielding-system}
@@ -81,7 +81,7 @@ The Shielding system adopts following standards and frameworks:
 - The [CovidCreds](https://covidcreds.com) that propose a shared format for Covid Relate Verifiable Credential.
 
 
-The Shielding reference implementation is made by [g0v.it team](http://g0v.it/)using the [DIZME platform](https://dizme.io/) kindly provided by [Infocert](https://www.infocert.it/)
+The Shielding reference implementation is made by [g0v.it team](http://g0v.it/) using the [DIZME platform](https://dizme.io/) kindly provided by [Infocert](https://www.infocert.it/)
 
 The architecture and the protocols for Shielding Reference application is described in 
 the [Shielding Project repository documentation](https://github.com/g0v-it/safetogether-shielding/tree/master/docs/system)
