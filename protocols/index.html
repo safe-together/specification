@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 56380d9, updated Thu May 21 13:35:10 2020 -0700" name="generator">
+  <meta content="Bikeshed version d2e1957, updated Thu May 28 15:39:35 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/protocols/" rel="canonical">
-  <meta content="f275ffe9e2eb3b28d43193381aee62487086a2d3" name="document-revision">
+  <meta content="d03981370d6e3637b7e94a1c1712a226058ac059" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">SafeTogether Protocols and Architectures</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-25">25 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-29">29 May 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1383,13 +1383,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/safe-together/specification/issues/">GitHub</a>
      <dt class="editor">Editor:
-     <dd class="editor p-author h-card vcard"><span class="p-name fn">TBD</span>
+     <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:enrico@LinkedData.Center">Enrico Fagnoni</a> (<a class="p-org org" href="http://g0v-it/">g0v-it core team</a>)
     </dl>
    </div>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 25 May 2020,
+In addition, as of 29 May 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1448,28 +1448,31 @@ However, the information in this document is still subject to change.
    <p>**Note that <a href="https://github.com/dirkx/DP-3T-Documents/tree/implementation-profile-start#a-note-on-the-relationship-between-pepp-pt-and-dp-3t">DP-3T  is not  PEEP-PT</a>**</p>
    <p class="note" role="note"><span>Note:</span> to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it,
 but it states that you know it and you are able to describe why you adopt it or not.</p>
+   <p>The Tracing reference application is made by the <a href="https://coronavirus-outbreak-control.github.io/web/">Covid Community Alert Team</a>,
+the <a href="https://gitlab.com/coronavirus-outbreak-control">source code is available</a> with open source license.</p>
    <p>The architecture and the protocols for the Covid Community Alert reference application  is described in
-the <a href="https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf">project documentation</a></p>
+the <a href="https://github.com/Coronavirus-Outbreak-Control/Documentation">project documentation</a></p>
    <p>Here are some protocol interactions:</p>
    <p><img src="https://raw.githubusercontent.com/Coronavirus-Outbreak-Control/Documentation/master/Images/registration.jpg" width="100%"> <img src="https://raw.githubusercontent.com/Coronavirus-Outbreak-Control/Documentation/master/Images/monitor_anonymous_interactions.jpg" width="100%"> <img src="https://raw.githubusercontent.com/Coronavirus-Outbreak-Control/Documentation/master/Images/notify_people_at_risk.jpg" width="100%"></p>
    <h2 class="heading settled" data-level="2" id="quarantine-system"><span class="secno">2. </span><span class="content">Quarantine System</span><a class="self-link" href="#quarantine-system"></a></h2>
-   <p>These documents <strong>SHOULD</strong> be taken into consideration for quarantine domain:</p>
-   <ul>
-    <li data-md>
-     <p>keyless protocols for zero knowledge biometric authentication <a href="https://keyless.io/resources">see keyless resources on web site</a></p>
-   </ul>
+   <p>The Quarantine reference implementation is made by <a href="https://keyless.io/">Keyless team</a> using its zero knowledge biometric
+authentication <a href="https://keyless.io/resources">see keyless resources</a></p>
+   <p>The <a href="https://github.com/KeylessTech/kl_quarantine_auth">source repository</a> with Free Open Source License is available on request (ref Andrea Armignani).</p>
    <h2 class="heading settled" data-level="3" id="shielding-system"><span class="secno">3. </span><span class="content">Shielding System</span><a class="self-link" href="#shielding-system"></a></h2>
-   <p>The Shielding system adopts following standards and framework:</p>
+   <p>The Shielding system adopts following standards and frameworks:</p>
    <ul>
     <li data-md>
      <p><a data-link-type="biblio" href="#biblio-verifiablecredentials">[verifiableCredentials]</a> for credential definition standard made by W3C</p>
     <li data-md>
      <p><a data-link-type="biblio" href="#biblio-indy">[indy]</a> a reference implementation for Self Sovereign Identity (SSI)</p>
     <li data-md>
+     <p><a data-link-type="biblio" href="#biblio-aries">[aries]</a> a shared, reusable, interoperable tool kit designed for initiatives and solutions focused on creating, transmitting and storing verifiable digital credentials</p>
+    <li data-md>
      <p>The <a href="https://sovrin.org/">Sovrin Foundation</a> as an open source specification framework that implements SSI</p>
     <li data-md>
      <p>The <a href="https://covidcreds.com">CovidCreds</a> that propose a shared format for Covid Relate Verifiable Credential.</p>
    </ul>
+   <p>The Shielding reference implementation is made by <a href="http://g0v.it/">g0v.it team</a>using the <a href="https://dizme.io/">DIZME platform</a> kindly provided by <a href="https://www.infocert.it/">Infocert</a></p>
    <p>The architecture and the protocols for Shielding Reference application is described in
 the <a href="https://github.com/g0v-it/safetogether-shielding/tree/master/docs/system">Shielding Project repository documentation</a></p>
    <p>The main components of the Shielding System are summarized in following  picture:</p>
@@ -1624,6 +1627,8 @@ the <a href="https://github.com/g0v-it/safetogether-shielding/tree/master/docs/s
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
   <dl>
+   <dt id="biblio-aries">[ARIES]
+   <dd><a href="https://github.com/hyperledger/aries">Hyperledger Aries</a>. URL: <a href="https://github.com/hyperledger/aries">https://github.com/hyperledger/aries</a>
    <dt id="biblio-indy">[INDY]
    <dd>Manu Sporny; Dave Longley; David Chadwick. <a href="https://github.com/hyperledger/indy-sdk">hyperledger/indy-sdk repository</a>. URL: <a href="https://github.com/hyperledger/indy-sdk">https://github.com/hyperledger/indy-sdk</a>
    <dt id="biblio-process">[Process]
