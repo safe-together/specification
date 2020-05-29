@@ -7,7 +7,7 @@ Group: SafeTogether Community Group
 URL: https://safe-together.github.io/specification/protocols/
 Markup Shorthands: markdown yes
 Max ToC Depth: 3
-Editor: TBD
+Editor: Enrico Fagnoni, g0v-it core team http://g0v-it/, enrico@LinkedData.Center
 Abstract:
   This document is a high level description and reference to protocolos and architectures used in SafeTogether Applications.
   Anyone can take part in the editing process.
@@ -48,9 +48,11 @@ These documents **SHOLUD** be taken into consideration for tracing domain :
 Note: to say that a standard/protocol/specification must be taken into consideration, does not means that you have to adopt it, 
 but it states that you know it and you are able to describe why you adopt it or not.
 
+The Tracing reference application is made by the [Covid Community Alert Team](https://coronavirus-outbreak-control.github.io/web/),
+the [source code is available](https://gitlab.com/coronavirus-outbreak-control) with open source license.
 
 The architecture and the protocols for the Covid Community Alert reference application  is described in 
-the [project documentation](https://github.com/Coronavirus-Outbreak-Control/Documentation/blob/master/Covid%20Community%20Alert%20-%20Protocol%20Decription.pdf)
+the [project documentation](https://github.com/Coronavirus-Outbreak-Control/Documentation)
 
 Here are some protocol interactions:
 
@@ -61,19 +63,25 @@ Here are some protocol interactions:
 
 # Quarantine System # {#quarantine-system}
 
-These documents **SHOULD** be taken into consideration for quarantine domain:
- 
-- keyless protocols for zero knowledge biometric authentication  [see keyless resources on web site](https://keyless.io/resources)
+
+The Quarantine reference implementation is made by [Keyless team](https://keyless.io/) using its zero knowledge biometric 
+authentication  [see keyless resources](https://keyless.io/resources)
+
+The [source repository](https://github.com/KeylessTech/kl_quarantine_auth) with Free Open Source License is available on request (ref Andrea Armignani).
 
 
 # Shielding System # {#shielding-system}
 
-The Shielding system adopts following standards and framework:
+The Shielding system adopts following standards and frameworks:
 
 - [[!verifiableCredentials]] for credential definition standard made by W3C
 - [[!indy]] a reference implementation for Self Sovereign Identity (SSI)
+- [[!aries]] a shared, reusable, interoperable tool kit designed for initiatives and solutions focused on creating, transmitting and storing verifiable digital credentials
 - The [Sovrin Foundation](https://sovrin.org/) as an open source specification framework that implements SSI
 - The [CovidCreds](https://covidcreds.com) that propose a shared format for Covid Relate Verifiable Credential.
+
+
+The Shielding reference implementation is made by [g0v.it team](http://g0v.it/)using the [DIZME platform](https://dizme.io/) kindly provided by [Infocert](https://www.infocert.it/)
 
 The architecture and the protocols for Shielding Reference application is described in 
 the [Shielding Project repository documentation](https://github.com/g0v-it/safetogether-shielding/tree/master/docs/system)
@@ -109,6 +117,10 @@ The main components of the Shielding System are summarized in following  picture
 	      "Dave Longley",
 	      "David Chadwick"
 	    ]
+	},
+	"aries": {
+		"href": "https://github.com/hyperledger/aries",
+		"title": "Hyperledger Aries"
 	}
 }
 </pre>

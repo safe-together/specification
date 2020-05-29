@@ -23,7 +23,7 @@ A fair number of spec improvements are currently in the making. If you want to c
 ## Editing and building the specification
 The specification is built using [Bikeshed](https://tabatkins.github.io/bikeshed/).
 
-Pushing to master triggers the  compliation and publishing in GitHub pages.
+Pushing to master triggers the compilation and publishing in GitHub pages.
 
 ## Local building & test
  
