@@ -1175,7 +1175,7 @@ Possible extra rowspan handling
 		   1. When table < content column, centers table in column.
 		   2. When content < table < available, left-aligns.
 		   3. When table > available, fills available + scroll bar.
-		*/ 
+		*/
 		display: grid;
 		grid-template-columns: minmax(0, 50em);
 	}
@@ -1221,9 +1221,9 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version d2e1957, updated Thu May 28 15:39:35 2020 -0700" name="generator">
+  <meta content="Bikeshed version 61ecfba, updated Mon Jun 1 10:09:03 2020 -0700" name="generator">
   <link href="https://safe-together.github.io/specification/" rel="canonical">
-  <meta content="84864d437beed2dbed5e8cdd98864503d016c173" name="document-revision">
+  <meta content="bad18e4e4eba4c7d63a5d73804b38a2f3138dcd5" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1375,7 +1375,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">The SafeTogether Ecosystem</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-05-29">29 May 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Committee Draft, <time class="dt-updated" datetime="2020-06-01">1 June 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1391,7 +1391,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <div data-fill-with="warning"></div>
    <p class="copyright" data-fill-with="copyright"><a href="http://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/80x15.png"></a> To the extent possible under law, the editors have waived all copyright
 and related or neighboring rights to this work.
-In addition, as of 29 May 2020,
+In addition, as of 1 June 2020,
 the editors have made this specification available under the <a href="http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0" rel="license">Open Web Foundation Agreement Version 1.0</a>,
 which is available at http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0.
 Parts of this work may be from another specification document.  If so, those parts are instead covered by the license of that specification document. </p>
@@ -1399,11 +1399,9 @@ Parts of this work may be from another specification document.  If so, those par
   </div>
   <div class="p-summary" data-fill-with="abstract">
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>This document connects a set of specifications that, together,
+   <p>This document provides an interoperability framework for software components and support
 
-  provide an interoperability framework for SafeTogether project,
-  an ecosystem of software components and support services to provide
-  the operators in charge with a set of tools to help tackle phase 2 of the epidemic emergency.</p>
+  services that provide the operators in charge of some tools to help tackle phase 2 of the epidemic emergency.</p>
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
@@ -1419,7 +1417,6 @@ Parts of this work may be from another specification document.  If so, those par
      <ol class="toc">
       <li><a href="#project-panel"><span class="secno">6.1</span> <span class="content">General discussion Panel</span></a>
       <li><a href="#stories-panel"><span class="secno">6.2</span> <span class="content">Stories Panel</span></a>
-      <li><a href="#protocols-panel"><span class="secno">6.3</span> <span class="content">Protocols Panel</span></a>
      </ol>
     <li><a href="#repositories"><span class="secno">7</span> <span class="content">Repositories</span></a>
     <li><a href="#conformance"><span class="secno"></span> <span class="content"> Conformance</span></a>
@@ -1587,8 +1584,6 @@ as part of the editorial process.</p>
      <p><a href="#project-panel">§ 6.1 General discussion Panel</a></p>
     <li data-md>
      <p><a href="#stories-panel">§ 6.2 Stories Panel</a></p>
-    <li data-md>
-     <p><a href="#protocols-panel">§ 6.3 Protocols Panel</a></p>
    </ul>
    <p>More or less there is a weekly SafeTogether Community Group call to review all panels.
 See general channel in <a href="#project-panel">§ 6.1 General discussion Panel</a> to find out the agenda and exact time of the next call and the address to connect to it,
@@ -1635,30 +1630,6 @@ or to add put item on the next agenda.</p>
    <p><strong>Editorial Assignment:</strong></p>
    <p>Candidate Proposals to the SafeTogether Specification produced by this panel are likely to
 be associated with the <a data-link-type="biblio" href="#biblio-stories">[STORIES]</a> specifications, and will be principally reviewed 
-by any editors assigned to it.</p>
-   <h3 class="heading settled" data-level="6.3" id="protocols-panel"><span class="secno">6.3. </span><span class="content">Protocols Panel</span><a class="self-link" href="#protocols-panel"></a></h3>
-    Definition of protocols and architectures in SafeTogether systems 
-   <p><strong>Communication channels:</strong></p>
-   <ul>
-    <li data-md>
-     <p>#Slack channel: <a href="https://safetogether2020.slack.com/app_redirect?channel=protocols">#stories</a></p>
-   </ul>
-   <p><strong>Panelists:</strong></p>
-   <ul>
-    <li data-md>
-     <p>[Enrico Fagnoni]()</p>
-    <li data-md>
-     <p>[Luca Merealli]()</p>
-    <li data-md>
-     <p>[Andrea Carmignani]()</p>
-    <li data-md>
-     <p>[Stefano Quintarelli]()</p>
-    <li data-md>
-     <p>[Luciano Baresi]()</p>
-   </ul>
-   <p><strong>Editorial Assignment:</strong></p>
-   <p>Candidate Proposals to the SafeTogether Specification produced by this panel are likely to
-be associated with the <a data-link-type="biblio" href="#biblio-protocols">[PROTOCOLS]</a> specifications, and will be principally reviewed 
 by any editors assigned to it.</p>
    <h2 class="heading settled" data-level="7" id="repositories"><span class="secno">7. </span><span class="content">Repositories</span><a class="self-link" href="#repositories"></a></h2>
    <p>Each repository has one or more assigned editors, and only assigned editors are permitted to merge into the master branch of these repositories.</p>
