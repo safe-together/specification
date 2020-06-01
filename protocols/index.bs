@@ -23,7 +23,6 @@ You are invited to [contribute](https://github.com/safe-together/specification/i
 any feedback, comments, or questions you might have.
 
 
-
 ## Contributors ## {#contributors}
 
 Many people contributed to this specification; here is an incomplete list (please contact editor to add your name in this list):

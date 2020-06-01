@@ -193,7 +193,6 @@ Index of available Panels:
 
 - [[#project-panel]]
 - [[#stories-panel]]
-- [[#protocols-panel]]
 
 
 More or less there is a weekly SafeTogether Community Group call to review all panels. 
