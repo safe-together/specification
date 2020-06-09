@@ -109,7 +109,7 @@ There **MAY** exists more than one *Reference Implementation" for each applicati
 
 <tr>
 	<td>Shielding</td>
-	<td>in development</td>
+	<td>demo ready</td>
 	<td> 
 	    A reference implementation and the documentation for *Shielding* system by the [g0v.it team](http://g0v.it). 
 	    The [source repository](https://github.com/g0v-it/safetogether-shielding) was created. 
