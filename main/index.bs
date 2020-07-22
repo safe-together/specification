@@ -9,7 +9,7 @@ Markup Shorthands: markdown yes
 Max ToC Depth: 2
 Editor: Stefano Quintarelli, Copernicani.it https://copernicani.it/ , stefano@quintarelli.it  
 Editor: Luca Mastrostefano, Coronavirus Outbreak Control  https://coronavirus-outbreak-control.github.io/web/, luca.mastrostefano90@gmail.com 
-Editor: Enrico Fagnoni, g0v-it core team https://g0v.it/, enrico@LinkedData.Center
+Editor: Enrico Fagnoni, LinkedData.Center http://linkeddata.center/, enrico@LinkedData.Center
 Abstract:
   This document provides an interoperability framework for software components and support 
   services that provide the operators in charge of some tools to help tackle phase 2 of the epidemic emergency.
@@ -113,6 +113,7 @@ There **MAY** exists more than one *Reference Implementation" for each applicati
 	<td> 
 	    A reference implementation and the documentation for *Shielding* system by the [g0v.it team](http://g0v.it). 
 	    The [source repository](https://github.com/g0v-it/safetogether-shielding) was created. 
+	    The reference implementation uses portion of LinkedData.Center Mopso KYC tecnologies together with the Sovrin infrastructure and Infocert DIZME app.
 	    
 	    A [video storyboard](https://www.powtoon.com/c/f2AjuQcsqg0/1/m) is available. 
 	</td>
