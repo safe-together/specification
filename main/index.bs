@@ -238,7 +238,7 @@ Definition of personas and user stories inspiring SafeTogether
 **Panelists:**
 
 - [Enrico Fagnoni](https://github.com/ecow), <[enrico@LinkedData.Center](mailto:enrico@LinkedData.Center)> (@ecow)
-- [Michele D'Aliessi](), <[michele.daliessi@gmail.com](mailto:michele.daliessi@gmail.com)>
+- [Michele D'Aliessi](),
 - [Andrea Carmignani](), <[andrea@keyless.io](mailto:andrea@keyless.io)>
 
 
