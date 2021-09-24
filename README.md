@@ -20,6 +20,12 @@ For the time being, while the migration is in progress, please refer also to the
 A fair number of spec improvements are currently in the making. If you want to contribute, please refer to a relevant [panel](https://safe-together.github.io/specification/process#panels).
 
 
+## Data protection
+
+All personal data contained in this document (e.g. emails, addresseses etc., etc.) are sole properties of the respective owners and can't be used nor imported 
+without their written permission. The reverse enginering and automatic scraping and/or crawling of all project resources is not permitted.
+
+
 ## Editing and building the specification
 The specification is built using [Bikeshed](https://tabatkins.github.io/bikeshed/).
 
