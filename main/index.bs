@@ -24,6 +24,11 @@ However, the information in this document is still subject to change.
 You are invited to [contribute](https://github.com/safe-together/specification/issues)
 any feedback, comments, or questions you might have.
 
+## Data protection
+
+All personal data contained in this document (e.g. emails, addresseses etc., etc.) are sole properties of the respective owners and can't be used nor imported 
+without their written permission. The reverse enginering and automatic scraping and/or crawling of all project resources is not permitted.
+
 <!--
 ████ ██    ██ ████████ ████████   ███████  ████████  ██     ██  ██████  ████████ ████  ███████  ██    ██
  ██  ███   ██    ██    ██     ██ ██     ██ ██     ██ ██     ██ ██    ██    ██     ██  ██     ██ ███   ██
